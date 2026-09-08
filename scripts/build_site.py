@@ -75,47 +75,151 @@ def render(itinerary_by_day, pois_by_id, by_cat):
     return html
 
 
-HTML_TEMPLATE = """<!doctype html>
+HTML_TEMPLATE = """
+<!doctype html>
 <html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>__TITLE__ 旅行攻略</title><style>
-:root{--main:#0a6cff;--orange:#ff7a18;--bg:#f7f9fc;--card:#fff}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:#1c2733}
-header{padding:18px 22px;background:linear-gradient(135deg,#0a6cff,#00a6e6 60%,#72e0c7);color:#fff}
-header h1{margin:0;font-size:22px}header .sub{opacity:.92;margin-top:6px;font-size:13px}
-.container{max-width:1180px;margin:0 auto;padding:18px}.topbar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 18px}
-.pill{padding:8px 14px;border:1px solid #dbe3ee;background:var(--card);border-radius:999px;cursor:pointer;font-size:14px}
-.pill.on{background:var(--main);color:#fff;border-color:var(--main)}
-.grid{display:grid;grid-template-columns:2fr 1fr;gap:18px}@media(max-width:900px){.grid{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid #e6edf5;border-radius:12px;padding:16px;margin-bottom:16px}
-.daycard h2{font-size:17px;margin:0 0 10px}.daycard .theme{color:var(--orange);font-weight:400}
-ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;border-bottom:1px dashed #eef3f8;display:flex;align-items:center;gap:8px;justify-content:space-between}
-.poilist b{color:var(--main);white-space:nowrap}
-.nav-mini{font-size:11px;color:var(--main);text-decoration:none;border:1px solid #cfe0ff;padding:1px 6px;border-radius:6px}
-.actions .nav{display:inline-block;margin-top:6px;text-decoration:none;background:var(--main);color:#fff;padding:5px 12px;border-radius:8px;font-size:13px}
-.poi{border:1px solid #e6edf5;border-radius:12px;background:var(--card);padding:12px;margin-bottom:12px}
-.poi h3{margin:0 0 6px;font-size:16px}.poi .src{font-size:12px;color:#7b8897;font-weight:400}
-.poi .meta{color:#5b6b7c;font-size:13px}.tag{display:inline-block;background:#eef4ff;color:#3a6fc4;font-size:12px;padding:2px 8px;border-radius:6px;margin:3px 4px 3px 0}
-#mapwrap{height:52vh;border-radius:12px;overflow:hidden;position:sticky;top:8px}
-.panel{display:none}.panel.active{display:block}.note{font-size:12px;color:#8895a5;line-height:1.7}
-.sources a{font-size:12px;color:#0a6cff;text-decoration:none;display:inline-block;margin:1px 0}
-/* 地图编号点 + 地名标注 */
-.seqmarker{width:28px;height:28px;border-radius:50%;background:#0a6cff;color:#fff;font-size:13px;font-weight:700;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.2)}
-.poilabel{font-size:12px;background:rgba(255,255,255,.92);border:1px solid #dbe3ee;border-radius:6px;padding:1px 6px;color:#1c2733;white-space:nowrap}
-.hotelmark{width:28px;height:28px;border-radius:50%;background:#b06ae0;color:#fff;font-size:15px;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.2)}
-/* 顺序导航底部栏 */
-#navbar{position:sticky;bottom:0;left:0;right:0;z-index:50;background:#fff;border-top:1px solid #e6edf5;padding:8px 12px;gap:8px;flex-direction:column;box-shadow:0 -3px 12px rgba(0,0,0,.06)}
-#navbar .navhead{font-weight:700;font-size:14px}
-#navbar .navtip{font-weight:400;color:#8895a5;font-size:11px}
+<title>__TITLE__ 旅行攻略</title>
+<style>
+/* ===== 设计系统：潮汐 × 闽南砖瓦 ===== */
+:root{
+  --paper:#f7f9fb;            /* 海雾纸底（偏冷，非奶油） */
+  --ink:#12303d;              /* 深海墨蓝 */
+  --ink-soft:#4c6472;
+  --sea:#0e7490;              /* 主色：潮汐青 */
+  --sea-deep:#155e75;
+  --dusk:#e5725c;             /* 点缀：落日珊瑚（唯一强调色） */
+  --line:#dce7ec;
+  --card:#ffffff;
+  --glass:rgba(255,255,255,.86);
+  --shadow:0 1px 2px rgba(18,48,61,.05),0 8px 24px -12px rgba(18,48,61,.18);
+  --radius:16px;
+  --font-serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --font-sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-sans);background:var(--paper);color:var(--ink);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-serif);line-height:1.25;font-weight:700}
+a{color:var(--sea)}
+:focus-visible{outline:2px solid var(--dusk);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* ===== 页头：航线卡片式 hero ===== */
+header{position:relative;color:#fff;background:linear-gradient(135deg,#0f4c5c 0%,var(--sea) 55%,#0aa5a0 100%);padding:26px 22px 34px;overflow:hidden}
+header::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:26px;background:var(--paper);border-radius:100% 100% 0 0/100% 100% 0 0}
+header .hwrap{max-width:1180px;margin:0 auto;position:relative;z-index:1}
+header h1{margin:0;font-size:clamp(24px,4.6vw,34px);letter-spacing:.02em}
+header .sub{margin-top:8px;font-size:13.5px;opacity:.9;max-width:70ch}
+.metachips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.metachip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(4px);border-radius:999px;padding:4px 12px;font-size:12.5px}
+.metachip b{font-weight:600}
+
+/* ===== 栏目导航：吸顶玻璃条 ===== */
+.topbar{position:sticky;top:0;z-index:60;display:flex;gap:8px;align-items:center;background:var(--glass);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 14px;margin:0 -14px 18px;box-shadow:0 4px 16px -12px rgba(18,48,61,.2)}
+.topbar::-webkit-scrollbar{display:none}
+.pill{flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--ink-soft);border-radius:999px;padding:8px 15px;font-size:13.5px;cursor:pointer;transition:all .18s ease;font-family:var(--font-sans)}
+.pill:hover{border-color:var(--sea);color:var(--sea);transform:translateY(-1px)}
+.pill.on{background:var(--sea);border-color:var(--sea);color:#fff;box-shadow:0 6px 16px -8px rgba(14,116,144,.55)}
+
+/* ===== 布局 ===== */
+.container{max-width:1180px;margin:0 auto;padding:0 14px 40px}
+.grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:20px;align-items:start}
+@media(max-width:960px){.grid{grid-template-columns:1fr}}
+
+/* ===== 面板 ===== */
+.panel{display:none}
+.panel.active{display:block;animation:panelIn .22s ease}
+@keyframes panelIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.panel>h2{font-size:21px;margin:2px 0 14px;color:var(--ink)}
+.panel>h3{font-size:16px;margin:18px 0 8px;color:var(--ink)}
+.note{font-size:13px;color:var(--ink-soft);line-height:1.7}
+
+/* ===== 卡片通用 ===== */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:16px;box-shadow:var(--shadow)}
+
+/* ===== 每日行程：时间线 ===== */
+.daycard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 10px;margin-bottom:16px;box-shadow:var(--shadow);cursor:pointer;transition:border-color .2s, box-shadow .2s}
+.daycard:hover{border-color:var(--sea)}
+.daycard.on{border-color:var(--sea);box-shadow:0 12px 28px -14px rgba(14,116,144,.35)}
+.dayhead{display:flex;align-items:flex-start;gap:12px}
+.daynum{flex:0 0 auto;width:44px;height:44px;border-radius:14px;background:linear-gradient(145deg,var(--sea),var(--sea-deep));color:#fff;font-family:var(--font-serif);font-weight:700;font-size:17px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px -6px rgba(21,94,117,.5)}
+.dh-txt{min-width:0}
+.dh-txt h2{margin:2px 0 2px;font-size:17px}
+.daymeta{font-size:12.5px;color:var(--ink-soft)}
+ol.poilist{list-style:none;margin:12px 0 4px;padding:0;position:relative}
+ol.poilist li{position:relative;padding:8px 0 8px 26px;border-bottom:1px dashed var(--line)}
+ol.poilist li:last-child{border-bottom:none}
+ol.poilist li::before{content:"";position:absolute;left:7px;top:16px;width:8px;height:8px;border-radius:50%;background:var(--sea);opacity:.85}
+ol.poilist li::after{content:"";position:absolute;left:10px;top:28px;bottom:-6px;width:2px;background:linear-gradient(var(--sea),rgba(14,116,144,.15))}
+ol.poilist li:last-child::after{display:none}
+ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8px;font-weight:600}
+.nav-mini{flex:0 0 auto;font-size:12px;color:var(--sea);text-decoration:none;border:1px solid #bfdce6;padding:2px 10px;border-radius:999px;margin-left:8px;transition:all .15s}
+.nav-mini:hover{background:var(--sea);color:#fff}
+.routeinfo{font-size:12.5px;color:var(--ink-soft);background:#eef6f9;border-radius:8px;padding:6px 10px;display:inline-block;margin:6px 0 2px}
+.notes{font-size:13px;color:var(--ink-soft);margin:6px 0 10px}
+
+/* ===== POI / 酒店 / 餐厅卡片 ===== */
+.poi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);position:relative;transition:transform .15s,box-shadow .15s}
+.poi:hover{transform:translateY(-2px);box-shadow:0 14px 30px -16px rgba(18,48,61,.28)}
+.poi::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:3px;background:linear-gradient(var(--sea),var(--dusk));opacity:.85}
+.poi h3{margin:0 0 4px;font-size:16px;padding-left:6px}
+.poi .src{font-size:12px;color:var(--ink-soft);font-weight:400;font-family:var(--font-sans)}
+.poi .meta{color:var(--ink-soft);font-size:13px;padding-left:6px}
+.poi p{padding-left:6px;margin:6px 0}
+.tag{display:inline-block;background:#eef4f9;color:var(--sea-deep);font-size:12px;padding:2px 10px;border-radius:999px;margin:2px 4px 2px 0}
+.actions{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;padding-left:6px}
+.actions .nav{display:inline-block;text-decoration:none;background:var(--sea);color:#fff;padding:6px 14px;border-radius:999px;font-size:13px;transition:all .15s}
+.actions .nav:hover{background:var(--sea-deep);transform:translateY(-1px)}
+.actions .nav[style*="b06ae0"],.actions .nav[style*="background:#b06ae0"]{background:#8b5cf6}
+.actions .nav[style*="b06ae0"]:hover{background:#7c3aed}
+.sources{font-size:12px;color:var(--ink-soft);padding-left:6px;margin-top:6px}
+.sources a{color:var(--sea);text-decoration:none;margin-right:8px}
+
+/* ===== 地图 ===== */
+#mapwrap{position:sticky;top:70px;height:calc(100vh - 90px);min-height:420px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+#map{width:100%;height:100%}
+.mlegend{position:absolute;top:10px;left:10px;z-index:20;background:var(--glass);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:11.5px;color:var(--ink-soft);box-shadow:0 4px 12px -6px rgba(18,48,61,.25);pointer-events:none}
+.mlegend i{display:inline-block;width:14px;height:4px;border-radius:2px;margin-right:4px;vertical-align:middle}
+.mlegend i.p{background:var(--sea)}
+.mlegend i.l{background:var(--sea);opacity:.5}
+
+/* ===== 地图标注 ===== */
+.seqmarker{width:28px;height:28px;border-radius:50%;background:var(--sea);color:#fff;font-size:13px;font-weight:700;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 8px rgba(18,48,61,.3)}
+.poilabel{font-size:12px;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:8px;padding:2px 8px;color:var(--ink);white-space:nowrap;box-shadow:0 2px 6px -2px rgba(18,48,61,.2)}
+.hotelmark{width:28px;height:28px;border-radius:50%;background:#8b5cf6;color:#fff;font-size:15px;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 8px rgba(18,48,61,.3)}
+
+/* ===== 顺序导航底部栏（玻璃） ===== */
+#navbar{position:sticky;bottom:10px;left:0;right:0;z-index:50;background:var(--glass);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:14px;padding:10px 14px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 30px -12px rgba(18,48,61,.35);margin:0 4px}
+#navbar .navhead{font-weight:700;font-size:14px;color:var(--ink);display:flex;align-items:center;gap:8px}
+#navbar .navhead::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--dusk)}
+#navbar .navtip{font-weight:400;color:var(--ink-soft);font-size:11.5px}
 #navbar .chips{display:flex;gap:6px;flex-wrap:wrap}
-#navbar .chip{font-size:12px;padding:5px 9px;border-radius:999px;border:1px solid #dbe3ee;background:#f7f9fc;cursor:pointer}
-#navbar .chip.cur{background:#0a6cff;color:#fff;border-color:#0a6cff}
+#navbar .chip{font-size:12.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;transition:all .15s}
+#navbar .chip:hover{border-color:var(--sea)}
+#navbar .chip.cur{background:var(--sea);color:#fff;border-color:var(--sea)}
 #navbar .navctl{display:flex;gap:8px;align-items:center}
-#navbar .navctl button{font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid #cfe0ff;background:#eef4ff;color:#0a6cff;cursor:pointer}
-/* 手机端：地图置顶吸顶，方便边看边点导航 */
-@media(max-width:900px){#mapwrap{order:-1;position:sticky;top:0;z-index:40;height:42vh}}
+#navbar .navctl button{font-size:13px;padding:7px 14px;border-radius:10px;border:1px solid #bfdce6;background:#fff;color:var(--sea);cursor:pointer;transition:all .15s;font-family:var(--font-sans)}
+#navbar .navctl button:hover{background:var(--sea);color:#fff}
+
+/* ===== 手机端 ===== */
+@media(max-width:960px){
+  .topbar{flex-wrap:nowrap;overflow-x:auto;padding:10px 12px;margin:0 -14px 12px;scrollbar-width:none}
+  .grid{display:flex;flex-direction:column}
+  #mapwrap{order:-1;position:sticky;top:52px;height:44vh;min-height:300px}
+  #navbar{position:fixed;left:8px;right:8px;bottom:8px}
+  body{padding-bottom:120px}
+  .poilist li{padding:8px 0 8px 24px}
+}
+@media(max-width:560px){
+  .dayhead{gap:10px}
+  .daynum{width:38px;height:38px;font-size:15px;border-radius:12px}
+}
 </style></head><body>
-<header><h1>__TITLE__ 之旅 · 3天行程</h1>
-<div class='sub'>__SUBTITLE__</div></header>
+<header><div class='hwrap'>
+  <h1>__TITLE__ 之旅</h1>
+  <div class='sub'>__SUBTITLE__</div>
+  <div class='metachips'>__META_CHIPS__</div>
+</div></header>
 <div class='container'>
   <div class='topbar'>
     <button class='pill on' data-panel='trip'>📅 行程</button>
@@ -131,7 +235,7 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
   <div class='grid'>
     <div>
       <div id='panel-trip' class='panel active'>__DAYCARDS__
-        <div class='card note'>点击景点卡片勾选/取消 → 地图实时重算今日路线。</div>
+        <div class='card note'>点选任意一天查看当日线路；在地图上点击编号可直达高德导航。住宿区域用紫色圈标出，不在逐日路线内。</div>
       </div>
       <div id='panel-spots' class='panel'><h2>📍 景点指南</h2>__POIHTML__</div>
       <div id='panel-food' class='panel'><h2>🍜 餐饮指南</h2><div class='note'>__FOOD_PLACEHOLDER__</div></div>
@@ -142,14 +246,13 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
       <div id='panel-srcs' class='panel'><h2>📚 资料来源（__SRC_COUNT__ 条）</h2>__SRC_PLACEHOLDER__</div>
       <div id='panel-import' class='panel'><h2>📦 把行程导入高德地图 / 旅行软件</h2>__IMPORT_PLACEHOLDER__</div>
     </div>
-    <div><div id='mapwrap'><div id='map'></div></div></div>
+    <div><div id='mapwrap'><div class='mlegend'><i class='p'></i>当日路线 · <i class='l'></i>途经点 · <span style='color:#8b5cf6'>🏨 住宿区域</span></div><div id='map'></div></div></div>
   </div>
 </div>
 <script src='https://webapi.amap.com/maps?v=2.0&key=__AMAPKEY__&plugin=AMap.Driving,AMap.Walking,AMap.Transfer'></script>
 <script>
 window.__DAYS__ = __MAPDAYS__;
 window.__HOTELS__ = __HOTELS_JSON__;
-// 给每天的点编号
 (function(){ for(var d in window.__DAYS__){ var arr=window.__DAYS__[d]; arr.forEach(function(p,i){ p.seq=i+1; }); } })();
 var mp = new AMap.Map('map',{zoom:11,center:[118.09,24.47]});
 var routeLayers=[], markerLayers=[], activeDay=1;
@@ -160,29 +263,24 @@ function drawDay(d){
   var pts=(window.__DAYS__[d]||[]).filter(function(p){return p&&p.lat});
   if(pts.length<2) return;
   var path=pts.map(function(p){return [p.lng,p.lat]});
-  var poly=new AMap.Polyline({path:path,strokeColor:'#0a6cff',strokeWeight:6,strokeOpacity:.9,lineJoin:'round',borderWeight:2,strokeStyle:'solid'});
+  var poly=new AMap.Polyline({path:path,strokeColor:'#0e7490',strokeWeight:6,strokeOpacity:.9,lineJoin:'round',borderWeight:2,strokeStyle:'solid'});
   poly.setMap(mp); routeLayers.push(poly);
-  // 编号+地名标注
   pts.forEach(function(p){
-    var m=new AMap.Marker({
-      position:[p.lng,p.lat], zIndex:120,
-      content:'<div class="seqmarker" data-name="'+p.name+'">'+p.seq+'</div>',
-      offset:new AMap.Pixel(-14,-14)
-    });
+    var m=new AMap.Marker({position:[p.lng,p.lat],zIndex:120,content:'<div class="seqmarker" data-name="'+p.name+'">'+p.seq+'</div>',offset:new AMap.Pixel(-14,-14)});
     m.setMap(mp); markerLayers.push(m);
-    // 名称 label
     var lb=new AMap.Text({position:[p.lng,p.lat],content:'<div class="poilabel">'+(p.seq+'. '+p.name)+'</div>',offset:new AMap.Pixel(0,12),zIndex:130});
     lb.setMap(mp); markerLayers.push(lb);
   });
   mp.setFitView([poly]);
+  document.querySelectorAll('.daycard').forEach(function(c){ c.classList.toggle('on', +c.dataset.day===d); });
   renderNavbar(d, pts);
 }
 function renderNavbar(d, pts){
   var bar=document.getElementById('navbar'); if(!bar) return;
-  var html='<div class="navhead">Day'+d+' 顺序导航 <span class="navtip">点站点直开高德</span></div>';
+  var html='<div class="navhead">Day '+d+' 顺序导航 <span class="navtip">点站点直达高德 · 下一站自动前进</span></div>';
   html+='<div class="chips">';
   pts.forEach(function(p,i){ html+='<button class="chip" data-i="'+i+'">'+p.seq+'. '+p.name+'</button>'; });
-  html+='</div><div class="navctl"><button id="prevStop">⬅ 上一站</button><button id="nextStop">下一站 ➡</button></div>';
+  html+='</div><div class="navctl"><button id="prevStop">上一站</button><button id="nextStop">下一站</button></div>';
   bar.innerHTML=html;
   var chips=bar.querySelectorAll('.chip');
   chips.forEach(function(c){ c.addEventListener('click',function(){ window.open(navUrl(pts[+c.dataset.i]),'_blank'); }); });
@@ -195,15 +293,14 @@ function renderNavbar(d, pts){
 var dayCards=document.querySelectorAll('.daycard');
 dayCards.forEach(function(c){c.addEventListener('click',function(){activeDay=+c.dataset.day;drawDay(activeDay);});});
 drawDay(1);
-// 常显推荐住宿区域（紫色范围圈 + 中心标注，不随每日路线清除）
 var hotelLayer=[];
 (window.__HOTELS__||[]).forEach(function(h){
   if(!h.lat) return;
-  var c=new AMap.Circle({center:[h.lng,h.lat],radius:h.radius||800,strokeColor:'#b06ae0',strokeWeight:2,strokeOpacity:.6,fillColor:'#b06ae0',fillOpacity:.18,zIndex:100});
+  var c=new AMap.Circle({center:[h.lng,h.lat],radius:h.radius||800,strokeColor:'#8b5cf6',strokeWeight:2,strokeOpacity:.6,fillColor:'#8b5cf6',fillOpacity:.16,zIndex:100});
   c.setMap(mp); hotelLayer.push(c);
   var m=new AMap.Marker({position:[h.lng,h.lat],zIndex:110,content:'<div class="hotelmark">🏨</div>',offset:new AMap.Pixel(-14,-14)});
   m.setMap(mp); hotelLayer.push(m);
-  var lb=new AMap.Text({position:[h.lng,h.lat],content:'<div class="poilabel" style="border-color:#e0b0ff;background:#faf0ff">🏨 '+h.name+'</div>',offset:new AMap.Pixel(0,16),zIndex:115});
+  var lb=new AMap.Text({position:[h.lng,h.lat],content:'<div class="poilabel" style="border-color:#e0ccff;background:#faf5ff">🏨 '+h.name+'</div>',offset:new AMap.Pixel(0,16),zIndex:115});
   lb.setMap(mp); hotelLayer.push(lb);
   var _h=(function(hn){ return function(){ window.open('https://uri.amap.com/navigation?to='+h.lng+','+h.lat+','+encodeURIComponent(hn)+'&mode=car&callnative=1','_blank'); }; })(h.name);
   m.on('click',_h); lb.on('click',_h); c.on('click',_h);
@@ -219,10 +316,8 @@ btns.forEach(function(b){b.addEventListener('click',function(){
   else if(b.dataset.panel==='import'){ var nb=document.getElementById('navbar'); if(nb) nb.style.display='none'; }
 });});
 </script>
-<div id='navbar' style='display:flex'></div>
-</body></html>
-"""
-
+<div id='navbar'></div>
+</body></html>"""
 
 def fill_demo(build=True):
     files = glob.glob(os.path.join(TRIP_DIR, "trip-*.json"))
@@ -232,6 +327,7 @@ def fill_demo(build=True):
         html = HTML_TEMPLATE.replace("__AMAPKEY__", AMAP_JKEY) \
             .replace("__TITLE__", "旅行规划模板") \
             .replace("__SUBTITLE__", "还没有行程数据：请让 Agent 按 travel-research 流程生成 data/trips/trip-*.json 后重新运行本脚本") \
+            .replace("__META_CHIPS__", "") \
             .replace("__DAYCARDS__", "<div class='card note'>没有可显示的行程。⌛ 使用方法见仓库 README：配置高德 Key → Agent 调研 → scripts/amap/route_fill.py → export_routes.py → 本脚本构建。</div>") \
             .replace("__MAPDAYS__", "{}") \
             .replace("__POIHTML__", "<div class='note'>—</div>") \
@@ -249,6 +345,18 @@ def fill_demo(build=True):
         os.makedirs(SITE_DIR, exist_ok=True)
         title = trip["meta"]["destination"]
         subtitles = f"{title} · {trip['meta']['days']}天 · 出发{trip['meta']['departureCity']} · {trip['meta']['travelers']} · {'/'.join(trip['meta']['preferences'])}"
+        metachips = "".join(
+            f"<span class='metachip'><b>{esc(k)}</b> {esc(v)}</span>"
+            for k, v in [
+                ("游玩", f"{trip['meta']['days']} 天"),
+                ("日期", trip['meta']['dates'][0] + " ~ " + trip['meta']['dates'][-1]),
+                ("出发", trip['meta']['departureCity']),
+                ("人数", trip['meta']['travelers']),
+                ("预算", trip['meta']['budget']),
+            ])
+        if trip["meta"].get("preferences"):
+            metachips += "<span class='metachip'><b>偏好</b> " + esc(" / ".join(trip['meta']['preferences'])) + "</span>"
+        metachips += "<span class='metachip'><b>节奏</b> " + esc(trip['meta'].get('pace', '')) + "</span>"
         by_id = {p["id"]: p for p in trip["pois"]}
         by_id.update({p["id"]: p for p in trip.get("restaurants", [])})
         by_id.update({p["id"]: p for p in trip.get("hotels", [])})
@@ -288,7 +396,7 @@ def fill_demo(build=True):
                                f"<div class='actions'>{nav} {fav}</div><div class='sources'>{srcs}</div></article>")
         hotels_html = "\n".join(hotel_cards) if hotel_cards else "<div class='note'>暂无住宿推荐数据。</div>"
         hotels_json = json.dumps(hotel_pts, ensure_ascii=False)
-        html = HTML_TEMPLATE.replace("__AMAPKEY__", AMAP_JKEY).replace("__TITLE__", esc(title)).replace("__SUBTITLE__", esc(subtitles)).replace("__POIHTML__", "\n".join(poi_card(p, route_url()) for p in trip["pois"]))
+        html = HTML_TEMPLATE.replace("__AMAPKEY__", AMAP_JKEY).replace("__TITLE__", esc(title)).replace("__SUBTITLE__", esc(subtitles)).replace("__META_CHIPS__", metachips).replace("__POIHTML__", "\n".join(poi_card(p, route_url()) for p in trip["pois"]))
         # 逐日卡片
         daycards = []
         for d in sorted(itinerary):
@@ -303,9 +411,14 @@ def fill_demo(build=True):
             routeinfo = " / ".join([str(x) for x in [f"约{dr.get('distanceKm')} km", f"约{dr.get('durationMin')} min", dr.get('mode')] if x])
             daycards.append(f"""
             <section class='daycard' id='day-{d}' data-day='{d}'>
-              <h2>DAY {d} · {esc(day.get('date',''))} <span class='theme'>{esc(day.get('theme',''))}</span></h2>
+              <div class='dayhead'>
+                <div class='daynum'>D{d}</div>
+                <div class='dh-txt'>
+                  <h2>{esc(day.get('theme',''))}</h2>
+                  <div class='daymeta'>{esc(day.get('date',''))} · {esc(day.get('area',''))} · {esc(routeinfo)}</div>
+                </div>
+              </div>
               <ol class='poilist'>{''.join(blocks)}</ol>
-              <p class='routeinfo'>{esc(routeinfo)}</p>
               <p class='notes'>{esc(day.get('notes',''))}</p>
             </section>""")
         html = html.replace("__DAYCARDS__", "\n".join(daycards))
