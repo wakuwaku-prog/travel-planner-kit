@@ -56,7 +56,11 @@ python scripts/amap/route_fill.py data/trips/trip-*.json
 
 # 4. 导出可导入高德的路线图（KML/GPX）
 python scripts/amap/export_routes.py data/trips/trip-*.json
-#   → data/export/trip-*.kml / .gpx / .routes.json，site/export/ 同步
+#   → data/export/trip-*.kml / .gpx / .routes.json（含分日），site/export/ 同步
+
+# 4.5 可选：给点位反查高德 POI ID（供「收藏到高德」功能使用）
+python scripts/amap/poi_favorite.py data/trips/trip-*.json
+#   → 回填每个点位的 poiId；网站「导入路线」面板即可生成 uri.amap.com/poidetail 收藏按钮
 
 # 5. 生成网站
 python scripts/build_site.py
@@ -93,6 +97,7 @@ git push origin main   # 自动构建并发布到 GitHub Pages
 
 - **推荐用它来做线路图**：网站「行程」页地图就是**带编号+地名标注的逐日线路图**（每个景点有编号与名称，可直接点站唤起高德导航；手机端地图置顶吸顶 + 底部「顺序导航」栏逐站前进）。这是比导入高德更直观的方式。
 - **高德 App「轨迹导入」的局限**：高德把 KML/GPX 当<u>运动轨迹</u>解析，**只画出一条路线、不显示各处地名**（把文件导入"足迹/记录"参考可以，但看不到名称）；且官方不支持第三方直接写入用户收藏。
+- **收藏到高德（官方可行方式）**：「导入路线」面板的「📌 收藏进高德」区块，为每个点位生成 `uri.amap.com/poidetail?poiid=..&callnative=1` 按钮（脚本 `poi_favorite.py` 会先反查 poiId）——点击后高德打开该点详情页，用户点 ⭐ 收藏（需登录高德账号，收藏同步手机/多端）。高德不允许第三方静默写入收藏夹，这是官方唯一的个人侧收藏路径。
 - **逐段导航**：网站「导入路线」面板提供**每一段起点→终点**的高德导航链接（带地名），以及每天整体路线链接 + 二维码；手机直接点即唤起高德 App 导航。
 - **分日 KML/GPX**：导出物含 `trip-<目的地>.kml/gpx`（全部）和 `trip-<目的地>-day<N>.kml/gpx`（逐日），便于分批导入查看。
 - 坐标来自高德（GCJ-02）：导入高德系 App 无偏移；导入 Google 地球等 WGS84 工具会有系统偏差，属正常坐标差异。

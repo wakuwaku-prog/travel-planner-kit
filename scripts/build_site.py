@@ -327,16 +327,25 @@ def fill_demo(build=True):
                                    f"<a href='{uri}' target='_blank'>🚗 高德导航</a></li>")
             import_html.append("</ol></div>")
         # 每日整线（起终点）+ QR
-        import_html.append("<h3>③ 每日整体路线（起点→终点，附二维码）</h3><ol class='poilist'>")
-        for d in sorted(itinerary):
-            pts = [by_id[it.get('poiId')] for it in itinerary[d].get('items', []) if it.get('poiId') in by_id and by_id[it.get('poiId')].get('lat')]
-            if len(pts) >= 2:
-                a, b = pts[0], pts[-1]
-                uri = f"https://uri.amap.com/navigation?from={a['lng']},{a['lat']}&to={b['lng']},{b['lat']}&mode=car&callnative=1"
-                qr = f"https://api.qrserver.com/v1/create-qr-code/?size=140x140&data={urllib.parse.quote(uri, safe='')}"
-                import_html.append(f"<li><b>Day{d}</b> {esc(a['name'])} → {esc(b['name'])}：<a href='{uri}' target='_blank'>打开/唤起高德路线</a> <img src='{qr}' width='80' style='vertical-align:middle' alt='QR'/></li>")
-        import_html.append("</ol>")
-        import_html.append("<p style='color:#8895a5;font-size:12px'>提示：坐标来自高德（GCJ-02）。高德不支持第三方直接写入收藏，故用 KML 中转/逐段导航；本站地图即最完整的带地名线路图。</p>")
+        # ③ 收藏到高德（官方可行方式：详情页逐点收藏）
+        import_html.append("<h3>③ 📌 把点位收藏进高德（官方方式，逐点确认）</h3>")
+        import_html.append("<p style='color:#556;font-size:13px'>高德不允许第三方直接写入收藏夹；官方支持的做法是：点下面的按钮 → 高德打开该地点<b>详情页</b> → 点信息卡的<b>⭐ 收藏</b>按钮（需登录高德账号，收藏会同步到手机）。逐点点完即全部入你的收藏。</p>")
+        fav_points = []
+        for grp_key in ("pois", "hotels", "restaurants"):
+            for p in trip.get(grp_key, []):
+                if not p.get("lng"):
+                    continue
+                nm = p["name"]
+                pid = p.get("poiId") or ""
+                if pid:
+                    uri = f"https://uri.amap.com/poidetail?poiid={urllib.parse.quote(pid)}&callnative=1&src=travelsite"
+                    btn = f"<a href='{uri}' target='_blank'>⭐ 收藏：{esc(nm)}</a>"
+                else:
+                    uri = f"https://uri.amap.com/marker?position={p['lng']},{p['lat']}&name={urllib.parse.quote(nm)}&src=travelsite&coordinate=gaode"
+                    btn = f"<a href='{uri}' target='_blank'>📍 查看：{esc(nm)}（无POI_ID，打开标注页）</a>"
+                fav_points.append(f"<li>{btn}</li>")
+        import_html.append(f"<ol class='poilist' style='font-size:13px'>{''.join(fav_points)}</ol>")
+        import_html.append("<p style='color:#8895a5;font-size:12px'>提示：坐标来自高德（GCJ-02）。KML/GPX 供导入轨迹参考；本站地图即最完整的带地名线路图；高德官方不支持第三方静默写入收藏，唯一个人侧官方路径是上面这种『详情页收藏』。</p>")
         html = html.replace("__IMPORT_PLACEHOLDER__", "".join(import_html))
         with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
             f.write(html)
