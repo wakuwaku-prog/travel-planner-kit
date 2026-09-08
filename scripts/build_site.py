@@ -126,7 +126,8 @@ header .sub{margin-top:8px;font-size:13.5px;opacity:.9;max-width:70ch}
 .grid{display:grid;grid-template-areas:"content map";grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:20px;align-items:start}
 .col-content{grid-area:content;min-width:0}
 .col-map{grid-area:map;min-width:0}
-@media(max-width:960px){.grid{grid-template-areas:"map" "content";grid-template-columns:1fr}}
+.grid.no-map{grid-template-areas:"content";grid-template-columns:minmax(0,1fr)}
+.grid.no-map .col-map{display:none}
 
 /* ===== 面板 ===== */
 .panel{display:none}
@@ -206,10 +207,12 @@ ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8
 /* ===== 手机端 ===== */
 @media(max-width:960px){
   .topbar{flex-wrap:nowrap;overflow-x:auto;padding:10px 12px;margin:0 -14px 12px;scrollbar-width:none}
-  .col-map{grid-area:map;position:sticky;top:56px;z-index:40}
-  #mapwrap{height:46vh;min-height:320px}
+  .grid{grid-template-areas:"map" "content";grid-template-columns:1fr}
+  .col-map{grid-area:map}
+  #mapwrap{height:36vh;min-height:260px}
   #navbar{position:fixed;left:8px;right:8px;bottom:8px}
-  body{padding-bottom:120px}
+  #navbar .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  body{padding-bottom:96px}
   .poilist li{padding:8px 0 8px 24px}
 }
 @media(max-width:560px){
@@ -326,8 +329,11 @@ btns.forEach(function(b){b.addEventListener('click',function(){
   btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
   document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
   document.getElementById('panel-'+b.dataset.panel).classList.add('active');
-  if(b.dataset.panel==='trip'){ var bar=document.getElementById('navbar'); if(bar) bar.style.display='flex'; }
-  else if(b.dataset.panel==='import'){ var nb=document.getElementById('navbar'); if(nb) nb.style.display='none'; }
+  // 地图与顺序导航仅在「行程」栏显示；其他栏目隐藏地图列让内容占满
+  var showMap=(b.dataset.panel==='trip');
+  var grid=document.querySelector('.grid'); if(grid){ grid.classList.toggle('no-map', !showMap); }
+  var bar=document.getElementById('navbar'); if(bar){ bar.style.display=showMap?'flex':'none'; }
+  if(showMap){ setTimeout(function(){ try{ if(window.AMap){ mp.resize&&mp.resize(); drawDay(activeDay);} }catch(e){} },60); }
 });});
 </script>
 <div id='navbar'></div>
