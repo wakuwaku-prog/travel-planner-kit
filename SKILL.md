@@ -50,4 +50,4 @@
 - 不为名店扭曲路线：餐厅是当天区域的顺路候选
 - 一天一个主区域；行程是参考坐标，不是逐小时执行脚本
 - 不保存证件/订单号/完整聊天记录；长期偏好写入记忆文件（如 `~/.travel-research/MEMORY.md`）
-- 高德 Key 只写 `.env`（gitignore），汇报里不出现明文
+- 高德 Key 只写 `.env`（gitignore），汇报里不出现明文；获取 Key 的官方教程（创建项目与 Key）：https://lbs.amap.com/api/mcp-server/create-project-and-key

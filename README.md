@@ -43,6 +43,8 @@ travel-planner-kit/
 ```bash
 # 1. 配置（一次性）
 cp config.example.json config.json    # 按需改
+# 获取高德 Key（官方教程：创建项目与 Key）
+#   https://lbs.amap.com/api/mcp-server/create-project-and-key
 # 高德 Key 写入 .env：
 #   AMAP_WEB_KEY=你的Web服务Key
 #   AMAP_JS_KEY=你的JS API Key（需在控制台加部署域名白名单）
