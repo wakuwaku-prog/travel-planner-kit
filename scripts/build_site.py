@@ -119,9 +119,9 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
 <div class='container'>
   <div class='topbar'>
     <button class='pill on' data-panel='trip'>📅 行程</button>
+    <button class='pill' data-panel='stays'>🏨 住宿推荐</button>
     <button class='pill' data-panel='spots'>📍 景点指南</button>
     <button class='pill' data-panel='food'>🍜 餐饮指南</button>
-    <button class='pill' data-panel='stays'>🏨 住宿推荐</button>
     <button class='pill' data-panel='exp'>🎨 特色体验</button>
     <button class='pill' data-panel='prep'>🎒 出发前准备</button>
     <button class='pill' data-panel='tips'>⚠️ 旅行提醒</button>
@@ -135,7 +135,7 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
       </div>
       <div id='panel-spots' class='panel'><h2>📍 景点指南</h2>__POIHTML__</div>
       <div id='panel-food' class='panel'><h2>🍜 餐饮指南</h2><div class='note'>__FOOD_PLACEHOLDER__</div></div>
-      <div id='panel-stays' class='panel'><h2>🏨 推荐住宿位置</h2>__HOTEL_PLACEHOLDER__</div>
+      <div id='panel-stays' class='panel'><h2>🏨 住宿推荐（按区域）</h2>__HOTEL_PLACEHOLDER__</div>
       <div id='panel-exp' class='panel'><h2>🎨 当地特色体验</h2>__EXP_PLACEHOLDER__</div>
       <div id='panel-prep' class='panel'><h2>🎒 出发前准备</h2><div class='note'>__PREP_PLACEHOLDER__</div></div>
       <div id='panel-tips' class='panel'><h2>⚠️ 旅行提醒</h2><div class='note'>__TIPS_PLACEHOLDER__</div></div>
@@ -195,16 +195,18 @@ function renderNavbar(d, pts){
 var dayCards=document.querySelectorAll('.daycard');
 dayCards.forEach(function(c){c.addEventListener('click',function(){activeDay=+c.dataset.day;drawDay(activeDay);});});
 drawDay(1);
-// 常显推荐住宿位置（紫色标记，不随每日路线清除）
+// 常显推荐住宿区域（紫色范围圈 + 中心标注，不随每日路线清除）
 var hotelLayer=[];
 (window.__HOTELS__||[]).forEach(function(h){
   if(!h.lat) return;
+  var c=new AMap.Circle({center:[h.lng,h.lat],radius:h.radius||800,strokeColor:'#b06ae0',strokeWeight:2,strokeOpacity:.6,fillColor:'#b06ae0',fillOpacity:.18,zIndex:100});
+  c.setMap(mp); hotelLayer.push(c);
   var m=new AMap.Marker({position:[h.lng,h.lat],zIndex:110,content:'<div class="hotelmark">🏨</div>',offset:new AMap.Pixel(-14,-14)});
   m.setMap(mp); hotelLayer.push(m);
-  var lb=new AMap.Text({position:[h.lng,h.lat],content:'<div class="poilabel" style="border-color:#e0b0ff;background:#faf0ff">🏨 '+h.name+'</div>',offset:new AMap.Pixel(0,14),zIndex:115});
+  var lb=new AMap.Text({position:[h.lng,h.lat],content:'<div class="poilabel" style="border-color:#e0b0ff;background:#faf0ff">🏨 '+h.name+'</div>',offset:new AMap.Pixel(0,16),zIndex:115});
   lb.setMap(mp); hotelLayer.push(lb);
   var _h=(function(hn){ return function(){ window.open('https://uri.amap.com/navigation?to='+h.lng+','+h.lat+','+encodeURIComponent(hn)+'&mode=car&callnative=1','_blank'); }; })(h.name);
-  m.on('click',_h); lb.on('click',_h);
+  m.on('click',_h); lb.on('click',_h); c.on('click',_h);
 });
 var pois=document.querySelectorAll('.poi input[type=checkbox]');
 pois.forEach(function(cb){cb.addEventListener('change',function(){ drawDay(activeDay); });});
@@ -268,7 +270,7 @@ def fill_demo(build=True):
         for h in trip.get("hotels", []):
             if not h.get("lng"):
                 continue
-            hotel_pts.append({"name": h["name"], "lng": h["lng"], "lat": h["lat"]})
+            hotel_pts.append({"name": h["name"], "lng": h["lng"], "lat": h["lat"], "radius": h.get("radius", 800)})
             badge = " ⭐推荐" if h.get("recommend") else ""
             srcs = "".join(f"<a href='{esc(s.get('url',''))}' target='_blank'>📎 {esc((s.get('title') or s.get('id'))[:30])}</a>" for s in [srcmap.get(sid) for sid in h.get("sourceIds", []) if srcmap.get(sid)])
             nav = f"<a class='nav' href='{route_url().format(to=f"{h['lng']},{h['lat']},{urllib.parse.quote(h['name'])}")}' target='_blank'>🧭 高德导航</a>"
@@ -276,8 +278,13 @@ def fill_demo(build=True):
                 fav = f"<a class='nav' style='background:#b06ae0' href='https://uri.amap.com/poidetail?poiid={urllib.parse.quote(h['poiId'])}&callnative=1&src=travelsite' target='_blank'>⭐ 收藏</a>"
             else:
                 fav = f"<a class='nav' style='background:#b06ae0' href='https://uri.amap.com/marker?position={h['lng']},{h['lat']}&name={urllib.parse.quote(h['name'])}&src=travelsite&coordinate=gaode' target='_blank'>📍 详情</a>"
-            hotel_cards.append(f"<article class='poi'><h3>{esc(h['name'])}{badge} <span class='src'>{esc(h.get('area',''))}</span></h3>"
-                               f"<div class='meta'>{esc(h.get('priceRange',''))}</div><p>{esc(h.get('notes',''))}</p>"
+            best = f"<div class='meta'>适合：{esc(h.get('bestFor',''))} · {esc(h.get('priceRange',''))}</div>"
+            subs = ""
+            if h.get("subHotels"):
+                subs = "<div class='meta' style='color:#7b56a0'>候选示例：</div><p style='font-size:13px;color:#556'>" + " / ".join(esc(x) for x in h["subHotels"]) + "</p>"
+            hotel_cards.append(f"<article class='poi'><h3>🏠 {esc(h['name'])}{badge} <span class='src'>{esc('区域')}</span></h3>"
+                               f"<div class='meta'>{esc(h.get('area',''))}</div>{best}"
+                               f"<p>{esc(h.get('notes',''))}</p>{subs}"
                                f"<div class='actions'>{nav} {fav}</div><div class='sources'>{srcs}</div></article>")
         hotels_html = "\n".join(hotel_cards) if hotel_cards else "<div class='note'>暂无住宿推荐数据。</div>"
         hotels_json = json.dumps(hotel_pts, ensure_ascii=False)
