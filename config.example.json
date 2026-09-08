@@ -1,0 +1,25 @@
+{
+  "amap": {
+    "webServiceKey": "在此填入高德 Web 服务 Key（lbs.amap.com 控制台创建）",
+    "jsApiKey": "在此填入高德 JS API Key（需配置安全域名，本地可填 localhost）",
+    "baseUrl": "https://restapi.amap.com/v3"
+  },
+  "qweather": {
+    "apiKey": "可选：和风天气 Key（dev.qweather.com）"
+  },
+  "video": {
+    "provider": "ai-douyin",
+    "aiDouyinApiBase": "https://ai-douyin.top9.cc",
+    "aiDouyinApiKey": "可选：AI-Douyin Key（抖音/小红书视频解析）",
+    "tikhubToken": "可选：TikHub Token",
+    "asrBackend": "faster-whisper"
+  },
+  "xhs": {
+    "backend": "opencli",
+    "note": "优先 OpenCLI + Chrome 扩展；或运行 agent-reach configure xhs-cookies"
+  },
+  "site": {
+    "outputDir": "site",
+    "deploy": "GitHub Pages 或 Vercel（部署后把域名加入高德 JS API 白名单）"
+  }
+}
