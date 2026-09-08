@@ -124,15 +124,22 @@ def main():
         routes = build(trip)
         kml = to_kml(routes)
         gpx = to_gpx(routes)
-        for ext, content in (("kml", kml), ("gpx", gpx)):
-            path = os.path.join(EXPORT_DIR, f"{routes['slug']}.{ext}")
-            open(path, "w", encoding="utf-8").write(content)
-            # 同步到 site/export 供构建时内嵌/部署
-            open(os.path.join(SITE_EXPORT_DIR, f"{routes['slug']}.{ext}"), "w", encoding="utf-8").write(content)
-        open(os.path.join(EXPORT_DIR, f"{routes['slug']}.routes.json"), "w", encoding="utf-8").write(json.dumps(routes, ensure_ascii=False, indent=1))
+        write_all(routes["slug"], kml, gpx, routes)
+        # 分日文件：每天单独一个 KML/GPX，便于逐日导入/查看
+        for d in routes["days"]:
+            sub = {"slug": f"{routes['slug']}-day{d['day']}", "destination": routes["destination"], "days": [d]}
+            write_all(sub["slug"], to_kml(sub), to_gpx(sub), sub)
         out.append({"slug": routes["slug"], "days": len(routes["days"]), "points": sum(len(d["points"]) for d in routes["days"])})
-        print(f"✅ {routes['slug']}: {len(routes['days'])} 天 / {sum(len(d['points']) for d in routes['days'])} 点 → KML+GPX+routes.json")
+        print(f"✅ {routes['slug']}: {len(routes['days'])} 天 / {sum(len(d['points']) for d in routes['days'])} 点 → KML+GPX+routes.json（含分日）")
     return out
+
+
+def write_all(slug, kml, gpx, routes):
+    for ext, content in (("kml", kml), ("gpx", gpx)):
+        for d in (EXPORT_DIR, SITE_EXPORT_DIR):
+            open(os.path.join(d, f"{slug}.{ext}"), "w", encoding="utf-8").write(content)
+    for d in (EXPORT_DIR, SITE_EXPORT_DIR):
+        open(os.path.join(d, f"{slug}.routes.json"), "w", encoding="utf-8").write(json.dumps(routes, ensure_ascii=False, indent=1))
 
 
 def glob_trips():

@@ -98,6 +98,20 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
 #mapwrap{height:52vh;border-radius:12px;overflow:hidden;position:sticky;top:8px}
 .panel{display:none}.panel.active{display:block}.note{font-size:12px;color:#8895a5;line-height:1.7}
 .sources a{font-size:12px;color:#0a6cff;text-decoration:none;display:inline-block;margin:1px 0}
+/* 地图编号点 + 地名标注 */
+.seqmarker{width:28px;height:28px;border-radius:50%;background:#0a6cff;color:#fff;font-size:13px;font-weight:700;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.2)}
+.poilabel{font-size:12px;background:rgba(255,255,255,.92);border:1px solid #dbe3ee;border-radius:6px;padding:1px 6px;color:#1c2733;white-space:nowrap}
+/* 顺序导航底部栏 */
+#navbar{position:sticky;bottom:0;left:0;right:0;z-index:50;background:#fff;border-top:1px solid #e6edf5;padding:8px 12px;gap:8px;flex-direction:column;box-shadow:0 -3px 12px rgba(0,0,0,.06)}
+#navbar .navhead{font-weight:700;font-size:14px}
+#navbar .navtip{font-weight:400;color:#8895a5;font-size:11px}
+#navbar .chips{display:flex;gap:6px;flex-wrap:wrap}
+#navbar .chip{font-size:12px;padding:5px 9px;border-radius:999px;border:1px solid #dbe3ee;background:#f7f9fc;cursor:pointer}
+#navbar .chip.cur{background:#0a6cff;color:#fff;border-color:#0a6cff}
+#navbar .navctl{display:flex;gap:8px;align-items:center}
+#navbar .navctl button{font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid #cfe0ff;background:#eef4ff;color:#0a6cff;cursor:pointer}
+/* 手机端：地图置顶吸顶，方便边看边点导航 */
+@media(max-width:900px){#mapwrap{order:-1;position:sticky;top:0;z-index:40;height:42vh}}
 </style></head><body>
 <header><h1>__TITLE__ 之旅 · 3天行程</h1>
 <div class='sub'>__SUBTITLE__</div></header>
@@ -131,37 +145,64 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
 <script src='https://webapi.amap.com/maps?v=2.0&key=__AMAPKEY__&plugin=AMap.Driving,AMap.Walking,AMap.Transfer'></script>
 <script>
 window.__DAYS__ = __MAPDAYS__;
+// 给每天的点编号
+(function(){ for(var d in window.__DAYS__){ var arr=window.__DAYS__[d]; arr.forEach(function(p,i){ p.seq=i+1; }); } })();
 var mp = new AMap.Map('map',{zoom:11,center:[118.09,24.47]});
-var routeLayers=[];
+var routeLayers=[], markerLayers=[], activeDay=1;
+function navUrl(p){ return 'https://uri.amap.com/navigation?to='+p.lng+','+p.lat+','+encodeURIComponent(p.name)+'&mode=car&callnative=1'; }
+function clearLayers(){ routeLayers.concat(markerLayers).forEach(function(l){l.setMap&&l.setMap(null)}); routeLayers=[]; markerLayers=[]; }
 function drawDay(d){
-  routeLayers.forEach(function(l){l.setMap&&l.setMap(null)});routeLayers=[];
+  clearLayers();
   var pts=(window.__DAYS__[d]||[]).filter(function(p){return p&&p.lat});
-  if(pts.length<2)return;
+  if(pts.length<2) return;
   var path=pts.map(function(p){return [p.lng,p.lat]});
-  var poly=new AMap.Polyline({path:path,strokeColor:'#0a6cff',strokeWeight:5,strokeOpacity:.85});
-  poly.setMap(mp);routeLayers.push(poly);
+  var poly=new AMap.Polyline({path:path,strokeColor:'#0a6cff',strokeWeight:6,strokeOpacity:.9,lineJoin:'round',borderWeight:2,strokeStyle:'solid'});
+  poly.setMap(mp); routeLayers.push(poly);
+  // 编号+地名标注
+  pts.forEach(function(p){
+    var m=new AMap.Marker({
+      position:[p.lng,p.lat], zIndex:120,
+      content:'<div class="seqmarker" data-name="'+p.name+'">'+p.seq+'</div>',
+      offset:new AMap.Pixel(-14,-14)
+    });
+    m.setMap(mp); markerLayers.push(m);
+    // 名称 label
+    var lb=new AMap.Text({position:[p.lng,p.lat],content:'<div class="poilabel">'+(p.seq+'. '+p.name)+'</div>',offset:new AMap.Pixel(0,12),zIndex:130});
+    lb.setMap(mp); markerLayers.push(lb);
+  });
   mp.setFitView([poly]);
+  renderNavbar(d, pts);
+}
+function renderNavbar(d, pts){
+  var bar=document.getElementById('navbar'); if(!bar) return;
+  var html='<div class="navhead">Day'+d+' 顺序导航 <span class="navtip">点站点直开高德</span></div>';
+  html+='<div class="chips">';
+  pts.forEach(function(p,i){ html+='<button class="chip" data-i="'+i+'">'+p.seq+'. '+p.name+'</button>'; });
+  html+='</div><div class="navctl"><button id="prevStop">⬅ 上一站</button><button id="nextStop">下一站 ➡</button></div>';
+  bar.innerHTML=html;
+  var chips=bar.querySelectorAll('.chip');
+  chips.forEach(function(c){ c.addEventListener('click',function(){ window.open(navUrl(pts[+c.dataset.i]),'_blank'); }); });
+  var cur=0;
+  function hi(i){ cur=i; chips.forEach(function(c,j){ c.classList.toggle('cur', j===i); }); }
+  hi(0);
+  bar.querySelector('#prevStop').addEventListener('click',function(){ if(cur>0) hi(cur-1); });
+  bar.querySelector('#nextStop').addEventListener('click',function(){ if(cur<pts.length-1){ hi(cur+1); } window.open(navUrl(pts[cur]),'_blank'); });
 }
 var dayCards=document.querySelectorAll('.daycard');
-var activeDay=1;
-dayCards.forEach(function(c){c.addEventListener('click',function(){activeDay=+c.dataset.day;drawDay(activeDay)});});
+dayCards.forEach(function(c){c.addEventListener('click',function(){activeDay=+c.dataset.day;drawDay(activeDay);});});
 drawDay(1);
-// checkbox 勾选 → 该 POI 路由加入/移除 并重绘
 var pois=document.querySelectorAll('.poi input[type=checkbox]');
-pois.forEach(function(cb){cb.addEventListener('change',function(){
-  var d=activeDay,p=null;
-  (window.__DAYS__[d]||[]).some(function(x){if(x.id===cb.dataset.id){p=x;return true}return false});
-  if(p)drawDay(d);
-  if(AMap){/*前端重算用 Driving.search;示例先重绘静态polyline*/}
-});});
-// tab 切换
+pois.forEach(function(cb){cb.addEventListener('change',function(){ drawDay(activeDay); });});
 var btns=document.querySelectorAll('.topbar .pill');
 btns.forEach(function(b){b.addEventListener('click',function(){
   btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
   document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
   document.getElementById('panel-'+b.dataset.panel).classList.add('active');
+  if(b.dataset.panel==='trip'){ var bar=document.getElementById('navbar'); if(bar) bar.style.display='flex'; }
+  else if(b.dataset.panel==='import'){ var nb=document.getElementById('navbar'); if(nb) nb.style.display='none'; }
 });});
 </script>
+<div id='navbar' style='display:flex'></div>
 </body></html>
 """
 
@@ -250,31 +291,52 @@ def fill_demo(build=True):
             return "\n".join(f"<li><a href='{esc(s.get('url',''))}' target='_blank'>{esc((s.get('title') or s.get('id'))[:46])}</a> <span style='color:#8895a5'>{esc(s.get('author',''))} {esc('♥'+str(s.get('likes'))) if s.get('likes') else ''}{esc(' · '+str(s.get('play'))) if s.get('play') else ''}</span></li>" for s in group)
         src_html = f"<h3>B站视频（{len(vids)}）</h3><ol class='poilist'>{src_rows(vids)}</ol><h3>小红书帖子（{len(posts)}）</h3><ol class='poilist'>{src_rows(posts)}</ol>"
         html = html.replace("__SRC_PLACEHOLDER__", src_html).replace("__SRC_COUNT__", str(len(trip.get("sources", []))))
-        # 导入路线面板（KML/GPX + 高德导入说明 + 每日 URI）
+        # 导入路线面板（分日 KML/GPX + 逐段导航 + 说明）
         import_html = []
         EXP = os.path.join(SITE_DIR, "export")
-        if os.path.isdir(EXP):
-            for fn in sorted(os.listdir(EXP)):
-                if fn.endswith((".kml", ".gpx")):
+        def files_list(kind):
+            rows = []
+            if os.path.isdir(EXP):
+                for fn in sorted(os.listdir(EXP)):
+                    if kind and not fn.endswith(kind): continue
+                    if not f.endswith((".kml", ".gpx")): continue
                     size = os.path.getsize(os.path.join(EXP, fn)) // 1024
-                    kind = "KML（高德收藏导入 / Google 地球）" if fn.endswith(".kml") else "GPX（两步路/六只脚/运动软件）"
-                    import_html.append(f"<a class='nav' style='margin:4px 8px 4px 0' href='export/{fn}' download>⬇️ {fn}（{size}KB）</a><span style='color:#8895a5;font-size:12px'>{kind}</span><br>")
-        per_day = []
+                    rows.append(f"<a class='nav' style='margin:3px 8px 3px 0' href='export/{fn}' download>⬇️ {fn}（{size}KB）</a>")
+            return "".join(rows)
+        # 分日 KML/GPX + 总的
+        import_html.append("<h3>① 把路线图存进高德（KML 分日 / GPX 通用）</h3>")
+        import_html.append("<div style='line-height:1.9'>" + files_list(".kml") + "</div>")
+        import_html.append("<div style='line-height:1.9'>" + files_list(".gpx") + "</div>")
+        import_html.append("<p style='color:#c00;font-size:12px'><b>重要提醒：</b>高德 App 的『轨迹导入』把文件当<u>运动轨迹</u>解析，<b>只显示一条路线、不显示各景点名称</b>（你在截图中看到的就是这个）。要带地名+编号的线路图，请直接用本站『行程』页的地图（已给每个点加编号与名称，可点站导航）。KML 导入仅适合把整条路线存进『足迹』参考。</p>")
+        # 逐段导航（每一段）
+        import_html.append("<h3>② 逐段导航（每段一个高德入口）</h3>")
         for d in sorted(itinerary):
             pts = []
             for it in itinerary[d].get("items", []):
                 p = by_id.get(it.get("poiId"))
                 if p and p.get("lat"):
                     pts.append(p)
+            if len(pts) < 2: continue
+            import_html.append(f"<div class='card' style='padding:10px'><b>Day{d} · {esc(itinerary[d].get('date',''))}</b>")
+            import_html.append("<ol class='poilist' style='font-size:13px'>")
+            for i in range(len(pts) - 1):
+                a, b = pts[i], pts[i + 1]
+                uri = (f"https://uri.amap.com/navigation?from={a['lng']},{a['lat']},{urllib.parse.quote(a['name'])}"
+                       f"&to={b['lng']},{b['lat']},{urllib.parse.quote(b['name'])}&mode=car&callnative=1")
+                import_html.append(f"<li><b>{i+1}. {esc(a['name'])}</b> → <b>{i+2}. {esc(b['name'])}</b> "
+                                   f"<a href='{uri}' target='_blank'>🚗 高德导航</a></li>")
+            import_html.append("</ol></div>")
+        # 每日整线（起终点）+ QR
+        import_html.append("<h3>③ 每日整体路线（起点→终点，附二维码）</h3><ol class='poilist'>")
+        for d in sorted(itinerary):
+            pts = [by_id[it.get('poiId')] for it in itinerary[d].get('items', []) if it.get('poiId') in by_id and by_id[it.get('poiId')].get('lat')]
             if len(pts) >= 2:
                 a, b = pts[0], pts[-1]
                 uri = f"https://uri.amap.com/navigation?from={a['lng']},{a['lat']}&to={b['lng']},{b['lat']}&mode=car&callnative=1"
                 qr = f"https://api.qrserver.com/v1/create-qr-code/?size=140x140&data={urllib.parse.quote(uri, safe='')}"
-                per_day.append(f"<li><b>Day{d}</b> {esc(a['name'])} → {esc(b['name'])}：<a href='{uri}' target='_blank'>打开/唤起高德路线</a> <img src='{qr}' width='80' style='vertical-align:middle' alt='QR'/></li>")
-        import_html.append("<h3>高德 App 导入 KML（把路线图存进高德）</h3>")
-        import_html.append("<ol class='poilist'><li>下载上面的 <b>.kml</b> 文件（手机浏览器下载）</li><li>打开高德地图 App → 我的 → 收藏 → 右上角「导入」→ 选择该 KML</li><li>导入后行程点与每日路线会出现在收藏/足迹里，可直接规划导航</li></ol>")
-        import_html.append("<p style='color:#8895a5'>提示：坐标来自高德（GCJ-02），导入高德 App 无偏移；若导入 Google 地球等 WGS84 工具会有系统偏差，属正常。高德不支持把行程直接写入手写收藏，故用 KML 中转。</p>")
-        import_html.append("<h3>每日整体路线（起点→终点）</h3><ol class='poilist'>" + "".join(per_day) + "</ol>")
+                import_html.append(f"<li><b>Day{d}</b> {esc(a['name'])} → {esc(b['name'])}：<a href='{uri}' target='_blank'>打开/唤起高德路线</a> <img src='{qr}' width='80' style='vertical-align:middle' alt='QR'/></li>")
+        import_html.append("</ol>")
+        import_html.append("<p style='color:#8895a5;font-size:12px'>提示：坐标来自高德（GCJ-02）。高德不支持第三方直接写入收藏，故用 KML 中转/逐段导航；本站地图即最完整的带地名线路图。</p>")
         html = html.replace("__IMPORT_PLACEHOLDER__", "".join(import_html))
         with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
             f.write(html)
