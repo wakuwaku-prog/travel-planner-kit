@@ -101,6 +101,7 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
 /* 地图编号点 + 地名标注 */
 .seqmarker{width:28px;height:28px;border-radius:50%;background:#0a6cff;color:#fff;font-size:13px;font-weight:700;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.2)}
 .poilabel{font-size:12px;background:rgba(255,255,255,.92);border:1px solid #dbe3ee;border-radius:6px;padding:1px 6px;color:#1c2733;white-space:nowrap}
+.hotelmark{width:28px;height:28px;border-radius:50%;background:#b06ae0;color:#fff;font-size:15px;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(0,0,0,.2)}
 /* 顺序导航底部栏 */
 #navbar{position:sticky;bottom:0;left:0;right:0;z-index:50;background:#fff;border-top:1px solid #e6edf5;padding:8px 12px;gap:8px;flex-direction:column;box-shadow:0 -3px 12px rgba(0,0,0,.06)}
 #navbar .navhead{font-weight:700;font-size:14px}
@@ -120,6 +121,7 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
     <button class='pill on' data-panel='trip'>📅 行程</button>
     <button class='pill' data-panel='spots'>📍 景点指南</button>
     <button class='pill' data-panel='food'>🍜 餐饮指南</button>
+    <button class='pill' data-panel='stays'>🏨 住宿推荐</button>
     <button class='pill' data-panel='exp'>🎨 特色体验</button>
     <button class='pill' data-panel='prep'>🎒 出发前准备</button>
     <button class='pill' data-panel='tips'>⚠️ 旅行提醒</button>
@@ -133,6 +135,7 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
       </div>
       <div id='panel-spots' class='panel'><h2>📍 景点指南</h2>__POIHTML__</div>
       <div id='panel-food' class='panel'><h2>🍜 餐饮指南</h2><div class='note'>__FOOD_PLACEHOLDER__</div></div>
+      <div id='panel-stays' class='panel'><h2>🏨 推荐住宿位置</h2>__HOTEL_PLACEHOLDER__</div>
       <div id='panel-exp' class='panel'><h2>🎨 当地特色体验</h2>__EXP_PLACEHOLDER__</div>
       <div id='panel-prep' class='panel'><h2>🎒 出发前准备</h2><div class='note'>__PREP_PLACEHOLDER__</div></div>
       <div id='panel-tips' class='panel'><h2>⚠️ 旅行提醒</h2><div class='note'>__TIPS_PLACEHOLDER__</div></div>
@@ -145,6 +148,7 @@ ol.poilist{margin:0;padding-left:0;list-style:none}.poilist li{padding:7px 0;bor
 <script src='https://webapi.amap.com/maps?v=2.0&key=__AMAPKEY__&plugin=AMap.Driving,AMap.Walking,AMap.Transfer'></script>
 <script>
 window.__DAYS__ = __MAPDAYS__;
+window.__HOTELS__ = __HOTELS_JSON__;
 // 给每天的点编号
 (function(){ for(var d in window.__DAYS__){ var arr=window.__DAYS__[d]; arr.forEach(function(p,i){ p.seq=i+1; }); } })();
 var mp = new AMap.Map('map',{zoom:11,center:[118.09,24.47]});
@@ -191,6 +195,17 @@ function renderNavbar(d, pts){
 var dayCards=document.querySelectorAll('.daycard');
 dayCards.forEach(function(c){c.addEventListener('click',function(){activeDay=+c.dataset.day;drawDay(activeDay);});});
 drawDay(1);
+// 常显推荐住宿位置（紫色标记，不随每日路线清除）
+var hotelLayer=[];
+(window.__HOTELS__||[]).forEach(function(h){
+  if(!h.lat) return;
+  var m=new AMap.Marker({position:[h.lng,h.lat],zIndex:110,content:'<div class="hotelmark">🏨</div>',offset:new AMap.Pixel(-14,-14)});
+  m.setMap(mp); hotelLayer.push(m);
+  var lb=new AMap.Text({position:[h.lng,h.lat],content:'<div class="poilabel" style="border-color:#e0b0ff;background:#faf0ff">🏨 '+h.name+'</div>',offset:new AMap.Pixel(0,14),zIndex:115});
+  lb.setMap(mp); hotelLayer.push(lb);
+  var _h=(function(hn){ return function(){ window.open('https://uri.amap.com/navigation?to='+h.lng+','+h.lat+','+encodeURIComponent(hn)+'&mode=car&callnative=1','_blank'); }; })(h.name);
+  m.on('click',_h); lb.on('click',_h);
+});
 var pois=document.querySelectorAll('.poi input[type=checkbox]');
 pois.forEach(function(cb){cb.addEventListener('change',function(){ drawDay(activeDay); });});
 var btns=document.querySelectorAll('.topbar .pill');
@@ -219,6 +234,7 @@ def fill_demo(build=True):
             .replace("__MAPDAYS__", "{}") \
             .replace("__POIHTML__", "<div class='note'>—</div>") \
             .replace("__FOOD_PLACEHOLDER__", "—").replace("__EXP_PLACEHOLDER__", "—") \
+            .replace("__HOTEL_PLACEHOLDER__", "—").replace("__HOTELS_JSON__", "[]") \
             .replace("__PREP_PLACEHOLDER__", "—").replace("__TIPS_PLACEHOLDER__", "—") \
             .replace("__SRC_PLACEHOLDER__", "—").replace("__SRC_COUNT__", "0") \
             .replace("__IMPORT_PLACEHOLDER__", "—")
@@ -246,6 +262,25 @@ def fill_demo(build=True):
         food_html = " / ".join(f"{esc(r['name'])}（{esc(r['type'])}，约¥{r['avgPrice']}）" for r in trip["restaurants"])
         r_html = "\n".join(poi_card({**r, "category": "restaurant", "address": r.get("area", ""), "ticketPrice": f"人均约¥{r.get('avgPrice')}", "openHours": r.get("dianpingKeyword",""), "sources": [srcmap[sid] for sid in r.get("sourceIds", []) if sid in srcmap]}, route_url()) for r in trip["restaurants"])
         exp_html = "\n".join(f"<div class='card'><h3>{esc(e['name'])}</h3><div class='meta'>{esc(e.get('where',''))} · {esc(e.get('durationMin',''))}分钟 · {esc(e.get('price',''))}</div><p>{esc('需预约' if e.get('bookingRequired') else '无需预约')}{' · 预约入口:'+esc(e.get('bookingLink','')) if e.get('bookingLink') else ''} · 适合：{esc(e.get('bestFor',''))}</p></div>" for e in trip["experiences"])
+        # 住宿推荐：卡片 + 地图常显数据
+        hotel_cards = []
+        hotel_pts = []
+        for h in trip.get("hotels", []):
+            if not h.get("lng"):
+                continue
+            hotel_pts.append({"name": h["name"], "lng": h["lng"], "lat": h["lat"]})
+            badge = " ⭐推荐" if h.get("recommend") else ""
+            srcs = "".join(f"<a href='{esc(s.get('url',''))}' target='_blank'>📎 {esc((s.get('title') or s.get('id'))[:30])}</a>" for s in [srcmap.get(sid) for sid in h.get("sourceIds", []) if srcmap.get(sid)])
+            nav = f"<a class='nav' href='{route_url().format(to=f"{h['lng']},{h['lat']},{urllib.parse.quote(h['name'])}")}' target='_blank'>🧭 高德导航</a>"
+            if h.get("poiId"):
+                fav = f"<a class='nav' style='background:#b06ae0' href='https://uri.amap.com/poidetail?poiid={urllib.parse.quote(h['poiId'])}&callnative=1&src=travelsite' target='_blank'>⭐ 收藏</a>"
+            else:
+                fav = f"<a class='nav' style='background:#b06ae0' href='https://uri.amap.com/marker?position={h['lng']},{h['lat']}&name={urllib.parse.quote(h['name'])}&src=travelsite&coordinate=gaode' target='_blank'>📍 详情</a>"
+            hotel_cards.append(f"<article class='poi'><h3>{esc(h['name'])}{badge} <span class='src'>{esc(h.get('area',''))}</span></h3>"
+                               f"<div class='meta'>{esc(h.get('priceRange',''))}</div><p>{esc(h.get('notes',''))}</p>"
+                               f"<div class='actions'>{nav} {fav}</div><div class='sources'>{srcs}</div></article>")
+        hotels_html = "\n".join(hotel_cards) if hotel_cards else "<div class='note'>暂无住宿推荐数据。</div>"
+        hotels_json = json.dumps(hotel_pts, ensure_ascii=False)
         html = HTML_TEMPLATE.replace("__AMAPKEY__", AMAP_JKEY).replace("__TITLE__", esc(title)).replace("__SUBTITLE__", esc(subtitles)).replace("__POIHTML__", "\n".join(poi_card(p, route_url()) for p in trip["pois"]))
         # 逐日卡片
         daycards = []
@@ -282,6 +317,8 @@ def fill_demo(build=True):
         html = html.replace("__POIHTML__", "\n".join(poi_card(p, route_url()) for p in trip["pois"]))
         html = html.replace("__FOOD_PLACEHOLDER__", food_html + "<p style='margin-top:8px'>共 " + str(len(trip["restaurants"])) + " 家候选（坐标来自高德 POI，人均为估算）</p><div style='margin-top:10px'>" + r_html + "</div>")
         html = html.replace("__EXP_PLACEHOLDER__", exp_html)
+        html = html.replace("__HOTEL_PLACEHOLDER__", hotels_html)
+        html = html.replace("__HOTELS_JSON__", hotels_json)
         html = html.replace("__PREP_PLACEHOLDER__", prep_html + "<h3>本地交通</h3>" + ts_html)
         html = html.replace("__TIPS_PLACEHOLDER__", tips_html)
         # 资料来源面板
