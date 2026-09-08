@@ -123,8 +123,10 @@ header .sub{margin-top:8px;font-size:13.5px;opacity:.9;max-width:70ch}
 
 /* ===== 布局 ===== */
 .container{max-width:1180px;margin:0 auto;padding:0 14px 40px}
-.grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:20px;align-items:start}
-@media(max-width:960px){.grid{grid-template-columns:1fr}}
+.grid{display:grid;grid-template-areas:"content map";grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:20px;align-items:start}
+.col-content{grid-area:content;min-width:0}
+.col-map{grid-area:map;min-width:0}
+@media(max-width:960px){.grid{grid-template-areas:"map" "content";grid-template-columns:1fr}}
 
 /* ===== 面板 ===== */
 .panel{display:none}
@@ -204,8 +206,8 @@ ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8
 /* ===== 手机端 ===== */
 @media(max-width:960px){
   .topbar{flex-wrap:nowrap;overflow-x:auto;padding:10px 12px;margin:0 -14px 12px;scrollbar-width:none}
-  .grid{display:flex;flex-direction:column}
-  #mapwrap{order:-1;position:sticky;top:52px;height:44vh;min-height:300px}
+  .col-map{grid-area:map;position:sticky;top:56px;z-index:40}
+  #mapwrap{height:46vh;min-height:320px}
   #navbar{position:fixed;left:8px;right:8px;bottom:8px}
   body{padding-bottom:120px}
   .poilist li{padding:8px 0 8px 24px}
@@ -233,7 +235,7 @@ ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8
     <button class='pill' data-panel='import'>📦 导入路线</button>
   </div>
   <div class='grid'>
-    <div>
+    <div class='col-content'>
       <div id='panel-trip' class='panel active'>__DAYCARDS__
         <div class='card note'>点选任意一天查看当日线路；在地图上点击编号可直达高德导航。住宿区域用紫色圈标出，不在逐日路线内。</div>
       </div>
@@ -246,7 +248,7 @@ ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8
       <div id='panel-srcs' class='panel'><h2>📚 资料来源（__SRC_COUNT__ 条）</h2>__SRC_PLACEHOLDER__</div>
       <div id='panel-import' class='panel'><h2>📦 把行程导入高德地图 / 旅行软件</h2>__IMPORT_PLACEHOLDER__</div>
     </div>
-    <div><div id='mapwrap'><div class='mlegend'><i class='p'></i>当日路线 · <i class='l'></i>途经点 · <span style='color:#8b5cf6'>🏨 住宿区域</span></div><div id='map'></div></div></div>
+    <div class='col-map'><div id='mapwrap'><div class='mlegend'><i class='p'></i>当日路线 · <i class='l'></i>途经点 · <span style='color:#8b5cf6'>🏨 住宿区域</span></div><div id='mapnotice' class='mlegend' style='display:none;left:10px;top:38px;color:#a33'></div><div id='map'></div></div></div>
   </div>
 </div>
 <script src='https://webapi.amap.com/maps?v=2.0&key=__AMAPKEY__&plugin=AMap.Driving,AMap.Walking,AMap.Transfer'></script>
@@ -255,6 +257,18 @@ window.__DAYS__ = __MAPDAYS__;
 window.__HOTELS__ = __HOTELS_JSON__;
 (function(){ for(var d in window.__DAYS__){ var arr=window.__DAYS__[d]; arr.forEach(function(p,i){ p.seq=i+1; }); } })();
 var mp = new AMap.Map('map',{zoom:11,center:[118.09,24.47]});
+// 手机端地图兜底：高德脚本加载失败 / 初始化异常时给出提示，并延迟重绘保证容器尺寸稳定
+function mapNotice(msg){ var n=document.getElementById('mapnotice'); if(n){ n.style.display='block'; n.textContent=msg; } }
+window.addEventListener('error',function(e){
+  if(e.target && e.target.tagName==='SCRIPT' && /webapi[.]amap/.test(e.target.src||'')){ mapNotice('高德地图脚本加载失败（网络或 Key 域名未授权）。仍可点各站点「导航」按钮直达高德。'); }
+},true);
+setTimeout(function(){
+  if(!window.AMap){ mapNotice('高德地图未加载（通常为 Key 安全域名未包含本站，或网络原因）。仍可点各站点「导航」按钮直达高德。'); return; }
+  try{ if(window.AMap.Map && typeof drawDay==='function'){ drawDay(activeDay); } }catch(err){}
+},2500);
+setTimeout(function(){
+  if(window.AMap && mp && mp.getContainer && mp.getContainer().clientHeight===0){ try{ mp.resize && mp.resize(); }catch(err){} }
+},600);
 var routeLayers=[], markerLayers=[], activeDay=1;
 function navUrl(p){ return 'https://uri.amap.com/navigation?to='+p.lng+','+p.lat+','+encodeURIComponent(p.name)+'&mode=car&callnative=1'; }
 function clearLayers(){ routeLayers.concat(markerLayers).forEach(function(l){l.setMap&&l.setMap(null)}); routeLayers=[]; markerLayers=[]; }
