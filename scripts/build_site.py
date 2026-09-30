@@ -18,13 +18,19 @@ def esc(s):
     return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+_NDAYS = 3  # 由 fill_demo 按行程天数覆盖；poi_card 用它生成「+D1/+D2/…」按钮
+
+
 def poi_card(p, nav_base):
-    checked = "checked" if p.get("checked", True) else ""
+    nd = globals().get("_NDAYS", 3)
+    chips = "".join(
+        f"<button class='addbtn' data-pid='{p['id']}' data-day='{d}' type='button'>+D{d}</button>"
+        for d in range(1, nd + 1))
     srcs = "<br>".join([f"<a href='{s['url']}'>{s['title'][:28]}</a>" for s in p.get("sources", [])])
     tags = " ".join(f"<span class='tag'>{esc(t)}</span>" for t in p.get("tags", []))
     return f"""
-    <article class='poi' id='poi-{p['id']}' data-lng='{p.get('lng','')}' data-lat='{p.get('lat','')}'>
-      <label class='check'><input type='checkbox' {checked} data-id='{p['id']}'> 加入当日行程</label>
+    <article class='poi' id='poi-{p['id']}' data-pid='{p['id']}' data-name='{esc(p['name'])}' data-lng='{p.get('lng','')}' data-lat='{p.get('lat','')}'>
+      <div class='addrow'><span class='addtip'>加入行程</span>{chips}</div>
       <h3>{esc(p['name'])} <span class='src'>{esc(p.get('address',''))}</span></h3>
       <div class='meta'>{" · ".join([x for x in [p.get('openHours'),p.get('ticketPrice','免费'), " / ".join(p.get('tags', [])) if isinstance(p.get('tags', []), list) else p.get('tags','')] if x])}</div>
       <p>{esc(p.get('notes',''))}</p>
@@ -161,6 +167,26 @@ ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8
 .routeinfo{font-size:12.5px;color:var(--ink-soft);background:#eef6f9;border-radius:8px;padding:6px 10px;display:inline-block;margin:6px 0 2px}
 .notes{font-size:13px;color:var(--ink-soft);margin:6px 0 10px}
 
+/* ===== 行程编辑器：排序 / 跨天移动 ===== */
+.dayhead .resetbtn{flex:0 0 auto;align-self:center;margin-left:auto;border:1px solid var(--line);background:#fff;color:var(--ink-soft);border-radius:8px;font-size:12px;padding:3px 10px;cursor:pointer;transition:all .15s}
+.dayhead .resetbtn:hover{border-color:var(--dusk);color:var(--dusk)}
+.poilist li .drag{cursor:grab;color:#9db4bf;margin-right:2px;font-size:13px;user-select:none;touch-action:none}
+.poilist li.pdragging{opacity:.4;background:#eef6f9;border-radius:8px}
+.poilist li.dropbefore{box-shadow:inset 0 3px 0 var(--dusk)}
+.poilist li.empty{color:var(--ink-soft);font-size:13px;padding:12px 0 12px 26px}
+.poilist li .nm{color:var(--ink);text-decoration:none}
+.poilist li .nm:hover{color:var(--sea)}
+.poilist li .ops{position:absolute;right:0;top:7px;display:flex;gap:4px;opacity:.8}
+.poilist li .ops button{border:1px solid var(--line);background:#fff;border-radius:6px;width:22px;height:22px;line-height:1;font-size:12px;cursor:pointer;color:var(--ink-soft);padding:0}
+.poilist li .ops button:hover{border-color:var(--sea);color:var(--sea)}
+.addrow{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-left:6px}
+.addrow .addtip{font-size:12px;color:var(--ink-soft)}
+.addbtn{border:1px solid var(--line);background:#fff;color:var(--sea);border-radius:999px;font-size:12px;padding:3px 10px;cursor:pointer;transition:all .15s}
+.addbtn:hover{border-color:var(--sea);transform:translateY(-1px)}
+.addbtn.in{background:var(--sea);border-color:var(--sea);color:#fff;cursor:default}
+.addbtn.in:hover{transform:none}
+.editable-hint{font-size:12.5px;color:var(--ink-soft);background:#fff8f2;border:1px dashed #f0c9a8;border-radius:10px;padding:8px 12px;margin-bottom:12px}
+
 /* ===== POI / 酒店 / 餐厅卡片 ===== */
 .poi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);position:relative;transition:transform .15s,box-shadow .15s}
 .poi:hover{transform:translateY(-2px);box-shadow:0 14px 30px -16px rgba(18,48,61,.28)}
@@ -240,7 +266,7 @@ ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8
   <div class='grid'>
     <div class='col-content'>
       <div id='panel-trip' class='panel active'>__DAYCARDS__
-        <div class='card note'>点选任意一天查看当日线路；在地图上点击编号可直达高德导航。住宿区域用紫色圈标出，不在逐日路线内。</div>
+        <div class='editable-hint'>✏️ 行程可编辑：☰ 拖拽（或 ↑↓）调整当日顺序、支持跨天拖拽；「✕」把站点移出当日；在「景点指南 / 餐饮指南」里点 <b>+D1/+D2/+D3</b> 把任意点（含备选景点）加入某天；改动自动保存在本机浏览器，「↺ 恢复默认」一键还原。点选任意一天查看当日线路；住宿区域用紫色圈标出，不在逐日路线内。</div>
       </div>
       <div id='panel-spots' class='panel'><h2>📍 景点指南</h2>__POIHTML__</div>
       <div id='panel-food' class='panel'><h2>🍜 餐饮指南</h2><div class='note'>__FOOD_PLACEHOLDER__</div></div>
@@ -258,8 +284,32 @@ ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8
 <script>
 window.__DAYS__ = __MAPDAYS__;
 window.__HOTELS__ = __HOTELS_JSON__;
-(function(){ for(var d in window.__DAYS__){ var arr=window.__DAYS__[d]; arr.forEach(function(p,i){ p.seq=i+1; }); } })();
-var mp = new AMap.Map('map',{zoom:11,center:[118.09,24.47]});
+// ===== 行程状态：__DAYS__ 为唯一数据源（顺序/成员可编辑） =====
+var ENT = {};                                    // id -> {id,name,lng,lat,time}
+var ORIG = {};                                   // 初始快照，供「恢复默认」
+function escH(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function reSeq(){ for(var d in window.__DAYS__){ (window.__DAYS__[d]||[]).forEach(function(p,i){ p.seq=i+1; }); } }
+(function initState(){
+  for(var d in window.__DAYS__){ (window.__DAYS__[d]||[]).forEach(function(p){ ENT[p.id]=p; }); }
+  document.querySelectorAll('.poi[data-pid]').forEach(function(el){
+    var pid=el.getAttribute('data-pid'); if(ENT[pid]) return;
+    ENT[pid]={id:pid,name:el.getAttribute('data-name')||pid,lng:el.getAttribute('data-lng'),lat:el.getAttribute('data-lat'),time:''};
+  });
+  ORIG=JSON.parse(JSON.stringify(window.__DAYS__));
+  try{
+    var raw=localStorage.getItem('dayplan::'+document.title);
+    if(raw){ var s=JSON.parse(raw);
+      if(s && s.v===1 && s.days){ for(var d2 in s.days){
+        if(!window.__DAYS__[d2]) continue;
+        window.__DAYS__[d2]=(s.days[d2]||[]).map(function(x){ return ENT[x.pid]?Object.assign({},ENT[x.pid],{time:x.time||''}):null; }).filter(Boolean);
+      } }
+    }
+  }catch(e){}
+  reSeq();
+})();
+var mp = null;
+try{ if(window.AMap) mp = new AMap.Map('map',{zoom:11,center:[118.09,24.47]}); }catch(e){ mp=null; }
+if(!mp){ mapNotice('高德地图未加载（网络或 Key 域名原因）。行程编辑与各站点「导航」按钮不受影响。'); }
 // 手机端地图兜底：高德脚本加载失败 / 初始化异常时给出提示，并延迟重绘保证容器尺寸稳定
 function mapNotice(msg){ var n=document.getElementById('mapnotice'); if(n){ n.style.display='block'; n.textContent=msg; } }
 window.addEventListener('error',function(e){
@@ -278,7 +328,16 @@ function clearLayers(){ routeLayers.concat(markerLayers).forEach(function(l){l.s
 function drawDay(d){
   clearLayers();
   var pts=(window.__DAYS__[d]||[]).filter(function(p){return p&&p.lat});
-  if(pts.length<2) return;
+  document.querySelectorAll('.daycard').forEach(function(c){ c.classList.toggle('on', +c.dataset.day===d); });
+  renderNavbar(d, pts);
+  if(!mp || pts.length===0) return;
+  if(pts.length===1){
+    var m1=new AMap.Marker({position:[pts[0].lng,pts[0].lat],zIndex:120,content:'<div class="seqmarker">'+pts[0].seq+'</div>',offset:new AMap.Pixel(-14,-14)});
+    m1.setMap(mp); markerLayers.push(m1);
+    var l1=new AMap.Text({position:[pts[0].lng,pts[0].lat],content:'<div class="poilabel">'+(pts[0].seq+'. '+escH(pts[0].name))+'</div>',offset:new AMap.Pixel(0,12),zIndex:130});
+    l1.setMap(mp); markerLayers.push(l1);
+    mp.setFitView(markerLayers); return;
+  }
   var path=pts.map(function(p){return [p.lng,p.lat]});
   var poly=new AMap.Polyline({path:path,strokeColor:'#0e7490',strokeWeight:6,strokeOpacity:.9,lineJoin:'round',borderWeight:2,strokeStyle:'solid'});
   poly.setMap(mp); routeLayers.push(poly);
@@ -289,8 +348,6 @@ function drawDay(d){
     lb.setMap(mp); markerLayers.push(lb);
   });
   mp.setFitView([poly]);
-  document.querySelectorAll('.daycard').forEach(function(c){ c.classList.toggle('on', +c.dataset.day===d); });
-  renderNavbar(d, pts);
 }
 function renderNavbar(d, pts){
   var bar=document.getElementById('navbar'); if(!bar) return;
@@ -312,7 +369,7 @@ dayCards.forEach(function(c){c.addEventListener('click',function(){activeDay=+c.
 drawDay(1);
 var hotelLayer=[];
 (window.__HOTELS__||[]).forEach(function(h){
-  if(!h.lat) return;
+  if(!h.lat || !mp) return;
   var c=new AMap.Circle({center:[h.lng,h.lat],radius:h.radius||800,strokeColor:'#8b5cf6',strokeWeight:2,strokeOpacity:.6,fillColor:'#8b5cf6',fillOpacity:.16,zIndex:100});
   c.setMap(mp); hotelLayer.push(c);
   var m=new AMap.Marker({position:[h.lng,h.lat],zIndex:110,content:'<div class="hotelmark">🏨</div>',offset:new AMap.Pixel(-14,-14)});
@@ -322,8 +379,110 @@ var hotelLayer=[];
   var _h=(function(hn){ return function(){ window.open('https://uri.amap.com/navigation?to='+h.lng+','+h.lat+','+encodeURIComponent(hn)+'&mode=car&callnative=1','_blank'); }; })(h.name);
   m.on('click',_h); lb.on('click',_h); c.on('click',_h);
 });
-var pois=document.querySelectorAll('.poi input[type=checkbox]');
-pois.forEach(function(cb){cb.addEventListener('change',function(){ drawDay(activeDay); });});
+// ===== 行程编辑器：顺序调整 / 跨天移动 / 任意点加入某天 =====
+function saveState(){ try{
+  var s={v:1,days:{}};
+  for(var d in window.__DAYS__){ s.days[d]=(window.__DAYS__[d]||[]).map(function(p){ return {pid:p.id,time:p.time||''}; }); }
+  localStorage.setItem('dayplan::'+document.title, JSON.stringify(s));
+}catch(e){} }
+function refreshChips(){
+  document.querySelectorAll('.addbtn').forEach(function(b){
+    var inDay=(window.__DAYS__[b.dataset.day]||[]).some(function(p){ return p.id===b.dataset.pid; });
+    b.classList.toggle('in',inDay);
+    b.textContent=inDay?'✓D'+b.dataset.day:'+'+'D'+b.dataset.day;
+  });
+}
+function renderDayList(d){
+  var card=document.querySelector(".daycard[data-day='"+d+"']"); if(!card) return;
+  var ol=card.querySelector('.poilist'); if(!ol) return;
+  var arr=window.__DAYS__[d]||[];
+  if(!arr.length){
+    ol.innerHTML="<li class='empty'>当日暂无站点：去「景点指南 / 餐饮指南」点 +D"+escH(d)+" 加入，或从其他日期拖拽过来</li>";
+  }else{
+    ol.innerHTML=arr.map(function(p,i){
+      var time=p.time?"<b>"+escH(p.time)+"</b>":"<b style='color:#b9c6cd'>时间自定</b>";
+      return "<li data-idx='"+i+"' data-pid='"+escH(p.id)+"'>"
+        +"<span class='drag' title='拖拽排序（可跨天）'>☰</span>"+time
+        +" <a class='nm' href='"+navUrl(p)+"' target='_blank'>"+(i+1)+". "+escH(p.name)+"</a>"
+        +"<span class='ops'>"
+        +"<button data-op='up' title='上移'>↑</button>"
+        +"<button data-op='down' title='下移'>↓</button>"
+        +"<button data-op='del' title='移出当日'>✕</button>"
+        +"</span></li>";
+    }).join('');
+  }
+  refreshChips();
+}
+function afterChange(d){ reSeq(); renderDayList(d); saveState(); if(+d===activeDay) drawDay(activeDay); }
+function opMove(d,i,dir){ var a=window.__DAYS__[d]; if(!a) return; var j=i+dir; if(j<0||j>=a.length) return; var t=a[i]; a[i]=a[j]; a[j]=t; afterChange(d); }
+function opDel(d,i){ var a=window.__DAYS__[d]; if(!a) return; a.splice(i,1); afterChange(d); }
+function opAdd(pid,d){ if((window.__DAYS__[d]||[]).some(function(p){ return p.id===pid; })) return;
+  var e=ENT[pid]; if(!e) return;
+  if(!window.__DAYS__[d]) window.__DAYS__[d]=[];
+  window.__DAYS__[d].push(Object.assign({},e,{time:''})); afterChange(d); }
+function opReset(d){ if(!ORIG[d]) return;
+  window.__DAYS__[d]=ORIG[d].map(function(p){ return Object.assign({},p); }); afterChange(d); }
+function moveItem(sd,si,td,tj){
+  var sa=window.__DAYS__[sd]; if(!sa||si<0||si>=sa.length) return;
+  var it=sa.splice(si,1)[0];
+  var ta=(window.__DAYS__[td]=window.__DAYS__[td]||[]);
+  if(sd===td&&si<tj) tj-=1;
+  ta.splice(Math.max(0,Math.min(tj,ta.length)),0,it);
+  afterChange(td);
+  if(sd!==td){ reSeq(); renderDayList(sd); saveState(); }
+}
+// 全站事件委托：加行程 / 上下移 / 移出 / 恢复默认
+document.addEventListener('click',function(ev){
+  var t=ev.target;
+  if(t.classList&&t.classList.contains('addbtn')){ ev.stopPropagation(); opAdd(t.dataset.pid,t.dataset.day); return; }
+  var btn=t.closest?t.closest('.ops button'):null;
+  if(btn){ ev.stopPropagation();
+    var li=btn.closest('li'), card=btn.closest('.daycard');
+    var i=+li.dataset.idx, d=card.dataset.day;
+    if(btn.dataset.op==='up') opMove(d,i,-1);
+    else if(btn.dataset.op==='down') opMove(d,i,1);
+    else opDel(d,i);
+    return; }
+  var rb=t.closest?t.closest('.resetbtn'):null;
+  if(rb){ ev.stopPropagation(); opReset(rb.dataset.day); }
+});
+// 指针拖拽（鼠标/触屏通用）：按住 ☰ 移到目标站松手即落位，同日排序或跨日移动
+var pdrag=null; // {d,i,srcLi,curLi}
+function pdragCleanup(){
+  document.querySelectorAll('.pdragging').forEach(function(x){ x.classList.remove('pdragging'); });
+  document.querySelectorAll('.dropbefore').forEach(function(x){ x.classList.remove('dropbefore'); });
+}
+document.addEventListener('pointerdown',function(ev){
+  if(!ev.isPrimary || (ev.pointerType==='mouse' && ev.button!==0)) return;
+  var h=ev.target.closest?ev.target.closest('.daycard .poilist li .drag'):null; if(!h) return;
+  var li=h.closest('li[data-idx]');
+  pdrag={d:li.closest('.daycard').dataset.day, i:+li.dataset.idx, srcLi:li, curLi:null};
+  li.classList.add('pdragging');
+  try{ h.setPointerCapture(ev.pointerId); }catch(e){}
+  ev.preventDefault();
+});
+document.addEventListener('pointermove',function(ev){
+  if(!pdrag) return;
+  var el=document.elementFromPoint(ev.clientX,ev.clientY);
+  var li=el&&el.closest?el.closest('.daycard .poilist li[data-idx]'):null;
+  document.querySelectorAll('.dropbefore').forEach(function(x){ if(x!==li) x.classList.remove('dropbefore'); });
+  if(li && li!==pdrag.srcLi) li.classList.add('dropbefore');
+  pdrag.curLi=li;
+});
+function pdragFinish(apply){
+  if(!pdrag) return;
+  var st=pdrag; pdrag=null;
+  pdragCleanup();
+  if(apply && st.curLi && st.curLi!==st.srcLi){
+    moveItem(st.d, st.i, st.curLi.closest('.daycard').dataset.day, +st.curLi.dataset.idx);
+  }
+}
+document.addEventListener('pointerup',function(){ pdragFinish(true); });
+document.addEventListener('pointercancel',function(){ pdragFinish(false); });
+(function initEditor(){
+  for(var d in window.__DAYS__){ renderDayList(d); }
+  if(window.__DAYS__[activeDay] && window.__DAYS__[activeDay].length!==document.querySelectorAll('#daylist-'+activeDay+' li[data-idx]').length) drawDay(activeDay);
+})();
 var btns=document.querySelectorAll('.topbar .pill');
 btns.forEach(function(b){b.addEventListener('click',function(){
   btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
@@ -340,6 +499,7 @@ btns.forEach(function(b){b.addEventListener('click',function(){
 </body></html>"""
 
 def fill_demo(build=True):
+    global _NDAYS
     files = glob.glob(os.path.join(TRIP_DIR, "trip-*.json"))
     if not files:
         # 模板模式：无行程数据时输出说明页
@@ -381,6 +541,7 @@ def fill_demo(build=True):
         by_id.update({p["id"]: p for p in trip.get("restaurants", [])})
         by_id.update({p["id"]: p for p in trip.get("hotels", [])})
         itinerary = {int(d["day"]): d for d in trip["itinerary"]}
+        _NDAYS = len(itinerary)
         # 把 source 挂到 pois
         srcmap = {s["id"]: s for s in trip.get("sources", [])}
         for p in trip["pois"]:
@@ -437,8 +598,9 @@ def fill_demo(build=True):
                   <h2>{esc(day.get('theme',''))}</h2>
                   <div class='daymeta'>{esc(day.get('date',''))} · {esc(day.get('area',''))} · {esc(routeinfo)}</div>
                 </div>
+                <button class='resetbtn' data-day='{d}' type='button' title='撤销本日所有手动调整'>↺ 恢复默认</button>
               </div>
-              <ol class='poilist'>{''.join(blocks)}</ol>
+              <ol class='poilist' id='daylist-{d}'>{''.join(blocks)}</ol>
               <p class='notes'>{esc(day.get('notes',''))}</p>
             </section>""")
         html = html.replace("__DAYCARDS__", "\n".join(daycards))
@@ -450,7 +612,7 @@ def fill_demo(build=True):
                 for it in itinerary[d].get("items", []):
                     p = by_id.get(it.get("poiId"))
                     if p and p.get("lat"):
-                        pts.append({"id": p["id"], "name": p["name"], "lng": p["lng"], "lat": p["lat"]})
+                        pts.append({"id": p["id"], "name": p["name"], "lng": p["lng"], "lat": p["lat"], "time": it.get("time", "")})
                 out[d] = pts
             return out
         html = html.replace("__MAPDAYS__", json.dumps(mkmapdays(), ensure_ascii=False))
