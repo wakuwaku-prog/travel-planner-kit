@@ -58,5 +58,7 @@
 - `poiId`/`sourceIds` 必须与同级 ID 一致，保证可追溯
 - `lng/lat` 用 GCJ-02（高德系）；`route_fill.py` 与 `export_routes.py` 回填/导出时保持同一坐标系
 - `checked` 为前端默认勾选；用户可在网站上取消（加入/移出当日路线）
+- **备选点约定**：`checked:false` 且不出现在任何 `itinerary.items` 里的 POI 只在「景点指南」展示为备选，可被用户在网站上加入某天
+- `geoQuery` / `geoFallback`（可选，pois/hotels/restaurants 通用）：`fill_geo.py` 按此关键词走高德 `/place/text`（citylimit 限定目的地）搜索回填坐标与 poiId；geoQuery 未命中时用 geoFallback，再失败按 `address` 走 `/geocode/geo` 兜底（此时无 poiId）
 - `meta.sources` 用于展示调研达标情况（videos ≥10、posts ≥20 为推荐线）
 - 缺失可选字段用空字符串/空数组，脚本均有容错

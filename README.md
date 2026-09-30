@@ -9,9 +9,9 @@
 
 1. **调研**：`agent-reach`（小红书 ≥20 篇、B站/其他平台 ≥10 个视频，含字幕转写要点）＋ Exa 等补充
 2. **整理**：攻略 Markdown + 结构化 `data/trips/trip-<目的地>.json`（行程/酒店/交通/特色/美食/项目 + 来源追溯）
-3. **地图**：高德 API 补齐坐标与逐日实测路线（`route_fill.py`）
+3. **地图**：高德 API 一键回填坐标 / POI ID / 天气（`fill_geo.py`），再补逐日实测路线（`route_fill.py`）
 4. **导出**：生成 **KML / GPX** 路线文件 + 每日「一键唤起高德导航」链接（`export_routes.py`）
-5. **建站**：生成 7 栏目可交互单页站（行程 / 景点指南 / 特色体验 / 餐饮指南 / 出发前准备 / 旅行提醒 / 资料来源 + 导入路线），带高德地图与每点导航按钮（`build_site.py`）
+5. **建站**：生成 7 栏目可交互单页站（行程 / 景点指南 / 特色体验 / 餐饮指南 / 出发前准备 / 旅行提醒 / 资料来源 + 导入路线），带高德地图与每点导航按钮（`build_site.py`）；站点内置**行程编辑器**——拖拽/↑↓ 调整当日顺序、跨天拖拽、任意点加入某天、恢复默认，改动本地保存
 6. **部署**：GitHub Actions 自动发布到 GitHub Pages（模板自带 workflow）
 
 ## 目录结构
@@ -30,8 +30,9 @@ travel-planner-kit/
 │   ├── raw/                   # 原始素材（字幕、音频——已 gitignore）
 │   └── export/                # KML/GPX/routes.json 导出物
 ├── scripts/
-│   ├── build_site.py          # trip JSON → site/ 网站
+│   ├── build_site.py          # trip JSON → site/ 网站（含行程编辑器）
 │   └── amap/
+│       ├── fill_geo.py        # 坐标/POI ID/天气一键回填（按 geoQuery 搜索）
 │       ├── route_fill.py      # 逐日高德方向 API → 距离/耗时回填
 │       └── export_routes.py   # KML/GPX + polyline 路线导出
 ├── site/                      # 生成后的网站（部署物）
@@ -53,22 +54,27 @@ cp config.example.json config.json    # 按需改
 #    告知：目的地/天数/出发日期/出发地/人数/预算/偏好/节奏
 #    → 产出 data/trips/trip-<目的地>.json 与 guides/*.md
 
-# 3. 高德路线回填（依赖 .env 里的 AMAP_WEB_KEY）
+# 3. 坐标/POI ID/天气一键回填（依赖 .env 里的 AMAP_WEB_KEY）
+#    trip JSON 里每个待回填实体写 geoQuery（可选 geoFallback），脚本按高德搜索命中：
+python scripts/amap/fill_geo.py data/trips/trip-*.json
+#    → 回写 lng/lat、poiId、address；高德天气预报写入 tips.weather
+
+# 4. 高德路线回填
 python scripts/amap/route_fill.py data/trips/trip-*.json
 
-# 4. 导出可导入高德的路线图（KML/GPX）
+# 5. 导出可导入高德的路线图（KML/GPX）
 python scripts/amap/export_routes.py data/trips/trip-*.json
 #   → data/export/trip-*.kml / .gpx / .routes.json（含分日），site/export/ 同步
 
-# 4.5 可选：给点位反查高德 POI ID（供「收藏到高德」功能使用）
+# 5.5 可选：给点位反查高德 POI ID（fill_geo 已按名称命中时通常无需再跑）
 python scripts/amap/poi_favorite.py data/trips/trip-*.json
 #   → 回填每个点位的 poiId；网站「导入路线」面板即可生成 uri.amap.com/poidetail 收藏按钮
 
-# 5. 生成网站
+# 6. 生成网站
 python scripts/build_site.py
 #   → site/index.html（无数据时会生成说明页）
 
-# 6. 部署（可选，模板自带 GitHub Actions）
+# 7. 部署（可选，模板自带 GitHub Actions）
 git push origin main   # 自动构建并发布到 GitHub Pages
 ```
 
@@ -94,6 +100,18 @@ git push origin main   # 自动构建并发布到 GitHub Pages
 | `GET /v3/weather/weatherInfo` | 目的地天气预报 |
 | JS API `AMap.Driving`/`Polyline` | 网站前端画每日路线 |
 | `uri.amap.com/navigation` | 每个点位「一键唤起高德 App 导航」 |
+
+## 行程编辑器（站点内置）
+
+生成的网站支持在浏览器里直接改行程，无需回改 JSON 重新建站：
+
+- **调整顺序**：每站 ☰ 拖拽（Pointer 实现，鼠标/触屏通用），或 ↑ / ↓ 微调；地图路线、站点编号、底部「顺序导航」实时重绘
+- **跨天移动**：把站点从一个日期列表拖到另一个日期；也可 ✕ 移出后用 +D1/+D2/… 加入别天
+- **任意点加入某天**：「景点指南 / 餐饮指南」每张卡片带 +D1/+D2/… 按钮，已加入显示 ✓Dn；同一日自动防重复
+- **恢复默认**：每日「↺ 恢复默认」撤销当天全部手动调整
+- **本地保存**：改动存浏览器 localStorage（按页面标题区分行程），刷新/重开不丢
+- **备选景点约定**：trip JSON 中 `checked:false` 且不出现在 `itinerary` 里的 POI（如网红点、博物馆）只出现在「景点指南」作备选，不进逐日行程
+- 地图未加载（Key 域名/网络原因）时编辑器照常可用，仅地图区显示提示
 
 ## 关于"行程导入高德"的说明（重要）
 

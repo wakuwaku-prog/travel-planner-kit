@@ -28,18 +28,18 @@
 
 ## 结构化与地图补齐（第三步）
 
-1. 提炼 `pois/hotels/restaurants/experiences` 及逐日行程草案进 trip JSON；
-2. 高德 Web 服务回填坐标/POI ID/天气：
-   - `/config/district` 校验目的地；`/geocode/geo` + `/place/text` 回填实体（**LLM 生成名不可信，坐标以高德回填为准**）；
-   - `/weather/weatherInfo` 写 `tips.weather`；
-3. `python scripts/amap/route_fill.py data/trips/trip-*.json` → 逐日真实距离/耗时回写；
+1. 提炼 `pois/hotels/restaurants/experiences` 及逐日行程草案进 trip JSON（每个待回填实体写 `geoQuery`，可选 `geoFallback`，供脚本搜索）；
+2. 高德 Web 服务回填坐标/POI ID/天气（一键）：
+   `python scripts/amap/fill_geo.py data/trips/trip-<目的地>.json`
+   （**LLM 生成名不可信，坐标以高德回填为准**；脚本按 geoQuery 走 `/place/text` citylimit 搜索，失败用 geoFallback、再用 `/geocode/geo` 兜底，并回写天气到 `tips.weather`）；
+3. `python scripts/amap/route_fill.py data/trips/trip-*.json` → 逐日真实距离/耗时回写（驾车口径，每日 `dailyRoute.note` 应写明实际交通方式）；
 4. `python scripts/amap/export_routes.py data/trips/trip-*.json` → KML/GPX 路线导出。
 
 ## 生成网站与导出路线（第四步）
 
 1. `python scripts/build_site.py` → `site/index.html`（7 栏目：行程/景点指南/特色体验/餐饮指南/出发前准备/旅行提醒/资料来源 + 📦 导入路线）；
 2. 地图：高德 JS API 画每日路线；每 POI「跳转高德导航」＝ `https://uri.amap.com/navigation?to=<lng>,<lat>,<名称>&mode=car&callnative=1`；
-3. 交互：用户勾选感兴趣景点 → 前端 `AMap.Driving.search` 动态重规划；
+3. **行程编辑器（站点内置）**：用户可在网站上自行调整——☰ 拖拽（Pointer 实现，鼠标/触屏通用）或 ↑↓ 调整当日顺序、跨天拖拽、✕ 移出、卡片上 +D1/+D2/… 把任意点（含备选）加入某天、每日「↺ 恢复默认」；改动存 localStorage，刷新不丢；地图与「顺序导航」随编辑实时重绘。备选景点＝ trip JSON 里 `checked:false` 且不进 `itinerary` 的 POI；
 4. **导入高德/旅行软件**：网站「导入路线」面板提供 KML（高德 App 收藏→导入）与 GPX（两步路等）下载 + 每日整体路线链接/二维码；
 5. 汇报：网站位置 + 调研统计（视频/帖子数量）+ 关键提醒 + 来源。
 
