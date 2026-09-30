@@ -22,3 +22,6 @@ site/index.html
 Thumbs.db
 .idea/
 .vscode/
+# 数据导出物（可由 export_routes.py 重建）
+data/export/
+site/export/
