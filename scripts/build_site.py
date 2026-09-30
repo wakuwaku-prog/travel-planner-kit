@@ -434,7 +434,11 @@ function moveItem(sd,si,td,tj){
 // 全站事件委托：加行程 / 上下移 / 移出 / 恢复默认
 document.addEventListener('click',function(ev){
   var t=ev.target;
-  if(t.classList&&t.classList.contains('addbtn')){ ev.stopPropagation(); opAdd(t.dataset.pid,t.dataset.day); return; }
+  if(t.classList&&t.classList.contains('addbtn')){ ev.stopPropagation();
+    var pid=t.dataset.pid, d=t.dataset.day, arr=window.__DAYS__[d]||[];
+    for(var k=0;k<arr.length;k++){ if(arr[k].id===pid){ opDel(d,k); return; } }
+    opAdd(pid,d);
+    return; }
   var btn=t.closest?t.closest('.ops button'):null;
   if(btn){ ev.stopPropagation();
     var li=btn.closest('li'), card=btn.closest('.daycard');
