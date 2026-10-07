@@ -1,0 +1,1048 @@
+{
+ "meta": {
+  "destination": "绍兴",
+  "slug": "shaoxing",
+  "dates": [
+   "2026-10-06"
+  ],
+  "days": 1,
+  "departureCity": "上海",
+  "travelers": "3人",
+  "budget": "穷游",
+  "preferences": [
+   "人文历史",
+   "美食小吃",
+   "自然风光"
+  ],
+  "pace": "均衡",
+  "sources": {
+   "videos": 5,
+   "posts": 8,
+   "web": 12,
+   "postsSeeds": 94
+  },
+  "generatedAt": "2026-10-05",
+  "status": "调研完成：B站29种子/5视频全文转写 + 小红书94篇去重种子/8篇高赞帖精读(6篇有效正文) + 12个web来源交叉验证；小红书通道需Chrome开启OpenCLI扩展后使用；一日主线经本地人路线交叉确认，备选点扩至9个供网站勾选"
+ },
+ "sources": [
+  {
+   "id": "v01",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1KBUTBnEdF",
+   "title": "绍兴一日游|避开人流！超详细！超省钱",
+   "author": "-大銘",
+   "play": 6937,
+   "status": "已转写",
+   "summary": "7:40上海动车出发1.5h到；鲁迅故里公众号免费预约；故里内乌篷船河道窄不推荐、船留东湖；沈园40现场买；书圣故里入口西街口臭豆腐；东湖门票50、船票约41元/船可坐4人、17:00前入园；仓桥直街奶油小攀/黄酒奶茶收尾",
+   "used": true
+  },
+  {
+   "id": "v02",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Qg4y1L7mH",
+   "title": "绍兴旅游攻略｜绍兴一日游逛吃计划｜一天埋头打卡10家",
+   "author": "舒妹和你拼了",
+   "play": 136842,
+   "status": "已转写",
+   "summary": "一日逛吃10家：出站口走到打车点较远、一天时间打车更高效；鲁迅故里提前预约刷脸/身份证入园非高峰可现场排队；沈园故事建议配讲解；奶油小攀5元趁热吃；仓桥直街黄酒棒冰约5元",
+   "used": true
+  },
+  {
+   "id": "v03",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1sq1rBMEGq",
+   "title": "绍兴古城一日游保姆级攻略，串联鲁迅故里、沈园、八字桥等免费景点",
+   "author": "刘羽的旅行",
+   "play": 21349,
+   "status": "已转写",
+   "summary": "古城7km步行环线：书圣故里(题扇桥最佳机位)→周恩来祖居→八字桥(南宋/三河交汇/全国重点文保)→鲁迅故里(祖居→三味书屋→故居→百草园)→沈园(40元)→仓桥直街(1.5km/清末民初43个台门/府山横街往北最热闹)→西小路→阳明故里(约65元)",
+   "used": true
+  },
+  {
+   "id": "v04",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV12N4y1C7KH",
+   "title": "绍兴一日游｜坐地铁去绍兴，这条老街环线适合慢游一整天",
+   "author": "十三游迹",
+   "play": 30414,
+   "status": "已转写",
+   "summary": "杭州地铁2.5h约15元到绍兴（姑娘桥→城市广场约1h）；城市广场大善塔；书圣故里笔飞弄蔡元培故居、戒珠讲寺(王羲之舍宅为寺)、题扇桥与躲婆弄传说；八字桥800年历史双坡道结构；老城区保护好人烟味足",
+   "used": true
+  },
+  {
+   "id": "v05",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1SZdwYTETf",
+   "title": "绍兴vlog | City Walk 绍兴就是一个巨大的绿色能量场",
+   "author": "Camille小婷儿",
+   "play": 91751,
+   "status": "已转写",
+   "summary": "寻宝记13:00后午市休息（正餐要么赶早要么晚饭）；乌篷船线上购票比现场便宜且至少提前2小时；城市广场码头南线经典；东湖门票+船票游客中心取、两款棒冰奶味/酒味；阿国饭店16:00后才开门；东湖景区不大半天够",
+   "used": true
+  },
+  {
+   "id": "w01",
+   "platform": "web",
+   "type": "post",
+   "url": "https://sxlxmuseum.com/cgzn/lxgl.htm",
+   "title": "鲁迅故里·沈园景区官方参观指南",
+   "author": "绍兴鲁迅纪念馆官网",
+   "status": "已核实",
+   "summary": "免费开放：鲁迅祖居/三味书屋/纪念馆/故居/百草园/笔下风情园；周二~周日8:30-20:00（19:30停止入园）；公众号「绍兴市文旅集团」「绍兴鲁迅纪念馆」分时预约，每号每日限约5人、每证每日限约1次，凭身份证或人脸入园；沈园白天40元、8:00-16:40，沈园之夜18:30-21:00",
+   "used": true
+  },
+  {
+   "id": "w02",
+   "platform": "web",
+   "type": "post",
+   "url": "https://sx.bendibao.com/tour/2026618/36431.shtm",
+   "title": "2026年端午节绍兴鲁迅故里景区免费预约入口",
+   "author": "绍兴本地宝",
+   "status": "已核实",
+   "summary": "预约平台：绍兴市文旅集团/绍兴鲁迅纪念馆公众号+小程序「迅哥旅行」；假期延长开放至22:30并有《那一年的语文课》沉浸式活动（9:30/10:30/14:00/15:00，笔下风情园，入园免费体验）；推荐17:00后入园避峰（本行程因返程卡点不适用）",
+   "used": true
+  },
+  {
+   "id": "w03",
+   "platform": "web",
+   "type": "post",
+   "url": "https://hk.trip.com/trains/china/route/shanghai-hongqiao-to-shaoxing",
+   "title": "上海虹桥→绍兴高铁时刻表",
+   "author": "Trip.com",
+   "status": "已核实",
+   "summary": "沪→绍班次密集；08:19上海虹桥→09:48绍兴北（D3201，1h29m）符合8点出发需求；二等座约95-110元",
+   "used": true
+  },
+  {
+   "id": "w04",
+   "platform": "web",
+   "type": "post",
+   "url": "http://gaotie.huochepiao.com/chezhan/shaoxingbei",
+   "title": "绍兴北站高铁时刻表",
+   "author": "火车票网",
+   "status": "已核实",
+   "summary": "绍兴北↔上海虹桥全天40+班；D2282绍兴北19:38→上海虹桥21:20（1h42m）为晚间稳妥返程；20:15前发车的宁波方向G/D车约1h20m-1h45m；再晚发车22:00前到不了上海",
+   "used": true
+  },
+  {
+   "id": "w05",
+   "platform": "web",
+   "type": "post",
+   "url": "https://tw.trip.com",
+   "title": "2026绍兴乌篷船观光游玩指南",
+   "author": "Trip.com",
+   "status": "已核实",
+   "summary": "古城乌篷船从八字桥/城市广场码头发船，南/北/八字桥三条游线，是东湖乌篷船之外的平替；东湖乌篷船穿崖壁水道与陶公洞为精华",
+   "used": true
+  },
+  {
+   "id": "w06",
+   "platform": "web",
+   "type": "post",
+   "url": "https://post.smzdm.com",
+   "title": "500元玩转绍兴：三天吃住行全攻略",
+   "author": "什么值得买",
+   "status": "已核实",
+   "summary": "平价美食集中在仓桥直街与八字桥周边：奶油小馄饨5元、梅干菜扣肉饭15元、黄酒棒冰约5元/根；鲁迅故里门口『网红黄酒』溢价可回避",
+   "used": true
+  },
+  {
+   "id": "w07",
+   "platform": "web",
+   "type": "post",
+   "url": "https://hk.trip.com/moments/destination-shaoxing-18",
+   "title": "绍兴2日慢游攻略（含一日精华线）",
+   "author": "Trip.com 攻略",
+   "status": "已核实",
+   "summary": "仓桥直街→八字桥→书圣故里步行串联可行；东湖乌篷船+黄酒棒冰为经典组合；鲁迅故里需提前预约",
+   "used": true
+  },
+  {
+   "id": "w08",
+   "platform": "web",
+   "type": "post",
+   "url": "https://travelnews.qunar.com",
+   "title": "绍兴3天2夜慢游/纪念馆夜间开放提示",
+   "author": "去哪儿旅行资讯",
+   "status": "已核实",
+   "summary": "鲁迅纪念馆免费预约开放至约21:00；东湖乘乌篷船认准景区官方码头明码标价；书圣故里免费；公众号提前预约0元门票",
+   "used": true
+  },
+  {
+   "id": "w09",
+   "platform": "web",
+   "type": "post",
+   "url": "https://www.metroman.cn",
+   "title": "绍兴轨道交通1号线首末班时刻（第三方汇总）",
+   "author": "Metroman/地铁时代网",
+   "status": "已核实",
+   "summary": "1号线约6:00-22:30；绍兴北站往黄酒小镇方向约6:03-22:48；北站至鲁迅故里站约30-35分钟（支线→黄酒小镇换乘主线）、约5元/人；行车间隔高峰6-7分钟",
+   "used": true
+  },
+  {
+   "id": "w10",
+   "platform": "web",
+   "type": "post",
+   "url": "http://vip.people.com.cn",
+   "title": "绍兴鲁迅故里沈园游玩指南",
+   "author": "人民网图片网",
+   "status": "已核实",
+   "summary": "鲁迅故里免费实名预约；高铁至绍兴北站乘地铁1号线至鲁迅故里站步行可达；沈园40元",
+   "used": true
+  },
+  {
+   "id": "w11",
+   "platform": "web",
+   "type": "post",
+   "url": "https://zhuanlan.zhihu.com/p/706439623",
+   "title": "绍兴一日游最佳攻略路线",
+   "author": "知乎",
+   "status": "已核实",
+   "summary": "经典一日线：鲁迅故里→东湖(乌篷船)→仓桥直街(逛吃午饭)→书圣故里/周恩来祖居→沈园夜游（本行程因22:00返沪卡点砍掉夜游段）",
+   "used": true
+  },
+  {
+   "id": "w12",
+   "platform": "web",
+   "type": "post",
+   "url": "https://www.12306.cn",
+   "title": "铁路12306：上海↔绍兴北购票",
+   "author": "12306官方",
+   "status": "已核实",
+   "summary": "沪绍段二等座浮动票价约90-110元；国庆假期票紧俏需尽快购买往返；三连座可在选座页一次选2+1",
+   "used": true
+  },
+  {
+   "id": "x01",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/69d77253000000001a02333d",
+   "title": "本地人讲讲绍兴景点的真实感受",
+   "author": "番茄游记",
+   "likes": "9669",
+   "status": "已精读",
+   "summary": "本地人视角一日游路线：鲁迅故里→书圣故里→八字桥/仓桥直街(2选1)→东湖/兰亭(2选1)→沈园；含景点真实评价/注意事项/美食推荐",
+   "used": true
+  },
+  {
+   "id": "x02",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/690cc20f0000000004001c09",
+   "title": "带70+老母亲打卡绍兴古城一日游攻略",
+   "author": "（见链接）",
+   "likes": "4479",
+   "status": "已精读",
+   "summary": "慢节奏一日游全天2万+步；府山公园特别推荐（免费、登飞翼楼俯瞰全城）；绍兴菜偏咸、卤糟醉特色；黄酒棒冰酒味不足像米仁棒冰；臭豆腐认准24小时卤水现做店",
+   "used": true
+  },
+  {
+   "id": "x03",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/6a3cf772000000001603f881",
+   "title": "特种兵——绍兴一日游完整版攻略",
+   "author": "（见链接）",
+   "likes": "3137",
+   "status": "已精读",
+   "summary": "北站→鲁迅故里地铁1号线5元首选不堵车；三味书屋与故居不相连、早到先逛书屋、少逛文创店省时；沈园40可取舍；府山飞翼楼16:30关门、爬山单程约20分钟；西小路→城市广场地铁站返程；全程无折返顺序",
+   "used": true
+  },
+  {
+   "id": "x04",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/6996cb9e000000001b015822",
+   "title": "杭州到绍兴的一日游Citywalk攻略不走回路",
+   "author": "（见链接）",
+   "likes": "2245",
+   "status": "已精读",
+   "summary": "11个点位一次讲清：书圣故里/周恩来祖居/八字桥/沈园(40)/鲁迅故里(免费预约)/徐渭艺术馆·青藤书屋(免费,周一闭馆,小长假除外)/绍兴博物馆(免费,周一闭馆)/仓桥直街/西小路/阳明故里(65)/中国黄酒博物馆(30,黄酒小镇免费)",
+   "used": true
+  },
+  {
+   "id": "x05",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/6a9a7a09000000002603bc7f",
+   "title": "绍兴经典一日游city walk路线",
+   "author": "（见链接）",
+   "likes": "2200",
+   "status": "已精读",
+   "summary": "鲁迅故里→百草园→三味书屋→沈园→八字桥→书圣故里→老爷爷书店→仓桥直街→东湖；东湖离市区约半小时、建议打车；节假日人流大建议早出发；书圣故里/八字桥避开正午强光",
+   "used": true
+  },
+  {
+   "id": "x06",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/69e60c85000000001a024e5f",
+   "title": "鲁迅故里不走回头路，一分钟讲清路线攻略",
+   "author": "镜鱼观剧",
+   "likes": "2326",
+   "status": "已精读",
+   "summary": "鲁迅故里内部最短路线：东门进→鲁迅祖居→三味书屋→鲁迅故居→西门出，全程不走回头路",
+   "used": true
+  },
+  {
+   "id": "x07",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/6a72cbd20000000022010a0c",
+   "title": "绍兴仓桥直街！好吃的店（合集）",
+   "author": "我是一只羊",
+   "likes": "1920",
+   "status": "已读（图片帖）",
+   "summary": "仓桥直街好吃店铺合集（图片帖，店铺清单在图内，无可提取正文）",
+   "used": false
+  },
+  {
+   "id": "x08",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/explore/6a23d6dd000000001700ad83",
+   "title": "到绍兴必吃的Top10美食",
+   "author": "大喜带你看绍兴",
+   "likes": "1645",
+   "status": "已读（图片帖）",
+   "summary": "本地人推荐Top10美食（图片帖，清单在图内，无可提取正文）",
+   "used": false
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "交通",
+   "name": "绍兴北站（到达）",
+   "address": "绍兴市越城区站前大道",
+   "lng": "120.539485",
+   "lat": "30.098661",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 15,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "—",
+   "openHours": "随班次",
+   "tags": [
+    "高铁抵达",
+    "地铁1号线起点"
+   ],
+   "notes": "09:48 D3201 到达；出站按指示换乘地铁1号线（支线往黄酒小镇方向），约30-35分钟、5元/人到鲁迅故里站；赶时间3人打车约25-30分钟、40-55元",
+   "sourceIds": [
+    "w03",
+    "w09",
+    "v02"
+   ],
+   "checked": true,
+   "poiId": "B023F0PZUW",
+   "geoQuery": "绍兴北站",
+   "geoFallback": "绍兴北站 高铁站"
+  },
+  {
+   "id": "p02",
+   "category": "人文",
+   "name": "鲁迅故里",
+   "address": "绍兴市越城区鲁迅中路241号",
+   "lng": "120.584419",
+   "lat": "29.993263",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "bookingNote": "免费实名分时预约：公众号「绍兴市文旅集团」/「绍兴鲁迅纪念馆」或小程序「迅哥旅行」；每号每日限约5人（一个号约3人正好）、每证每日限约1次；凭身份证或人脸入园；假期票紧俏立刻约",
+   "ticketPrice": "免费（预约制）",
+   "openHours": "周二~周日8:30-20:00（19:30停止入园）；假期或延长，以官方公告为准",
+   "tags": [
+    "人文历史",
+    "课本实景",
+    "免费",
+    "三味书屋",
+    "百草园"
+   ],
+   "notes": "游览顺序：鲁迅祖居→三味书屋（找书桌『早』字）→鲁迅故居→百草园→鲁迅纪念馆；10:30场可顺带看笔下风情园免费沉浸式活动《那一年的语文课》；故里内乌篷船河道窄不推荐，船留给东湖；出口街区黄酒棒冰/黄酒奶茶文创多，穷游控手；本地人路线：东门进→鲁迅祖居→三味书屋→鲁迅故居→西门出全程不走回头路；三味书屋与故居不相连，早到先逛书屋；想省时走快速通道少逛文创店",
+   "sourceIds": [
+    "w01",
+    "w02",
+    "v01",
+    "v03",
+    "x01",
+    "x03",
+    "x06"
+   ],
+   "checked": true,
+   "poiId": "B023F02PG3",
+   "geoQuery": "鲁迅故里",
+   "geoFallback": "绍兴鲁迅故里景区"
+  },
+  {
+   "id": "p03",
+   "category": "美食街区",
+   "name": "仓桥直街",
+   "address": "绍兴市越城区仓桥直街",
+   "lng": "120.577947",
+   "lat": "29.997525",
+   "day": 1,
+   "slot": "中午",
+   "durationMin": 75,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（小吃人均15-40）",
+   "openHours": "街区全天，午市最热闹",
+   "tags": [
+    "美食小吃",
+    "历史街区",
+    "穷游天堂",
+    "台门"
+   ],
+   "notes": "从鲁迅故里步行约650米；全长1.5公里、清末民初43个台门，府山横街往北一段最热闹；扫街当午餐：臭豆腐约10元/份、奶油小攀约5元、黄酒棒冰约5元、梅干菜扣肉饭约15元；认准现炸酥脆配甜面酱+辣椒酱的摊位；本地人路线中仓桥直街与八字桥二选一，带老人/体力一般选其一即可",
+   "sourceIds": [
+    "v03",
+    "v01",
+    "w06",
+    "v02",
+    "x01"
+   ],
+   "checked": true,
+   "poiId": "B023F0QGK1",
+   "geoQuery": "仓桥直街",
+   "geoFallback": "绍兴仓桥直街历史街区"
+  },
+  {
+   "id": "p04",
+   "category": "景点",
+   "name": "东湖景区（乌篷船）",
+   "address": "绍兴市越城区东湖镇东湖景区",
+   "lng": "120.632047",
+   "lat": "29.998452",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "bookingNote": "门票当天可购；乌篷船线上购票更便宜且需提前至少2小时购好；假期先买船票再逛",
+   "ticketPrice": "门票约50元；乌篷船约40-90元/船（每船可坐3-4人，各码头/线路不同，以现场为准）",
+   "openHours": "约8:30-17:00（17:00前入园；以现场为准）",
+   "tags": [
+    "自然风光",
+    "乌篷船",
+    "崖壁水道",
+    "陶公洞",
+    "西游记取景地"
+   ],
+   "notes": "乘乌篷船穿崖壁、钻陶公洞是全天精华（86版《西游记》女儿国取景地），约20-30分钟；3人拼一条船；从仓桥直街/鲁迅故里乘公交1路/57路约2元或打车3人分摊约5元/人；景区不大，2小时含船足够；假期公交拥挤时打车更稳（约20分钟）；东湖离市区车程约半小时",
+   "sourceIds": [
+    "v01",
+    "v05",
+    "w05",
+    "w08",
+    "x05"
+   ],
+   "checked": true,
+   "poiId": "B023F02KB7",
+   "geoQuery": "绍兴东湖景区",
+   "geoFallback": "东湖风景区"
+  },
+  {
+   "id": "p05",
+   "category": "交通",
+   "name": "绍兴北站（返程）",
+   "address": "绍兴市越城区站前大道",
+   "lng": "120.539485",
+   "lat": "30.098661",
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 30,
+   "bookingRequired": true,
+   "bookingNote": "返程 D2282 绍兴北19:38→上海虹桥21:20 提前购票；备选：20:15前发车的宁波方向G/D车；再晚22:00前回不了上海",
+   "ticketPrice": "二等座约95-110元",
+   "openHours": "随班次",
+   "tags": [
+    "返程",
+    "硬卡点"
+   ],
+   "notes": "18:30前从鲁迅故里地铁站进站（硬卡点），地铁约30-35分钟，19:05前到站；安检高峰多留10分钟",
+   "sourceIds": [
+    "w04",
+    "w09"
+   ],
+   "checked": true,
+   "poiId": "B023F0PZUW",
+   "geoQuery": "绍兴北站",
+   "geoFallback": "绍兴北站 高铁站"
+  },
+  {
+   "id": "p06",
+   "category": "园林",
+   "name": "沈园（备选）",
+   "address": "绍兴市越城区鲁迅中路318号",
+   "lng": "120.590035",
+   "lat": "29.990303",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约40元（半价20；规划估算，以官方为准）",
+   "openHours": "白天8:00-16:40；沈园之夜18:30-21:00（返程卡点赶不上夜场）",
+   "tags": [
+    "备选",
+    "钗头凤",
+    "宋代园林"
+   ],
+   "notes": "备选未进主行程：陆游唐婉《钗头凤》所在地，从鲁迅故里出来步行约260米顺路可加；想听透故事建议请讲解；夜场堂会与本行程返程冲突",
+   "sourceIds": [
+    "w01",
+    "v01",
+    "v02",
+    "v03"
+   ],
+   "checked": false,
+   "poiId": "B0FFFR0TIH",
+   "geoQuery": "绍兴沈园",
+   "geoFallback": "沈园景区"
+  },
+  {
+   "id": "p07",
+   "category": "街区",
+   "name": "八字桥历史街区（备选）",
+   "address": "绍兴市越城区八字桥直街",
+   "lng": "120.591561",
+   "lat": "29.999705",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 45,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "街区全天",
+   "tags": [
+    "备选",
+    "南宋古桥",
+    "全国重点文保",
+    "免费"
+   ],
+   "notes": "备选未进主行程：建于南宋、三河交汇、中国最早『立交桥』式古桥；从东湖回城顺路，可替换晚餐前45分钟",
+   "sourceIds": [
+    "v03",
+    "v04",
+    "w05"
+   ],
+   "checked": false,
+   "poiId": "B023F02KFF",
+   "geoQuery": "八字桥",
+   "geoFallback": "绍兴八字桥历史街区"
+  },
+  {
+   "id": "p08",
+   "category": "街区",
+   "name": "书圣故里历史街区（备选）",
+   "address": "绍兴市越城区蕺山街",
+   "lng": "120.585740",
+   "lat": "30.008014",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（蔡元培故居等馆可免费领票参观）",
+   "openHours": "街区全天",
+   "tags": [
+    "备选",
+    "王羲之",
+    "题扇桥",
+    "免费"
+   ],
+   "notes": "备选未进主行程：题扇桥（最佳机位可连拍桥+文笔塔+水上建筑）、戒珠讲寺（王羲之舍宅为寺）、笔飞弄蔡元培故居、躲婆弄；可替换仓桥直街下午段或与八字桥串联",
+   "sourceIds": [
+    "v03",
+    "v04",
+    "v02"
+   ],
+   "checked": false,
+   "poiId": "B023F0PZZ3",
+   "geoQuery": "书圣故里",
+   "geoFallback": "绍兴书圣故里历史街区"
+  },
+  {
+   "id": "p09",
+   "category": "景点",
+   "name": "阳明故里（备选）",
+   "address": "绍兴市越城区西小河片区",
+   "lng": "120.575442",
+   "lat": "30.008745",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约65元（规划估算，以现场为准）",
+   "openHours": "约9:00-17:00",
+   "tags": [
+    "备选",
+    "王阳明",
+    "小众"
+   ],
+   "notes": "备选未进主行程：王阳明及后世尊长世居之地，毗邻西小路小众河畔段；顺路性一般，深度爱好者专用",
+   "sourceIds": [
+    "v03"
+   ],
+   "checked": false,
+   "poiId": "B0FFKBSHQD",
+   "geoQuery": "阳明故里",
+   "geoFallback": "绍兴阳明故里"
+  },
+  {
+   "id": "p10",
+   "category": "景点",
+   "name": "兰亭景区（备选）",
+   "address": "绍兴市柯桥区兰亭街道",
+   "lng": "120.499868",
+   "lat": "29.926031",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约40元（规划估算，以官方为准）",
+   "openHours": "约8:30-17:00",
+   "tags": [
+    "备选",
+    "书法",
+    "曲水流觞",
+    "较远"
+   ],
+   "notes": "备选未进主行程：王羲之《兰亭集序》曲水流觞处，距古城车程约30分钟；仅当愿意放弃东湖、且接受返程风险时整段替换下午",
+   "sourceIds": [
+    "w07"
+   ],
+   "checked": false,
+   "poiId": "B023F00N0U",
+   "geoQuery": "兰亭景区",
+   "geoFallback": "绍兴兰亭"
+  },
+  {
+   "id": "p11",
+   "category": "体验点",
+   "name": "古城乌篷船码头·城市广场/八字桥（备选）",
+   "address": "绍兴市越城区城市广场码头/八字桥码头",
+   "lng": "120.579460",
+   "lat": "30.003039",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 40,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约40-85元/船（以现场为准）",
+   "openHours": "日间运营，以码头为准",
+   "tags": [
+    "备选",
+    "水乡体验",
+    "平替"
+   ],
+   "notes": "备选未进主行程：南线/北线/八字桥三条游线，是不去东湖时的水乡平替；乌篷船线上购票通常更便宜且需提前约2小时",
+   "sourceIds": [
+    "w05",
+    "v05"
+   ],
+   "checked": false,
+   "poiId": "B0FFF3O00T",
+   "geoQuery": "绍兴城市广场",
+   "geoFallback": "城市广场码头"
+  },
+  {
+   "id": "p12",
+   "category": "公园",
+   "name": "府山公园（备选）",
+   "address": "绍兴市越城区府山横街",
+   "lng": "120.572964",
+   "lat": "30.000496",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天；飞翼楼约16:30停止登楼",
+   "tags": [
+    "备选",
+    "免费",
+    "登高观景",
+    "飞翼楼"
+   ],
+   "notes": "备选未进主行程：就在仓桥直街西侧，登山单程约20分钟，飞翼楼俯瞰全城（16:30关门务必早去）；可替换晚餐前一小时",
+   "sourceIds": [
+    "x03",
+    "x02"
+   ],
+   "checked": false,
+   "poiId": "B023F02L8F",
+   "geoQuery": "绍兴府山公园",
+   "geoFallback": "府山公园 越城区"
+  },
+  {
+   "id": "p13",
+   "category": "博物馆",
+   "name": "中国黄酒博物馆（备选）",
+   "address": "绍兴市越城区下大路",
+   "lng": "120.573923",
+   "lat": "30.012015",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约30元（黄酒小镇免费；规划估算，以现场为准）",
+   "openHours": "约9:00-17:00",
+   "tags": [
+    "备选",
+    "黄酒文化",
+    "品酒"
+   ],
+   "notes": "备选未进主行程：国内唯一黄酒主题博物馆，可看酿造工艺+品黄酒；与鲁迅故里片区顺路性一般，黄酒爱好者专用",
+   "sourceIds": [
+    "x04"
+   ],
+   "checked": false,
+   "poiId": "B023F0256C",
+   "geoQuery": "中国黄酒博物馆",
+   "geoFallback": "绍兴黄酒博物馆"
+  },
+  {
+   "id": "p14",
+   "category": "博物馆",
+   "name": "徐渭艺术馆·青藤书屋（备选）",
+   "address": "绍兴市越城区前观巷",
+   "lng": "120.578713",
+   "lat": "29.995809",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "周二至周日约9:00-17:00；周一闭馆（小长假除外）",
+   "tags": [
+    "备选",
+    "免费",
+    "泼墨大写意",
+    "建筑设计感"
+   ],
+   "notes": "备选未进主行程：新馆展示徐渭书画、建筑出片，对面即徐渭故居青藤书屋；离鲁迅故里步行可达，10-06为周二正常开放",
+   "sourceIds": [
+    "x04",
+    "x02"
+   ],
+   "checked": false,
+   "poiId": "B0HDDCCVC9",
+   "geoQuery": "徐渭艺术馆",
+   "geoFallback": "绍兴青藤书屋"
+  }
+ ],
+ "hotels": [],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "咸亨酒店（鲁迅中路店）",
+   "type": "绍兴菜·孔乙己打卡",
+   "avgPrice": 80,
+   "day": 1,
+   "area": "鲁迅中路（以高德POI为准）",
+   "lng": "120.582891",
+   "lat": "29.993074",
+   "poiId": "B023F02L5U",
+   "dianpingKeyword": "绍兴 咸亨酒店 茴香豆",
+   "tips": "穷游只打卡：一碟茴香豆+一碗黄酒，坐孔乙己同款雕像旁；正餐人均偏高，大餐留给寻宝记",
+   "sourceIds": [
+    "v01",
+    "w06"
+   ],
+   "checked": true,
+   "geoQuery": "咸亨酒店",
+   "geoFallback": "绍兴咸亨酒店 鲁迅中路",
+   "address": "鲁迅中路179号"
+  },
+  {
+   "id": "r02",
+   "name": "仓桥直街臭豆腐摊（西街口等）",
+   "type": "臭豆腐·小吃",
+   "avgPrice": 10,
+   "day": 1,
+   "area": "仓桥直街（以高德POI为准）",
+   "lng": "120.577365",
+   "lat": "30.001127",
+   "poiId": "B0FFFGW21J",
+   "dianpingKeyword": "绍兴 仓桥直街 臭豆腐",
+   "tips": "约10元/份现炸，外皮金黄酥脆配甜面酱+辣椒酱；摊位多，认准现炸锅气与本地排队",
+   "sourceIds": [
+    "v01",
+    "v02",
+    "w06"
+   ],
+   "checked": true,
+   "geoQuery": "仓桥直街 臭豆腐",
+   "geoFallback": "仓桥直街",
+   "address": "仓桥直街"
+  },
+  {
+   "id": "r03",
+   "name": "奶油小攀（仓桥直街）",
+   "type": "甜品·老手艺",
+   "avgPrice": 5,
+   "day": 1,
+   "area": "仓桥直街（以高德POI为准）",
+   "lng": "120.577654",
+   "lat": "30.000924",
+   "poiId": "B0G3MUZEOF",
+   "dianpingKeyword": "绍兴 奶油小攀",
+   "tips": "约5元/个趁热吃：上层蛋清、下层蛋黄和面粉、中间糖水，边走边吸，焦底最香",
+   "sourceIds": [
+    "v01",
+    "v02"
+   ],
+   "checked": true,
+   "geoQuery": "仓桥直街 奶油小攀",
+   "geoFallback": "高老太奶油小攀",
+   "address": "仓桥直街"
+  },
+  {
+   "id": "r04",
+   "name": "寻宝记状元楼（鲁迅故里店）",
+   "type": "绍兴菜正餐",
+   "avgPrice": 70,
+   "day": 1,
+   "area": "鲁迅故里周边（以高德POI为准）",
+   "lng": "120.578458",
+   "lat": "30.000241",
+   "poiId": "B023F0OROT",
+   "dianpingKeyword": "绍兴 寻宝记状元楼",
+   "tips": "绍三鲜/酱鸭/梅干菜扣肉/醉鸡；假期饭点排队，先取号再逛；穷游替代：回仓桥直街补小吃人均25-40",
+   "sourceIds": [
+    "v05"
+   ],
+   "checked": true,
+   "geoQuery": "寻宝记状元楼",
+   "geoFallback": "寻宝记 鲁迅故里",
+   "address": "鲁迅故里景区周边"
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "东湖乌篷船穿陶公洞",
+   "where": "东湖景区码头",
+   "durationMin": 30,
+   "price": "船票约40-90元/船（3人拼一条）",
+   "bookingRequired": false,
+   "bestFor": "全员（必体验）",
+   "sourceIds": [
+    "v01",
+    "v05",
+    "w05"
+   ]
+  },
+  {
+   "id": "e02",
+   "name": "三味书屋找『早』字+百草园课本实景",
+   "where": "鲁迅故里",
+   "durationMin": 120,
+   "price": "免费（需预约）",
+   "bookingRequired": true,
+   "bestFor": "全员",
+   "sourceIds": [
+    "v01",
+    "v03",
+    "w01"
+   ]
+  },
+  {
+   "id": "e03",
+   "name": "《那一年的语文课》沉浸式体验",
+   "where": "鲁迅笔下风情园·朝花书局",
+   "durationMin": 30,
+   "price": "免费（入园即可体验）",
+   "bookingRequired": false,
+   "bestFor": "全员（10:30场正好赶上）",
+   "sourceIds": [
+    "w02"
+   ]
+  },
+  {
+   "id": "e04",
+   "name": "仓桥直街小吃扫街",
+   "where": "仓桥直街",
+   "durationMin": 75,
+   "price": "人均15-40吃到扶墙",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "v01",
+    "v02",
+    "w06"
+   ]
+  },
+  {
+   "id": "e05",
+   "name": "沈园读《钗头凤》",
+   "where": "沈园（备选）",
+   "durationMin": 60,
+   "price": "约40元",
+   "bookingRequired": false,
+   "bestFor": "陆游唐婉故事爱好者",
+   "sourceIds": [
+    "w01",
+    "v02"
+   ]
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-10-06",
+   "theme": "跟着课本游绍兴：鲁迅故里→仓桥直街→东湖乌篷船",
+   "area": "绍兴古城·东湖",
+   "items": [
+    {
+     "poiId": "p01",
+     "time": "09:48-10:05"
+    },
+    {
+     "poiId": "p02",
+     "time": "10:30-12:30"
+    },
+    {
+     "poiId": "p03",
+     "time": "12:45-14:00"
+    },
+    {
+     "poiId": "p04",
+     "time": "14:40-16:40"
+    },
+    {
+     "poiId": "r04",
+     "time": "17:15-18:15"
+    },
+    {
+     "poiId": "p05",
+     "time": "19:05-19:38"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "地铁+公交+步行",
+    "polylines": [],
+    "distanceKm": 46.85,
+    "durationMin": 139.8,
+    "note": "由 route_fill.py 回填（驾车口径参考）。实际交通：上海虹桥08:19 D3201→绍兴北09:48；北站↔鲁迅故里站地铁1号线（黄酒小镇换乘）约30-35分钟/5元；鲁迅故里↔仓桥直街步行约650米；仓桥直街↔东湖公交1路/57路约2元或打车3人分摊；晚餐后18:30鲁迅故里地铁站进站→19:05到绍兴北→19:38 D2282→21:20上海虹桥。",
+    "legs": [
+     {
+      "from": "p01",
+      "to": "p02",
+      "distanceKm": 17.73,
+      "durationMin": 37.2
+     },
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 1.87,
+      "durationMin": 17.7
+     },
+     {
+      "from": "p03",
+      "to": "p04",
+      "distanceKm": 6.47,
+      "durationMin": 32.5
+     },
+     {
+      "from": "p04",
+      "to": "r04",
+      "distanceKm": 6.25,
+      "durationMin": 23.2
+     },
+     {
+      "from": "r04",
+      "to": "p05",
+      "distanceKm": 14.53,
+      "durationMin": 29.1
+     }
+    ]
+   },
+   "notes": "硬卡点两处：08:19 去程（07:40 虹桥集合）与 18:30 地铁进站（赶 19:38 D2282）；假期票紧俏，往返一起买、鲁迅故里立刻约；全天步行约1.2-1.5万步"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "10月初初秋（高德实况预报）",
+   "high": 26,
+   "low": 14,
+   "advice": "高德实时预报：2026-10-05 多云转晴 23~15°C；2026-10-06 晴转晴 24~14°C；2026-10-07 晴转晴 26~15°C；2026-10-08 晴转晴 26~16°C。10月初绍兴早晚凉，古城步行与东湖船游体感舒适；若预报有雨改带雨衣（乌篷船舱矮打伞不便）；出发前1天再刷新一次预报，返程日天气以临近预报为准。"
+  },
+  "packing": [
+   "身份证人人必带（进站+预约入园）",
+   "运动鞋（全天步行约1.2-1.5万步、石板路）",
+   "薄外套（10月初早晚凉）",
+   "晴雨伞（看出发前一天预报定）",
+   "充电宝",
+   "少量现金/零钱备用（公交2元可扫码）"
+  ],
+  "bookings": [
+   {
+    "item": "高铁往返（D3201去/D2282回）",
+    "how": "12306 购买；假期票紧俏往返一起买，三连座选2+1；去程备选07:50-08:30虹桥发车任一G/D，返程务必20:15前绍兴北发车",
+    "deadline": "立即"
+   },
+   {
+    "item": "鲁迅故里免费预约",
+    "how": "公众号「绍兴市文旅集团」/「绍兴鲁迅纪念馆」或小程序「迅哥旅行」实名分时预约；每号限约5人（一个号约3人）、每证每日限约1次；约10:30前后入场",
+    "deadline": "立即（假期可能约满）"
+   },
+   {
+    "item": "东湖乌篷船船票",
+    "how": "线上购票更便宜且需提前至少2小时；假期先买船票再逛园",
+    "deadline": "当天14:00前"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "上海→绍兴（去程）",
+    "note": "D3201 上海虹桥08:19→绍兴北09:48（约1.5h，二等座约95-110元）；备选07:50-08:30间任一G/D，绍兴北全天40+班"
+   },
+   {
+    "line": "绍兴→上海（返程）",
+    "note": "D2282 绍兴北19:38→上海虹桥21:20；务必选20:15前发车车次，再晚22:00前回不了上海"
+   },
+   {
+    "line": "绍兴地铁1号线",
+    "note": "约6:00-22:30；北站↔鲁迅故里站约30-35分钟（黄酒小镇站换乘）、5元/人；间隔高峰6-7分钟"
+   },
+   {
+    "line": "市内公交/打车",
+    "note": "1路/57路鲁迅故里↔东湖约2元班次多；3人打车15-25元/程，分摊后与公交接近，赶时间用打车"
+   },
+   {
+    "line": "返程备用上车点",
+    "note": "城市广场站同样在地铁1号线上（西小路/府山收尾时从这里回北站更近）；古城内短途可共享单车代步省体力"
+   }
+  ],
+  "safety": [
+   "假期虹桥/绍兴北安检排队长，去程提前40分钟到、返程预留10分钟余量",
+   "乌篷船上下船听船工指挥，穿好救生衣、不站起拍照、勿伸手戏水",
+   "老街石板路雨后湿滑，看好同行人",
+   "18:30 地铁进站是全天最硬卡点，宁早勿晚；错过则改签20:15前车次并放弃晚餐",
+   "若勾选府山公园备选：飞翼楼16:30停止登楼，务必预留下山时间"
+  ],
+  "customs": [
+   "认准官方预约渠道，不买黄牛票，谨防个人信息泄露",
+   "景区门口『网红黄酒』溢价可回避，黄酒棒冰约5元一根足矣",
+   "臭豆腐闻着臭吃着香，认准现炸；奶油小攀趁热咬小心烫口",
+   "乌篷船认准景区官方码头明码标价，不跟拉客走",
+   "参观鲁迅故居/纪念馆保持安静，殿内展室通常不让拍照",
+   "黄酒棒冰酒味清淡（本地人评价接近米仁棒冰），为尝鲜可买不必囤；臭豆腐认准24小时卤水现做的店"
+  ]
+ },
+ "_routeFilled": true,
+ "_geoFilled": true
+}

@@ -12,7 +12,9 @@ import json, os, sys, time, urllib.parse, urllib.request
 
 KEY = os.environ.get("AMAP_WEB_KEY", "")
 BASE = "https://restapi.amap.com/v3"
-CITY = "025"  # 南京 citycode
+# 目的地 citycode / adcode 用环境变量注入（默认南京 025 / 320100，保持历史行为）
+CITY = os.environ.get("AMAP_CITY_CODE", "025")
+ADCODE = os.environ.get("AMAP_ADCODE", "320100")
 
 
 def req(path, params):
@@ -64,7 +66,7 @@ def fill_one(obj):
 
 
 def fill_weather(trip):
-    d = req("/weather/weatherInfo", {"city": "320100", "extensions": "all"})
+    d = req("/weather/weatherInfo", {"city": ADCODE, "extensions": "all"})
     time.sleep(0.35)
     if d.get("status") != "1" or not d.get("forecasts"):
         return "天气查询失败: " + d.get("info", "")
@@ -72,9 +74,9 @@ def fill_weather(trip):
     lines = []
     for cast in fc.get("casts", []):
         lines.append(f"{cast['date']} {cast['dayweather']}转{cast['nightweather']} {cast['daytemp']}~{cast['nighttemp']}°C")
-    advice = ("高德实时预报：" + "；".join(lines) +
-              "。10月初南京早晚凉、适合徒步，带薄外套；若预报有雨改带雨衣（山顶风大伞不便）；"
-              "出发前1天再刷新一次预报，10.4返程日天气以临近预报为准。")
+    advice = ("高德实时预报：" + "；".join(lines) + "。" +
+              os.environ.get("AMAP_WEATHER_TIP",
+              "早晚温差大注意添衣；出发前1天再刷新一次预报，返程日天气以临近预报为准。"))
     w = trip["tips"]["weather"]
     w["advice"] = advice
     if lines:
