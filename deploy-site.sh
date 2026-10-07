@@ -19,7 +19,11 @@ git commit -m "绍兴一日游行程（2026-10-06·上海出发·3人）：trip 
 - 备选点 9 个，站点由 CI 自动构建发布" || echo "（没有新变更可提交，直接尝试推送）"
 
 echo "== 3/3 推送并触发 Pages 部署 =="
-git push origin main
+# 全局代理（127.0.0.1:7890）未运行时自动直连兜底
+git push origin main || {
+  echo "（代理连接失败，改用直连重试）"
+  git -c http.proxy= -c https.proxy= push origin main
+}
 
 echo ""
 echo "✅ 已推送，GitHub Actions 构建完成后（约 1-2 分钟）访问："
