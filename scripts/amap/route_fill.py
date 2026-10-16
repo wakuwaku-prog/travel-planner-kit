@@ -6,7 +6,7 @@
 import json, os, sys, time, urllib.parse, urllib.request
 
 KEY = os.environ.get("AMAP_WEB_KEY", "")
-BASE = "https://restapi.amap.com/v3/direction/driving"
+BASE = "https://restapi.amap.com/v3/direction"  # + /driving 或 /walking
 
 
 def geo_iter(path):
@@ -15,9 +15,9 @@ def geo_iter(path):
         yield p
 
 
-def call_driving(origin, dest):
+def call_dir(api, origin, dest):
     params = {"origin": origin, "destination": dest, "strategy": 0, "extensions": "base", "key": KEY}
-    url = BASE + "?" + urllib.parse.urlencode(params)
+    url = f"{BASE}/{api}?" + urllib.parse.urlencode(params)
     with urllib.request.urlopen(url, timeout=20) as r:
         return json.load(r)
 
@@ -37,6 +37,10 @@ def fill_trip(trip, out_path):
                 seq.append(p)
         # 双点 route 计算
         route = day.setdefault("dailyRoute", {})
+        if route.get("manual"):  # 跨海/无道路行程：保留 JSON 里人工填的 legs/汇总，不调 API
+            finished.append({"day": day["day"], "theme": day.get("theme"), "items": len(seq), "route": route, "skipped": "manual"})
+            continue
+        api = "walking" if "步行" in (route.get("mode") or "") else "driving"  # 与 export_routes.py 判定一致
         legs = []
         total_d = 0.0
         total_t = 0
@@ -45,7 +49,7 @@ def fill_trip(trip, out_path):
             o = f"{float(a['lng']):.6f},{float(a['lat']):.6f}"
             d = f"{float(b['lng']):.6f},{float(b['lat']):.6f}"
             try:
-                res = call_driving(o, d)
+                res = call_dir(api, o, d)
                 if res.get("status") == "1":
                     path = res["route"]["paths"][0]
                     dist = float(path.get("distance", 0))
@@ -74,4 +78,5 @@ if __name__ == "__main__":
     res = fill_trip(trip, p)
     for d in res:
         r = d["route"]
-        print(f"Day{d['day']} {d['theme']}: legs={len(r.get('legs', []))} dist={r['distanceKm']}km dur={r['durationMin']}min")
+        tag = "（manual 跳过）" if d.get("skipped") else ""
+        print(f"Day{d['day']} {d['theme']}: legs={len(r.get('legs', []))} dist={r.get('distanceKm')}km dur={r.get('durationMin')}min{tag}")

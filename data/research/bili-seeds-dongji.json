@@ -1,0 +1,779 @@
+{
+ "destination": "东极岛",
+ "source": "bili-cli search (9 keywords x 20)",
+ "counts": {
+  "unique": 109,
+  "travel": 85,
+  "other": 18,
+  "movie": 6
+ },
+ "travel": [
+  {
+   "bvid": "BV1ThYQzfEeJ",
+   "title": "舟山人怒喷《东极岛》：又蠢又坏！篡改历史，蔑视舟山！【影视闲谈】",
+   "author": "威肯的草坪",
+   "play": 253061,
+   "duration": "13:55"
+  },
+  {
+   "bvid": "BV1J64y1r71j",
+   "title": "舟山旅游&amp;东极岛旅游攻略+避坑指南",
+   "author": "脏脏游记",
+   "play": 185802,
+   "duration": "8:17"
+  },
+  {
+   "bvid": "BV1ZSaCzSE7v",
+   "title": "属于浙江的绝美海岛！超详细攻略！",
+   "author": "烤棕熊的玉米",
+   "play": 174299,
+   "duration": "16:43"
+  },
+  {
+   "bvid": "BV1Wrgr6QEtY",
+   "title": "台风刚过，我一个人去了中国几乎最东的小岛赌一次日出｜东极岛｜东福山岛｜小岛旅行｜日出｜Luna Ultra",
+   "author": "陈山一个人",
+   "play": 123676,
+   "duration": "10:31"
+  },
+  {
+   "bvid": "BV1HLUpBHET3",
+   "title": "一人穷游日本之3765块搞定13天7城，攻略奉上！",
+   "author": "屁屁凤眼-朋友圈看货",
+   "play": 121892,
+   "duration": "6:23"
+  },
+  {
+   "bvid": "BV17x4y1x7w9",
+   "title": "千万不要去舟山、舟山的海又黄又脏?教你选择舟山群岛蓝色大海！",
+   "author": "自驾攻略",
+   "play": 101382,
+   "duration": "3:49"
+  },
+  {
+   "bvid": "BV1Dtjv6ZEmc",
+   "title": "舟山：沈家门·东极岛·嵊山岛· 中国最东有人岛",
+   "author": "明明無明",
+   "play": 97849,
+   "duration": "33:53"
+  },
+  {
+   "bvid": "BV1gQ4y1s7Tv",
+   "title": "【4K】浙江舟山文旅宣传片，星辰大海，日出日落，这是你所从未见的舟山群岛",
+   "author": "HAVENstudio黑文传媒",
+   "play": 74439,
+   "duration": "6:7"
+  },
+  {
+   "bvid": "BV1Ph4y1C7e5",
+   "title": "舟山最值得去的海岛，自驾、轮渡、车渡怎么买票？详细攻略收好",
+   "author": "自驾攻略",
+   "play": 48067,
+   "duration": "3:38"
+  },
+  {
+   "bvid": "BV1uQ4y187qE",
+   "title": "男生一个人穷游小众免签国3天4晚总花费560元攻略",
+   "author": "简单的生活记录",
+   "play": 46022,
+   "duration": "2:37"
+  },
+  {
+   "bvid": "BV1ie411W7Pe",
+   "title": "｜东极岛旅游｜衣食住行【保姆级】东极岛出行攻略！",
+   "author": "嘴强小旋风",
+   "play": 36362,
+   "duration": "11:41"
+  },
+  {
+   "bvid": "BV1cc41137Xv",
+   "title": "烟台游玩，首推长岛，坐游艇只需65元，赏一路美景",
+   "author": "楠的院子",
+   "play": 27222,
+   "duration": "4:28"
+  },
+  {
+   "bvid": "BV1iM4y1G73d",
+   "title": "李SIR带你玩【东极岛】，超详细的保姆级攻略",
+   "author": "舟山度假找李SIR",
+   "play": 24929,
+   "duration": "21:24"
+  },
+  {
+   "bvid": "BV1nkHaz8E3W",
+   "title": "全网最强攻略！浙江最美海岛系列2—东极岛",
+   "author": "寻南的旅行",
+   "play": 24372,
+   "duration": "6:17"
+  },
+  {
+   "bvid": "BV1vsap6TENb",
+   "title": "一个人来东极岛穷游了，三天两晚总花费700元攻略vlog请查收，请三休十三第一站:舟山东极岛！",
+   "author": "阿磊在旅行",
+   "play": 21428,
+   "duration": "2:16"
+  },
+  {
+   "bvid": "BV1j1421f74s",
+   "title": "这才是真正的穷游，700元，游遍15个沿海城市",
+   "author": "账号已注销",
+   "play": 20884,
+   "duration": "1:23"
+  },
+  {
+   "bvid": "BV1yH1YBjE37",
+   "title": "青浜岛 东极岛 路亚新手怎么钓 和在家钓翘嘴一样 有结构 掏就完了",
+   "author": "传洋啊",
+   "play": 17696,
+   "duration": "1:53"
+  },
+  {
+   "bvid": "BV18y4y1K74i",
+   "title": "【东极岛vlog/一个人去看海】治愈一下吧",
+   "author": "_kcha",
+   "play": 15772,
+   "duration": "3:20"
+  },
+  {
+   "bvid": "BV1AANWzTE64",
+   "title": "徒步舟山东极岛-东福山岛｜Hiking in China&#x27;s Dongji Island｜环岛｜治愈｜4K",
+   "author": "Dddddavid-w",
+   "play": 15183,
+   "duration": "10:35"
+  },
+  {
+   "bvid": "BV1ZXVA66EEe",
+   "title": "在舟山东极岛露营，我看到了果冻海！",
+   "author": "鹿野LuYe-",
+   "play": 14635,
+   "duration": "13:33"
+  },
+  {
+   "bvid": "BV1FYHW6sE5Q",
+   "title": "一个人穷游中国之舟山·东极岛。去不了南极和北极就来一趟东极岛吧，三天两晚700元攻略请查收",
+   "author": "阿磊在旅行",
+   "play": 13134,
+   "duration": "5:33"
+  },
+  {
+   "bvid": "BV1vVfmY1EBW",
+   "title": "别再瞎玩东极岛！这份攻略带你玩转精华景点",
+   "author": "旅行说故事",
+   "play": 11700,
+   "duration": "21:13"
+  },
+  {
+   "bvid": "BV1214y1r7fY",
+   "title": "东极岛-青浜岛短片",
+   "author": "Balechloeharper",
+   "play": 10124,
+   "duration": "1:30"
+  },
+  {
+   "bvid": "BV1jJHm6HEWQ",
+   "title": "舟山群岛到底该怎么玩？一次性说清楚！舟山旅游攻略！",
+   "author": "白菜根难吃",
+   "play": 8932,
+   "duration": "7:25"
+  },
+  {
+   "bvid": "BV1LFxMeTESA",
+   "title": "鼓浪屿船票超全攻略！一分钟快速上岛山鼓浪屿之旅，从这张船票开始！",
+   "author": "闽行故事簿",
+   "play": 7822,
+   "duration": "1:4"
+  },
+  {
+   "bvid": "BV1mzVCzQEj3",
+   "title": "东极岛旅游攻略-干货总结篇",
+   "author": "小明和兔子",
+   "play": 6180,
+   "duration": "22:10"
+  },
+  {
+   "bvid": "BV1frjb6REve",
+   "title": "朱朱｜东极岛vlog.在小岛上度过美好的三天^-^看到了北斗七星和美丽的日出日落！",
+   "author": "jentlely",
+   "play": 5041,
+   "duration": "7:16"
+  },
+  {
+   "bvid": "BV13m4y1t782",
+   "title": "东极岛vlog～",
+   "author": "冰美式加糖424",
+   "play": 4976,
+   "duration": "1:36"
+  },
+  {
+   "bvid": "BV1sU4y1D7s3",
+   "title": "如果你来东极岛，也请不要错过青浜岛",
+   "author": "一颗蘑菇Miya",
+   "play": 4324,
+   "duration": "1:18"
+  },
+  {
+   "bvid": "BV1tm4y1K7jx",
+   "title": "东极岛/庙子湖岛攻略，你想知道的都在这里",
+   "author": "我是小乔儿呀",
+   "play": 3575,
+   "duration": "3:34"
+  },
+  {
+   "bvid": "BV1DZ421K7W5",
+   "title": "超详细讲解舟山各个小岛的购票攻略",
+   "author": "舟山攻略",
+   "play": 3411,
+   "duration": "1:22"
+  },
+  {
+   "bvid": "BV16U4y1T7DY",
+   "title": "【东极岛旅拍】一个人遇见的旅途风景",
+   "author": "摄影师王欣",
+   "play": 2819,
+   "duration": "2:10"
+  },
+  {
+   "bvid": "BV1bvHm6gEUj",
+   "title": "东极岛最强旅游攻略！周末江浙宝藏海岛！",
+   "author": "白菜根难吃",
+   "play": 2768,
+   "duration": "7:34"
+  },
+  {
+   "bvid": "BV1fe411s7da",
+   "title": "【微电影 Vlog】日出时分 | 延时 · 生命的意义 自然的救赎",
+   "author": "耘嘉君的人生游记",
+   "play": 2605,
+   "duration": "2:44"
+  },
+  {
+   "bvid": "BV1nw411B77G",
+   "title": "T-1 固定翼航拍 海岛漫游——东极岛 庙子湖",
+   "author": "TerayTech",
+   "play": 2100,
+   "duration": "12:3"
+  },
+  {
+   "bvid": "BV1vu411B7od",
+   "title": "【东极岛路线3】：东福山，一旦开始就无法折返的4小时环岛路线。",
+   "author": "打车不黑心-",
+   "play": 2065,
+   "duration": "2:0"
+  },
+  {
+   "bvid": "BV1PZVBzNEgZ",
+   "title": "东极岛旅游攻略-第一天出发东福山",
+   "author": "小明和兔子",
+   "play": 1995,
+   "duration": "22:17"
+  },
+  {
+   "bvid": "BV15H4y1u7ak",
+   "title": "【VLOG】在东极岛，我们get了日出日落流星银河大满贯！",
+   "author": "Asa阿佐佐",
+   "play": 1987,
+   "duration": "5:37"
+  },
+  {
+   "bvid": "BV116VrzVEW8",
+   "title": "东极岛之旅-青浜岛、庙子湖后会无期打卡！",
+   "author": "小明和兔子",
+   "play": 1407,
+   "duration": "41:9"
+  },
+  {
+   "bvid": "BV1abCoYaEEE",
+   "title": "东极岛上有个青浜岛，青浜岛上有个无人村！",
+   "author": "两只小猪616-环国版",
+   "play": 1371,
+   "duration": "4:11"
+  },
+  {
+   "bvid": "BV1Rf421B7Rm",
+   "title": "舟山东极岛订民宿必看！",
+   "author": "舟山攻略",
+   "play": 1267,
+   "duration": "2:7"
+  },
+  {
+   "bvid": "BV1N4Hj6LET3",
+   "title": "皇家加勒比海洋光谱号，26年中秋，俩人船票1万，船上消费600美金，看看都干了啥？纯路人攻略，第一次邮轮旅行的朋友可以参考。",
+   "author": "安吉的猫",
+   "play": 1084,
+   "duration": "26:1"
+  },
+  {
+   "bvid": "BV1434y1k758",
+   "title": "一个人去东极岛海钓，四天三夜花不到900块，结尾有详细攻略哦。",
+   "author": "打车不黑心-",
+   "play": 1054,
+   "duration": "7:46"
+  },
+  {
+   "bvid": "BV1N6KtzHE4H",
+   "title": "东极岛吃海鲜，到底冷不冷，带大家避坑东极岛海鲜餐厅#东极岛 #舟山旅游 #东极岛攻略#东极岛避坑",
+   "author": "东极岛吴彦祖",
+   "play": 1037,
+   "duration": "5:3"
+  },
+  {
+   "bvid": "BV1Sr4y1B7vk",
+   "title": "东极岛攻略—上船后仓位实况以及去往东福山和青浜岛中转注意事项 东极这么美 应该来看看",
+   "author": "打车不黑心-",
+   "play": 1006,
+   "duration": "1:9"
+  },
+  {
+   "bvid": "BV1Wy5F6VEMe",
+   "title": "一个人的旅行 ︳周末两天上海➡️东极岛，用海浪拍打礁石的声音治愈自己",
+   "author": "一只神猪猪",
+   "play": 971,
+   "duration": "5:42"
+  },
+  {
+   "bvid": "BV1bqaPzxEBF",
+   "title": "东极岛两天一夜攻略",
+   "author": "阿蛋在东极星球",
+   "play": 924,
+   "duration": "9:14"
+  },
+  {
+   "bvid": "BV1yr4y1v7WN",
+   "title": "你是一个孤独的人么？在最冷的冬天去东极岛看日出吧",
+   "author": "露转峰回",
+   "play": 877,
+   "duration": "5:45"
+  },
+  {
+   "bvid": "BV11U4y1e7pF",
+   "title": "【VLOG】东极岛 | 舟山",
+   "author": "赣蓝炳望",
+   "play": 859,
+   "duration": "6:7"
+  },
+  {
+   "bvid": "BV1fB4y1z7U8",
+   "title": "东极岛之行，环岛庙子湖，带你全方位游后悔无期拍摄地",
+   "author": "柳柳爱旅游",
+   "play": 770,
+   "duration": "1:3"
+  },
+  {
+   "bvid": "BV1d7vYeAEN7",
+   "title": "青浜岛秘密基地赶海攻略，全部都是狠货#赶海#东极岛#旅游#搞海边#舟山旅游",
+   "author": "东极岛吴彦祖",
+   "play": 764,
+   "duration": "3:31"
+  },
+  {
+   "bvid": "BV1wv41137GC",
+   "title": "【后会有期】太平洋的风吹了八万里 青浜岛vlog",
+   "author": "宇仔很忙-X",
+   "play": 720,
+   "duration": "5:58"
+  },
+  {
+   "bvid": "BV16k4y1F7Cm",
+   "title": "东极岛自驾游攻略",
+   "author": "bili_快乐旅行下半场",
+   "play": 691,
+   "duration": "2:41"
+  },
+  {
+   "bvid": "BV1bE411o7j8",
+   "title": "【 SonyA7M3旅行记录短片】探索江浙最东边的舟山群岛|枸杞岛 |东极岛 | 上章 /Sony a7m3、Dji Mavic Air",
+   "author": "TENZETT藤泽",
+   "play": 655,
+   "duration": "2:51"
+  },
+  {
+   "bvid": "BV1uB4y1677N",
+   "title": "A7M4治愈系旅拍，如果多一张船票，跟我走吧｜VLOG11 东极黄兴岛旅拍？海钓？冒险？",
+   "author": "别闹的视界",
+   "play": 596,
+   "duration": "5:54"
+  },
+  {
+   "bvid": "BV11GeZeSEQb",
+   "title": "今天正式开航了，台风过后青浜岛更美了，保姆级上岛攻略，你值得拥有#舟山 #东极岛 #一起看海 #海景民宿",
+   "author": "东极岛吴彦祖",
+   "play": 552,
+   "duration": "2:55"
+  },
+  {
+   "bvid": "BV167RzB1EgL",
+   "title": "上海直达东极岛最新攻略  2026年五一版",
+   "author": "Shanhai的小毛驴er",
+   "play": 546,
+   "duration": "10:4"
+  },
+  {
+   "bvid": "BV1gJ411M7vG",
+   "title": "四人游｜东极岛｜庙子湖东福山｜日出日落｜四天三晚 快乐暴走环岛  Vlog02",
+   "author": "EIYO-",
+   "play": 531,
+   "duration": "19:38"
+  },
+  {
+   "bvid": "BV1CKZWBUE7L",
+   "title": "东极岛｜舟山诸岛中的极地胜境第三站·庙子湖岛",
+   "author": "饭忆陈",
+   "play": 516,
+   "duration": "12:46"
+  },
+  {
+   "bvid": "BV1JfhezfEhq",
+   "title": "东极岛-东福山环岛徒步vlog",
+   "author": "又又又又饿",
+   "play": 508,
+   "duration": "4:56"
+  },
+  {
+   "bvid": "BV1mf4y1E7qJ",
+   "title": "东福山海钓 第一次海钓就被大海盘了 铜铃镜社 AJ的生活VLOG",
+   "author": "铜铃镜社AJ",
+   "play": 497,
+   "duration": "3:30"
+  },
+  {
+   "bvid": "BV12N4y1d7k5",
+   "title": "环游中国之庙子湖 | 庙子湖的最后一天，追个日出吧",
+   "author": "韩十七willing",
+   "play": 446,
+   "duration": "2:36"
+  },
+  {
+   "bvid": "BV1Vu411G7Nm",
+   "title": "舟山 vlog｜环游青浜岛（1）",
+   "author": "伍个文",
+   "play": 428,
+   "duration": "1:39"
+  },
+  {
+   "bvid": "BV1dtpKetEXu",
+   "title": "青浜岛的鱼都跳出来咬人了，你还在等什么？我有秘密的钓点哦#东极岛 #海钓 #一起看海 #旅行",
+   "author": "东极岛吴彦祖",
+   "play": 418,
+   "duration": "0:18"
+  },
+  {
+   "bvid": "BV1Ck8eeTEZX",
+   "title": "台风要来了，宝藏青浜岛到底怎么玩，刷到这条视频，你算是赚到了#舟山旅游 #东极岛 #海边 #旅游 #海边度假",
+   "author": "东极岛吴彦祖",
+   "play": 374,
+   "duration": "4:4"
+  },
+  {
+   "bvid": "BV1Mt4y1s7hn",
+   "title": "东福山岛｜卷入军演，在防空洞里可以怎样造作？",
+   "author": "灿烂晴崽",
+   "play": 369,
+   "duration": "6:32"
+  },
+  {
+   "bvid": "BV15142117fz",
+   "title": "东极岛之旅—青浜岛",
+   "author": "xxxxxxlululululu",
+   "play": 352,
+   "duration": "1:14"
+  },
+  {
+   "bvid": "BV15L4y1K7YT",
+   "title": "东极岛 -- 青浜岛   钓鱼的快乐呀！",
+   "author": "wilson静默",
+   "play": 351,
+   "duration": "1:12"
+  },
+  {
+   "bvid": "BV1gQqSBHEXF",
+   "title": "东极岛｜舟山诸岛中的极地胜境第二站·青浜岛",
+   "author": "饭忆陈",
+   "play": 340,
+   "duration": "9:25"
+  },
+  {
+   "bvid": "BV1G94y1y7jS",
+   "title": "【4K 30FPS】东极东福山岛日出——我国居人岛第一缕曙光",
+   "author": "OrionNebu1a",
+   "play": 336,
+   "duration": "1:47"
+  },
+  {
+   "bvid": "BV1YkYJeQEq2",
+   "title": "【东极青浜岛】沉浸式～游小孩洞🕳️",
+   "author": "闲洛CcccEs",
+   "play": 334,
+   "duration": "18:27"
+  },
+  {
+   "bvid": "BV1qhi6YrE8V",
+   "title": "在踩了无数个坑后，所以我看到东极岛的日出了吗？",
+   "author": "又拉闸了啊",
+   "play": 319,
+   "duration": "9:18"
+  },
+  {
+   "bvid": "BV1m9gK6dEeV",
+   "title": "东极岛 之 庙子湖岛",
+   "author": "M_Stone6",
+   "play": 298,
+   "duration": "6:10"
+  },
+  {
+   "bvid": "BV1ap411f7SR",
+   "title": "沪江集团的东极岛vlog",
+   "author": "浮生尽歇qaq",
+   "play": 238,
+   "duration": "6:49"
+  },
+  {
+   "bvid": "BV1hE411X7M6",
+   "title": "象鼻峰 东极岛东福山环岛游",
+   "author": "真的会飞起来",
+   "play": 202,
+   "duration": "4:59"
+  },
+  {
+   "bvid": "BV1r44y1M7Z8",
+   "title": "东极岛分为四个点，重点推荐东福山和庙子湖",
+   "author": "打车不黑心-",
+   "play": 196,
+   "duration": "1:50"
+  },
+  {
+   "bvid": "BV1SN34eyEhj",
+   "title": "舟山东福山岛徒步露营",
+   "author": "guoty",
+   "play": 179,
+   "duration": "5:25"
+  },
+  {
+   "bvid": "BV1pYub61EGm",
+   "title": "拒绝人挤人！青浜岛做一日避世岛民",
+   "author": "栖映民宿",
+   "play": 163,
+   "duration": "0:30"
+  },
+  {
+   "bvid": "BV1HLunzKEMk",
+   "title": "青浜岛半日游",
+   "author": "IVY005",
+   "play": 158,
+   "duration": "6:42"
+  },
+  {
+   "bvid": "BV1TxaU6aEWr",
+   "title": "东极岛之东福山～",
+   "author": "soujineki",
+   "play": 147,
+   "duration": "0:15"
+  },
+  {
+   "bvid": "BV19Vpw6DEpH",
+   "title": "东极岛之庙子湖～",
+   "author": "soujineki",
+   "play": 130,
+   "duration": "0:18"
+  },
+  {
+   "bvid": "BV1x4uS63EUL",
+   "title": "东极岛攻略",
+   "author": "不良人摩的佬",
+   "play": 119,
+   "duration": "10:27"
+  },
+  {
+   "bvid": "BV1nJ41187Td",
+   "title": "东极岛之〔青浜岛〕20191009",
+   "author": "郑好梦",
+   "play": 106,
+   "duration": "3:43"
+  },
+  {
+   "bvid": "BV1L5b16aED4",
+   "title": "电影后会无期和东极岛的取景地 住在海边海景房 看日出 在浙江舟山市的东极岛镇旅游vlog全程记录2天1夜#东极岛 #东极岛旅游攻略 #后会无期东极岛  #旅游",
+   "author": "啤啤吃什么",
+   "play": 81,
+   "duration": "7:8"
+  },
+  {
+   "bvid": "BV1n74nz1EQm",
+   "title": "Vlog｜东极岛-庙子湖",
+   "author": "孑骜丶",
+   "play": 77,
+   "duration": "4:11"
+  }
+ ],
+ "other": [
+  {
+   "bvid": "BV1VkUTYMEcR",
+   "title": "这期带大家去传说中最东边的岛屿，东极岛！",
+   "author": "岛主吹吹",
+   "play": 336577,
+   "duration": "3:20"
+  },
+  {
+   "bvid": "BV1894y1B7BL",
+   "title": "原创《东极岛》想看看大家拍的海",
+   "author": "粥粥和小伙",
+   "play": 98025,
+   "duration": "1:32"
+  },
+  {
+   "bvid": "BV1KP411s7vK",
+   "title": "在中国最东边东极岛庆生",
+   "author": "蓝战非OvO",
+   "play": 94825,
+   "duration": "4:37"
+  },
+  {
+   "bvid": "BV1294y1F7wC",
+   "title": "《东极岛》原创，希望能被你喜欢",
+   "author": "粥粥和小伙",
+   "play": 50133,
+   "duration": "1:30"
+  },
+  {
+   "bvid": "BV1Dm4ezaE1p",
+   "title": "一口气看完《东极岛》完整版",
+   "author": "小丑电影丫",
+   "play": 44554,
+   "duration": "28:29"
+  },
+  {
+   "bvid": "BV1a54y117ks",
+   "title": "【VLOG】文艺向旅拍短片/ 富士XT-30/东极岛",
+   "author": "朝歌为什么昵称太短",
+   "play": 38467,
+   "duration": "4:52"
+  },
+  {
+   "bvid": "BV1pXTQzWEqz",
+   "title": "东极岛值不值得去？！怎么去？去了要花多少钱？看完就有答案",
+   "author": "大王611",
+   "play": 26456,
+   "duration": "5:8"
+  },
+  {
+   "bvid": "BV1katZz9EMW",
+   "title": "东极岛，前半段多憋屈，后半段就多痛快",
+   "author": "光影播客X",
+   "play": 14870,
+   "duration": "1:18"
+  },
+  {
+   "bvid": "BV1gy4y197f9",
+   "title": "东极岛钓鱼",
+   "author": "Jfree_Director",
+   "play": 10505,
+   "duration": "1:2"
+  },
+  {
+   "bvid": "BV1wLtmzdEvv",
+   "title": "【转载】《东极岛》：献给血性的中国人",
+   "author": "findwaygo",
+   "play": 5271,
+   "duration": "2:41"
+  },
+  {
+   "bvid": "BV1zz4y1D7ZH",
+   "title": "延时摄影  东极岛",
+   "author": "Bingbing2021",
+   "play": 1477,
+   "duration": "1:33"
+  },
+  {
+   "bvid": "BV1qs411376K",
+   "title": "东极岛的延时旅拍里面还有星空",
+   "author": "南山下一小书童",
+   "play": 1262,
+   "duration": "2:55"
+  },
+  {
+   "bvid": "BV1h31ABrEQo",
+   "title": "到了东极岛钓鱼新手该怎么钓，跟着内陆钓鱼新手的探索经验，提前学习一下",
+   "author": "传洋啊",
+   "play": 517,
+   "duration": "1:19"
+  },
+  {
+   "bvid": "BV12EQPB7EAM",
+   "title": "4k｜东极岛没有少年",
+   "author": "Summer晚宴",
+   "play": 504,
+   "duration": "64:6"
+  },
+  {
+   "bvid": "BV1vs421g7Qj",
+   "title": "象山东门岛 免费游 跨海第一小桥 灯塔 浙江渔业第一村 渔光之城",
+   "author": "阿琼vlog",
+   "play": 477,
+   "duration": "5:35"
+  },
+  {
+   "bvid": "BV1rEEh6KEG4",
+   "title": "【纯享Vlog】东极岛24小时体验券！",
+   "author": "Lewis海月",
+   "play": 470,
+   "duration": "20:1"
+  },
+  {
+   "bvid": "BV1rZ4y1U7vi",
+   "title": "东极岛 庙子岛 一日游",
+   "author": "哟你个小蘑菇",
+   "play": 238,
+   "duration": "6:33"
+  },
+  {
+   "bvid": "BV13f4y1h7Si",
+   "title": "东极岛Vlog",
+   "author": "焕焕吃不饱n",
+   "play": 161,
+   "duration": "2:56"
+  }
+ ],
+ "movie": [
+  {
+   "bvid": "BV11TxvzREca",
+   "title": "《东极岛》一口气看完电影东极岛解说，朱一龙吴磊倪妮 #东极岛",
+   "author": "十点影文",
+   "play": 35032,
+   "duration": "13:54"
+  },
+  {
+   "bvid": "BV1xt421G7BC",
+   "title": "【日推歌单】东极岛：被夕阳照耀过的爱情 像一幅油画去掉了嘈杂 我念念不忘夏末的岛屿",
+   "author": "有山雾的秋",
+   "play": 32123,
+   "duration": "3:29"
+  },
+  {
+   "bvid": "BV1q1eMzWEJE",
+   "title": "【电影原声】【东极岛】【OST】Dongji Rescue Soundtrack (by Atli Orvarsson)",
+   "author": "遗失的音轨",
+   "play": 30373,
+   "duration": "64:11"
+  },
+  {
+   "bvid": "BV1DuWbzGEVS",
+   "title": "2025最新战争大片《东极岛》朱一龙和吴磊联手抗日 孤岛义胆！里斯本丸背后的中国渔民",
+   "author": "梦入少年时",
+   "play": 15165,
+   "duration": "96:16"
+  },
+  {
+   "bvid": "BV1ApeozeEPY",
+   "title": "谭维维｜电影《东极岛》主题曲/片尾曲《东极谣》",
+   "author": "谭维维",
+   "play": 13005,
+   "duration": "3:6"
+  },
+  {
+   "bvid": "BV1o2HuztEyT",
+   "title": "比东极岛更早的同题材电影-东极拯救（2006）",
+   "author": "lonelyrangerhmy",
+   "play": 4219,
+   "duration": "116:39"
+  }
+ ]
+}

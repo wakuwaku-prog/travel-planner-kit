@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="travel-planner" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>东极岛 行程路线图</name></metadata>
+<wpt lat="31.207955" lon="121.501002"><name>南浦大桥旅游集散中心（发车点）</name><desc>去程 08:20 发车（车船联运大巴，约 2h 到沈家湾）；务必 07:50 前到站；车票可线上购或现场加购；这是全程最硬的卡点之一，晚到就赶不上 10:30 的船</desc></wpt>
+<wpt lat="30.600682" lon="122.134355"><name>沈家湾客运码头（去程登船）</name><desc>沈家湾 10:30 开船（每日 1 班；营运期 5/1–10/31，10/31 为本季最后一天）；提前 30 分钟到码头安检上船；大巴直接送到码头</desc></wpt>
+<wpt lat="30.188892" lon="122.688402"><name>庙子湖码头（换乘）</name><desc>下船后同码头换乘去东福山/青浜的船；去程在到庙子湖前到指定船舱现金补票（东福山 +30、青浜 +20）；换乘等待 10–40 分钟（视船班衔接）；不用出站</desc></wpt>
+<wpt lat="30.141302" lon="122.761275"><name>东福山码头（到达）</name><desc>约 14:00–14:30 到达（含换乘）；码头有民宿阿姨拉客，淡季标间可现场讲价（约 140 元）；岛上多台阶上坡，民宿一般会来帮接行李（人要自己走）；先安顿再看日落</desc></wpt>
+<wpt lat="30.132298" lon="122.769822"><name>东福山村落海岸（日落）</name><desc>渔村面西的礁石海岸，是全岛看海上日落的机位（10/29 日落约 17:06，提前 30–40 分钟到场）；蓝调时刻极美；晚上海风大记得加外套；夜间村落极暗适合看星空</desc></wpt>
+<wpt lat="30.139850" lon="122.760036"><name>东福山民宿村餐食</name><desc></desc></wpt>
+<trk><name>Day1 上海→沈家湾→东福山：车船联运日 + 村落日落</name><trkseg>
+<trkpt lat="31.207955" lon="121.501002"></trkpt>
+<trkpt lat="30.600682" lon="122.134355"></trkpt>
+<trkpt lat="30.600682" lon="122.134355"></trkpt>
+<trkpt lat="30.188892" lon="122.688402"></trkpt>
+<trkpt lat="30.188892" lon="122.688402"></trkpt>
+<trkpt lat="30.141302" lon="122.761275"></trkpt>
+<trkpt lat="30.141289" lon="122.761432"></trkpt>
+<trkpt lat="30.140729" lon="122.761385"></trkpt>
+<trkpt lat="30.140651" lon="122.761341"></trkpt>
+<trkpt lat="30.140603" lon="122.761233"></trkpt>
+<trkpt lat="30.14059" lon="122.761194"></trkpt>
+<trkpt lat="30.140599" lon="122.761102"></trkpt>
+<trkpt lat="30.140595" lon="122.761098"></trkpt>
+<trkpt lat="30.140447" lon="122.761133"></trkpt>
+<trkpt lat="30.140352" lon="122.761224"></trkpt>
+<trkpt lat="30.140339" lon="122.761341"></trkpt>
+<trkpt lat="30.140282" lon="122.761419"></trkpt>
+<trkpt lat="30.140113" lon="122.761602"></trkpt>
+<trkpt lat="30.139931" lon="122.761688"></trkpt>
+<trkpt lat="30.139727" lon="122.761849"></trkpt>
+<trkpt lat="30.13964" lon="122.761784"></trkpt>
+<trkpt lat="30.139622" lon="122.761788"></trkpt>
+<trkpt lat="30.139618" lon="122.761788"></trkpt>
+<trkpt lat="30.13928" lon="122.761927"></trkpt>
+<trkpt lat="30.139076" lon="122.762157"></trkpt>
+<trkpt lat="30.138937" lon="122.762257"></trkpt>
+<trkpt lat="30.138598" lon="122.762574"></trkpt>
+<trkpt lat="30.138598" lon="122.762726"></trkpt>
+<trkpt lat="30.138455" lon="122.762999"></trkpt>
+<trkpt lat="30.138281" lon="122.763112"></trkpt>
+<trkpt lat="30.138186" lon="122.763255"></trkpt>
+<trkpt lat="30.13816" lon="122.763464"></trkpt>
+<trkpt lat="30.138099" lon="122.763546"></trkpt>
+<trkpt lat="30.13803" lon="122.763659"></trkpt>
+<trkpt lat="30.137839" lon="122.763711"></trkpt>
+<trkpt lat="30.137266" lon="122.763733"></trkpt>
+<trkpt lat="30.136897" lon="122.763872"></trkpt>
+<trkpt lat="30.136528" lon="122.763954"></trkpt>
+<trkpt lat="30.136345" lon="122.764076"></trkpt>
+<trkpt lat="30.135985" lon="122.764162"></trkpt>
+<trkpt lat="30.13559" lon="122.764436"></trkpt>
+<trkpt lat="30.135152" lon="122.764714"></trkpt>
+<trkpt lat="30.134974" lon="122.764653"></trkpt>
+<trkpt lat="30.134718" lon="122.76454"></trkpt>
+<trkpt lat="30.134714" lon="122.764536"></trkpt>
+<trkpt lat="30.134536" lon="122.764601"></trkpt>
+<trkpt lat="30.134145" lon="122.764657"></trkpt>
+<trkpt lat="30.133542" lon="122.764865"></trkpt>
+<trkpt lat="30.133537" lon="122.764865"></trkpt>
+<trkpt lat="30.134141" lon="122.764661"></trkpt>
+<trkpt lat="30.134531" lon="122.764605"></trkpt>
+<trkpt lat="30.134714" lon="122.76454"></trkpt>
+<trkpt lat="30.134714" lon="122.764536"></trkpt>
+<trkpt lat="30.13497" lon="122.764648"></trkpt>
+<trkpt lat="30.135148" lon="122.764714"></trkpt>
+<trkpt lat="30.135586" lon="122.76444"></trkpt>
+<trkpt lat="30.135981" lon="122.764167"></trkpt>
+<trkpt lat="30.136341" lon="122.76408"></trkpt>
+<trkpt lat="30.136528" lon="122.763958"></trkpt>
+<trkpt lat="30.136892" lon="122.763876"></trkpt>
+<trkpt lat="30.137261" lon="122.763737"></trkpt>
+<trkpt lat="30.137834" lon="122.763715"></trkpt>
+<trkpt lat="30.138025" lon="122.763663"></trkpt>
+<trkpt lat="30.138095" lon="122.76355"></trkpt>
+<trkpt lat="30.138155" lon="122.763468"></trkpt>
+<trkpt lat="30.138181" lon="122.76326"></trkpt>
+<trkpt lat="30.138277" lon="122.763116"></trkpt>
+<trkpt lat="30.138451" lon="122.763003"></trkpt>
+<trkpt lat="30.138594" lon="122.76273"></trkpt>
+<trkpt lat="30.138594" lon="122.762578"></trkpt>
+<trkpt lat="30.138932" lon="122.762261"></trkpt>
+<trkpt lat="30.139071" lon="122.762161"></trkpt>
+<trkpt lat="30.139275" lon="122.761931"></trkpt>
+<trkpt lat="30.139618" lon="122.761793"></trkpt>
+<trkpt lat="30.139618" lon="122.761788"></trkpt>
+<trkpt lat="30.139761" lon="122.761476"></trkpt>
+<trkpt lat="30.139913" lon="122.761337"></trkpt>
+<trkpt lat="30.140056" lon="122.761241"></trkpt>
+<trkpt lat="30.140204" lon="122.761016"></trkpt>
+<trkpt lat="30.140408" lon="122.760829"></trkpt>
+<trkpt lat="30.140469" lon="122.760807"></trkpt>
+<trkpt lat="30.140673" lon="122.760864"></trkpt>
+<trkpt lat="30.140673" lon="122.760864"></trkpt>
+<trkpt lat="30.140681" lon="122.760686"></trkpt>
+<trkpt lat="30.140677" lon="122.760451"></trkpt>
+<trkpt lat="30.14059" lon="122.760139"></trkpt>
+<trkpt lat="30.140482" lon="122.759961"></trkpt>
+<trkpt lat="30.140477" lon="122.759957"></trkpt>
+<trkpt lat="30.140534" lon="122.760503"></trkpt>
+<trkpt lat="30.140521" lon="122.760629"></trkpt>
+<trkpt lat="30.140499" lon="122.760707"></trkpt>
+<trkpt lat="30.140456" lon="122.760725"></trkpt>
+<trkpt lat="30.140391" lon="122.760725"></trkpt>
+<trkpt lat="30.140386" lon="122.760725"></trkpt>
+<trkpt lat="30.140378" lon="122.760477"></trkpt>
+<trkpt lat="30.140317" lon="122.760226"></trkpt>
+<trkpt lat="30.140182" lon="122.76"></trkpt>
+<trkpt lat="30.139983" lon="122.759805"></trkpt>
+<trkpt lat="30.139835" lon="122.759818"></trkpt>
+<trkpt lat="30.139835" lon="122.759878"></trkpt>
+<trkpt lat="30.139905" lon="122.759978"></trkpt>
+</trkseg></trk>
+</gpx>

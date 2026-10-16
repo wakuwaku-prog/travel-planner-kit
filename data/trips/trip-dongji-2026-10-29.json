@@ -1,0 +1,1621 @@
+{
+ "meta": {
+  "destination": "东极岛",
+  "slug": "dongji",
+  "dates": [
+   "2026-10-29",
+   "2026-10-30",
+   "2026-10-31"
+  ],
+  "days": 3,
+  "departureCity": "上海",
+  "travelers": "单人",
+  "budget": "穷游",
+  "preferences": [
+   "海岛风光",
+   "日出日落",
+   "渔村人文",
+   "海钓体验",
+   "海鲜美食",
+   "徒步环岛"
+  ],
+  "pace": "均衡",
+  "primary": true,
+  "sources": {
+   "videos": 8,
+   "posts": 18,
+   "web": 4,
+   "postsSeeds": 166
+  },
+  "generatedAt": "2026-10-17",
+  "status": "调研完成：B站8视频全文转写 + 小红书166篇去重种子/18篇高赞精读 + 官方渠道核实（票价批复/购票渠道/高德数据）；主线=沈家湾直达·东福山环岛+庙子湖精华；备选=半升洞/宁波中转；停航预案已写；⚠️ 10/31 为沈家湾线本季最后一天"
+ },
+ "sources": [
+  {
+   "id": "v01",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1J64y1r71j",
+   "title": "舟山旅游&东极岛旅游攻略+避坑指南",
+   "author": "脏脏游记",
+   "play": 185802,
+   "status": "已转写",
+   "summary": "避坑向：东极群岛适合海岛新手/天气好时出片，常去海岛者与带老人者慎选；庙子湖码头涌浪时换靠旧码头，需自行扛行李爬约1km陡坡（可花20元坐电瓶车）；想看日出要转到东福山岛；天气与船班是最大变量，必须提前做功课；普陀山（拜佛，船票来回60+门票160）/桃花岛（本地人不推荐）/花鸟岛枸杞岛（无人村）是近远岛另选",
+   "used": true
+  },
+  {
+   "id": "v02",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ie411W7Pe",
+   "title": "｜东极岛旅游｜衣食住行【保姆级】东极岛出行攻略！",
+   "author": "嘴强小旋风",
+   "play": 36362,
+   "status": "已转写",
+   "summary": "抵达码头四方式：外省火车到宁波站（客运中心就在旁边）转大巴至普陀客运中心再打车约15元到半升洞；航班落地普陀山机场打车20分钟；大巴直达；自驾定位半升洞。岛际为一站站坐：半升洞→庙子湖约2h→青浜约20min→东福山约20min，船票实名制",
+   "used": true
+  },
+  {
+   "id": "v03",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1pXTQzWEqz",
+   "title": "东极岛值不值得去？！怎么去？去了要花多少钱？看完就有答案",
+   "author": "大王611",
+   "play": 26456,
+   "status": "已转写",
+   "summary": "5天4夜慢玩：东福山核心区很小很快逛完，但环岛值得走（约4h，顺时针，前半段环海步道风景最佳）；灯塔与第一缕曙光观景台就在民宿村旁（出门约2min）；石屋群后有四门废弃炮台，多数攻略建议此后折返——但继续走风景也好；后半段山路为主；青浜岛原生渔村可玩性弱于另两岛；实测餐厅：东福山云南风味烧烤、青浜味（黑鲷/海胆蒸蛋）",
+   "used": true
+  },
+  {
+   "id": "v04",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1yH1YBjE37",
+   "title": "青浜岛 东极岛 路亚新手怎么钓 和在家钓翘嘴一样 有结构 掏就完了",
+   "author": "传洋啊",
+   "play": 17696,
+   "status": "已转写",
+   "summary": "路亚实战教学：岸边作钓找结构（洞、墙边、礁石缝），牵头钩搜结构深处；渔获虎头鱼、海鲈鱼；核心口诀『找结构+掏洞』；新手可在码头/礁石边体验",
+   "used": true
+  },
+  {
+   "id": "v05",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1AANWzTE64",
+   "title": "徒步舟山东极岛-东福山岛｜Hiking in China's Dongji Island｜环岛｜治愈｜4K",
+   "author": "Dddddavid-w",
+   "play": 15183,
+   "status": "已转写（4K 无旁白）",
+   "summary": "东福山环岛徒步 4K 实拍（无旁白仅环境音）：用于核验环岛路况与沿途风光段落（海岸线+石屋+礁石+山脊）",
+   "used": true
+  },
+  {
+   "id": "v06",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1FYHW6sE5Q",
+   "title": "一个人穷游中国之舟山·东极岛 三天两晚700元攻略",
+   "author": "阿磊在旅行",
+   "play": 13134,
+   "status": "已转写",
+   "summary": "700元solo实录（宁波中转）：宁波→大巴59元→沈家门→打车13元→半升洞；船下舱100元、班次一天3班；庙子湖换乘现金补票（青浜20/东福山30）；全程2.5h到东福山；码头拉客标间讲价140；可乐7元/泡面10元；东福山环岛7.2km/3.5h（曙光点250m→石屋群1.1km→象鼻峰2.5km→白云宫1.4km）；民宿9点退房；海鲜炒米线28元好吃；庙子湖6景点观光车88元；返程票要早买（12:10的票已售罄只剩14:00）",
+   "used": true
+  },
+  {
+   "id": "v07",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1PZVBzNEgZ",
+   "title": "东极岛旅游攻略-第一天出发东福山",
+   "author": "小明和兔子",
+   "play": 1995,
+   "status": "已转写",
+   "summary": "上海→半升洞顺风车实录（约3h20、高速费234元）；码头旁约300米『阿宝海鲜』被本地人点名（海鲜面30-50自选浇头、鸡肉面20元）；东极船票只能提前7天抢（岛上人数受限）；五一酒店价格是平时3倍；码头附近海鲜面是沈家门招牌之一",
+   "used": true
+  },
+  {
+   "id": "v08",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Sr4y1B7vk",
+   "title": "东极岛攻略—上船后仓位实况以及去往东福山和青浜岛中转注意事项",
+   "author": "打车不黑心-",
+   "play": 1006,
+   "status": "已转写",
+   "summary": "中转流程实拍：船舱实况（晕船选卧铺、上舱150元宽敞）；船先到庙子湖（约2h）；去东福山/青浜需在到庙子湖前听广播、到指定船舱现金购小船票（东福山30/青浜20），到庙子湖后换船继续坐（东福山约30min/青浜约15min）",
+   "used": true
+  },
+  {
+   "id": "x01",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a294332000000003501f958?xsec_token=ABFbZ8wdZTPie4q39Rd3DEuRNWzNAClbjI9N0-nwO5IXU=&xsec_source=",
+   "title": "熬夜整理舟山东极岛48h保姆攻略📝",
+   "author": "苏米的时光匣",
+   "likes": "1736",
+   "status": "已精读",
+   "summary": "庙子湖主岛48h：环岛打卡《后会无期》取景地、红白灯塔（日落机位）、财伯公塑像；东极亭守第一缕阳光；青浜岛石屋（海上布达拉宫）+里斯本丸遗址可半日；旺季船票提前锁、住宿选庙子湖",
+   "used": true
+  },
+  {
+   "id": "x02",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a2948d6000000001502669b?xsec_token=ABFbZ8wdZTPie4q39Rd3DEuaHJYFG2CiQjuzzTlk7bUEY=&xsec_source=",
+   "title": "📍舟山·东极岛|三天两晚保姆级攻略！！",
+   "author": "一颗青苹果🍏",
+   "likes": "1606",
+   "status": "已精读",
+   "summary": "3天2晚慢游建议：D1 到东福山沿海边步道看日落；D2 日出+轻徒步（不推荐全程，走到象鼻峰折返即可）+青浜岛；D3 庙子湖环岛（88元观光车或全程徒步）：财伯公雕像→网红灯塔→《后会无期》取景地→东极亭→纪念碑；船上风浪备晕船药",
+   "used": true
+  },
+  {
+   "id": "x03",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68b26bbd000000001d0074a4?xsec_token=ABpSfHitRLPketD6thHcQ08Iso0R61-B7sfW1i-DW88oU=&xsec_source=",
+   "title": "东极岛美归美，但真不来了",
+   "author": "OasisAurora",
+   "likes": "1419",
+   "status": "已精读",
+   "summary": "避坑清单：上岛票提前一周抢（被占票易加价、其实船上有空位）；返程票提前一天早7:30放票；后沙滩等海滩私人收费80元/张（可改去青浜岛，单程20元、末班17点多）；夏天暴晒注意防晒；环岛巴士88元/位",
+   "used": true
+  },
+  {
+   "id": "x04",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6835b093000000000f03aa5a?xsec_token=ABx0JOrnDT-YMmWrBoyN6D_joTb3g69oRAgSbSo4GYeV4=&xsec_source=",
+   "title": "东极岛游玩攻略（3天2晚交通＋费用）",
+   "author": "LIZHU灵感集",
+   "likes": "1276",
+   "status": "已精读",
+   "summary": "杭州出发综合账：半升洞航线用『智游海星』购票（最晚班14:20）；船上补票只收现金（东福山30/青浜20）；东福山→庙子湖线下买（最早8:45）；回程庙子湖→半升洞用『东极海运』；全程约1200元含观光车88",
+   "used": true
+  },
+  {
+   "id": "x05",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a2273160000000008001339?xsec_token=ABNjzawiTvAKswyDv7G6J0-jGPBKR6msHeV4U_OuNznLo=&xsec_source=",
+   "title": "宁波出发!!去东极岛的省钱路线来啦~",
+   "author": "一口一个大舟山",
+   "likes": "524",
+   "status": "已精读",
+   "summary": "宁波出发省钱交通路线（图文版）：宁波→舟山→半升洞/沈家门中转上岛，学生党低成本参考",
+   "used": true
+  },
+  {
+   "id": "x06",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6ab4e1ba000000001501294d?xsec_token=ABA0M4oQvPsrdVHJxIuuoww2Z_3ze8GPqtgEHFKohRlb4=&xsec_source=",
+   "title": "🐙东极岛一篇搞懂，详细攻略拿走不谢！(上)",
+   "author": "Camie Ho",
+   "likes": "490",
+   "status": "已精读",
+   "summary": "本地视角综合攻略：半升洞日常8:05/14:20两班（节假日加开）；建议中舱（有窗、贴近水面不易晕）；补票现金（海上无信号）；东福山环岛7.5km、累计爬升300m+、石阶铺装；水至少1L-1.5L；里斯本丸纪念馆会午休，别中午去；大风天晕船风险明显",
+   "used": true
+  },
+  {
+   "id": "x07",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a3fda40000000001503edde?xsec_token=AB5OqwlBqgB-9Gm53cRhDyQ2DOCheGQykkc8lYq7-MDNI=&xsec_source=",
+   "title": "东福山｜岛上吃饭真的很少！",
+   "author": "一颗小虎牙",
+   "likes": "423",
+   "status": "已精读",
+   "summary": "东福山吃住实录：餐饮选择单一（海鲜面/炒饭/小炒/少量烧烤，蛋炒饭25元）；海鲜大排档200-300元；海景房600+可讲价到400；顺时针环岛8km/3.5-4.5h（精华在前半段）；懒人版：曙光点+石屋群折返约2h、或走到象鼻峰折返",
+   "used": true
+  },
+  {
+   "id": "x08",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a8d205f0000000017000445?xsec_token=ABa1QbWiHbX9h9-gycqAFuINzjL0PlVjmyOJMekVvSjfY=&xsec_source=",
+   "title": "东福山环岛徒步路线攻略看这一篇就够了",
+   "author": "芝麻kima",
+   "likes": "342",
+   "status": "已精读",
+   "summary": "环岛路线详解：全程8-10km、4-6h，顺时针=码头→曙光点→大树湾石屋群→藏兵洞→象鼻峰→白云宫→回村；藏兵洞→象鼻峰段最精彩（悬崖+巨石+需要拉铁链的陡段）；水1.5-2L/人；中途仅石屋群有小超市（水贵）",
+   "used": true
+  },
+  {
+   "id": "x09",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6ac22a30000000001801449b?xsec_token=ABqM2T-5fQH8Ayg8ynfChe-4ROy2RJJEhAPVVw5CHfV2s=&xsec_source=",
+   "title": "一个人穷游东极岛｜三天两晚700元攻略",
+   "author": "阿磊在旅行.",
+   "likes": "335",
+   "status": "已精读",
+   "summary": "一个人三天两晚700元全记录（与B站视频同作者）：含往返交通/岛上花费明细，可乐7元水5元等物价参考",
+   "used": true
+  },
+  {
+   "id": "x10",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a2276c50000000036019de3?xsec_token=ABNjzawiTvAKswyDv7G6J0-vvlWq4pHa5o96rW007XYFs=&xsec_source=",
+   "title": "东极三岛游玩及住宿建议",
+   "author": "大草（美丽旅行者）",
+   "likes": "302",
+   "status": "已精读",
+   "summary": "三岛住宿差异：青浜岛民宿可直接看日出；东福山民宿能直接看日落；庙子湖看不到海上日出日落；夏季岛际每天约4班、淡季缩减到3班以下",
+   "used": true
+  },
+  {
+   "id": "x11",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68344d05000000000303bed9?xsec_token=ABvKjZiX7MdefsR_KzgZAqFW9Eic70zSxteWcMl9CtV6w=&xsec_source=",
+   "title": "舟山海钓全类价目「一篇就够🙊Deepfish」",
+   "author": "深娱舟山Deepfish游艇会",
+   "likes": "248",
+   "status": "已精读",
+   "summary": "海钓市场价目科普：『东极观光钓』适合全年龄段、观光为主、固定从庙子湖出发（码头在极岛面栈对面）；若先到东福山可回程顺路玩；节假日会加开船班；新手近海/远海船钓资质门槛有别",
+   "used": true
+  },
+  {
+   "id": "x12",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6aa8ba030000000027014a59?xsec_token=AB-YfH0nGjH3nvinvCrQ0NL50x1qfIzqlbsohdeT3kfJM=&xsec_source=",
+   "title": "如果你去东极岛，请一定留一天给庙子湖岛",
+   "author": "大卫想知道",
+   "likes": "231",
+   "status": "已精读",
+   "summary": "庙子湖慢走实录：纯步行环岛4.5-6h（水泥路为主坡度不大）；观光车88元窗口在出码头右侧；后沙滩为私人收费沙滩（大家避雷）；9点退房+部分民宿无浴巾拖鞋；财伯公雕像旁有超市可补给；《后会无期》咖啡38元/杯；夕阳紫粉晚霞温柔",
+   "used": true
+  },
+  {
+   "id": "x13",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68e12f430000000004013fce?xsec_token=ABY-ywRp5TGeDB3lpCs-w9ppgIV1ZzPN-eKc1qi0fDD3Q=&xsec_source=",
+   "title": "无脑照抄丨三天两晚东极岛保姆级攻略",
+   "author": "Milad",
+   "likes": "221",
+   "status": "已精读",
+   "summary": "无脑照抄行程：半升洞7:10出发→9点庙子湖→换乘东福山→环岛→14:05船到青浜→小孩洞→17:25回庙子湖刚好日落；抢票=开航前7天中午12点；建议上舱150元（信号好+可上甲板）；山下东极海鲜面馆（相对）便宜好吃、山上大排档贵且难吃；务必带现金",
+   "used": true
+  },
+  {
+   "id": "x14",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a22ae69000000003502c4e0?xsec_token=ABNjzawiTvAKswyDv7G6J0-iubc4MdvtIXr6XIg1Y2yQM=&xsec_source=",
+   "title": "🌊东极岛船票舱位怎么选⛴️",
+   "author": "Rainfie",
+   "likes": "187",
+   "status": "已精读",
+   "summary": "船票舱位原理：下舱稳而闷（省钱少晕）、卧铺可躺睡、中舱票量大、上舱沙发桌适合打牌吃东西、贵宾舱最晃；岛际短途是散座；上层公共甲板任何舱位都能去（晕船去船尾甲板缓解）；返程推荐卧铺睡一觉",
+   "used": true
+  },
+  {
+   "id": "x15",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a73ff4e000000002603445b?xsec_token=ABK7cO9YvAS8rMkxvmR3zFCgVtDA7Bw2msVoDjuo1l4t4=&xsec_source=",
+   "title": "舟山海岛📍交通➕吃住玩全攻略",
+   "author": "小美环游记",
+   "likes": "184",
+   "status": "已精读",
+   "summary": "舟山三岛串游参考：东福山全靠步行（穿防滑鞋）；岛上物价稍高可自备零食；大风会停航、出发前再确认；沈家门半升洞附近吃住方便",
+   "used": true
+  },
+  {
+   "id": "x16",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a11d3bd000000003701e068?xsec_token=ABjrVW9utWh3rTPVgAeyHRdTDXBlPQfvwgpGJhmbOIhM0=&xsec_source=",
+   "title": "📍东极岛重装徒步｜三天两晚，终赴海上银河🌟",
+   "author": "小破孩买不起相机Lj",
+   "likes": "168",
+   "status": "已精读",
+   "summary": "重装徒步视角：东福山远离光污染，深夜礁石海岸边可见整片银河垂落海面（星空摄影机位）",
+   "used": true
+  },
+  {
+   "id": "x17",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a7aa31100000000330080ef?xsec_token=ABBtnrP7nF_Yf6_eNXVonmaL5iZHY4eH23mZy0wJqZpTg=&xsec_source=",
+   "title": "这次舟山最值得就是去了青浜岛…",
+   "author": "桃得意-",
+   "likes": "134",
+   "status": "已精读",
+   "summary": "反向体验：更推荐青浜岛（原生态），庙子湖除《后会无期》取景地外可玩性一般；青浜动线=9:10到→玩2-3h→13:30船回",
+   "used": true
+  },
+  {
+   "id": "x18",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a59e8da0000000006012e9e?xsec_token=ABT5rsNBHMquUvDgFxwDdBkHPuuNbYI-pfoevmua5zKTs=&xsec_source=",
+   "title": "最新！上海→东极岛保姆级交通攻略",
+   "author": "玻野莓",
+   "likes": "115",
+   "status": "已精读",
+   "summary": "上海直达半升洞交通：『自在旅游』小程序买车票到普陀长途客运中心（4.5h、约150元豪华座）；智游海星提前7天12点抢票；补票现金不用身份证；东福山回程分两程买（候船室线下+『东极海运』提前一天7:30）",
+   "used": true
+  },
+  {
+   "id": "w01",
+   "platform": "web",
+   "type": "post",
+   "url": "http://zsfgw.zhoushan.gov.cn/art/2022/4/22/art_1229327760_3687640.html",
+   "title": "关于『舟山群岛昌盛』普通客船营运嵊泗沈家湾至普陀东极航线票价的公开征求意见",
+   "author": "舟山市发改委官网",
+   "status": "已核实",
+   "summary": "沈家湾↔东极航线核定票价（2022年批复口径，参考）：昌盛轮下舱座位130/下舱卧铺220/中舱座位200/上舱座位260/包厢卧铺与头等舱380；应急船繁荣同价（包厢320）、祥和轮下130/卧200/中180/上230；实际票价以购票页为准",
+   "used": true
+  },
+  {
+   "id": "w02",
+   "platform": "web",
+   "type": "post",
+   "url": "",
+   "title": "『舟山交通』/『嵊泗客运』微信小程序（去程购票渠道）",
+   "author": "舟山交通官方渠道",
+   "status": "已核实",
+   "summary": "沈家湾线去程（上海方向）购票：『舟山交通』/『嵊泗客运』小程序；开航前7天放票（10/29班次=10/22抢）；沈家湾10:30每日1班、营运期5/1-10/31（10/31为本季最后一天）；大风停航会提前公告",
+   "used": true
+  },
+  {
+   "id": "w03",
+   "platform": "web",
+   "type": "post",
+   "url": "",
+   "title": "『东极海运』微信小程序/公众号（返程购票与航班公告）",
+   "author": "东极海运官方渠道",
+   "status": "已核实",
+   "summary": "庙子湖→沈家湾返程购票：『东极海运』提前1天放票（10/31班次≈10/30早7点前后）；同时是查航班动态/停航公告的主渠道；庙子湖13:40开船、约16:10到沈家湾",
+   "used": true
+  },
+  {
+   "id": "w04",
+   "platform": "web",
+   "type": "post",
+   "url": "https://lbs.amap.com",
+   "title": "高德地图开放平台（本次坐标与路径数据来源说明）",
+   "author": "高德开放平台",
+   "status": "已核实",
+   "summary": "全行程 POI 坐标（GCJ-02）与驾车/步行参考距离由高德 API 校验与回填；跨海段无道路数据，采用人工估算并标注",
+   "used": true
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "交通",
+   "name": "南浦大桥旅游集散中心（发车点）",
+   "address": "外马路1588号(近四号线南浦大桥)",
+   "lng": "121.501002",
+   "lat": "31.207955",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "车船联运票可提前线上购买",
+   "ticketPrice": "大巴约110元/程（参考，以购票页为准）",
+   "openHours": "08:20 发车（以购票页为准）",
+   "tags": [
+    "车船联运",
+    "发车点"
+   ],
+   "notes": "去程 08:20 发车（车船联运大巴，约 2h 到沈家湾）；务必 07:50 前到站；车票可线上购或现场加购；这是全程最硬的卡点之一，晚到就赶不上 10:30 的船",
+   "sourceIds": [
+    "w02",
+    "v07"
+   ],
+   "checked": true,
+   "geoQuery": "南浦大桥旅游集散中心",
+   "geoFallback": "上海南浦大桥客运站",
+   "geoCity": "021",
+   "poiId": "B0FFGNVJSM"
+  },
+  {
+   "id": "p02",
+   "category": "交通",
+   "name": "沈家湾客运码头（去程登船）",
+   "address": "洋山深水港东端",
+   "lng": "122.134355",
+   "lat": "30.600682",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 30,
+   "bookingRequired": true,
+   "bookingNote": "『舟山交通』/『嵊泗客运』提前 7 天放票（10/22 抢 10/29 班次）",
+   "ticketPrice": "船票 130 元起（批复口径，以购票页为准）",
+   "openHours": "10:30 开船（每日 1 班）",
+   "tags": [
+    "跳岛起点",
+    "安检登船"
+   ],
+   "notes": "沈家湾 10:30 开船（每日 1 班；营运期 5/1–10/31，10/31 为本季最后一天）；提前 30 分钟到码头安检上船；大巴直接送到码头",
+   "sourceIds": [
+    "w01",
+    "w02",
+    "v02"
+   ],
+   "checked": true,
+   "geoQuery": "沈家湾客运码头",
+   "geoFallback": "嵊泗 沈家湾码头",
+   "poiId": "B024464Q3V"
+  },
+  {
+   "id": "p03",
+   "category": "交通",
+   "name": "庙子湖码头（换乘）",
+   "address": "东极镇东极岛庙子湖岛内",
+   "lng": "122.688402",
+   "lat": "30.188892",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 40,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "补票现金：东福山+30/青浜+20",
+   "openHours": "随船班",
+   "tags": [
+    "换乘",
+    "现金补票"
+   ],
+   "notes": "下船后同码头换乘去东福山/青浜的船；去程在到庙子湖前到指定船舱现金补票（东福山 +30、青浜 +20）；换乘等待 10–40 分钟（视船班衔接）；不用出站",
+   "sourceIds": [
+    "v06",
+    "v08",
+    "x04"
+   ],
+   "checked": true,
+   "geoQuery": "庙子湖码头",
+   "geoFallback": "东极 庙子湖 码头",
+   "poiId": "B0FFG2E05L"
+  },
+  {
+   "id": "p04",
+   "category": "交通",
+   "name": "东福山码头（到达）",
+   "address": "陌海客栈北侧",
+   "lng": "122.761275",
+   "lat": "30.141302",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "—",
+   "openHours": "随船班",
+   "tags": [
+    "住宿安顿",
+    "台阶多"
+   ],
+   "notes": "约 14:00–14:30 到达（含换乘）；码头有民宿阿姨拉客，淡季标间可现场讲价（约 140 元）；岛上多台阶上坡，民宿一般会来帮接行李（人要自己走）；先安顿再看日落",
+   "sourceIds": [
+    "v06",
+    "x13",
+    "x02"
+   ],
+   "checked": true,
+   "geoQuery": "东福山码头",
+   "geoFallback": "东福山岛 码头",
+   "poiId": "B0LRNHKXCS"
+  },
+  {
+   "id": "p05",
+   "category": "景点",
+   "name": "东福山村落海岸（日落）",
+   "address": "东极镇东极岛景区(东南角)",
+   "lng": "122.769822",
+   "lat": "30.132298",
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "日落 17:06（10/29 参考）",
+   "tags": [
+    "日落",
+    "蓝调时刻",
+    "星空"
+   ],
+   "notes": "渔村面西的礁石海岸，是全岛看海上日落的机位（10/29 日落约 17:06，提前 30–40 分钟到场）；蓝调时刻极美；晚上海风大记得加外套；夜间村落极暗适合看星空",
+   "sourceIds": [
+    "v03",
+    "x02",
+    "x16"
+   ],
+   "checked": true,
+   "geoQuery": "东福山 灯塔 日落",
+   "geoFallback": "东福山岛 海边",
+   "poiId": "B0HB4RC7V4"
+  },
+  {
+   "id": "p06",
+   "category": "景点",
+   "name": "第一缕曙光观测点",
+   "address": "东极岛景区-东福山岛",
+   "lng": "122.761901",
+   "lat": "30.141738",
+   "day": 2,
+   "slot": "清晨",
+   "durationMin": 80,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "日出 06:01（10/30 参考）",
+   "tags": [
+    "日出",
+    "第一缕曙光"
+   ],
+   "notes": "东福山最东端，中国有人岛里最早迎接日出的位置之一（10/30 日出约 06:01；建议 05:20–05:40 到场）；离民宿村约 250m；看完日出直接接顺时针环岛线",
+   "sourceIds": [
+    "x08",
+    "v03",
+    "v06"
+   ],
+   "checked": true,
+   "geoQuery": "新世纪第一缕曙光观测点",
+   "geoFallback": "东福山 曙光观测台",
+   "poiId": "B0H6L5EO6U"
+  },
+  {
+   "id": "p07",
+   "category": "景点",
+   "name": "大树湾石屋群",
+   "address": "东极岛景区-东福山岛",
+   "lng": "122.771368",
+   "lat": "30.137758",
+   "day": 2,
+   "slot": "上午",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "石屋",
+    "出片",
+    "补给点"
+   ],
+   "notes": "依山面海的老石屋渔村（俗称『海上山城』），网红出片点；从曙光点步行约 1.1km；**这里是环岛途中唯一有小超市的补给点（东西贵，建议自备水）**；屋基勿踩踏",
+   "sourceIds": [
+    "x08",
+    "v03",
+    "v06"
+   ],
+   "checked": true,
+   "geoQuery": "大树湾石屋群",
+   "geoFallback": "东福山 石屋群",
+   "poiId": "B0FFG2BP3Q"
+  },
+  {
+   "id": "p08",
+   "category": "景点",
+   "name": "藏兵洞",
+   "address": "东极镇东极岛景区(东南角)",
+   "lng": "122.769822",
+   "lat": "30.132298",
+   "day": 2,
+   "slot": "上午",
+   "durationMin": 15,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "海蚀洞",
+    "精华路段起点"
+   ],
+   "notes": "环岛线中点一处海蚀洞/工事遗迹，短暂停留即可；从这里往前进入全程最精华的悬崖海岸线（藏兵洞→象鼻峰段）——若时间有限只能走一段，走这段",
+   "sourceIds": [
+    "x08"
+   ],
+   "checked": true,
+   "geoQuery": "藏兵洞",
+   "geoFallback": "东福山 藏兵洞",
+   "poiId": "B0HB4RC7V4"
+  },
+  {
+   "id": "p09",
+   "category": "景点",
+   "name": "象鼻峰",
+   "address": "东极镇东福山岛",
+   "lng": "122.778709",
+   "lat": "30.128546",
+   "day": 2,
+   "slot": "中午",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天（建议上午）",
+   "tags": [
+    "制高点",
+    "拉铁链路段",
+    "出片"
+   ],
+   "notes": "环岛制高点（全程累计爬升 300m+），山形似象鼻，『世界尽头感』最强机位；附近部分路段陡、需拉铁链通过；体力一般者可在打卡后原路折返（最精华已看完）；水带足 1.5–2L",
+   "sourceIds": [
+    "x08",
+    "v06",
+    "x02"
+   ],
+   "checked": true,
+   "geoQuery": "象鼻峰",
+   "geoFallback": "东极 象鼻峰",
+   "poiId": "B0FFFOPZ13"
+  },
+  {
+   "id": "p10",
+   "category": "景点",
+   "name": "白云宫",
+   "address": "东极镇东极岛东福山岛内",
+   "lng": "122.770201",
+   "lat": "30.130400",
+   "day": 2,
+   "slot": "中午",
+   "durationMin": 20,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "白天",
+   "tags": [
+    "寺观",
+    "返程节点"
+   ],
+   "notes": "东福山唯一的寺观（渔民世代祭拜之地）；过白云宫就接上盘山水泥公路，约 40–60 分钟可回到民宿村/码头；从这里也能抄近路原路返回",
+   "sourceIds": [
+    "v06"
+   ],
+   "checked": true,
+   "geoQuery": "白云宫",
+   "geoFallback": "东福山 白云宫",
+   "poiId": "B0FFG28RX4"
+  },
+  {
+   "id": "p18",
+   "category": "交通",
+   "name": "东福山码头（返程乘船）",
+   "address": "陌海客栈北侧",
+   "lng": "122.761275",
+   "lat": "30.141302",
+   "day": 2,
+   "slot": "下午",
+   "durationMin": 60,
+   "bookingRequired": true,
+   "bookingNote": "只能现场买，无线上渠道",
+   "ticketPrice": "船票约 30 元（现场买）",
+   "openHours": "候船室线下售票（最早约 8:45）",
+   "tags": [
+    "线下买票",
+    "班次少"
+   ],
+   "notes": "东福山→庙子湖的票只能到候船室现场买（最早班约 8:45 前后；淡季每天 ≤3 班，含傍晚 17:2x 经青浜的班次）；实际班次请提前问民宿老板；建议 14:00–14:30 到候船室盯班",
+   "sourceIds": [
+    "x04",
+    "x18",
+    "x13"
+   ],
+   "checked": true,
+   "geoQuery": "东福山码头",
+   "geoFallback": "东福山岛 码头",
+   "poiId": "B0LRNHKXCS"
+  },
+  {
+   "id": "p19",
+   "category": "交通",
+   "name": "庙子湖码头（到达）",
+   "address": "东极镇东极岛庙子湖岛内",
+   "lng": "122.688402",
+   "lat": "30.188892",
+   "day": 2,
+   "slot": "下午",
+   "durationMin": 40,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "—",
+   "openHours": "随船班",
+   "tags": [
+    "主岛",
+    "补给"
+   ],
+   "notes": "约 15:00–16:30 到达庙子湖（视所乘班次）；码头一带集中民宿/超市/海鲜面馆；先放行李补给，再往灯塔方向看晚霞",
+   "sourceIds": [
+    "x12",
+    "x02"
+   ],
+   "checked": true,
+   "geoQuery": "庙子湖码头",
+   "geoFallback": "东极 庙子湖 码头",
+   "poiId": "B0FFG2E05L"
+  },
+  {
+   "id": "p11",
+   "category": "景点",
+   "name": "红白灯塔（东海第一哨）",
+   "address": "东极岛庙子湖岛",
+   "lng": "122.690276",
+   "lat": "30.181115",
+   "day": 2,
+   "slot": "傍晚",
+   "durationMin": 70,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "灯塔",
+    "晚霞机位",
+    "出片"
+   ],
+   "notes": "庙子湖标志——红白条纹灯塔，看晚霞的经典机位（10/30 日落约 17:06）；清晨来也出片（早起没人）；旁边就是财伯公雕像区域，D3 环岛会再次路过",
+   "sourceIds": [
+    "x01",
+    "x02",
+    "x12"
+   ],
+   "checked": true,
+   "geoQuery": "东极岛 红白灯塔",
+   "geoFallback": "庙子湖 灯塔",
+   "poiId": "B0FFGNJ41I"
+  },
+  {
+   "id": "p12",
+   "category": "景点",
+   "name": "财伯公雕像",
+   "address": "东极镇东极岛庙子湖岛内",
+   "lng": "122.690876",
+   "lat": "30.182711",
+   "day": 3,
+   "slot": "上午",
+   "durationMin": 50,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "地标",
+    "补给",
+    "草坪看海"
+   ],
+   "notes": "纪念最早到岛渔民的财伯公像；雕像旁有超市可补水/雪糕（岛上补给点之一）；这一带草坪看海极好；D3 清晨也可来这里看日出（10/31 日出约 06:03）",
+   "sourceIds": [
+    "x12",
+    "x02",
+    "x13"
+   ],
+   "checked": true,
+   "geoQuery": "财伯公雕像",
+   "geoFallback": "庙子湖 财伯公",
+   "poiId": "B0FFFOJ48R"
+  },
+  {
+   "id": "p13",
+   "category": "景点",
+   "name": "《后会无期》取景地",
+   "address": "东极岛",
+   "lng": "122.691507",
+   "lat": "30.187775",
+   "day": 3,
+   "slot": "上午",
+   "durationMin": 40,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "电影机位",
+    "咖啡店",
+    "出片"
+   ],
+   "notes": "电影《后会无期》取景的白房子/石屋一带；旁边有『后会无期』咖啡店（约 38 元/杯，山顶视野）；是全岛最出片的人文机位之一",
+   "sourceIds": [
+    "x01",
+    "x02",
+    "x12"
+   ],
+   "checked": true,
+   "geoQuery": "后会无期取景地",
+   "geoFallback": "庙子湖 后会无期",
+   "poiId": "B0LAM57YF5"
+  },
+  {
+   "id": "p14",
+   "category": "景点",
+   "name": "东极亭",
+   "address": "东极镇东极岛庙子湖岛内",
+   "lng": "122.689618",
+   "lat": "30.196117",
+   "day": 3,
+   "slot": "上午",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "观景亭",
+    "山海公路"
+   ],
+   "notes": "沿山海公路一路上行的观景亭，俯瞰整片蓝海；也是庙子湖看日出的位置之一（『祖国早看到日出的地方』即指这一带）；顺路可看烈士纪念碑",
+   "sourceIds": [
+    "x12",
+    "x02"
+   ],
+   "checked": true,
+   "geoQuery": "东极亭",
+   "geoFallback": "庙子湖 东极亭",
+   "poiId": "B0FFG1RBL1"
+  },
+  {
+   "id": "p15",
+   "category": "景点",
+   "name": "倒陡街",
+   "address": "东极岛庙子湖村倒陡街留夏甜品斜对面",
+   "lng": "122.685375",
+   "lat": "30.192925",
+   "day": 3,
+   "slot": "中午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（消费自选）",
+   "openHours": "白天",
+   "tags": [
+    "小街",
+    "文创",
+    "午餐"
+   ],
+   "notes": "庙子湖的商业小街（倒陡=坡度陡）：文创、海产干货、小吃；海鲜炒米线约 28 元份量大；走完接回码头；午餐可在此或山下海鲜面馆解决",
+   "sourceIds": [
+    "v06",
+    "x12"
+   ],
+   "checked": true,
+   "geoQuery": "倒陡街",
+   "geoFallback": "庙子湖 倒陡街",
+   "poiId": "B0KU5SRODN"
+  },
+  {
+   "id": "p16",
+   "category": "交通",
+   "name": "庙子湖码头（返程登船）",
+   "address": "东极镇东极岛庙子湖岛内",
+   "lng": "122.688402",
+   "lat": "30.188892",
+   "day": 3,
+   "slot": "下午",
+   "durationMin": 30,
+   "bookingRequired": true,
+   "bookingNote": "『东极海运』提前 1 天放票（10/30 早 7 点前后）",
+   "ticketPrice": "船票 130 元起（参考）",
+   "openHours": "13:40 开船",
+   "tags": [
+    "返程",
+    "季节末班"
+   ],
+   "notes": "10/31 13:40 开船回沈家湾（每日 1 班）；**这是本季（5/1–10/31）沈家湾线最后一天**；提前 30 分钟到码头；上船前买好水/零食",
+   "sourceIds": [
+    "w03",
+    "v06"
+   ],
+   "checked": true,
+   "geoQuery": "庙子湖码头",
+   "geoFallback": "东极 庙子湖 码头",
+   "poiId": "B0FFG2E05L"
+  },
+  {
+   "id": "p17",
+   "category": "交通",
+   "name": "沈家湾客运码头（返程到达）",
+   "address": "洋山深水港东端",
+   "lng": "122.134355",
+   "lat": "30.600682",
+   "day": 3,
+   "slot": "傍晚",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "大巴约 70–110 元（参考）",
+   "openHours": "随船班",
+   "tags": [
+    "返程",
+    "换大巴"
+   ],
+   "notes": "约 16:10 到沈家湾；码头换大巴回上海（约 2h，18:30 前后到市区）；大巴票在船上或码头购买（约 70–110 元参考）",
+   "sourceIds": [
+    "v06",
+    "w02"
+   ],
+   "checked": true,
+   "geoQuery": "沈家湾客运码头",
+   "geoFallback": "嵊泗 沈家湾码头",
+   "poiId": "B024464Q3V"
+  },
+  {
+   "id": "p20",
+   "category": "岛屿",
+   "name": "青浜岛·海上布达拉宫（备选）",
+   "address": "普陀区",
+   "lng": "122.706271",
+   "lat": "30.199232",
+   "day": 0,
+   "slot": "备选",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "备选",
+    "石屋群",
+    "原生态"
+   ],
+   "notes": "备选未进主行程：错落的石屋群被称『海上布达拉宫』，另有小孩洞、原生态渔村与可看日出的民宿；单程船票约 20 元、末班约 17:25；适合时间富余时加半日（D2 傍晚或 D3 上午）",
+   "sourceIds": [
+    "x10",
+    "x17",
+    "x01"
+   ],
+   "checked": false,
+   "geoQuery": "青浜岛",
+   "geoFallback": "东极 青浜岛",
+   "poiId": "B0FFFCMXNT"
+  },
+  {
+   "id": "p21",
+   "category": "景点",
+   "name": "小孩洞（备选）",
+   "address": "东极镇东极岛青浜岛内",
+   "lng": "122.712093",
+   "lat": "30.208270",
+   "day": 0,
+   "slot": "备选",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "备选",
+    "徒步",
+    "礁石"
+   ],
+   "notes": "备选未进主行程：青浜岛最远端景点（码头往返约 4.5km），原生态礁石海岸、一路几乎无人；去青浜时若体力富余可走",
+   "sourceIds": [
+    "x13",
+    "x17"
+   ],
+   "checked": false,
+   "geoQuery": "小孩洞",
+   "geoFallback": "青浜岛 小孩洞",
+   "poiId": "B0FFFCMXPU"
+  },
+  {
+   "id": "p22",
+   "category": "景点",
+   "name": "后沙滩（备选·避雷）",
+   "address": "东极岛",
+   "lng": "122.684946",
+   "lat": "30.204387",
+   "day": 0,
+   "slot": "备选",
+   "durationMin": 0,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "备选",
+    "避雷",
+    "收费80"
+   ],
+   "notes": "备选未进主行程：庙子湖的『私人管理』沙滩，收费 80 元/张、评价普遍避雷（岛上没有免费海滩）；想看沙滩建议改坐船去青浜岛（单程约 20 元）",
+   "sourceIds": [
+    "x03",
+    "x12"
+   ],
+   "checked": false,
+   "geoQuery": "后沙滩",
+   "geoFallback": "庙子湖 后沙滩",
+   "poiId": "B0FFKXNDR8"
+  },
+  {
+   "id": "p23",
+   "category": "景点",
+   "name": "里斯本丸沉船纪念馆（备选）",
+   "address": "东极岛",
+   "lng": "122.685397",
+   "lat": "30.193601",
+   "day": 0,
+   "slot": "备选",
+   "durationMin": 40,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "备选",
+    "历史",
+    "注意午休"
+   ],
+   "notes": "备选未进主行程：庙子湖上的历史纪念馆（里斯本丸事件）；注意午休时段，别中午去；顺路时可加",
+   "sourceIds": [
+    "x06"
+   ],
+   "checked": false,
+   "geoQuery": "里斯本丸纪念馆",
+   "geoFallback": "庙子湖 里斯本丸",
+   "poiId": "B0FFKTM6MX"
+  },
+  {
+   "id": "p24",
+   "category": "交通",
+   "name": "半升洞客运码头（备选路线B）",
+   "address": "滨港路675号",
+   "lng": "122.320845",
+   "lat": "29.941847",
+   "day": 0,
+   "slot": "备选",
+   "durationMin": 0,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "备选",
+    "路线B",
+    "停航预案"
+   ],
+   "notes": "备选未进主行程：舟山沈家门方向的另一上岛码头（路线B）：日常 8:05/14:20 两班（节假日加开）、下舱100/中130/上150/贵宾260；『智游海星』买去程、『东极海运』买回程；台风停航时从沈家湾线改此方向",
+   "sourceIds": [
+    "x04",
+    "x18",
+    "w02"
+   ],
+   "checked": false,
+   "geoQuery": "半升洞码头",
+   "geoFallback": "舟山 半升洞客运码头",
+   "poiId": "B0IRPS3ERX"
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h01",
+   "name": "东福山·民宿村（码头-村落一带）",
+   "area": "东福山岛码头至村落沿线",
+   "day": 1,
+   "lng": "122.761678",
+   "lat": "30.140281",
+   "priceRange": "淡季标间约 ¥140–200（现场可讲价/平台比价）；旺季海景房可谈到 ¥400+",
+   "recommend": true,
+   "notes": "海角一号/塔塔/潘多拉等多家可选；住高一点视野好但要爬台阶；全岛 9 点退房惯例；部分民宿无浴巾/一次性拖鞋（自带）；可请老板帮接行李、约好次日日出叫早与东福山→庙子湖班次",
+   "sourceIds": [
+    "v06",
+    "v03",
+    "x07",
+    "x13"
+   ],
+   "checked": true,
+   "geoQuery": "东福山 民宿",
+   "geoFallback": "东福山岛 客栈",
+   "poiId": "B0MDKUCY93",
+   "address": "东极镇东福山大岙村下排头2弄6号"
+  },
+  {
+   "id": "h02",
+   "name": "庙子湖·码头-倒陡街一带",
+   "area": "庙子湖岛码头及主街",
+   "day": 2,
+   "lng": "122.685578",
+   "lat": "30.193183",
+   "priceRange": "淡季约 ¥140–200（平台比价常低于现场）",
+   "recommend": true,
+   "notes": "住宿集中在码头-倒陡街一带，步行可达灯塔/取景地；看晚霞选面海一侧；订房平台多看评价；同样 9 点退房",
+   "sourceIds": [
+    "x12",
+    "x02"
+   ],
+   "checked": true,
+   "geoQuery": "庙子湖 民宿",
+   "geoFallback": "东极 庙子湖 客栈",
+   "poiId": "B0FFJFEL8Y",
+   "address": "东极镇庙子湖村(中街山路1弄8号)"
+  }
+ ],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "东极海鲜面馆",
+   "type": "海鲜面·平价",
+   "avgPrice": 28,
+   "day": 2,
+   "area": "庙子湖·码头山下（以高德POI为准）",
+   "lng": "122.689126",
+   "lat": "30.190735",
+   "dianpingKeyword": "东极 海鲜面馆",
+   "tips": "山下比山上大排档便宜近半；海鲜面/海鲜炒米线约 28 元料足；饭点排队避峰；网红店但性价比公认",
+   "sourceIds": [
+    "v06",
+    "x13"
+   ],
+   "checked": true,
+   "geoQuery": "东极海鲜面馆",
+   "geoFallback": "庙子湖 海鲜面",
+   "poiId": "B0FFMCGA20",
+   "address": "东极镇庙子湖自然村东极埠头1弄"
+  },
+  {
+   "id": "r02",
+   "name": "东福山民宿村餐食",
+   "type": "民宿家常菜·海鲜",
+   "avgPrice": 60,
+   "day": 1,
+   "area": "东福山村落",
+   "lng": "122.760036",
+   "lat": "30.139850",
+   "dianpingKeyword": "东福山 民宿 餐",
+   "tips": "『住哪吃哪』，提前跟民宿约晚饭；海鲜炒米线约 28 元、海鲜面 30–50 元；想换口味可去云南风味海鲜餐厅（柠檬拌花蛤/泰式鱿鱼，实测好评）；点海鲜先问价",
+   "sourceIds": [
+    "v03",
+    "v06",
+    "x07"
+   ],
+   "checked": true,
+   "geoQuery": "东福山 餐厅",
+   "geoFallback": "东福山岛 海鲜",
+   "poiId": "B0GRHCYD23",
+   "address": "东极镇东福山岛大岙村下排头1弄5号"
+  },
+  {
+   "id": "r03",
+   "name": "青浜味（备选）",
+   "type": "海鲜小馆",
+   "avgPrice": 80,
+   "day": 0,
+   "area": "青浜岛",
+   "lng": "122.707954",
+   "lat": "30.195014",
+   "dianpingKeyword": "青浜味",
+   "tips": "只有去青浜岛才用得上：推荐黑鲷、海胆蒸蛋、空心菜；岛上餐饮整体贵且一般，期望放低",
+   "sourceIds": [
+    "v03"
+   ],
+   "checked": false,
+   "geoQuery": "青浜味",
+   "geoFallback": "青浜岛 餐厅",
+   "poiId": "B0FFKS9UNF",
+   "address": "青浜村芝麻坑1弄43号"
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "东福山环岛徒步（顺时针全程）",
+   "where": "东福山岛（码头→曙光点→石屋群→藏兵洞→象鼻峰→白云宫→回村）",
+   "durationMin": 300,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "体力好、想收全岛最全风景的人",
+   "sourceIds": [
+    "x08",
+    "v05",
+    "v06"
+   ]
+  },
+  {
+   "id": "e02",
+   "name": "懒人半环线（曙光点→石屋群→象鼻峰折返）",
+   "where": "东福山岛前半段",
+   "durationMin": 150,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "体力一般/时间有限：把最精华段走完",
+   "sourceIds": [
+    "x07",
+    "x08",
+    "x02"
+   ]
+  },
+  {
+   "id": "e03",
+   "name": "守一轮『第一缕曙光』日出",
+   "where": "东福山第一缕曙光观测点",
+   "durationMin": 80,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "所有人（早起值一次）",
+   "sourceIds": [
+    "x08",
+    "v03",
+    "x01"
+   ]
+  },
+  {
+   "id": "e04",
+   "name": "庙子湖观光车环岛",
+   "where": "庙子湖（码头右侧窗口购票）",
+   "durationMin": 30,
+   "price": "88 元/人（中途可下车，全程玩约1.5h）",
+   "bookingRequired": false,
+   "bestFor": "不想全程步行/带行李的人",
+   "sourceIds": [
+    "v06",
+    "x12",
+    "x13"
+   ]
+  },
+  {
+   "id": "e05",
+   "name": "东极观光钓（海钓体验）",
+   "where": "庙子湖·极岛面栈对面码头出发",
+   "durationMin": 120,
+   "price": "按船家报价（参考：近海体验百元级）",
+   "bookingRequired": true,
+   "bestFor": "全年龄段、以观光体验为主",
+   "sourceIds": [
+    "x11",
+    "v04"
+   ]
+  },
+  {
+   "id": "e06",
+   "name": "星空/银河观测",
+   "where": "东福山礁石海岸（远离光污染）",
+   "durationMin": 120,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "摄影/夜猫子：晴天夜空可见银河",
+   "sourceIds": [
+    "x16",
+    "v03",
+    "x01"
+   ]
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-10-29",
+   "theme": "上海→沈家湾→东福山：车船联运日 + 村落日落",
+   "area": "上海—嵊泗—东极·东福山",
+   "items": [
+    {
+     "poiId": "p01",
+     "time": "07:50-08:20"
+    },
+    {
+     "poiId": "p02",
+     "time": "10:00-10:30"
+    },
+    {
+     "poiId": "p03",
+     "time": "13:00-13:40"
+    },
+    {
+     "poiId": "p04",
+     "time": "14:00-14:30"
+    },
+    {
+     "poiId": "p05",
+     "time": "16:30-18:00"
+    },
+    {
+     "poiId": "r02",
+     "time": "18:15-19:15"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "车+船（车船联运）+步行",
+    "manual": true,
+    "distanceKm": 196.0,
+    "durationMin": 325,
+    "legs": [
+     {
+      "from": "p01",
+      "to": "p02",
+      "distanceKm": 110.0,
+      "durationMin": 120,
+      "note": "大巴约2h（经东海大桥）"
+     },
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 75.0,
+      "durationMin": 150,
+      "note": "海上约2.5h"
+     },
+     {
+      "from": "p03",
+      "to": "p04",
+      "distanceKm": 10.0,
+      "durationMin": 40,
+      "note": "换乘船约40min"
+     },
+     {
+      "from": "p04",
+      "to": "p05",
+      "distanceKm": 0.5,
+      "durationMin": 10
+     },
+     {
+      "from": "p05",
+      "to": "r02",
+      "distanceKm": 0.3,
+      "durationMin": 5
+     }
+    ],
+    "note": "跨海段无道路数据，为人工估算（海上直线距离口径）；车船联运总耗时约5.5h。日落 17:06（NOAA估算）"
+   },
+   "notes": "三个硬卡点：07:50 到南浦大桥集合上车、10:30 登船、13:00 前后庙子湖换乘（船上现金补票）；全程带身份证+现金；若 10/29 遇大风停航，启动攻略『停航预案』"
+  },
+  {
+   "day": 2,
+   "date": "2026-10-30",
+   "theme": "东福山日出+全环岛徒步 → 傍晚转场庙子湖",
+   "area": "东福山岛 → 庙子湖岛",
+   "items": [
+    {
+     "poiId": "p06",
+     "time": "05:20-06:40"
+    },
+    {
+     "poiId": "p07",
+     "time": "07:40-08:10"
+    },
+    {
+     "poiId": "p08",
+     "time": "09:30-09:45"
+    },
+    {
+     "poiId": "p09",
+     "time": "10:45-11:15"
+    },
+    {
+     "poiId": "p10",
+     "time": "12:00-12:20"
+    },
+    {
+     "poiId": "p18",
+     "time": "13:00-14:00"
+    },
+    {
+     "poiId": "p19",
+     "time": "15:00-15:40"
+    },
+    {
+     "poiId": "p11",
+     "time": "16:30-17:40"
+    },
+    {
+     "poiId": "r01",
+     "time": "18:00-19:00"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "徒步环岛 + 岛际船",
+    "manual": true,
+    "distanceKm": 18.1,
+    "durationMin": 310,
+    "legs": [
+     {
+      "from": "p06",
+      "to": "p07",
+      "distanceKm": 1.1,
+      "durationMin": 25
+     },
+     {
+      "from": "p07",
+      "to": "p08",
+      "distanceKm": 2.5,
+      "durationMin": 60
+     },
+     {
+      "from": "p08",
+      "to": "p09",
+      "distanceKm": 1.4,
+      "durationMin": 60,
+      "note": "精华悬崖段，慢走"
+     },
+     {
+      "from": "p09",
+      "to": "p10",
+      "distanceKm": 1.4,
+      "durationMin": 45
+     },
+     {
+      "from": "p10",
+      "to": "p18",
+      "distanceKm": 1.2,
+      "durationMin": 30,
+      "note": "水泥公路回村/码头"
+     },
+     {
+      "from": "p18",
+      "to": "p19",
+      "distanceKm": 10.0,
+      "durationMin": 40,
+      "note": "岛际船约40min"
+     },
+     {
+      "from": "p19",
+      "to": "p11",
+      "distanceKm": 1.5,
+      "durationMin": 35
+     },
+     {
+      "from": "p11",
+      "to": "r01",
+      "distanceKm": 0.8,
+      "durationMin": 15
+     }
+    ],
+    "note": "东福山环岛 7.2–10km/4–6h（顺时针，人工估算）；若候船室只有傍晚 17:2x 经青浜班，则庙子湖灯塔晚霞顺延到 D3 清晨/傍晚前"
+   },
+   "notes": "①05:20 起看日出，06:40 前回民宿早餐；②环岛体力点=象鼻峰折返与否，水 1.5–2L；③14:00 前后到候船室买东福山→庙子湖票（最早约 8:45 班、淡季≤3班）；④9 点退房惯例提前收好行李"
+  },
+  {
+   "day": 3,
+   "date": "2026-10-31",
+   "theme": "庙子湖精华环线 → 返程（沈家湾线本季最后一天）",
+   "area": "庙子湖岛 → 沈家湾 → 上海",
+   "items": [
+    {
+     "poiId": "p12",
+     "time": "07:30-08:20"
+    },
+    {
+     "poiId": "p13",
+     "time": "08:40-09:20"
+    },
+    {
+     "poiId": "p14",
+     "time": "09:50-10:20"
+    },
+    {
+     "poiId": "p15",
+     "time": "10:40-11:40"
+    },
+    {
+     "poiId": "p16",
+     "time": "13:10-13:40"
+    },
+    {
+     "poiId": "p17",
+     "time": "16:10-16:40"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "步行 + 岛际船 + 大巴",
+    "manual": true,
+    "distanceKm": 79.4,
+    "durationMin": 255,
+    "legs": [
+     {
+      "from": "p12",
+      "to": "p13",
+      "distanceKm": 0.8,
+      "durationMin": 20
+     },
+     {
+      "from": "p13",
+      "to": "p14",
+      "distanceKm": 1.2,
+      "durationMin": 30
+     },
+     {
+      "from": "p14",
+      "to": "p15",
+      "distanceKm": 1.5,
+      "durationMin": 35
+     },
+     {
+      "from": "p15",
+      "to": "p16",
+      "distanceKm": 0.9,
+      "durationMin": 20
+     },
+     {
+      "from": "p16",
+      "to": "p17",
+      "distanceKm": 75.0,
+      "durationMin": 150,
+      "note": "海上约2.5h"
+     }
+    ],
+    "note": "庙子湖步行环线 4.5–6h（可换 88 元观光车）；返程后另加大巴约 2h 回上海（约 110km）"
+   },
+   "notes": "⚠️ 10/31 为本季沈家湾线最后一天，返程票前一天（10/30 早 7 点前后）就要在『东极海运』抢到；13:40 开船别迟到；回程大巴票在船上或码头买"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "10月底深秋·东北季风期（规划估算）",
+   "high": 21,
+   "low": 14,
+   "advice": "【规划估算·非实时预报】10月底东极岛日间约17–21°C、夜间约14–17°C，比上海陆地低约5–6°C、海风体感更凉；深秋正值东北季风期，**大风停航风险高**——出发前1天+当天早上务必再查船班（『东极海运』公告），并预先想好停航预案（攻略有）。晴天海水最蓝，阴天海色发灰属正常。"
+  },
+  "packing": [
+   "身份证（买票安检必带）",
+   "现金 500–800 元（船上补票只收现金；岛上小卖部/民宿可能无信号）",
+   "防风外套/抓绒（10月底海风）",
+   "运动鞋（环岛石阶+礁石，防滑）",
+   "水壶1.5–2L容量（环岛中途仅石屋群有小卖部）",
+   "晕船药/晕船贴（提前30分钟吃）",
+   "防晒（帽子/冰袖/防晒霜，海边紫外线强）",
+   "手电/头灯（岛上夜极暗）",
+   "充电宝+数据线",
+   "毛巾/拖鞋（部分民宿不提供）",
+   "常用药（肠胃药/创可贴/驱蚊液）",
+   "少量干粮（岛上物价高：水5/可乐7/泡面10）"
+  ],
+  "bookings": [
+   {
+    "item": "去程：上海→沈家湾→庙子湖（车船联运）",
+    "how": "『舟山交通』/『嵊泗客运』小程序；开航前7天放票；南浦大桥08:20发车；东福山段船上现金补30元",
+    "deadline": "10/22 起（开航前7天）"
+   },
+   {
+    "item": "住宿：东福山民宿（D1/D2现住）+庙子湖民宿（D2）",
+    "how": "携程/平台比价下单（淡季现场也能讲到约140）；东福山选能接行李的；订前问清 D2 东福山→庙子湖的班次",
+    "deadline": "立即（越早选择越多）"
+   },
+   {
+    "item": "返程：庙子湖→沈家湾船票",
+    "how": "『东极海运』小程序提前1天放票",
+    "deadline": "10/30 早 7:00 前后"
+   },
+   {
+    "item": "岛际：东福山→庙子湖",
+    "how": "只能到东福山候船室现场买（最早约8:45，淡季≤3班）；问民宿老板当天实际班次",
+    "deadline": "10/30 当天（14:00前后到候船室）"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "上海→沈家湾→东极（去程·每日1班）",
+    "note": "南浦大桥旅游集散中心 08:20 大巴 → 沈家湾 10:30 船 → 庙子湖约13:00（换乘10–40分钟）→ 东福山约14:00–14:30；营运期 5/1–10/31（10/31为本季最后一天）"
+   },
+   {
+    "line": "东极→沈家湾→上海（返程·每日1班）",
+    "note": "庙子湖 13:40 船 → 沈家湾约16:10 → 大巴约2h回上海（傍晚18:30前后）"
+   },
+   {
+    "line": "路线B：宁波/沈家门·半升洞（停航备选）",
+    "note": "宁波站→大巴约2h（59–70元）→普陀客运中心→打车10–15分钟→半升洞；船日常8:05/14:20两班（节假日加开）、下100/中130/上150/贵宾260；『智游海星』去程+『东极海运』回程"
+   },
+   {
+    "line": "岛际班船",
+    "note": "庙子湖↔东福山/青浜：去程船上现金补票（东福山+30/青浜+20）、庙子湖同码头换乘（10–40分钟）；东福山→庙子湖候船室现场买（最早约8:45、淡季≤3班含傍晚17:2x经青浜班）"
+   },
+   {
+    "line": "岛上交通",
+    "note": "东福山全靠步行（无观光车）；庙子湖可选观光车88元（环岛30分钟、全下约1.5h）或全程步行4.5–6h"
+   }
+  ],
+  "safety": [
+   "⚠️ 大风停航是最大不确定：出发前1天+当天早上各查一次船班；预案=改半升洞路线B / 行程顺延一天 / 滞留改次日班次（多留一晚住宿余地）",
+   "环岛徒步：穿防滑运动鞋（石阶+礁石+野草），象鼻峰前后陡段拉铁链慢行；水1.5–2L；雨天/大风不勉强走全程",
+   "坐船：晕船提前30分钟吃药/贴；风大少在甲板久站；上下船听指挥",
+   "礁石/岸边：注意涨潮时间，不踩湿滑苔藓礁石深处；不单独夜闯礁石区",
+   "夜路带手电（村落外极暗）；海风大注意保暖防感冒",
+   "赶海/钓鱼：只在安全区域体验，穿鞋防割伤；观光钓听船家安排穿救生衣"
+  ],
+  "customs": [
+   "住宿惯例：全岛民宿9点退房；部分无浴巾/一次性拖鞋（自带）",
+   "现金：船上补票只收现金（东福山30/青浜20）；备500–800元最稳（岛上可能无信号）",
+   "海鲜先问价再点；山下东极海鲜面馆（28元）比山上大排档便宜近半；烧烤/土豆丝等家常反而好评",
+   "垃圾带走、不踩石屋老屋基；渔村码头拍照别打扰渔民作业",
+   "不追危险机位（夜间礁石/悬崖边）；蓝眼泪等自然现象看运气别强求",
+   "岛上叫车/观光车认准官方窗口（码头右侧），不跟拉客；住宿拉客可礼貌议价但先看房"
+  ]
+ },
+ "_geoFilled": true,
+ "_routeFilled": true
+}

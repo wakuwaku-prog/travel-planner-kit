@@ -24,8 +24,11 @@ def req(path, params):
         return json.load(r)
 
 
-def place_text(kw):
-    d = req("/place/text", {"keywords": kw, "city": CITY, "citylimit": "true", "offset": 3})
+def place_text(kw, city=None, citylimit=True):
+    params = {"keywords": kw, "city": city or CITY, "offset": 3}
+    if citylimit:
+        params["citylimit"] = "true"
+    d = req("/place/text", params)
     if d.get("status") == "1" and d.get("pois"):
         p = d["pois"][0]
         return {"lng": p["location"].split(",")[0], "lat": p["location"].split(",")[1],
@@ -33,8 +36,8 @@ def place_text(kw):
     return None
 
 
-def geocode(addr):
-    d = req("/geocode/geo", {"address": addr, "city": CITY})
+def geocode(addr, city=None):
+    d = req("/geocode/geo", {"address": addr, "city": city or CITY})
     if d.get("status") == "1" and d.get("geocodes"):
         loc = d["geocodes"][0]["location"]
         return {"lng": loc.split(",")[0], "lat": loc.split(",")[1], "poiId": "", "address": ""}
@@ -44,10 +47,13 @@ def geocode(addr):
 def fill_one(obj):
     if str(obj.get("lng", "")).strip() and str(obj.get("lat", "")).strip():
         return "已有坐标，跳过"
+    city = obj.get("geoCity") or CITY  # 个别点跨市（如南浦大桥在上海 021），用 geoCity 覆盖
     for kw in (obj.get("geoQuery"), obj.get("geoFallback")):
         if not kw:
             continue
-        r = place_text(kw)
+        r = place_text(kw, city=city)
+        if not r:  # citylimit 过滤太脏时，去掉 citylimit 全国重试一次
+            r = place_text(kw, city=city, citylimit=False)
         time.sleep(0.35)
         if r:
             obj["lng"], obj["lat"] = r["lng"], r["lat"]
@@ -57,7 +63,7 @@ def fill_one(obj):
                 obj["address"] = r["address"]
             return f"命中: {kw} -> ({r['lng']},{r['lat']})"
     if obj.get("address"):
-        r = geocode(obj["address"])
+        r = geocode(obj["address"], city=city)
         time.sleep(0.35)
         if r:
             obj["lng"], obj["lat"] = r["lng"], r["lat"]

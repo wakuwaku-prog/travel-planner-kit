@@ -505,6 +505,15 @@ btns.forEach(function(b){b.addEventListener('click',function(){
 def fill_demo(build=True):
     global _NDAYS
     files = glob.glob(os.path.join(TRIP_DIR, "trip-*.json"))
+    # 多行程并存时的渲染顺序（决定 index.html 最终显示哪个行程）：
+    #   meta.primary=true 的最后渲染；否则按出发日期升序（日期最新者最后渲染胜出）
+    def _render_order(fpath):
+        try:
+            meta = json.load(open(fpath, encoding="utf-8")).get("meta", {})
+        except Exception:
+            return (0, "")
+        return (1 if meta.get("primary") else 0, (meta.get("dates") or [""])[-1])
+    files.sort(key=_render_order)
     if not files:
         # 模板模式：无行程数据时输出说明页
         os.makedirs(SITE_DIR, exist_ok=True)
@@ -528,6 +537,7 @@ def fill_demo(build=True):
         trip = json.load(open(f, encoding="utf-8"))
         os.makedirs(SITE_DIR, exist_ok=True)
         title = trip["meta"]["destination"]
+        slug = trip["meta"].get("slug", "")
         subtitles = f"{title} · {trip['meta']['days']}天 · 出发{trip['meta']['departureCity']} · {trip['meta']['travelers']} · {'/'.join(trip['meta']['preferences'])}"
         metachips = "".join(
             f"<span class='metachip'><b>{esc(k)}</b> {esc(v)}</span>"
@@ -642,7 +652,8 @@ def fill_demo(build=True):
             if os.path.isdir(EXP):
                 for fn in sorted(os.listdir(EXP)):
                     if kind and not fn.endswith(kind): continue
-                    if not f.endswith((".kml", ".gpx")): continue
+                    if not fn.endswith((".kml", ".gpx")): continue
+                    if slug and f"trip-{slug}" not in fn: continue  # 只列当前行程的导出物
                     size = os.path.getsize(os.path.join(EXP, fn)) // 1024
                     rows.append(f"<a class='nav' style='margin:3px 8px 3px 0' href='export/{fn}' download>⬇️ {fn}（{size}KB）</a>")
             return "".join(rows)

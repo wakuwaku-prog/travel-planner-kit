@@ -33,6 +33,14 @@ def call_direction(mode, origin, dest):
         return json.load(r)
 
 
+def haversine_km(a, b):
+    """两点球面距离（km），用于 manual 天判断是否同岛短腿。"""
+    from math import radians, sin, cos, asin, sqrt
+    lon1, lat1, lon2, lat2 = map(radians, [float(a["lng"]), float(a["lat"]), float(b["lng"]), float(b["lat"])])
+    h = sin((lat2 - lat1) / 2) ** 2 + cos(lat1) * cos(lat2) * sin((lon2 - lon1) / 2) ** 2
+    return 2 * asin(sqrt(h)) * 6371.0
+
+
 def get_polyline(mode, a, b):
     o = f"{float(a['lng']):.6f},{float(a['lat']):.6f}"
     d = f"{float(b['lng']):.6f},{float(b['lat']):.6f}"
@@ -63,14 +71,26 @@ def build(trip):
             if p and p.get("lat"):
                 seq.append(p)
         mode = "walking" if "步行" in (day.get("dailyRoute", {}).get("mode") or "") else "driving"
+        manual = bool(day.get("dailyRoute", {}).get("manual"))  # 跨海/混合交通日：不能整段交给高德
         legs = []
         polyline_all = []
         for i in range(len(seq) - 1):
-            pts, o, d = get_polyline(mode, seq[i], seq[i + 1])
+            a, b = seq[i], seq[i + 1]
+            o = f"{float(a['lng']):.6f},{float(a['lat']):.6f}"
+            d = f"{float(b['lng']):.6f},{float(b['lat']):.6f}"
+            if manual:
+                pts = None
+                if haversine_km(a, b) <= 4.0:  # 同岛短腿：尝试真实步行路径，失败或跨海长腿退化直线段
+                    pts, o, d = get_polyline("walking", a, b)
+                    time.sleep(0.3)
+                if not pts:
+                    pts = [[float(a["lng"]), float(a["lat"])], [float(b["lng"]), float(b["lat"])]]
+            else:
+                pts, o, d = get_polyline(mode, a, b)
+                time.sleep(0.3)
             if pts:
                 polyline_all.extend(pts)
-            legs.append({"from": seq[i]["name"], "to": seq[i + 1]["name"], "polyline": pts, "origin": o, "dest": d})
-            time.sleep(0.3)
+            legs.append({"from": a["name"], "to": b["name"], "polyline": pts, "origin": o, "dest": d})
         days.append({"day": day["day"], "date": day.get("date"), "theme": day.get("theme"),
                      "mode": mode, "points": [{"name": p["name"], "lng": p["lng"], "lat": p["lat"], "desc": p.get("notes", "")} for p in seq],
                      "legs": legs, "polyline": polyline_all})
