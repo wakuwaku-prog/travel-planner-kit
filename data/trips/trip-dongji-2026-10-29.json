@@ -20,7 +20,7 @@
    "徒步环岛"
   ],
   "pace": "均衡",
-  "primary": true,
+  "primary": false,
   "sources": {
    "videos": 8,
    "posts": 18,
