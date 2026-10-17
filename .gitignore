@@ -15,7 +15,7 @@ __pycache__/
 *.py[cod]
 
 # 本地生成物（可由脚本重建）
-site/index.html
+site/*.html
 
 # OS / 编辑器
 .DS_Store

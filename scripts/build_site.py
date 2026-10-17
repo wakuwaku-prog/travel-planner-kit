@@ -3,7 +3,7 @@
 """将 data/trips/trip-*.json 渲染成单文件/travel-site/site/index.html
 带高德 JS API 每日路线 + 一键高德导航。部署静态站即可用。
 """
-import json, os, glob, sys, urllib.parse
+import json, os, glob, re, sys, urllib.parse
 
 SITE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site")
 TRIP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "trips")
@@ -21,6 +21,14 @@ def esc(s):
 _NDAYS = 3  # 由 fill_demo 按行程天数覆盖；poi_card 用它生成「+D1/+D2/…」按钮
 
 
+def _nav_html(p, nav_base):
+    """容错：缺坐标时不生成导航链接（fill_geo.py 未命中的点位不应导致建站崩溃）。"""
+    if p.get("lng") and p.get("lat"):
+        to = f"{p['lng']},{p['lat']},{urllib.parse.quote(p['name'])}"
+        return f"<a class='nav' href='{nav_base.format(to=to)}' target='_blank'>🧭 高德导航</a>"
+    return "<span class='nav' style='background:#b9c2cc;cursor:not-allowed'>🧭 待回填坐标</span>"
+
+
 def poi_card(p, nav_base):
     nd = globals().get("_NDAYS", 3)
     chips = "".join(
@@ -36,7 +44,7 @@ def poi_card(p, nav_base):
       <p>{esc(p.get('notes',''))}</p>
       {tags}
       <div class='actions'>
-        <a class='nav' href='{nav_base.format(to=f"{p['lng']},{p['lat']},{urllib.parse.quote(p['name'])}")}' target='_blank'>🧭 高德导航</a>
+        {_nav_html(p, nav_base)}
         <a class='detail' target='_blank' data-poi='{p['id']}' href='javascript:;'>详情</a>
       </div>
       <div class='sources'>{srcs}</div>
@@ -533,6 +541,16 @@ def fill_demo(build=True):
             f.write(html)
         print("模板模式：无 trip 数据，已生成说明页")
         return
+
+    def _wants_primary(fpath):
+        try:
+            return bool(json.load(open(fpath, encoding="utf-8")).get("meta", {}).get("primary"))
+        except Exception:
+            return False
+
+    _primaries = [f for f in files if _wants_primary(f)]
+    # index.html 归属：有 primary 时取排序最后的一个；都没有 primary 则取排序最后者（沿用「最新者占主页」旧行为）
+    _index_file = _primaries[-1] if _primaries else files[-1]
     for f in files:
         trip = json.load(open(f, encoding="utf-8"))
         os.makedirs(SITE_DIR, exist_ok=True)
@@ -653,7 +671,7 @@ def fill_demo(build=True):
                 for fn in sorted(os.listdir(EXP)):
                     if kind and not fn.endswith(kind): continue
                     if not fn.endswith((".kml", ".gpx")): continue
-                    if slug and f"trip-{slug}" not in fn: continue  # 只列当前行程的导出物
+                    if slug and not re.match(rf"^trip-{re.escape(slug)}(?:-day\d+)?\.", fn): continue  # 只列当前行程的导出物
                     size = os.path.getsize(os.path.join(EXP, fn)) // 1024
                     rows.append(f"<a class='nav' style='margin:3px 8px 3px 0' href='export/{fn}' download>⬇️ {fn}（{size}KB）</a>")
             return "".join(rows)
@@ -701,9 +719,14 @@ def fill_demo(build=True):
         import_html.append(f"<ol class='poilist' style='font-size:13px'>{''.join(fav_points)}</ol>")
         import_html.append("<p style='color:#8895a5;font-size:12px'>提示：坐标来自高德（GCJ-02）。KML/GPX 供导入轨迹参考；本站地图即最完整的带地名线路图；高德官方不支持第三方静默写入收藏，唯一个人侧官方路径是上面这种『详情页收藏』。</p>")
         html = html.replace("__IMPORT_PLACEHOLDER__", "".join(import_html))
-        with open(os.path.join(SITE_DIR, "index.html"), "w", encoding="utf-8") as f:
-            f.write(html)
-        print("站点已生成:", os.path.join(SITE_DIR, "index.html"))
+        # 多方案并存：主页（index.html）归 _index_file；其余行程各输出 <slug>-<日期>.html 独立页，互不覆盖
+        if f == _index_file:
+            out_name = "index.html"
+        else:
+            out_name = f"{trip['meta'].get('slug', 'trip')}-{(trip['meta'].get('dates') or ['x'])[0]}.html"
+        with open(os.path.join(SITE_DIR, out_name), "w", encoding="utf-8") as fh:
+            fh.write(html)
+        print("站点已生成:", os.path.join(SITE_DIR, out_name))
 
 
 if __name__ == "__main__":
