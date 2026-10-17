@@ -1,7 +1,7 @@
 # travel-planner-kit — 通用旅行规划网站模板
 
-> 一套「调研 → 攻略 → 高德路线 → 可部署网站」的完整方法包。**不含任何具体目的地数据**，拿到即可规划任意目的地。
-> 由厦门实战项目沉淀（https://github.com/wakuwaku-prog/travel-site 是厦门实例仓库，含产出的数据与攻略）。
+> 一套「调研 → 攻略 → 高德路线 → 可部署网站」的完整方法包。方法本体与目的地数据解耦，拿到即可规划任意目的地；本仓库同时收录 **7 段实战行程**（见文末「已收录的行程」）。
+> 由厦门实战项目沉淀（原实例仓库 travel-site 保留作历史存档，全部数据已归并至本仓库）。
 
 ## 它能干什么
 
@@ -72,7 +72,7 @@ python scripts/amap/poi_favorite.py data/trips/trip-*.json
 
 # 6. 生成网站
 python scripts/build_site.py
-#   → site/index.html（无数据时会生成说明页）
+#   → site/index.html（primary 行程主页）+ site/<slug>-<日期>.html（其余行程各一张独立页）；无数据时生成说明页
 
 # 7. 部署（可选，模板自带 GitHub Actions）
 git push origin main   # 自动构建并发布到 GitHub Pages
@@ -123,10 +123,23 @@ git push origin main   # 自动构建并发布到 GitHub Pages
 - 坐标来自高德（GCJ-02）：导入高德系 App 无偏移；导入 Google 地球等 WGS84 工具会有系统偏差，属正常坐标差异。
 - 高德官方不支持第三方直接把行程写入用户收藏，KML 中转 / 逐段导航是目前通用做法。
 
-## 与厦门实例仓库的关系
+## 已收录的行程
 
-- 本仓库 = 方法/模板（无目的地数据）
-- https://github.com/wakuwaku-prog/travel-site = 用本方法生成的厦门行程实例（含完整数据与线上站：https://wakuwaku-prog.github.io/travel-site/）
+线上站（GitHub Pages，push 后自动重建）：https://wakuwaku-prog.github.io/travel-planner-kit/
+主页显示 `meta.primary` 的行程；其余行程各有独立页面 `<slug>-<日期>.html`。
+
+| 行程 | 日期 | 数据 | 攻略 | 站点页面 |
+|---|---|---|---|---|
+| 台州温岭·水桶岙 2 天 | 2026-10-29~30 | `data/trips/trip-shuitongao-2026-10-29.json` | [攻略](guides/水桶岙-shuitongao-攻略.md) | [主页](https://wakuwaku-prog.github.io/travel-planner-kit/) |
+| 东极岛 3 天 2 晚 | 2026-10-29~31 | `data/trips/trip-dongji-2026-10-29.json` | [攻略](guides/东极岛-dongji-攻略.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/dongji-2026-10-29.html) |
+| 绍兴一日 | 2026-10-06 | `data/trips/trip-shaoxing-2026-10-06.json` | [攻略](guides/绍兴-shaoxing-攻略.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/shaoxing-2026-10-06.html) |
+| 上海一日·双起点汇合版 | 2026-10-03 | `data/trips/trip-shanghai-2026-10-03.json` | [攻略](guides/上海-shanghai-攻略.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/shanghai-2026-10-03.html) |
+| 上海一日·市中心体验版 | 2026-10-04 | `data/trips/trip-shanghai-2026-10-04.json` | [市中心版](guides/上海-市中心体验版.md) / [体验类专项版](guides/上海-体验类专项版.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/shanghai-dt-2026-10-04.html) |
+| 南京 3 天 | 2026-10-02~04 | `data/trips/trip-nanjing-2026-10-02.json` | [攻略](guides/南京-nanjing-攻略.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/nanjing-2026-10-02.html) |
+| 厦门 3 天 2 晚 | 2026-09-18~20 | `data/trips/trip-xiamen-2026-09-18.json` | [攻略](guides/厦门-xiamen-攻略.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/xiamen-2026-09-18.html) |
+
+> 原独立实例仓库（travel-site / travel-site-nanjing 等）保留作历史存档，数据以本仓库为准。
+> 历史版本行程在 `data/trips/archive/`（不参与建站，仅留档）。
 
 ## 许可
 
