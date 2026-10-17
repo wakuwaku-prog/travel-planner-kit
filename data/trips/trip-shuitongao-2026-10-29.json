@@ -1,0 +1,1061 @@
+{
+ "meta": {
+  "primary": true,
+  "destination": "台州温岭·水桶岙",
+  "slug": "shuitongao",
+  "dates": [
+   "2026-10-29",
+   "2026-10-30"
+  ],
+  "days": 2,
+  "departureCity": "上海",
+  "travelers": "1人（单人）",
+  "budget": "穷游",
+  "preferences": [
+   "海岸徒步/自然风光",
+   "穷游省钱攻略",
+   "美食小吃",
+   "周边顺路景点"
+  ],
+  "pace": "休闲",
+  "sources": {
+   "videos": 5,
+   "posts": 15,
+   "web": 3,
+   "postsSeeds": 106
+  },
+  "generatedAt": "2026-10-17",
+  "status": "调研完成：B站5条高频视频全文转写精读（大环线vlog/两天一夜露营全攻略/清明实况/小环线保姆级/一日游实录）+ 小红书106篇去重种子标题池（15篇关键证据标注，小红书note精读因浏览器扩展断连未做，已以视频全文+标题池双源交叉验证补齐）+ Trip.com班次/open-meteo天气/高德POI三路web核实。当前无可查证的封闭/管控信息，最近组队帖10-16仍在约伴，仅有军事区无人机禁飞的共同证词；出发前建议再查一次最新公告"
+ },
+ "sources": [
+  {
+   "id": "v01",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Km421N74Z",
+   "title": "水桶岙大环线徒步vlog（下集，五一出行实录）",
+   "author": "（见链接）",
+   "status": "已转写",
+   "summary": "起点小交陈村（转写「小礁城」）公路段爬升较大、有指示牌处正式进山；山脊线风景佳、左右分别是船港与群山；石台阶+石子平路好走但碎石滑；军事基地（迷彩球建筑）旁领队强调不能放飞无人机；下午来的人在下坡苦路段排队3小时；大环线约14km、8点进山13:03已9km、全程6h33m；沙滩有两个简易便利店（卖水/饭、无冰淇淋）；大环线灌木茂密易走错路；停车位置傍晚停满车",
+   "used": true
+  },
+  {
+   "id": "v02",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1DemUBgEFV",
+   "title": "水桶岙两天一夜徒步+露营全攻略（衣食住行全流程）",
+   "author": "（见链接）",
+   "status": "已转写",
+   "summary": "全流程干货：自驾导航小交陈村进村有闸机、停车费1.5h以上到24h内20元并隔天重算；高铁杭州东→温岭106元参考；温岭站打车到村40km约1h/70-80元；公交232路（至松门各站约1h10m/11元）下车换打车10元/10-15分钟更优，或232→换乘217路直达小交陈步行800m全程约2h；11月底5-10°C推荐的速干+硬壳装备；松门镇买嵌糕/泡虾做路餐；小环线7km+/爬升300+/最高180+/2-3h；重装可寄存徒步起点小卖部（5元、约18点关门）；日出点=起点走30分钟的山脊高处、「沙滩看不到日出」（东有山挡）；日落点=往山的西侧近入口方向；起点→沙滩直达线1.2km/30分钟路况最好；露营扎营避开涨潮线、日落之后店家关门无厕所无洗漱需自带水；大环线含小环线并继续北上绕圈、累计爬升700+/最高200+、轻装变体（沙滩捷径转大环）约9km/3-4h；大环线特有路况是茂密杂草；返程公交=打车松门卫生院10元→232路11元→温岭站；补给仅起点/沙滩/步道一处，可乐5-10元",
+   "used": true
+  },
+  {
+   "id": "v03",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1AHdTYME58",
+   "title": "水桶岙清明假期实况：堵到崩溃（反面教材）",
+   "author": "（见链接）",
+   "status": "已转写",
+   "summary": "清明第二天直播式实拍：村内停车场爆满、公路走一段才到「松门沿海登山健身步道」起点；五一清明式客流把不陡的路段堵成3km长队、单处四五行落差坡排队1小时+、有人天黑被困山上；UP主走海边野路艰难绕行、被海水冲湿、手被刺藤扎伤；结论=这条路是「好走但会堵人」的路线，节假日必然大堵，非节假日体验完全不同；反复强调量力而行、身体不好别凑热闹",
+   "used": true
+  },
+  {
+   "id": "v04",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1fx4y1m7Yx",
+   "title": "水桶岙小环线保姆级攻略（含分段海拔/里程/路线判断）",
+   "author": "户外艾自然",
+   "status": "已转写",
+   "summary": "定位：温岭松门镇、三面环海的野生海岸线、可露营、称江浙沪休闲徒步天花板；小环线7km/爬升约300m/入门级/3-6h（新手可走）；分段节奏：起点小交陈公交站7m→水泥路→上坡→岩石路→山脊线140m(1.9km)→下坡(130m)→大象岩72m(2.4km)→第一个风顶52m(2.8km)→海岸线→土路→左转下沙滩(4.9km)→沙滩小卖部(5.3km)→小屋→上坡→军事雷达球→公交路→回到小交陈公交站(6.7km)；公路左右都与「公礁站」（公交站转写）衔接",
+   "used": true
+  },
+  {
+   "id": "v05",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1vgZNY9ETS",
+   "title": "水桶岙一日游实录（夏季果冻水视角）",
+   "author": "（见链接）",
+   "status": "已转写",
+   "summary": "天气近30°C实测：一公里爬升大、易中暑、务必带冰水；1公里处即小环线/大环线岔口；要点：仙人床=大树遮挡的阴凉打卡位、大象岩=下坡后沿岩走一段长上坡；海边碎石坡路段危险、有铁绳可拉、务必找稳支点；沿海窄路穿小树林不晒；沙滩本地小卖部绿豆汤5元、杨梅冻等；军事基地=雷达球区域不能进/不能飞（沙滩方向可以飞）；可观「像火山的岛」与停泊的韩籍货船；两步路实测小环线7km、纯走2.5h+玩1.5h≈4h；建议：新手走小环线即可「把所有景观看遍」，体力好走大环6-8h",
+   "used": true
+  },
+  {
+   "id": "w01",
+   "platform": "web",
+   "type": "post",
+   "url": "https://hk.trip.com/trains/china/route/shanghai-hongqiao-to-wenling",
+   "title": "上海虹桥→温岭高铁班次",
+   "author": "Trip.com",
+   "status": "已核实",
+   "summary": "沪→温每日约31班、最短2h33m、二等座低至约170元；06:24 G7363为首班；提前15天可订；对应行程主选首班大巴运力；返程同通道反向挑选15:30-17:00段班次",
+   "used": true
+  },
+  {
+   "id": "w02",
+   "platform": "web",
+   "type": "post",
+   "url": "https://ditu.amap.com/",
+   "title": "高德地图 POI 核实（温岭站/小交陈村/徒步路线/沙滩/松门）",
+   "author": "高德地图",
+   "status": "已核实",
+   "summary": "温岭站B024006UXW(121.325421,28.479562)；水桶岙徒步路线B0MA6LKZBR(121.640067,28.337186)；水桶岙沙滩B0HGLDPYQV(121.652196,28.341073)；松门镇人民政府B024006WWT(121.590028,28.349469)；小交陈村村委会(121.633319,28.335936)与小交陈公交站温岭217B路(121.632427,28.335816)核实存在；「松南南闸」公交站(121.603967,28.328567)有温岭232路等10余条线",
+   "used": true
+  },
+  {
+   "id": "w03",
+   "platform": "web",
+   "type": "post",
+   "url": "https://open-meteo.com/",
+   "title": "温岭 14 天天气（open-meteo，2026-10-03 后期预测口径）",
+   "author": "open-meteo",
+   "status": "已核实",
+   "summary": "坐标28.33,121.73：10-29 峰值22.6°C/低19.5°C、降水概率16%、阵风53km/h偏大；10-30 峰值21.1/低18.8°C、降水20%、阵风30km/h；多云为主。14天预测不确定性大，出发前3天内复核一次",
+   "used": true
+  },
+  {
+   "id": "x01",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a462d3300000000060334b7?xsec_token=ABF1AKqhi53ea5gK503qPmAvdagAupLdYVmqQbs0Y3UvU=&xsec_source=",
+   "title": "温岭嵌糕",
+   "author": "小金学长",
+   "likes": "6803",
+   "status": "标题池证据（106篇去重种子，未逐篇精读）",
+   "summary": "温岭美食搜索结果池中的顶流（6803赞）——温岭小吃必尝代表作",
+   "used": true
+  },
+  {
+   "id": "x02",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69cf9b4a000000001a02bf09?xsec_token=ABxF1NI8ht_7DcOwlvOLEBvZFnDcMK3aZErGJ8vBHV4Og=&xsec_source=",
+   "title": "浙江宝藏海岛徒步路线❗️大海+沙滩+火山",
+   "author": "卢小君嬉游记",
+   "likes": "4990",
+   "status": "标题池证据",
+   "summary": "温岭徒步题材高流量内容（4990赞），证明水桶岙是浙江海岛海岸徒步的头部选题",
+   "used": true
+  },
+  {
+   "id": "x03",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6916e7970000000005013f12?xsec_token=ABH8J25NvzVP_ZQLRGSxZQxKyWaKK50HvcEtPHH9fSNDE=&xsec_source=",
+   "title": "这才是真实的水桶岙、别被网上的滤镜给骗了",
+   "author": "蚂蚁路书",
+   "likes": "3095",
+   "status": "标题池证据",
+   "summary": "去滤镜向高赞帖（3095赞）=「浙版麦理浩径」是宣传话术、实际是条不错但不算顶级绝景的海岸线，做预期管理",
+   "used": true
+  },
+  {
+   "id": "x04",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68b2e409000000001b035281?xsec_token=ABpSfHitRLPketD6thHcQ08MsnMWIjGTTbqmHP3TedlHU=&xsec_source=",
+   "title": "【上海特种兵一日线】水桶岙",
+   "author": "椰汁好喝耶",
+   "likes": "741",
+   "status": "标题池证据",
+   "summary": "上海出发一日往返可行（741赞）作为本攻略两天一夜的降档备选",
+   "used": true
+  },
+  {
+   "id": "x05",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6819b0700000000022037737?xsec_token=ABaGLOGrr_gvPhU4ID67sbGYnGB5IEcKTXxGlyHeddXAo=&xsec_source=",
+   "title": "【水桶岙小环线】答应我节假日别去🥺",
+   "author": "绿僵菌",
+   "likes": "288",
+   "status": "标题池证据",
+   "summary": "与B站v03清明实况互证：节假日小环线必堵（288赞），工作日错峰是体验关键",
+   "used": true
+  },
+  {
+   "id": "x06",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68e496df0000000004004f25?xsec_token=ABd6CRQJ-sxugDVg_eT9S1FLz_XRhbkEmWZ9uAlYcH6fE=&xsec_source=",
+   "title": "水桶岙徒步｜根本就不是浙版麦理浩径",
+   "author": "阿发滴好朋友",
+   "likes": "278",
+   "status": "标题池证据",
+   "summary": "户外爱好者视角的预期纠偏（278赞）：跟香港麦理浩径不在一个量级，走前别被种草话术推高预期",
+   "used": true
+  },
+  {
+   "id": "x07",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/690768890000000004010051?xsec_token=AB83RKCHtbg1ww91lYDjZf4YkuGG7rubM6txFR_3UOZXU=&xsec_source=",
+   "title": "水桶岙大小环线怎么选？食宿攻略及避雷汇总",
+   "author": "eee",
+   "likes": "68",
+   "status": "标题池证据",
+   "summary": "大小环线选择+食宿避雷的综合帖（68赞），与v02食宿结论互相印证",
+   "used": true
+  },
+  {
+   "id": "x08",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/690867c50000000007030325?xsec_token=ABG7pgwPWWxwXqxxUjsUqJazpbidpIhkYAADJHTNK2usc=&xsec_source=",
+   "title": "11.2水桶岙大环线，很爽但不建议小白独行",
+   "author": "🌳🌳",
+   "likes": "66",
+   "status": "标题池证据",
+   "summary": "大环线要素：碎石/杂草/体力消耗大、独行有风险（66赞）；单人走大环需按安全清单自评",
+   "used": true
+  },
+  {
+   "id": "x09",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69b02073000000000b036437?xsec_token=ABYa1Ey0uV9CPpf6OeI-NQUg56c-U1DYMGllASWxDTzBA=&xsec_source=",
+   "title": "水桶岙大环| 上海周五出发2天完全不赶路线",
+   "author": "Tommy",
+   "likes": "92",
+   "status": "标题池证据",
+   "summary": "与本攻略最同构的参考行程：上海工作日出发两日完全不赶（92赞），支持本方案「工作日错峰」判断",
+   "used": true
+  },
+  {
+   "id": "x10",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6ab1f47500000000360163e2?xsec_token=ABSWi_juMcqK9nNIhal_j5ENlIPyyN5cnl-PvDgL2RjnM=&xsec_source=",
+   "title": "水桶岙-暴晒和垃圾堆🙁",
+   "author": "JIOZi",
+   "likes": "85",
+   "status": "标题池证据",
+   "summary": "踩坑点：海边无遮挡暴晒+沿途垃圾管理缺位（85赞）→ 防晒必备+自带垃圾袋",
+   "used": true
+  },
+  {
+   "id": "x11",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6ad1b39f0000000018038517?xsec_token=ABTFFNHAys0Yj_2aX1bRdw0X2cM2u4pbBzXYXsUSuX0gE=&xsec_source=",
+   "title": "水桶岙 10.17-10.18 有去的不",
+   "author": "甜豆浆、",
+   "likes": "赞",
+   "status": "标题池证据（关键时效证据）",
+   "summary": "10-16发布、约本周末（10.17-10.18）结伴——间接证明当前时段路线正常开放未封闭",
+   "used": true
+  },
+  {
+   "id": "x12",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a743c0a0000000025007473?xsec_token=ABoJw4evhOcYE1GbKcKBhML_L78pCa3ERdWqLXVChlYFg=&xsec_source=",
+   "title": "水桶岙最近的酒店｜温岭远洲逸廷酒店",
+   "author": "温岭远洲逸廷酒店-来来",
+   "likes": "3",
+   "status": "标题池证据（商家帖）",
+   "summary": "水桶岙最近的酒店为温岭远洲逸廷酒店（商家自述），穷游档可对比但可能偏贵",
+   "used": true
+  },
+  {
+   "id": "x13",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a42f79f000000001003e900?xsec_token=ABQdgJ_DLnWxS3Rxp_pmgsFWah74aGIqkFpy4tB1voe_I=&xsec_source=",
+   "title": "温岭住宿，可以送到水桶岙，方便无广",
+   "author": "拍照呆瓜",
+   "likes": "7",
+   "status": "标题池证据",
+   "summary": "本地民宿有提供「接送至徒步口」的服务（7赞参考）——穷游省打车费的关键技巧",
+   "used": true
+  },
+  {
+   "id": "x14",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6950e9d200000000220223db?xsec_token=ABHtxQM6-exGYGtRUHNQicVR7BUDTLxZupYwmgBrmpU2E=&xsec_source=",
+   "title": "水桶岙＋小箬村＋落日＋长屿硐天｜照搬攻略",
+   "author": "摇曳",
+   "likes": "133",
+   "status": "标题池证据",
+   "summary": "常见组合拳行程模板（133赞）：水桶岙+小箬村+落日+长屿硐天，为顺路景点备选层提供依据",
+   "used": true
+  },
+  {
+   "id": "x15",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6881f658000000002203ead7?xsec_token=AB28fHaflbeu8jESRQiu3CeRY3Qe94OXoKM0iWnJx2KSw=&xsec_source=",
+   "title": "网红小箬村拔草｜原来网图都是 “照骗” 啊！",
+   "author": "小板",
+   "likes": "282",
+   "status": "标题池证据",
+   "summary": "小箬村「照骗」惩罚组高赞帖（282赞）。同类拔草/劝退帖合计5+篇——顺路可去、专程不值",
+   "used": true
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "交通",
+   "name": "温岭站（高铁到达）",
+   "address": "台州市温岭市",
+   "lng": "121.325421",
+   "lat": "28.479562",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 15,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "上海虹桥→温岭二等座约170元（穷游档实际约170-200元）",
+   "openHours": "随班次",
+   "tags": [
+    "高铁抵达",
+    "打车集散点"
+   ],
+   "notes": "G7363 06:24 首班、约09:00-09:20到；出站跟指示到打车点，上车前报「松门镇小交陈村」；全程约40km、1小时上下、70-80元（可用高德/滴滴比价，或嘀嗒拼车）；雨天或上班早高峰适当放宽20分钟",
+   "sourceIds": [
+    "w01",
+    "w02",
+    "v02"
+   ],
+   "checked": true,
+   "poiId": "B024006UXW",
+   "geoQuery": "温岭站",
+   "geoFallback": "温岭高铁站"
+  },
+  {
+   "id": "p02",
+   "category": "镇区/美食",
+   "name": "松门镇（住宿+吃饭集散）",
+   "address": "台州市温岭市松门镇",
+   "lng": "121.590028",
+   "lat": "28.349469",
+   "day": 1,
+   "slot": "中午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "—",
+   "openHours": "全天（镇上店家多为早午市）",
+   "tags": [
+    "住宿区",
+    "美食区",
+    "集散中心"
+   ],
+   "notes": "穷游定位：把行李与住宿放这里，轻装去徒步。镇上能吃到嵌糕/泡虾/海鲜面等本地味、比景区价低；距离小交陈村约10km、打车15-20分钟、20-25元；v02提到「可送货到水桶岙的民宿」存在但需现问",
+   "sourceIds": [
+    "v02",
+    "v04",
+    "x07",
+    "x13"
+   ],
+   "checked": true,
+   "poiId": "B024006WWT",
+   "geoQuery": "松门镇人民政府",
+   "geoFallback": "温岭松门镇"
+  },
+  {
+   "id": "p03",
+   "category": "徒步起点",
+   "name": "小交陈村（徒步起点·导航锚点）",
+   "address": "台州市温岭市松门镇小交陈村",
+   "lng": "121.633319",
+   "lat": "28.335936",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（停车 1.5h起步至24h内20元，隔日重计）",
+   "openHours": "全天",
+   "tags": [
+    "导航锚点",
+    "停车",
+    "寄存小卖部"
+   ],
+   "notes": "各视频转写作「小礁城/小郊城/小江城」均为该村（读音xiǎo jiāo chén）；自驾导航用此村名、进村有闸机；村内有停车场；徒步起点小卖部提供寄存5元、约18:00关门；打车到达后沿指示牌步行800米左右到真正的登山口",
+   "sourceIds": [
+    "v02",
+    "v01",
+    "w02"
+   ],
+   "checked": true,
+   "poiId": "B0GUML997Y",
+   "geoQuery": "小交陈村",
+   "geoFallback": "松门镇小交陈村"
+  },
+  {
+   "id": "p04",
+   "category": "徒步",
+   "name": "水桶岙徒步路线（登山口·小环线/大环线）",
+   "address": "台州市温岭市松门镇属地",
+   "lng": "121.640067",
+   "lat": "28.337186",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 210,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（无门票无预约，仅停车+补给消费）",
+   "openHours": "全天通行；日落后无照明不设救援窗口性",
+   "tags": [
+    "海岸徒步",
+    "山峰+沙滩",
+    "免费",
+    "山脊线",
+    "大象岩",
+    "仙人床"
+   ],
+   "notes": "官方路线名「松门沿海登山健身步道」（v03视频里指示牌）。小环线7km/爬升300m/2.5-3.5h；大环线14km/爬升700m/5-8h；起点→沙滩直达线1.2km/30分钟全线路况最好；高风险点：山脊下段碎石坡（有铁绳）与一处约4-5m落差的陡降段；军事区提示：途中迷彩球建筑为军事管理区，禁止进入、禁止飞行/航拍；经典地标顺序（小环线）：水泥路→山脊线→大象岩→仙人床→海岸窄路→沙滩",
+   "sourceIds": [
+    "v04",
+    "v01",
+    "v02",
+    "v05"
+   ],
+   "checked": true,
+   "poiId": "B0MA6LKZBR",
+   "geoQuery": "水桶岙徒步路线",
+   "geoFallback": "水桶岙"
+  },
+  {
+   "id": "p05",
+   "category": "海滩",
+   "name": "水桶岙沙滩",
+   "address": "台州市温岭市松门镇属地水桶岙",
+   "lng": "121.652196",
+   "lat": "28.341073",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（小卖部消费：可乐5元起点/10元步道，绿豆汤5元）",
+   "openHours": "全天；日落（约17:05）后店家关门",
+   "tags": [
+    "沙滩",
+    "露营地",
+    "日落",
+    "免费",
+    "补给点"
+   ],
+   "notes": "沙滩呈月牙形、背后即山；玩水点/拍照点/露营点三合一；露营需选涨潮线以上（潮汐按当天查）；日落按v02推荐去山的西侧近入口侧机位；沙滩以东「看不见日出」有东面山遮挡——想看日出请早走半小时上山脊高处；东面海面碎石多、不建议下海野泳；「果冻水」是机位与天气条件的加成效果，实际色彩请按v05预期降一档",
+   "sourceIds": [
+    "v02",
+    "v05",
+    "w02",
+    "x10"
+   ],
+   "checked": true,
+   "poiId": "B0HGLDPYQV",
+   "geoQuery": "水桶岙沙滩",
+   "geoFallback": "水桶岙 海滩"
+  },
+  {
+   "id": "p06",
+   "category": "交通应变",
+   "name": "松南南闸（232路公交站）",
+   "address": "台州市温岭市松门镇",
+   "lng": "121.603967",
+   "lat": "28.328567",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 5,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "公交11-12元（vs 打车70-80元）",
+   "openHours": "班次有限，发车间隔长",
+   "tags": [
+    "公交",
+    "穷游降档",
+    "备选"
+   ],
+   "notes": "公交最省钱路径：温岭站232路→此站或前一站下车（约1h10m、11元）→打车10元/10-15分钟进村；或232路→换217路B→小交陈(公交站)→步行800m；「温岭交通」公众号查实时公交；发车少，别硬等——单人赶路强度大时推荐直接打车",
+   "sourceIds": [
+    "v02",
+    "w02"
+   ],
+   "checked": true,
+   "poiId": "BV11229415",
+   "geoQuery": "松南南闸",
+   "geoFallback": "松门南闸 公交站"
+  },
+  {
+   "id": "p07",
+   "category": "交通",
+   "name": "温岭站（返程）",
+   "address": "台州市温岭市",
+   "lng": "121.325421",
+   "lat": "28.479562",
+   "day": 2,
+   "slot": "傍晚",
+   "durationMin": 105,
+   "bookingRequired": true,
+   "bookingNote": "返程班次请在12306先买好：温岭→上海虹桥每日约31班；建议15:30-16:30发车段，2.5-3h后回沪",
+   "ticketPrice": "二等座约170-200元",
+   "openHours": "随班次",
+   "tags": [
+    "返程",
+    "硬卡点"
+   ],
+   "notes": "D2流程（休闲版）：小交陈玩上午半段→12:30回松门午饭→13:40前后打车40km去温岭站（预留1小时+）→15:30-16:30班次上车。温岭站与上海间仅靠高铁连接，站内打车是进山的唯一主路径",
+   "sourceIds": [
+    "w01"
+   ],
+   "checked": true,
+   "poiId": "B024006UXW",
+   "geoQuery": "温岭站",
+   "geoFallback": "温岭高铁站"
+  },
+  {
+   "id": "p08",
+   "category": "备选",
+   "name": "七彩小箬村（备选·预期管理）",
+   "address": "台州市温岭市石塘镇小箬村",
+   "lng": "121.584931",
+   "lat": "28.254805",
+   "day": 2,
+   "slot": "备选",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（村内餐饮略贵）",
+   "openHours": "全天",
+   "tags": [
+    "备选",
+    "网红",
+    "照骗预警",
+    "顺路"
+   ],
+   "notes": "备选不进主线：位于水桶岙东南侧石塘半岛上（顺路网约10-15分钟车程）；多篇拔草帖描述「去滤镜后色彩饱和度全靠修图、人流大」（x15等5+篇）；用户偏好避开网红点，主线不加，如体力有余/想去拍照可作D2下午可选段",
+   "sourceIds": [
+    "x15",
+    "x14",
+    "v02"
+   ],
+   "checked": false,
+   "poiId": "B0LKXUO3K3",
+   "geoQuery": "温岭小箬村",
+   "geoFallback": "小箬村"
+  },
+  {
+   "id": "p09",
+   "category": "备选",
+   "name": "石塘半岛旅游度假区（备选·观景台/落日）",
+   "address": "台州市温岭市石塘镇",
+   "lng": "121.634928",
+   "lat": "28.286797",
+   "day": 2,
+   "slot": "备选",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "备选",
+    "落日",
+    "观景台",
+    "顺路"
+   ],
+   "notes": "备选不进主线：「对戒观景台」为D2赶高铁前可替换的落日/观景位（x14等）；距离松门镇约15km；如D2上午走小环线轻松、下午不赶路可顺路短逗——时间兜底原则：出发温岭站前3小时必须关闭所有备选",
+   "sourceIds": [
+    "x14",
+    "v02",
+    "w02"
+   ],
+   "checked": true,
+   "poiId": "B0FFJFGHFQ",
+   "geoQuery": "温岭市石塘半岛旅游度假区",
+   "geoFallback": "石塘半岛 度假区"
+  },
+  {
+   "id": "p10",
+   "category": "备选",
+   "name": "长屿硐天（备选·雨天方案）",
+   "address": "台州市温岭市长屿镇",
+   "lng": "121.443548",
+   "lat": "28.422894",
+   "day": 2,
+   "slot": "备选",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "旺季约70-100元（估，以官方为准）",
+   "openHours": "约8:00-16:30",
+   "tags": [
+    "备选",
+    "雨天替代",
+    "洞穴",
+    "人文"
+   ],
+   "notes": "备选不进主线且只在全程下雨时启用：水桶岙雨后路滑+山脊线暴露度高，迫不得已改去长屿硐天（人工石洞、相对不依赖天气、位于温岭市北面）；距离松门镇约30km、打车约50元，穷游档谨慎取舍",
+   "sourceIds": [
+    "x14"
+   ],
+   "checked": false,
+   "poiId": "B0240025J2",
+   "geoQuery": "长屿硐天",
+   "geoFallback": "温岭长屿硐天"
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h01",
+   "name": "松门镇周边经济型酒店/民宿（穷游主线）",
+   "type": "经济型",
+   "avgPrice": 130,
+   "day": 1,
+   "area": "松门镇（以高德POI为准）",
+   "lng": "121.590028",
+   "lat": "28.349469",
+   "poiId": "B024006WWT",
+   "dianpingKeyword": "温岭 松门镇 酒店",
+   "tips": "单人穷游首选：100-160元/晚（工作日不打挤）；优先挑「能接送/拼车去徒步口」的民宿（x13），能省两趟70-80元打车；入住后可让老板推荐镇上实惠海鲜面/炒年糕",
+   "sourceIds": [
+    "x13",
+    "x07",
+    "v02"
+   ],
+   "checked": false,
+   "geoQuery": "松门镇",
+   "geoFallback": "温岭松门镇 住宿",
+   "address": "松门镇"
+  },
+  {
+   "id": "h02",
+   "name": "石塘半岛海景民宿（备选）",
+   "type": "海景民宿",
+   "avgPrice": 220,
+   "day": 1,
+   "area": "石塘半岛（以高德POI为准）",
+   "lng": "121.634928",
+   "lat": "28.286797",
+   "poiId": "B0FFJFGHFQ",
+   "dianpingKeyword": "温岭 石塘半岛 民宿",
+   "tips": "如果想为「落日+日出」多加些氛围：石塘半岛海景民宿150-300元档次较多；距离徒步场15km、每天来回多花约40元打车，综合性价比略输松门镇",
+   "sourceIds": [
+    "v02"
+   ],
+   "checked": false,
+   "geoQuery": "石塘半岛旅游度假区",
+   "geoFallback": "温岭石塘 住宿",
+   "address": "石塘半岛"
+  },
+  {
+   "id": "h03",
+   "name": "温岭远洲逸廷酒店（备选·最近位）",
+   "type": "商务酒店",
+   "avgPrice": 380,
+   "day": 1,
+   "area": "温岭市郊（以高德POI为准）",
+   "lng": "121.595407",
+   "lat": "28.347157",
+   "poiId": "B0KDL7L9IS",
+   "dianpingKeyword": "温岭远洲逸廷酒店",
+   "tips": "距徒步点最近的酒店（x12商家帖自述），穷游档嫌贵可优先忽略；若预算松动可作为舒适备选",
+   "sourceIds": [
+    "x12"
+   ],
+   "checked": false,
+   "geoQuery": "温岭远洲逸廷酒店",
+   "geoFallback": "远洲逸廷",
+   "address": "温岭市（查实际门店地址）"
+  }
+ ],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "松门镇·嵌糕店（早饭/brunch）",
+   "type": "温岭小吃·嵌糕",
+   "avgPrice": 10,
+   "day": 1,
+   "area": "松门镇（以高德POI为准）",
+   "lng": "121.590028",
+   "lat": "28.349469",
+   "poiId": "B024006WWT",
+   "dianpingKeyword": "温岭 嵌糕",
+   "tips": "温岭名片级小吃（6803赞顶流）：年糕皮包裹炒粉干/肉末/萝卜丝等，各家配方版本不一，一份6-12元；松门镇均有分布、不用挑人气也常有惊喜；D1上午作为进山前的brunch",
+   "sourceIds": [
+    "x01",
+    "v02"
+   ],
+   "checked": false,
+   "geoQuery": "松门镇",
+   "geoFallback": "温岭 松门 嵌糕",
+   "address": "松门镇"
+  },
+  {
+   "id": "r02",
+   "name": "石塘/松门·泡虾摊",
+   "type": "台州油炸·泡虾",
+   "avgPrice": 8,
+   "day": 1,
+   "area": "石塘/松门（以高德POI为准）",
+   "lng": "121.605635",
+   "lat": "28.279311",
+   "poiId": "B0240022C8",
+   "dianpingKeyword": "温岭 泡虾",
+   "tips": "台州油炸小吃：面糊裹肉馅/虾仁现炸，4-10元一个；标题池证据+石塘高赞帖佐证；刚出锅最香、别囤",
+   "sourceIds": [
+    "v02",
+    "x01",
+    "x15"
+   ],
+   "checked": false,
+   "geoQuery": "石塘镇",
+   "geoFallback": "温岭 泡虾",
+   "address": "石塘/松门"
+  },
+  {
+   "id": "r03",
+   "name": "松门镇·海鲜面/炒年糕",
+   "type": "海鲜主食",
+   "avgPrice": 40,
+   "day": 1,
+   "area": "松门镇（以高德POI为准）",
+   "lng": "121.590028",
+   "lat": "28.349469",
+   "poiId": "B024006WWT",
+   "dianpingKeyword": "温岭 松门 海鲜面",
+   "tips": "穷游档D1晚/D2午主食：30-45元能吃到一整碗小海鲜浇头的面（算不上高级席面但很实在）；镇上老店多为夫妻老婆店、晚市关得早（约20:00前）；v02提到镇上能买温岭特色点心、可顺带安排D2早/路餐",
+   "sourceIds": [
+    "v02",
+    "x15"
+   ],
+   "checked": false,
+   "geoQuery": "松门镇",
+   "geoFallback": "温岭松门 海鲜面馆",
+   "address": "松门镇"
+  },
+  {
+   "id": "r04",
+   "name": "水桶岙沙滩小卖部（徒步补给）",
+   "type": "补给·绿豆汤/炒饭",
+   "avgPrice": 15,
+   "day": 1,
+   "area": "徒步终点沙滩",
+   "lng": "121.652196",
+   "lat": "28.341073",
+   "poiId": "B0HGLDPYQV",
+   "dianpingKeyword": "水桶岙 沙滩 小卖部",
+   "tips": "全程仅两、三处补给：起点+沙滩各有小卖部（v05称沙滩绿豆汤5元、v02称可乐5/10元；步道中段无补给）；日落前后关门；不要把钱花在「温岭特产身份」上、镇上更便宜",
+   "sourceIds": [
+    "v02",
+    "v05",
+    "v01"
+   ],
+   "checked": true,
+   "geoQuery": "",
+   "geoFallback": "",
+   "address": "水桶岙沙滩"
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "小环线徒步（7km/爬升300m）",
+   "where": "小交陈村→山脊线→大象岩→仙人床→沙滩→回",
+   "durationMin": 180,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "全员（入门级·当天主线）",
+   "sourceIds": [
+    "v04",
+    "v05",
+    "v01"
+   ]
+  },
+  {
+   "id": "e02",
+   "name": "山脊线上看日落",
+   "where": "徒步起点往西侧近入口段",
+   "durationMin": 40,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "全员（D1傍晚·视体力加段）",
+   "sourceIds": [
+    "v02"
+   ]
+  },
+  {
+   "id": "e03",
+   "name": "山脊线上看日出（可选·早起党专用）",
+   "where": "起点走30分钟至山脊高处",
+   "durationMin": 90,
+   "price": "免费（头灯必带，日出约06:05）",
+   "bookingRequired": false,
+   "bestFor": "早起的单人徒步党；集体路线不推荐夜行",
+   "sourceIds": [
+    "v02",
+    "v04"
+   ]
+  },
+  {
+   "id": "e04",
+   "name": "沙滩露营（自备睡帐）",
+   "where": "水桶岙沙滩（涨潮线以上）",
+   "durationMin": 600,
+   "price": "0元（装备自理；无洗漱、日落关门）",
+   "bookingRequired": false,
+   "bestFor": "自助徒步+穷游党的可选支线",
+   "sourceIds": [
+    "v02",
+    "v01"
+   ]
+  },
+  {
+   "id": "e05",
+   "name": "起点→沙滩直达线（1.2km/30分钟）",
+   "where": "小交陈村起步",
+   "durationMin": 40,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "轻量玩家/D2上午二次进山直奔沙滩",
+   "sourceIds": [
+    "v02",
+    "v04"
+   ]
+  },
+  {
+   "id": "e06",
+   "name": "大环线徒步（14km/爬升700m；轻装变体约9km）",
+   "where": "小交陈村起步→大环→回",
+   "durationMin": 270,
+   "price": "免费（碎石/杂草多）",
+   "bookingRequired": false,
+   "bestFor": "体力好/徒步经验≥3h场；单人慎选（见安全清单）",
+   "sourceIds": [
+    "v01",
+    "v02",
+    "x08"
+   ]
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-10-29",
+   "theme": "周四错峰进山：小环线全程+沙滩慢日",
+   "area": "温岭站→松门镇→小交陈村→小环线→沙滩→松门镇",
+   "items": [
+    {
+     "poiId": "p01",
+     "time": "09:05-09:20"
+    },
+    {
+     "poiId": "p02",
+     "time": "10:15-11:10"
+    },
+    {
+     "poiId": "p03",
+     "time": "11:45-12:15"
+    },
+    {
+     "poiId": "p04",
+     "time": "12:20-15:20"
+    },
+    {
+     "poiId": "p05",
+     "time": "15:20-17:10"
+    },
+    {
+     "poiId": "p02",
+     "time": "17:50-20:30"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "高铁+打车+徒步（D1主交通为打车）",
+    "polylines": [],
+    "distanceKm": 63.06,
+    "durationMin": 88.4,
+    "note": "由 route_fill.py 回填驾车口径。实际交通：06:24 G7363 上海虹桥→温岭（约09:05-09:20到）；温岭站打车40km≈70-80元至松门镇（放行李+嵌糕早午餐）；11:10再打车≈20-25元至小交陈村；徒步小环线7km约2.5-3.5h；17:20前后由村里的车/民宿接驳或原路打车回松门镇晚餐+住宿。",
+    "legs": [
+     {
+      "from": "p01",
+      "to": "p02",
+      "distanceKm": 44.83,
+      "durationMin": 44.1
+     },
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 6.8,
+      "durationMin": 13.7
+     },
+     {
+      "from": "p03",
+      "to": "p04",
+      "distanceKm": 0.72,
+      "durationMin": 1.8
+     },
+     {
+      "from": "p04",
+      "to": "p05",
+      "distanceKm": 1.52,
+      "durationMin": 7.5
+     },
+     {
+      "from": "p05",
+      "to": "p02",
+      "distanceKm": 9.19,
+      "durationMin": 21.3
+     }
+    ]
+   },
+   "notes": "错峰核心：周四出发。硬卡点仅两处——06:24 虹桥发车（05:50 前到站，虹桥早高峰安检建议预留 60 分钟），到达温岭站后直接打车、不要在站内徘徊。D1全程约2.1万步、小环线体感3h内， 属休闲档。起雾/大风时把山脊段换成起点直达线（1.2km），安全优先。"
+  },
+  {
+   "day": 2,
+   "date": "2026-10-30",
+   "theme": "二次进山（沙滩直达线或大环轻装变体）+ 出发温岭站返程",
+   "area": "松门镇→小交陈村→沙滩/大环变体→松门镇→温岭站→上海",
+   "items": [
+    {
+     "poiId": "p02",
+     "time": "08:00-08:40"
+    },
+    {
+     "poiId": "p03",
+     "time": "09:00-09:20"
+    },
+    {
+     "poiId": "p05",
+     "time": "09:50-12:00"
+    },
+    {
+     "poiId": "p02",
+     "time": "12:45-13:40"
+    },
+    {
+     "poiId": "p07",
+     "time": "14:00-16:00"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "民宿接驳/打车+徒步+高铁",
+    "polylines": [],
+    "distanceKm": 58.69,
+    "durationMin": 88.1,
+    "note": "由 route_fill.py 回填。实际：08:40民宿接送或打车至小交陈村；A案=起点直达线1.2km至沙滩+慢玩2h，B案=沙滩捷径转大环9km/3-4h；12:45回松门午饭（泡虾打包）；13:40前后打车40km（预留堵车1小时+）至温岭站；选15:30-16:30发车班次，2.5-3h抵上海虹桥。",
+    "legs": [
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 6.8,
+      "durationMin": 13.7
+     },
+     {
+      "from": "p03",
+      "to": "p05",
+      "distanceKm": 2.24,
+      "durationMin": 8.0
+     },
+     {
+      "from": "p05",
+      "to": "p02",
+      "distanceKm": 9.19,
+      "durationMin": 21.3
+     },
+     {
+      "from": "p02",
+      "to": "p07",
+      "distanceKm": 40.46,
+      "durationMin": 45.1
+     }
+    ]
+   },
+   "notes": "返程硬卡点=温岭站 15:30-16:30 发车段——别贪晚班次：13:45 之前必须结束 D2 全部徒步动作，留足缓冲；车票开售即买。若想顺路石塘半岛/小箬村请自行评估（仅当走 B 案且返程班次晚于 17:30 时才成立）。"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "十月末深秋（open-meteo 14天中期预报口径）",
+   "high": 22.6,
+   "low": 19.5,
+   "advice": "open-meteo中期预测：10-29 最高22.6°C/最低19.5°C、降水概率16%、阵风53km/h偏大；10-30 最高21.1°C/最低18.8°C、降水20%、阵风30km/h，多云为主。注意：14天预测不确定度大，出发前3天务必刷新一次。阵风53km/h时山脊段（尤其第一个风顶前后）被吹得难受、相机防手抖难度上升；若临近实测风力≥6级，把主线降档为起点→沙滩直达线+回程。日间体感凉而不冷，速干+防风壳最佳；日落约17:05、日出约06:05（10月底温岭日出日落实际时间与估算会有出入，以天气 app 为准）。"
+  },
+  "packing": [
+   "证件：身份证（高铁+入住）",
+   "徒步鞋/防滑底跑鞋（碎石+湿滑坡面不可穿纯板鞋）",
+   "速干长袖（灌木剐蹭多，v01强调穿长袖受伤率低）+防风外套",
+   "登山杖1根（山脊碎石下坡主力）",
+   "头灯（若D2早看日出/傍晚日落迟归自救）",
+   "防晒：帽/墨镜/防晒霜（D2晴日海边无遮挡、x10踩坑点）",
+   "垃圾袋（步道无垃圾桶、LNT准则——x10「垃圾堆」差评源头之一）",
+   "充电宝+少量现金（沙滩小卖部可能用现金更顺）",
+   "1升以上饮水（夏季热/v05带冰水的警示；10月末1.5L够）",
+   "防水袋/雨衣（预报有雨的前一天备）"
+  ],
+  "bookings": [
+   {
+    "item": "高铁往返（上海虹桥↔温岭 ×2）",
+    "how": "12306：去程06:24 G7363首班（05:50前到站）；返程选15:30-16:30温岭发车段；两条一起买。若06:24无票，备选任一07:30前发车G/D次",
+    "deadline": "即刻（10-17距出发12天，还在最优购期）"
+   },
+   {
+    "item": "D1晚住宿（松门镇经济型）",
+    "how": "美团/携程搜「松门镇 民宿/酒店」，挑「可接送去徒步口」的（x13提示的功能点）；100-160元档",
+    "deadline": "出发前3天确定，周四晚竞争强度不高"
+   },
+   {
+    "item": "打车平台提前安装/注册",
+    "how": "滴滴或高德打车：温岭站到小交陈村40km为必用路径，提前验证可用、看到达后实际价格",
+    "deadline": "出发前1天"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "上海→温岭（去程）",
+    "note": "G7363 上海虹桥06:24首发→温岭约09:00-09:20（2h33-35m，二等座约170元）；虹桥05:50前完成安检；同通道每日约31班可备选"
+   },
+   {
+    "line": "温岭→上海（返程）",
+    "note": "温岭→上海虹桥每日约31班；建议15:30-16:30发车段（2.5-3h）；千万选发车≥16:30班次，别贪更晚（否则D2徒步时间崩盘）"
+   },
+   {
+    "line": "温岭站↔小交陈村（打车）",
+    "note": "40km/约1h/70-80元；多人可拼，单人穷游档接受此价格或用公交路径"
+   },
+   {
+    "line": "温岭站→松南南闸/小交陈（公交·穷游降档）",
+    "note": "232路（约1h10m/11元）至松南南闸下车后再打车10元；或232路→换217路B→「小交陈」站（目的地旁）；「温岭交通」公众号查实时公交；班次少、不适合赶路"
+   },
+   {
+    "line": "小交陈村内停车",
+    "note": "自驾档备知：1.5h起步至24h内20元、隔日重算；村内有闸机",
+    "isBackup": true
+   }
+  ],
+  "safety": [
+   "碎石坡+湿滑大敌：小环线中段（山脊下切）+海岸窄路有多段碎石/陡降坡，雨后禁止跑向下；v05/v01多次强调滑倒风险，靠边慢走、有铁绳就拉",
+   "军事管理区：途中迷彩球（雷达）建筑为军事管理区——禁止进入、禁止无人机起飞（v01/v05双证）；沙滩/海面方向非禁区但请自觉",
+   "大环线勿独行（单人行者特别版）：x08「不建议小白独行」+小环线人口稀少的后段，两人以上更安全；如果是D2大环线，把去程起点时间调至不晚于10:00、并且一上大环就把回程时间窗定死，避免挤压返程高铁余量",
+   "日落=关门信号：沙滩小卖部日落关门、全程无洗漱/厕所；天黑后山脊线不可继续——日落前下山是必须执行的硬线",
+   "潮汐：露营者请扎营在涨潮线以上（v02实测席）；不露营也注意沙滩后方礁石段涨潮行为",
+   "节假日=拥堵模式：v03清明实况/x05同证——单段坡可堵3小时+、有人天黑被困，工作日出发本身就是重要安全决策；若被迫在节假日走请6:30前进山",
+   "沿路垃圾分类随身带走：x10「垃圾堆」痛点+步道无垃圾桶；随身垃圾带下山"
+  ],
+  "customs": [
+   "预期管理：所谓「浙版麦理浩径」是一个宣传用法——v01/x03/x06三条独立来源都在纠偏，真实体验是「不错的海岸+海景山脊徒步」，别对比在香港时的心理账户",
+   "小箬村慎去：需避开网红点的用户请在主线里略过它——多篇拔草帖（x15等）认为「照骗」；真要看彩色房子唯一拍点在麒麟山山顶",
+   "沙滩边消费：绿豆汤5元/可乐5-10元属于「本地友好价」vs 步道中段10元=「山地溢价」；大额消费集中在松门镇",
+   "山上偶遇放歌/喊喇叭的徒步客（v01），属正常徒步圈文化，无需大惊小怪",
+   "讨价还价极限小，但民宿接送/拼车可以谈——本地人也是这样做的（x13）"
+  ]
+ },
+ "verification": {
+  "closedStatus": {
+   "asOf": "2026-10-17",
+   "status": "未查到官方封闭/管控公告；国庆+10月中旬后多篇攻略帖（x14/x11）按正常开放方向写",
+   "notes": "仅军事管理区禁止进入/ Flugverbot（v01/v05互证），这属于长期状态而非封闭走路道。10-16 最新发帖（x11）仍在约10.17-10.18同行好友，旁证当前正常通行。出发前1天再复一次「温岭文旅/松门镇公众号」确认"
+  },
+  "notes": "影响信任等级的字段：温岭天气为 open-meteo 14 天中期预测；Trip.com 班次/金额、停车费/小卖部价格均为检测时点数据；开售与班次以 12306/官方为准。"
+ },
+ "_routeFilled": true,
+ "_geoFilled": true
+}
