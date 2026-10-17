@@ -1,0 +1,1378 @@
+{
+ "meta": {
+  "destination": "南京",
+  "slug": "nanjing",
+  "dates": [
+   "2026-10-02",
+   "2026-10-03",
+   "2026-10-04"
+  ],
+  "days": 3,
+  "departureCity": "上海",
+  "travelers": "3人",
+  "budget": "穷游",
+  "preferences": [
+   "小众深度",
+   "市井烟火",
+   "自然徒步",
+   "美食",
+   "避开网红打卡",
+   "少博物馆"
+  ],
+  "pace": "均衡",
+  "sources": {
+   "videos": 0,
+   "posts": 0,
+   "web": 8
+  },
+  "generatedAt": "2026-09-30",
+  "status": "调研完成：11个web来源交叉验证；主方案规避夫子庙/老门东等大流量网红点与全部博物馆类场景；另含6个备选点（默认不勾选）供按需替换"
+ },
+ "sources": [
+  {
+   "id": "w01",
+   "platform": "web",
+   "type": "post",
+   "url": "https://zschina.nanjing.gov.cn/fjms/fwzn/mpxx/",
+   "title": "钟山风景区官方购票及中山陵预约服务提示",
+   "author": "南京钟山风景名胜区官网",
+   "status": "已核实",
+   "summary": "明孝陵70/灵谷35/音乐台10/美龄宫30，四景点联票100；中山陵免费实名预约",
+   "used": true
+  },
+  {
+   "id": "w02",
+   "platform": "web",
+   "type": "post",
+   "url": "https://b.460.net.cn",
+   "title": "南京长江南岸Citywalk：从中山码头漫步燕子矶",
+   "author": "江苏便民信息网",
+   "status": "已核实",
+   "summary": "宁浦轮渡2元横渡长江，浦口火车站怀旧街区，可串联燕子矶",
+   "used": true
+  },
+  {
+   "id": "w03",
+   "platform": "web",
+   "type": "post",
+   "url": "https://www.ourjiangsu.com",
+   "title": "南京小众秘境：燕子矶，万里长江第一矶",
+   "author": "江苏网",
+   "status": "已核实",
+   "summary": "长江三大名矶之一，地铁1号线迈皋桥转8路可达；门票各来源说法不一（0-30元）",
+   "used": true
+  },
+  {
+   "id": "w04",
+   "platform": "web",
+   "type": "post",
+   "url": "https://hk.trip.com/moments/theme/poi-kexiang-118849178-comprehensive-guides-993136/",
+   "title": "科巷详细攻略：本地人才去的宝藏美食",
+   "author": "Trip.com 攻略",
+   "status": "已核实",
+   "summary": "鸿福面馆皮肚面人均20；科巷小潘鸭血粉丝、鸡鸣汤包等；人均15-30吃饱",
+   "used": true
+  },
+  {
+   "id": "w05",
+   "platform": "web",
+   "type": "post",
+   "url": "https://www.nanjing.gov.cn/zgnjsjb/jrtt/202308/t20230815_3986655.html",
+   "title": "三七八巷菜市场：老南京的烟火气",
+   "author": "南京日报",
+   "status": "已核实",
+   "summary": "熏鱼、小笼包、糖芋苗等市井小吃聚集地，人均便宜",
+   "used": true
+  },
+  {
+   "id": "w06",
+   "platform": "web",
+   "type": "post",
+   "url": "https://www.ourjiangsu.com/a/20171105/1509776770324.shtml",
+   "title": "鸿福面馆：皮肚面是南京人的命",
+   "author": "江苏网",
+   "status": "已核实",
+   "summary": "科巷老字号，招牌皮肚面，加辣油才正宗",
+   "used": true
+  },
+  {
+   "id": "w07",
+   "platform": "web",
+   "type": "post",
+   "url": "https://m.ctrip.com/html5/hotel/hoteldetail/120242639.html",
+   "title": "二十九层青年旅舍(南京新街口夫子庙店)点评",
+   "author": "携程",
+   "status": "已核实",
+   "summary": "新街口一带青旅口碑好、性价比高；国庆需尽早订",
+   "used": true
+  },
+  {
+   "id": "w08",
+   "platform": "web",
+   "type": "post",
+   "url": "https://www.12306.cn",
+   "title": "铁路12306：上海↔南京高铁查询购票",
+   "author": "12306官方",
+   "status": "已核实",
+   "summary": "沪宁段高铁班次密集约1.5-2h，二等座浮动票价约93-135元起；国庆票紧俏需尽快购买",
+   "used": true
+  },
+  {
+   "id": "w09",
+   "platform": "web",
+   "type": "post",
+   "url": "https://www.sina.cn",
+   "title": "南京旅游：免费预约+联票省钱，避开黄牛陷阱FAQ",
+   "author": "新浪旅游",
+   "status": "已核实",
+   "summary": "南博免费公众号提前3-7天约周一闭馆；大屠杀纪念馆免费预约注意着装",
+   "used": true
+  },
+  {
+   "id": "w10",
+   "platform": "web",
+   "type": "post",
+   "url": "http://nj.bendibao.com",
+   "title": "南京总统府开放时间+地址+交通（本地宝）",
+   "author": "南京本地宝",
+   "status": "已核实",
+   "summary": "8:30-18:00(3.1-10.14)周一闭馆法定节假日除外；成人约35元",
+   "used": true
+  },
+  {
+   "id": "w11",
+   "platform": "web",
+   "type": "post",
+   "url": "https://travelnews.qunar.com",
+   "title": "南京大屠杀纪念馆免费预约参观提示",
+   "author": "去哪儿旅行资讯",
+   "status": "已核实",
+   "summary": "免费，公众号提前1-7天分段预约；周二至周日8:30-17:30，周一闭馆；2号线云锦路站",
+   "used": true
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "景点",
+   "name": "鸡鸣寺",
+   "address": "南京市玄武区鸡鸣寺路1号",
+   "lng": "118.795246",
+   "lat": "32.061061",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "10元（赠3支清香）",
+   "openHours": "约7:30-17:30（以现场为准）",
+   "tags": [
+    "古寺",
+    "药师佛塔",
+    "登高看城墙"
+   ],
+   "notes": "门票含香不另购；寺内可远眺明城墙与玄武湖，与台城段顺路；国庆人多，入口处跟人流走即可，2小时内可逛完",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "poiId": "B0FFH62KNA",
+   "geoQuery": "鸡鸣寺",
+   "geoFallback": "南京市玄武区鸡鸣寺"
+  },
+  {
+   "id": "p02",
+   "category": "人文",
+   "name": "明城墙台城段（解放门登城口）",
+   "address": "南京市玄武区解放门",
+   "lng": "118.796260",
+   "lat": "32.062723",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约30元（规划估算，以现场为准）",
+   "openHours": "约8:30-17:30（旺季或延时，以现场为准）",
+   "tags": [
+    "世界最长砖石城墙",
+    "一城山水",
+    "俯瞰玄武湖"
+   ],
+   "notes": "从解放门上城，一侧玄武湖+紫金山，一侧鸡鸣寺+紫峰大厦，是南京最经典的城墙视角；穷游可只在城下环湖步道免费远观，登城体验更佳",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "poiId": "B001909FV4",
+   "geoQuery": "南京城墙台城解放门",
+   "geoFallback": "解放门"
+  },
+  {
+   "id": "p03",
+   "category": "公园",
+   "name": "玄武湖公园（环洲·樱洲）",
+   "address": "南京市玄武区玄武巷1号",
+   "lng": "118.812688",
+   "lat": "32.069455",
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "约6:00-21:00（环湖步道全天）",
+   "tags": [
+    "免费大公园",
+    "本地人遛弯",
+    "落日"
+   ],
+   "notes": "从解放门出来直接进玄武湖，环洲樱洲走一个环线约5km；傍晚在湖西看夕阳落进紫金山；游船另计，穷游可跳过",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "poiId": "B00190BBCZ",
+   "geoQuery": "玄武湖公园",
+   "geoFallback": "玄武门"
+  },
+  {
+   "id": "p04",
+   "category": "美食街区",
+   "name": "科巷",
+   "address": "南京市秦淮区科巷",
+   "lng": "118.796070",
+   "lat": "32.039213",
+   "day": 1,
+   "slot": "中午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费（小吃人均15-30）",
+   "openHours": "全天，午市最热闹",
+   "tags": [
+    "本地人菜市场",
+    "小吃扫街",
+    "穷游天堂"
+   ],
+   "notes": "南京人自己的美食街，非网红点：鸿福面馆皮肚面、小潘记鸭血粉丝、鸡鸣汤包都在这一片；中午人多属正常客流，随到随吃",
+   "sourceIds": [
+    "w04",
+    "w06"
+   ],
+   "checked": true,
+   "poiId": "B0IA3MP3IP",
+   "geoQuery": "科巷",
+   "geoFallback": "科巷菜市场"
+  },
+  {
+   "id": "p05",
+   "category": "徒步",
+   "name": "樱驼村登山口（蒋王庙街）",
+   "address": "南京市玄武区蒋王庙街东端",
+   "lng": "118.830109",
+   "lat": "32.078629",
+   "day": 2,
+   "slot": "早上",
+   "durationMin": 15,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "免费登山",
+    "本地人晨练线"
+   ],
+   "notes": "地铁4号线蒋王庙站2号口步行约10分钟到登山道入口；台阶道直上头陀岭，是南京人晨练的经典免费路线",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "poiId": "BV10056596",
+   "geoQuery": "樱驼村",
+   "geoFallback": "蒋王庙地铁站"
+  },
+  {
+   "id": "p06",
+   "category": "观景",
+   "name": "头陀岭",
+   "address": "南京市玄武区紫金山主峰西侧",
+   "lng": "118.860119",
+   "lat": "32.066740",
+   "day": 2,
+   "slot": "上午",
+   "durationMin": 135,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "紫金山制高点",
+    "俯瞰全城",
+    "免费"
+   ],
+   "notes": "海拔约425米，山顶观景台免费俯瞰南京城与长江；樱驼村上山约1.5-2h；带足水，穿运动鞋；下行往西马腰/天文台方向接明孝陵",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "poiId": "B001909G89",
+   "geoQuery": "头陀岭",
+   "geoFallback": "紫金山头陀岭"
+  },
+  {
+   "id": "p07",
+   "category": "景点",
+   "name": "紫霞湖",
+   "address": "南京市玄武区明孝陵景区内东北侧",
+   "lng": "118.843927",
+   "lat": "32.061600",
+   "day": 2,
+   "slot": "机动",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "含在明孝陵门票内",
+   "openHours": "随明孝陵景区",
+   "tags": [
+    "山湖",
+    "清幽",
+    "机动点"
+   ],
+   "notes": "下山途经的林中小湖，本地人游泳晨浴点；体力好顺路一看，时间紧直接下山进明孝陵",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": false,
+   "poiId": "B00190516B",
+   "geoQuery": "紫霞湖",
+   "geoFallback": "紫金山紫霞湖"
+  },
+  {
+   "id": "p08",
+   "category": "景点",
+   "name": "明孝陵（含石象路神道）",
+   "address": "南京市玄武区石象路7号",
+   "lng": "118.840463",
+   "lat": "32.051926",
+   "day": 2,
+   "slot": "中午",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "70元（四景点联票100元，2天有效；规划估算，以官方为准）",
+   "openHours": "约6:30-18:00",
+   "tags": [
+    "世界文化遗产",
+    "石象路",
+    "明清皇家陵寝"
+   ],
+   "notes": "穷游只买70元单票即可；石象路神道是必走段，10月初秋色初染；午餐自带干粮或在景区简餐；国庆人多，从紫霞湖方向进入可避开7号门大门口人流",
+   "sourceIds": [
+    "w01"
+   ],
+   "checked": true,
+   "poiId": "B0FFFFKG55",
+   "geoQuery": "明孝陵",
+   "geoFallback": "明孝陵景区"
+  },
+  {
+   "id": "p09",
+   "category": "景点",
+   "name": "音乐台",
+   "address": "南京市玄武区石象路7号钟山风景名胜区内",
+   "lng": "118.855382",
+   "lat": "32.055096",
+   "day": 2,
+   "slot": "下午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "10元",
+   "openHours": "约7:00-17:30",
+   "tags": [
+    "半圆形回音壁",
+    "喂鸽子",
+    "歇脚"
+   ],
+   "notes": "10元门票买一片草坪和成群鸽子，走累了歇脚很值；在中山陵广场南侧，顺路",
+   "sourceIds": [
+    "w01"
+   ],
+   "checked": true,
+   "poiId": "B001909G6V",
+   "geoQuery": "中山陵音乐台",
+   "geoFallback": "音乐台"
+  },
+  {
+   "id": "p10",
+   "category": "景点",
+   "name": "中山陵",
+   "address": "南京市玄武区石象路7号",
+   "lng": "118.854097",
+   "lat": "32.054508",
+   "day": 2,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": true,
+   "bookingNote": "微信小程序「钟山风景名胜区」免费实名预约，国庆务必开票即约",
+   "ticketPrice": "免费（预约制）",
+   "openHours": "8:30-17:00（16:30停止入内；周一祭堂维护、法定节假日除外）",
+   "tags": [
+    "历史地标",
+    "392级台阶",
+    "免费"
+   ],
+   "notes": "只走到陵门也壮观；国庆限流，严格按预约时段到；墓道两侧法国梧桐成荫，是钟山一天行程的收尾",
+   "sourceIds": [
+    "w01"
+   ],
+   "checked": true,
+   "poiId": "B0FFHVEECG",
+   "geoQuery": "中山陵",
+   "geoFallback": "中山陵园风景区"
+  },
+  {
+   "id": "p11",
+   "category": "街区",
+   "name": "颐和路民国建筑街区",
+   "address": "南京市鼓楼区颐和路",
+   "lng": "118.770087",
+   "lat": "32.063981",
+   "day": 3,
+   "slot": "上午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "民国公馆区",
+    "梧桐",
+    "citywalk"
+   ],
+   "notes": "一片免费开放的民国公馆区，清晨人最少光影最好；随手一条巷子都是黄墙老宅；与网红书店合影之外，更值得在宁海路、江苏路一带无目的乱走",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "poiId": "B00190BVB6",
+   "geoQuery": "颐和路公馆区",
+   "geoFallback": "颐和路"
+  },
+  {
+   "id": "p12",
+   "category": "园林",
+   "name": "愚园（胡家花园）",
+   "address": "南京市秦淮区鸣羊街胡家花园1号",
+   "lng": "118.773568",
+   "lat": "32.015967",
+   "day": 3,
+   "slot": "机动",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约25元（规划估算，以现场为准）",
+   "openHours": "约9:00-17:00",
+   "tags": [
+    "金陵狮子林",
+    "小众园林",
+    "机动点"
+   ],
+   "notes": "老门西的小众江南园林，游客少；若Day3不走长江线，可替换为颐和路→愚园→老门西外围的城南线",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": false,
+   "poiId": "B0019169OY",
+   "geoQuery": "愚园",
+   "geoFallback": "南京愚园胡家花园"
+  },
+  {
+   "id": "p13",
+   "category": "交通",
+   "name": "中山码头（宁浦轮渡）",
+   "address": "南京市鼓楼区中山北路643号",
+   "lng": "118.733456",
+   "lat": "32.087671",
+   "day": 3,
+   "slot": "上午",
+   "durationMin": 30,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "2元/人（交通卡或现金）",
+   "openHours": "约6:00-19:30（约20分钟一班）",
+   "tags": [
+    "2元过江",
+    "长江轮渡",
+    "百年码头"
+   ],
+   "notes": "1920年代老码头，2元坐轮渡横渡长江，约15-20分钟到浦口码头；码头大厅有免费历史陈列；骑行/电动车也可上渡轮",
+   "sourceIds": [
+    "w02"
+   ],
+   "checked": true,
+   "poiId": "B001908XJQ",
+   "geoQuery": "中山码头",
+   "geoFallback": "南京中山码头"
+  },
+  {
+   "id": "p14",
+   "category": "街区",
+   "name": "浦口火车站街区（大马路·津浦路）",
+   "address": "南京市浦口区津浦路30号",
+   "lng": "118.720209",
+   "lat": "32.097647",
+   "day": 3,
+   "slot": "中午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "街区全天",
+   "tags": [
+    "朱自清《背影》",
+    "民国老建筑",
+    "江边散步"
+   ],
+   "notes": "英式月台与民国货栈建筑群，部分区域仍在修缮，外围街巷随意逛；浦口码头江堤上看货轮和芦苇滩；餐饮少，午餐回城南岸解决",
+   "sourceIds": [
+    "w02"
+   ],
+   "checked": true,
+   "poiId": "B0FFHRRLNA",
+   "geoQuery": "浦口火车站旧址",
+   "geoFallback": "南京浦口火车站"
+  },
+  {
+   "id": "p15",
+   "category": "景点",
+   "name": "燕子矶公园",
+   "address": "南京市栖霞区临江街3号",
+   "lng": "118.817155",
+   "lat": "32.146815",
+   "day": 3,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约10-30元（各来源说法不一，以现场为准）",
+   "openHours": "约8:00-17:30",
+   "tags": [
+    "万里长江第一矶",
+    "悬崖观江",
+    "小众"
+   ],
+   "notes": "长江三矶之一，矶头悬崖下就是滚滚长江，傍晚光线最柔；从中山码头乘公交顺江而上班次多；崖边拍照注意护栏",
+   "sourceIds": [
+    "w02",
+    "w03"
+   ],
+   "checked": true,
+   "poiId": "B00190532C",
+   "geoQuery": "燕子矶公园",
+   "geoFallback": "南京燕子矶"
+  },
+  {
+   "id": "p16",
+   "category": "交通",
+   "name": "南京站",
+   "address": "南京市玄武区龙蟠路111号",
+   "lng": "118.797510",
+   "lat": "32.087125",
+   "day": 3,
+   "slot": "傍晚",
+   "durationMin": 30,
+   "bookingRequired": true,
+   "bookingNote": "返程高铁票提前购买；建议买18:30后从南京站发车的车次",
+   "ticketPrice": "—",
+   "openHours": "随班次",
+   "tags": [
+    "返程",
+    "地铁1号线直达"
+   ],
+   "notes": "燕子矶乘8路回迈皋桥，地铁1号线两站直达南京站，全程约40分钟；若返程车从南京南发车，则地铁1号线转3号线/打车，多预留40分钟",
+   "sourceIds": [
+    "w08"
+   ],
+   "checked": true,
+   "poiId": "B001905HYA",
+   "geoQuery": "南京站",
+   "geoFallback": "南京火车站"
+  },
+  {
+   "id": "p17",
+   "category": "街区",
+   "name": "夫子庙-秦淮风光带（备选）",
+   "address": "南京市秦淮区贡院街152号",
+   "lng": "118.787833",
+   "lat": "32.021582",
+   "day": 1,
+   "slot": "晚间备选",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "街区免费（画舫游船约80元另计）",
+   "openHours": "街区全天，夜景最佳",
+   "tags": [
+    "备选",
+    "大流量预警",
+    "夜景"
+   ],
+   "notes": "备选未进主行程：国庆人流量极大，主方案刻意避开。若想看秦淮夜景，建议D1晚饭后地铁1号线到三山街，只在河边外围走一段即回，不进核心商圈；科举博物馆在景区内（约50元）。",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": false,
+   "poiId": "B0FFHOSW24",
+   "geoQuery": "夫子庙",
+   "geoFallback": "南京夫子庙秦淮风光带"
+  },
+  {
+   "id": "p18",
+   "category": "街区",
+   "name": "老门东历史街区（备选）",
+   "address": "南京市秦淮区剪子巷54号",
+   "lng": "118.787877",
+   "lat": "32.012641",
+   "day": 1,
+   "slot": "晚间备选",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "免费",
+   "openHours": "街区全天",
+   "tags": [
+    "备选",
+    "大流量预警",
+    "小吃街"
+   ],
+   "notes": "备选未进主行程：节假日主街人多。替代走法是钻三条营、边营、中营等支巷，逛小吃不如科巷便宜；可与夫子庙串联成一次晚间行程，二选一即可。",
+   "sourceIds": [
+    "w04",
+    "w05"
+   ],
+   "checked": false,
+   "poiId": "B0LKZCFBGZ",
+   "geoQuery": "老门东历史街区",
+   "geoFallback": "南京老门东"
+  },
+  {
+   "id": "p19",
+   "category": "博物馆",
+   "name": "南京博物院（备选）",
+   "address": "南京市玄武区中山东路321号",
+   "lng": "118.825064",
+   "lat": "32.040802",
+   "day": 2,
+   "slot": "雨天替代",
+   "durationMin": 180,
+   "bookingRequired": true,
+   "bookingNote": "「南京博物院」公众号/小程序实名预约，每日18:00放票提前7天（含规则以官方为准）；节假日票源紧张开票即抢",
+   "ticketPrice": "免费（预约制）",
+   "openHours": "周二至周日9:00-17:00（16:00停止入馆）；周一闭馆，法定节假日除外",
+   "tags": [
+    "备选",
+    "雨天替代",
+    "需抢约"
+   ],
+   "notes": "备选未进主行程（应要求少博物馆）。最佳用途：D2预报中雨时替代紫金山登山——此时先看能否抢到票，抢不到再执行雨天备案。地铁2号线明故宫站1号口步行约10分钟。",
+   "sourceIds": [
+    "w09"
+   ],
+   "checked": false,
+   "poiId": "B001907TGR",
+   "geoQuery": "南京博物院",
+   "geoFallback": "南京博物院 中山东路"
+  },
+  {
+   "id": "p20",
+   "category": "博物馆",
+   "name": "总统府（备选）",
+   "address": "南京市玄武区长江路292号",
+   "lng": "118.797398",
+   "lat": "32.044228",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 150,
+   "bookingRequired": true,
+   "bookingNote": "「南京总统府景区」小程序实名购票，可提前2日预约，每日00:00放票",
+   "ticketPrice": "约35元（与六朝博物馆联票约65元；规划估算，以官方为准）",
+   "openHours": "8:30-18:00（3.1-10.14，17:00停止入园）；周一闭馆，法定节假日除外",
+   "tags": [
+    "备选",
+    "历史建筑",
+    "联票"
+   ],
+   "notes": "备选未进主行程。若愿意加半天博物馆类，可与六朝博物馆（隔壁长江路302号）买联票一次看完；国庆票紧张建议提前约。",
+   "sourceIds": [
+    "w10"
+   ],
+   "checked": false,
+   "poiId": "B00190BMRC",
+   "geoQuery": "南京总统府",
+   "geoFallback": "总统府 长江路"
+  },
+  {
+   "id": "p21",
+   "category": "博物馆",
+   "name": "六朝博物馆（备选）",
+   "address": "南京市玄武区长江路302号",
+   "lng": "118.799124",
+   "lat": "32.042840",
+   "day": 1,
+   "slot": "备选",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "bookingNote": "",
+   "ticketPrice": "约30元（与总统府联票约65元；规划估算）",
+   "openHours": "9:00-17:30（17:00停止入场）；周一闭馆，法定节假日除外",
+   "tags": [
+    "备选",
+    "贝聿铭设计",
+    "小众"
+   ],
+   "notes": "备选未进主行程：贝聿铭事务所设计，展厅光影出名，是博物馆类里人相对少的；在总统府东侧，顺路可联游。",
+   "sourceIds": [
+    "w09"
+   ],
+   "checked": false,
+   "poiId": "B0019135C5",
+   "geoQuery": "六朝博物馆",
+   "geoFallback": "南京六朝博物馆 长江路"
+  },
+  {
+   "id": "p22",
+   "category": "博物馆",
+   "name": "侵华日军南京大屠杀遇难同胞纪念馆（备选）",
+   "address": "南京市建邺区水西门大街418号",
+   "lng": "118.742372",
+   "lat": "32.035217",
+   "day": 3,
+   "slot": "备选",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "bookingNote": "官方公众号免费实名分段预约，提前1-7天；假期开放时间可能调整以官方公告为准",
+   "ticketPrice": "免费（预约制）",
+   "openHours": "周二至周日8:30-17:30（16:30停止入场）；周一闭馆",
+   "tags": [
+    "备选",
+    "纪念场馆",
+    "免费"
+   ],
+   "notes": "备选未进主行程。氛围肃穆，着装得体、馆内保持安静；地铁2号线云锦路站2号口即达。若加入D3，注意与长江线顺路性差（在城市西侧），需单独安排半天。",
+   "sourceIds": [
+    "w11"
+   ],
+   "checked": false,
+   "poiId": "B001905N9D",
+   "geoQuery": "侵华日军南京大屠杀遇难同胞纪念馆",
+   "geoFallback": "南京大屠杀纪念馆 云锦路"
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h01",
+   "name": "新街口·张府园片区",
+   "scope": "区域推荐",
+   "area": "地铁1/2号线新街口站、张府园站周边",
+   "lng": "118.783837",
+   "lat": "32.030966",
+   "radius": 800,
+   "priceRange": "国庆经济连锁标间约300-450/晚；3人可开家庭房或加床",
+   "bestFor": "第一天到得晚、想步行吃科巷明瓦廊、地铁去钟山最省事的组合",
+   "notes": "全城地铁枢纽，2号线直达苜蓿园（钟山），1号线直达南京站/南京南；国庆涨价明显，尽早锁定",
+   "subHotels": [
+    "二十九层青年旅舍(新街口夫子庙店)"
+   ],
+   "sourceIds": [
+    "w07"
+   ],
+   "recommend": true,
+   "poiId": "BV10056864",
+   "geoQuery": "张府园地铁站",
+   "geoFallback": "新街口地铁站",
+   "address": "1号线"
+  },
+  {
+   "id": "h02",
+   "name": "夫子庙外围·平江府路片区",
+   "scope": "区域推荐",
+   "area": "平江府路、白鹭洲公园一带（地铁3号线武定门/夫子庙站）",
+   "lng": "118.782899",
+   "lat": "32.024838",
+   "radius": 900,
+   "priceRange": "青旅四人间床位约75-100/人；经济连锁约250-400/晚",
+   "bestFor": "穷游预算优先：住外围只睡觉不看灯会，步行可达白鹭洲公园",
+   "notes": "刻意避开夫子庙核心区的人流与高价；该片区是本地生活区，安静便宜，地铁3号线到南京南/南京站都方便",
+   "subHotels": [
+    "南京夫子庙国际青年旅舍(平江府路68号)"
+   ],
+   "sourceIds": [
+    "w07"
+   ],
+   "recommend": true,
+   "poiId": "B0FFFVBQUU",
+   "geoQuery": "南京夫子庙国际青年旅舍",
+   "geoFallback": "武定门地铁站",
+   "address": "洪武路街道中山南路327号华美大厦603室"
+  },
+  {
+   "id": "h03",
+   "name": "大行宫·科巷片区",
+   "scope": "区域推荐",
+   "area": "地铁2/3号线大行宫站周边",
+   "lng": "118.794787",
+   "lat": "32.041737",
+   "radius": 700,
+   "priceRange": "经济连锁约280-420/晚",
+   "bestFor": "想把科巷当自家食堂的吃货行程",
+   "notes": "去钟山2号线3站、去颐和路3号线直达，位置万能；备选区域",
+   "subHotels": [],
+   "sourceIds": [
+    "w07"
+   ],
+   "recommend": false,
+   "poiId": "BV10055287",
+   "geoQuery": "大行宫地铁站",
+   "geoFallback": "大行宫",
+   "address": "2号线;3号线"
+  }
+ ],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "鸿福面馆（科巷）",
+   "type": "皮肚面",
+   "avgPrice": 20,
+   "day": 1,
+   "area": "科巷（以高德POI为准）",
+   "lng": "118.795900",
+   "lat": "32.038898",
+   "poiId": "B0HGBDPEGX",
+   "dianpingKeyword": "南京 鸿福面馆",
+   "tips": "皮肚浸满汤汁，加一勺辣油才正宗；大碗面管饱，人均20左右",
+   "sourceIds": [
+    "w04",
+    "w06"
+   ],
+   "checked": true,
+   "geoQuery": "鸿福面馆",
+   "geoFallback": "科巷 面馆",
+   "address": "科巷新市集西门(大行宫地铁站出入口步行260米)"
+  },
+  {
+   "id": "r02",
+   "name": "尹氏鸡汁汤包（明瓦廊店）",
+   "type": "鸡汁汤包",
+   "avgPrice": 25,
+   "day": 1,
+   "area": "明瓦廊（以高德POI为准）",
+   "lng": "118.772193",
+   "lat": "32.035584",
+   "poiId": "B0FFITHX6U",
+   "dianpingKeyword": "南京 尹氏鸡汁汤包",
+   "tips": "先咬小口吸汤再吃；配鸭油烧饼；晚市排队较快",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "geoQuery": "尹氏鸡汁汤包 明瓦廊",
+   "geoFallback": "尹氏鸡汁汤包",
+   "address": "朝天宫西街61号(中兴新村)"
+  },
+  {
+   "id": "r03",
+   "name": "小潘记鸭血粉丝（科巷）",
+   "type": "鸭血粉丝汤",
+   "avgPrice": 18,
+   "day": 1,
+   "area": "科巷（以高德POI为准）",
+   "lng": "118.793211",
+   "lat": "32.040697",
+   "poiId": "B0FFF90J6O",
+   "dianpingKeyword": "南京 小潘记鸭血粉丝",
+   "tips": "鸭血嫩、汤底清爽，加锅巴是本地吃法；科巷扫街顺手一碗",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "geoQuery": "小潘记鸭血粉丝",
+   "geoFallback": "科巷 鸭血粉丝",
+   "address": "中山东路198号龙台国际大厦星巴克旁"
+  },
+  {
+   "id": "r04",
+   "name": "鸡鸣汤包（大行宫科巷店）",
+   "type": "汤包",
+   "avgPrice": 25,
+   "day": 2,
+   "area": "科巷16号（大行宫地铁站出口步行180米）",
+   "lng": "118.795486",
+   "lat": "32.039286",
+   "poiId": "B0FFMHITWN",
+   "dianpingKeyword": "南京 鸡鸣汤包",
+   "tips": "早市开门早；吃完从大行宫站乘3号线到鸡鸣寺站转4号线，一站到蒋王庙站去登山口；菊汁汤包是特色",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "geoQuery": "鸡鸣汤包 兰园",
+   "geoFallback": "鸡鸣汤包",
+   "address": "科巷16号(大行宫地铁站出入口步行180米)"
+  },
+  {
+   "id": "r05",
+   "name": "李记清真馆（七家湾）",
+   "type": "牛肉锅贴",
+   "avgPrice": 25,
+   "day": 3,
+   "area": "评事街/七家湾一带（以高德POI为准）",
+   "lng": "118.779783",
+   "lat": "32.029251",
+   "poiId": "B001906WDQ",
+   "dianpingKeyword": "南京 李记清真馆 牛肉锅贴",
+   "tips": "七家湾锅贴是南京锅贴正统，底脆汁多；配牛肉汤当早午餐；颐和路去中山码头顺路",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "geoQuery": "李记清真馆",
+   "geoFallback": "七家湾 李记锅贴",
+   "address": "朝天宫街道评事街打钉巷1号"
+  },
+  {
+   "id": "r06",
+   "name": "蓝老大糖粥藕店（热河路）",
+   "type": "糖粥藕·小吃",
+   "avgPrice": 15,
+   "day": 3,
+   "area": "热河路（以高德POI为准）",
+   "lng": "118.786890",
+   "lat": "32.011751",
+   "poiId": "B0FFFDRA6O",
+   "dianpingKeyword": "南京 蓝老大糖粥藕",
+   "tips": "下关老字号小吃店，糖粥藕、糖芋苗、赤豆元宵都有；轮渡回到南岸后的补给点",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "geoQuery": "蓝老大糖粥藕",
+   "geoFallback": "热河路 糖粥藕",
+   "address": "老门东三条营49-3号"
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "2元轮渡横渡长江",
+   "where": "中山码头→浦口码头",
+   "durationMin": 40,
+   "price": "2元",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "w02"
+   ]
+  },
+  {
+   "id": "e02",
+   "name": "紫金山免费徒步登顶头陀岭",
+   "where": "樱驼村登山口→头陀岭",
+   "durationMin": 240,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "体力正常的年轻人",
+   "sourceIds": [
+    "w04"
+   ]
+  },
+  {
+   "id": "e03",
+   "name": "台城城墙上看一城山水",
+   "where": "解放门登城口",
+   "durationMin": 90,
+   "price": "约30元",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "w04"
+   ]
+  },
+  {
+   "id": "e04",
+   "name": "科巷小吃扫街",
+   "where": "科巷一带",
+   "durationMin": 90,
+   "price": "人均20-40吃到扶墙",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "w04",
+    "w06"
+   ]
+  },
+  {
+   "id": "e05",
+   "name": "明孝陵石象路神道散步",
+   "where": "明孝陵景区",
+   "durationMin": 90,
+   "price": "含在70元门票内",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "w01"
+   ]
+  },
+  {
+   "id": "e06",
+   "name": "玄武湖环洲樱洲暴走/骑行",
+   "where": "玄武湖公园",
+   "durationMin": 120,
+   "price": "免费（共享单车另计）",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "w04"
+   ]
+  },
+  {
+   "id": "e07",
+   "name": "燕子矶头看长江",
+   "where": "燕子矶公园",
+   "durationMin": 120,
+   "price": "约10-30元",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "w02",
+    "w03"
+   ]
+  },
+  {
+   "id": "e08",
+   "name": "颐和路民国街区清晨漫步",
+   "where": "颐和路公馆区",
+   "durationMin": 90,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "w04"
+   ]
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-10-02",
+   "theme": "老城慢启动：科巷→鸡鸣寺→城墙→玄武湖",
+   "area": "城中·玄武湖",
+   "items": [
+    {
+     "poiId": "p04",
+     "time": "11:00-12:00"
+    },
+    {
+     "poiId": "r01",
+     "time": "12:00-13:00"
+    },
+    {
+     "poiId": "p01",
+     "time": "13:30-14:30"
+    },
+    {
+     "poiId": "p02",
+     "time": "14:30-16:00"
+    },
+    {
+     "poiId": "p03",
+     "time": "16:00-18:00"
+    },
+    {
+     "poiId": "r02",
+     "time": "18:30-19:30"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "地铁+步行",
+    "polylines": [],
+    "distanceKm": 15.74,
+    "durationMin": 46.5,
+    "note": "交通为地铁+步行；p03玄武湖→r02晚餐实际坐地铁1号线约15分钟。距离为驾车参考值。",
+    "legs": [
+     {
+      "from": "p04",
+      "to": "r01",
+      "distanceKm": 0.05,
+      "durationMin": 0.6
+     },
+     {
+      "from": "r01",
+      "to": "p01",
+      "distanceKm": 3.21,
+      "durationMin": 11.6
+     },
+     {
+      "from": "p01",
+      "to": "p02",
+      "distanceKm": 0.47,
+      "durationMin": 3.3
+     },
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 4.3,
+      "durationMin": 12.2
+     },
+     {
+      "from": "p03",
+      "to": "r02",
+      "distanceKm": 7.71,
+      "durationMin": 18.8
+     }
+    ]
+   },
+   "notes": "建议08:00前后上海虹桥出发，约09:30-10:30到南京南，地铁1号线到酒店放行李再出门；全天以地铁+步行为主，晚餐后明瓦廊顺路扫个尾"
+  },
+  {
+   "day": 2,
+   "date": "2026-10-03",
+   "theme": "紫金山免费登顶+明孝陵石象路+中山陵",
+   "area": "钟山风景区",
+   "items": [
+    {
+     "poiId": "r04",
+     "time": "07:00-07:40"
+    },
+    {
+     "poiId": "p05",
+     "time": "08:00-08:15"
+    },
+    {
+     "poiId": "p06",
+     "time": "08:15-10:30"
+    },
+    {
+     "poiId": "p07",
+     "time": "10:30-11:30"
+    },
+    {
+     "poiId": "p08",
+     "time": "11:30-14:30"
+    },
+    {
+     "poiId": "p09",
+     "time": "14:30-15:30"
+    },
+    {
+     "poiId": "p10",
+     "time": "15:30-17:00"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "步行+登山",
+    "polylines": [],
+    "distanceKm": 36.04,
+    "durationMin": 123.0,
+    "note": "r04→p05实际为地铁3号线转4号线约25分钟；p05→p06→p07→p08为紫金山山间徒步段（约2.5h，驾车数字是绕山参考无意义）；p08→p09→p10为景区内步行；散场从p10步行约20分钟到苜蓿园地铁站2号线回城。",
+    "legs": [
+     {
+      "from": "r04",
+      "to": "p05",
+      "distanceKm": 6.44,
+      "durationMin": 15.9
+     },
+     {
+      "from": "p05",
+      "to": "p06",
+      "distanceKm": 11.87,
+      "durationMin": 26.3
+     },
+     {
+      "from": "p06",
+      "to": "p07",
+      "distanceKm": 6.81,
+      "durationMin": 27.8
+     },
+     {
+      "from": "p07",
+      "to": "p08",
+      "distanceKm": 3.97,
+      "durationMin": 21.6
+     },
+     {
+      "from": "p08",
+      "to": "p09",
+      "distanceKm": 5.42,
+      "durationMin": 22.4
+     },
+     {
+      "from": "p09",
+      "to": "p10",
+      "distanceKm": 1.53,
+      "durationMin": 9.0
+     }
+    ]
+   },
+   "notes": "全天步行10-12km，务必运动鞋+2L水+干粮；穷游线只买明孝陵70元，想全逛钟山可换100元四景点联票（2天有效）；中山陵按预约时段入场，16:30停止入内；傍晚苜蓿园站2号线回城"
+  },
+  {
+   "day": 3,
+   "date": "2026-10-04",
+   "theme": "长江与民国：颐和路→2元轮渡→浦口火车站→燕子矶",
+   "area": "鼓楼·浦口·燕子矶",
+   "items": [
+    {
+     "poiId": "p11",
+     "time": "08:30-10:00"
+    },
+    {
+     "poiId": "r05",
+     "time": "10:00-10:40"
+    },
+    {
+     "poiId": "p13",
+     "time": "11:00-11:30"
+    },
+    {
+     "poiId": "p14",
+     "time": "11:30-13:30"
+    },
+    {
+     "poiId": "r06",
+     "time": "14:00-14:40"
+    },
+    {
+     "poiId": "p15",
+     "time": "15:00-17:00"
+    },
+    {
+     "poiId": "p16",
+     "time": "17:30-18:00"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "公交+轮渡+地铁",
+    "polylines": [],
+    "distanceKm": 73.77,
+    "durationMin": 119.5,
+    "note": "p13↔p14为宁浦轮渡过江（2元/人约20分钟，驾车数字为绕长江大桥参考）；p14→r06实际是轮渡返回南岸后步行/公交约1.2km；r06→p15为8路公交或打车约25分钟；p15→p16实际为8路回迈皋桥转地铁1号线2站约40分钟。",
+    "legs": [
+     {
+      "from": "p11",
+      "to": "r05",
+      "distanceKm": 6.62,
+      "durationMin": 12.9
+     },
+     {
+      "from": "r05",
+      "to": "p13",
+      "distanceKm": 9.92,
+      "durationMin": 16.9
+     },
+     {
+      "from": "p13",
+      "to": "p14",
+      "distanceKm": 8.38,
+      "durationMin": 16.4
+     },
+     {
+      "from": "p14",
+      "to": "r06",
+      "distanceKm": 21.8,
+      "durationMin": 33.1
+     },
+     {
+      "from": "r06",
+      "to": "p15",
+      "distanceKm": 17.5,
+      "durationMin": 26.0
+     },
+     {
+      "from": "p15",
+      "to": "p16",
+      "distanceKm": 9.55,
+      "durationMin": 14.1
+     }
+    ]
+   },
+   "notes": "返程建议买南京站18:30后的高铁（燕子矶→8路→迈皋桥→1号线直达南京站约40分钟）；若车次在南京南，多预留40分钟；嫌长江线赶可把下午换成愚园+老门西外围（见p12）"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "10月初初秋（高德实况预报）",
+   "high": 24,
+   "low": 16,
+   "advice": "高德实时预报：2026-09-30 阵雨转阴 24~19°C；2026-10-01 阴转阴 22~17°C；2026-10-02 小雨转中雨 21~16°C；2026-10-03 中雨转小雨 18~17°C。10月初南京早晚凉、适合徒步，带薄外套；若预报有雨改带雨衣（山顶风大伞不便）；出发前1天再刷新一次预报，10.4返程日天气以临近预报为准。"
+  },
+  "packing": [
+   "运动鞋（紫金山登山+全天步行10km+）",
+   "薄外套（早晚凉）",
+   "晴雨伞",
+   "防晒霜（秋老虎）",
+   "充电宝",
+   "少量现金/交通卡（轮渡2元）",
+   "水壶（登山补给）"
+  ],
+  "bookings": [
+   {
+    "item": "上海↔南京高铁票",
+    "how": "12306 App 购买；沪宁段班次密集但国庆票紧俏，立刻买往返",
+    "deadline": "立即"
+   },
+   {
+    "item": "中山陵免费预约",
+    "how": "微信小程序「钟山风景名胜区」实名预约，按预约时段入园",
+    "deadline": "提前3-7天，开票即约"
+   },
+   {
+    "item": "住宿",
+    "how": "各平台比价：穷游选青旅床位或外围经济连锁，3人优先家庭房/三人间",
+    "deadline": "立即"
+   },
+   {
+    "item": "明孝陵门票",
+    "how": "官方渠道或美团购票扫码入园；穷游买70元单票即可",
+    "deadline": "当天可购"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "上海→南京",
+    "note": "高铁G/D约1.5-2h，二等座浮动票价约93-135元起（12306实时查询）；上海站/上海虹桥均有班次，到南京南站为主"
+   },
+   {
+    "line": "南京地铁",
+    "note": "2-5元，支付宝/微信乘车码通用；机场线S1约35分钟到南京南"
+   },
+   {
+    "line": "宁浦轮渡",
+    "note": "中山码头↔浦口码头，2元/人，约6:00-19:30，20分钟一班（以现场为准）"
+   },
+   {
+    "line": "钟山景区内部",
+    "note": "观光车10元/次可选；徒步为主，苜蓿园/下马坊地铁站进出"
+   },
+   {
+    "line": "燕子矶往返",
+    "note": "地铁1号线迈皋桥站转8路公交直达燕子矶公园站；8路班次多"
+   }
+  ],
+  "safety": [
+   "紫金山登山带足水，天黑前下山",
+   "国庆火车站与景区注意随身财物",
+   "燕子矶崖边与轮渡甲板注意脚下，听从现场管理",
+   "晚间科巷/明瓦廊人流密集，照看同伴"
+  ],
+  "customs": [
+   "盐水鸭认现斩现卖，真空包装口感打折",
+   "皮肚面加辣油才是本地标准吃法",
+   "鸡鸣寺内保持安静，殿内通常不让拍照",
+   "南京人排队耐心，景区遇限流听从指引"
+  ]
+ },
+ "_routeFilled": true,
+ "_geoFilled": true
+}
