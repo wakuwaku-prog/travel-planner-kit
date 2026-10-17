@@ -1,0 +1,2482 @@
+{
+ "meta": {
+  "destination": "厦门",
+  "slug": "xiamen",
+  "dates": [
+   "2026-09-18",
+   "2026-09-19",
+   "2026-09-20"
+  ],
+  "days": 3,
+  "departureCity": "上海",
+  "travelers": "2人",
+  "budget": "舒适",
+  "preferences": [
+   "自然风光",
+   "人文历史",
+   "美食",
+   "海岛度假"
+  ],
+  "pace": "均衡",
+  "sources": {
+   "videos": 16,
+   "posts": 79
+  },
+  "generatedAt": "2026-09-08",
+  "status": "调研完成：16视频(5全量转写)+79小红书；预约规则已按子代理核实更新"
+ },
+ "sources": [
+  {
+   "id": "v01",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1qJ4m1G7Gm",
+   "title": "套路多、花费高、体验差？厦门3天2晚旅游攻略",
+   "author": "KK叫阿KEN",
+   "play": 444626,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 1
+  },
+  {
+   "id": "v02",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1apDMBTEED",
+   "title": "可能是最全的厦门旅游攻略（不踩雷版）",
+   "author": "码语者和杰妮",
+   "play": 66012,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 2
+  },
+  {
+   "id": "v03",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1UCrVBRELu",
+   "title": "厦门超详细保姆级自由行攻略（路线、交通、避坑）",
+   "author": "那是sn",
+   "play": 148657,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 3
+  },
+  {
+   "id": "v04",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1dbyFBBE9X",
+   "title": "厦门人眼中的厦门攻略，拒绝人挤人踩大坑！",
+   "author": "厦门的小火车tiger",
+   "play": 135647,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 4
+  },
+  {
+   "id": "v05",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV12d3NzzEEE",
+   "title": "厦门本地人推荐的24小时美食小店盘点",
+   "author": "chi_chi_",
+   "play": 94071,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 5
+  },
+  {
+   "id": "v06",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1V5j96nESh",
+   "title": "泉州好吃到哭泣！30种泉州特色美食/厦门周边吃通",
+   "author": "星氪旅行记",
+   "play": 57108,
+   "status": "候选",
+   "summary": "",
+   "used": false,
+   "order": 6
+  },
+  {
+   "id": "v07",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1xb421J775",
+   "title": "12分钟带你看懂厦门，鼓浪屿、山海健康步道路线",
+   "author": "厦门导游小辉",
+   "play": 57028,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 7
+  },
+  {
+   "id": "v08",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV14oR5YYE1K",
+   "title": "挑战成为厦门本地人，在店里吃遍全厦超全美食攻略",
+   "author": "爱吃的达达",
+   "play": 3981602,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 8
+  },
+  {
+   "id": "v09",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Vs4y177Xa",
+   "title": "厦门vlog小吃篇：本地人的厦门美食攻略",
+   "author": "阿毛的旅行日记",
+   "play": 278032,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 9
+  },
+  {
+   "id": "v10",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1iM4y1f7V2",
+   "title": "到了厦门除了吃就是江头美食，48h厦门美食vlog",
+   "author": "百变小樱",
+   "play": 236204,
+   "status": "候选",
+   "summary": "",
+   "used": true,
+   "order": 10
+  },
+  {
+   "id": "BV14oR5YYE1K",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV14oR5YYE1K",
+   "title": "挑战成为南昌最会吃的外地人！挖遍大街小巷超全美食攻略！",
+   "author": "猴儿甜猴儿甜",
+   "play": 3981602,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1Dy4y1K7Hb",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Dy4y1K7Hb",
+   "title": "刻在DNA里的歌，小花忍不住就唱出来了【厦门云旅游08】",
+   "author": "边检小花",
+   "play": 581094,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1qJ4m1G7Gm",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1qJ4m1G7Gm",
+   "title": "套路多、花费高、体验差？请收好这份厦门3天2晚旅游攻略，从行程安排到美食推荐，一篇搞定不踩雷！",
+   "author": "KK叫阿KEN",
+   "play": 444626,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV16x4y1i7D7",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV16x4y1i7D7",
+   "title": "这次我来厦门旅游都没做攻略…",
+   "author": "猴儿甜猴儿甜",
+   "play": 282487,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1Vs4y177Xa",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Vs4y177Xa",
+   "title": "【宁波vlog小吃篇】宁波保姆级美食攻略！本地人推荐不踩雷！鼓楼美食合集 糯叽叽猪油年糕团 辣哭饼 糖糕 矮子馅饼 油赞子 梁弄大糕 一口气吃过瘾！无广探店",
+   "author": "西边有座桥",
+   "play": 278032,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1iM4y1f7V2",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1iM4y1f7V2",
+   "title": "别坑了！厦门美食这样才地道！巨好吃！狂吃3天，本地人推荐|48h逛吃厦门vlog",
+   "author": "嘿嘿逛吃噜",
+   "play": 236204,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1UCrVBRELu",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1UCrVBRELu",
+   "title": "厦门详细到离谱的旅行攻略｜路线、交通、避坑全有",
+   "author": "阿眯sn",
+   "play": 148657,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1dbyFBBE9X",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1dbyFBBE9X",
+   "title": "鼓浪屿“邪修”攻略，拒绝人挤人带着美食反向穿越小岛。",
+   "author": "机智的小肥虎tiger",
+   "play": 135647,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV12d3NzzEEE",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV12d3NzzEEE",
+   "title": "摸着良心分享的厦门24家神级美食小店，去厦门看这一篇就够了！",
+   "author": "好chi好chi_",
+   "play": 94071,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1apDMBTEED",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1apDMBTEED",
+   "title": "可能是最全的 厦门旅游攻略（不踩雷版）",
+   "author": "码语者和杰妮",
+   "play": 66012,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1V5j96nESh",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1V5j96nESh",
+   "title": "厦门好吃！一口气30家厦门特色美食！无广实拍耗时7天！全国各市美食速通--福建厦门",
+   "author": "这是花二腻",
+   "play": 57108,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1xb421J775",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1xb421J775",
+   "title": "12分钟带你们走鼓浪屿经典的旅游线路！堪称“保姆级”攻略！大家一定收藏，转发！以后一定能用上！#厦门旅游#厦门旅游攻略#厦门小程#鼓浪屿",
+   "author": "厦门导游小程",
+   "play": 57028,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1pF9BBLEri",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1pF9BBLEri",
+   "title": "鼓浪屿超全攻略｜真实跑图不照骗！",
+   "author": "有点瞎搞",
+   "play": 9776,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1A6QqBGEdD",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1A6QqBGEdD",
+   "title": "可能是最实在的 鼓浪屿攻略 （不踩雷版）",
+   "author": "码语者和杰妮",
+   "play": 6443,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1Ritm6cEuL",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Ritm6cEuL",
+   "title": "千万别乱去！厦门平潭岛4天3晚这样玩才不白来！看海拍照美食全搞定…",
+   "author": "27_王开心",
+   "play": 1574,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "BV1ngbs6yE9S",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ngbs6yE9S",
+   "title": "9月10号开始啊，千万不要随便来厦门了#厦门旅游攻略 #厦门旅游 #鼓浪屿旅游攻略 #鼓浪屿",
+   "author": "厦门导游小甜甜",
+   "play": 193,
+   "status": "候选（转写排队/未采用）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69567f2a000000001e009246",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69567f2a000000001e009246?xsec_token=ABgdCcPhY1PsMgVEUi3TsVfMh3ObVvekjrGUcSocSKDFY=&xsec_source=",
+   "title": "厦门环岛路",
+   "author": "Haru하루はる",
+   "likes": "2020",
+   "publishedAt": "2026-01-01",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a8823e700000000160264b9",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a8823e700000000160264b9?xsec_token=ABMb0x_53NUI1O-wFnapekIPEdNKtmiXEfo2MRadvWY3g=&xsec_source=",
+   "title": "去厦门，电动车骑行这条线真的可以闭眼冲！！！",
+   "author": "鹭岛电动车出租（厦大店）",
+   "likes": "50",
+   "publishedAt": "2026-08-21",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69b51f9f000000002200dbf0",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69b51f9f000000002200dbf0?xsec_token=ABX6K31MPkZeqfW0igWD1zgPrYUUw4e4AD7mS8NskCue4=&xsec_source=",
+   "title": "厦门环岛骑行攻略新手小白版",
+   "author": "小吴吴吴吴",
+   "likes": "111",
+   "publishedAt": "2026-03-14",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69f9cdf50000000038034a3e",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69f9cdf50000000038034a3e?xsec_token=ABcZZCnXzwqJP8GOVgNdTZvxErm4dnYHcV4ePWNq6s1_o=&xsec_source=",
+   "title": "厦门环岛路骑行🌊一日看海路线不走回头路",
+   "author": "川渝暴龙",
+   "likes": "173",
+   "publishedAt": "2026-05-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6958a421000000001e036e7e",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6958a421000000001e036e7e?xsec_token=ABRziRU08Bvmura1hKXWncGWXtJq-YclsxKgvOa1mfzz0=&xsec_source=",
+   "title": "🚴厦门环岛50KM骑行全攻略",
+   "author": "寻找多莉🐏",
+   "likes": "256",
+   "publishedAt": "2026-01-03",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69f0e30c000000002003b8bb",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69f0e30c000000002003b8bb?xsec_token=AB3HMrxzNyfDJV6UIpaJOZpd1qpM6Rc1A0I_sWJBR0SxE=&xsec_source=",
+   "title": "游玩攻略 ｜ 厦门环岛南路骑行",
+   "author": "榛果小柯粒",
+   "likes": "165",
+   "publishedAt": "2026-04-29",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6900bd25000000000401096d",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6900bd25000000000401096d?xsec_token=ABtqkIjzlP9XMdNHFcaBYI11DcubtbcWubNGRVd0vTu5s=&xsec_source=",
+   "title": "来厦门 必须环岛骑行（非专业人士攻略版）",
+   "author": "无声处听惊雷",
+   "likes": "459",
+   "publishedAt": "2025-10-28",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_694bf5e0000000000d036c6d",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/694bf5e0000000000d036c6d?xsec_token=AB-mLisFKtjEpHseXsz9o66oqfEy4JfFMGYrePex61qRk=&xsec_source=",
+   "title": "厦门共享单车骑行线路① | 环岛路",
+   "author": "爬坡喘成狗",
+   "likes": "934",
+   "publishedAt": "2025-12-24",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69de4840000000002202baba",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69de4840000000002202baba?xsec_token=ABhvbPx7bD3bf3r7qmyFJhOmmbs8efw1cdBIdFT8HQODc=&xsec_source=",
+   "title": "厦门环岛骑行",
+   "author": "知行",
+   "likes": "8",
+   "publishedAt": "2026-04-14",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6975c75f000000001a0245c3",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6975c75f000000001a0245c3?xsec_token=ABAx5MTd-wM8GstpjcRnVxMyfIjQXz_k13ytq2Er0kJKo=&xsec_source=",
+   "title": "厦门",
+   "author": "大天使只想在火锅店",
+   "likes": "4756",
+   "publishedAt": "2026-01-25",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69956115000000001a03145e",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69956115000000001a03145e?xsec_token=ABFX3kBZ4XVPKwiyvqK9zM6inznRL_S59xUmAP8hlpdlU=&xsec_source=",
+   "title": "分享一下我的厦门四天三夜行程，我很满意！",
+   "author": "时间旅人",
+   "likes": "1万",
+   "publishedAt": "2026-02-18",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69de52c9000000002202b105",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69de52c9000000002202b105?xsec_token=ABhvbPx7bD3bf3r7qmyFJhOp18KKpqz9bVY1zppi4Mjjw=&xsec_source=",
+   "title": "厦门|老牌旅游城市三天两夜攻略",
+   "author": "我笑起来连眼睛都没了",
+   "likes": "8",
+   "publishedAt": "2026-04-14",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a8d7278000000002a03f2be",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a8d7278000000002a03f2be?xsec_token=ABa1QbWiHbX9h9-gycqAFuIF3UwxWGv3wufus-2RASgcA=&xsec_source=",
+   "title": "终于把厦门景点地图画清楚了，P人直接抄",
+   "author": "福气小土豆",
+   "likes": "853",
+   "publishedAt": "2026-08-25",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a97af3c000000001200197b",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a97af3c000000001200197b?xsec_token=ABoxx5e04HCZj5BbpCSWyv5FAgZOEddfX8El92qOlx_VY=&xsec_source=",
+   "title": "去完厦门我的真实感受.....",
+   "author": "牛油果",
+   "likes": "86",
+   "publishedAt": "2026-09-02",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_695b6c51000000001a02654d",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/695b6c51000000001a02654d?xsec_token=ABgWzQMHns3t9w_s7YHgkXivEMJl_f82wVHMy2KwKM4M0=&xsec_source=",
+   "title": "厦门3天2夜攻略🌊人均2k+玩到爽！",
+   "author": "啊哈",
+   "likes": "2412",
+   "publishedAt": "2026-01-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69e387e0000000001a021e9c",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69e387e0000000001a021e9c?xsec_token=ABktfbQgGEZOXlQ1AGBlTFOS8IOjEMUf1g-y2z-YaNWmg=&xsec_source=",
+   "title": "个人认为，厦门无法超越的🔟个地方…（免费）",
+   "author": "喜东东xixi",
+   "likes": "2.6万",
+   "publishedAt": "2026-04-18",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a6c58740000000028008672",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a6c58740000000028008672?xsec_token=AByUg5HC4J3JDg3KcyF-9XFwU5Zj6oVz4sEQHYS3YPV2o=&xsec_source=",
+   "title": "终于把厦门景点地图画清楚了，P人抄作业吧",
+   "author": "一颗桔子🍊",
+   "likes": "1846",
+   "publishedAt": "2026-07-31",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a89c87e000000000b02470e",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a89c87e000000000b02470e?xsec_token=AB_klCvMvLr1oOFyEUdbZWHuQfAw-882PvxaLqCHdIaWk=&xsec_source=",
+   "title": "人均500💰厦门72h特种兵citywalk路线攻略‼️",
+   "author": "少女与诗",
+   "likes": "1297",
+   "publishedAt": "2026-08-23",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69eb13030000000019025c02",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69eb13030000000019025c02?xsec_token=ABLh4SCKB9Yr_veOGfWKLU_jE4P9DIPB-SaA5QuTQJuWg=&xsec_source=",
+   "title": "厦门三天两夜旅游这么规划合不合理呀",
+   "author": "泡芙小子oOo",
+   "likes": "155",
+   "publishedAt": "2026-04-24",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_68daa7a4000000000b03db1a",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68daa7a4000000000b03db1a?xsec_token=ABRNgMNlnndmIWtbsFkjF6DMA-nkytsZsdjU6tHmySRJM=&xsec_source=",
+   "title": "厦门3天2夜旅游攻略（上篇）",
+   "author": "奥特张张",
+   "likes": "11",
+   "publishedAt": "2025-09-29",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9bd9e5000000000b0348ac",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9bd9e5000000000b0348ac?xsec_token=ABTisHmzdkRrTLlmq-cJpSNJ334I_4jTGsNniWqvoR3k8=&xsec_source=",
+   "title": "厦门沙坡尾别瞎逛！沙坡尾+艺术西区+双子塔",
+   "author": "漫厦呀",
+   "likes": "204",
+   "publishedAt": "2026-09-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a94efdb000000002a03a2db",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a94efdb000000002a03a2db?xsec_token=ABF8Wk9F1h5tp9RvKTDSrHucBBQJKhHX1yNAjjWoKTJvU=&xsec_source=",
+   "title": "沙坡尾拍老厦门旧时光，citywalk 逛吃攻略",
+   "author": "琳仔环游记🐳",
+   "likes": "40",
+   "publishedAt": "2026-08-31",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9bfbcc000000002802d39a",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9bfbcc000000002802d39a?xsec_token=ABTisHmzdkRrTLlmq-cJpSNAfSnGoW-zBUL6bkNP7_CA4=&xsec_source=",
+   "title": "应该也是前几天大暴雨导致的",
+   "author": "也还是叫蘑菇吧",
+   "likes": "5",
+   "publishedAt": "2026-09-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9b116a0000000012001807",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9b116a0000000012001807?xsec_token=ABTisHmzdkRrTLlmq-cJpSNNQo2SUZfaKujsy_bnO2U-I=&xsec_source=",
+   "title": "厦门沙坡尾☀️",
+   "author": "加加儿",
+   "likes": "3",
+   "publishedAt": "2026-09-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9ec7dc0000000011035316",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9ec7dc0000000011035316?xsec_token=ABlr7DzEQt-8jkhcnOr84mPOoWET52v0ksspAm1d_CK4o=&xsec_source=",
+   "title": "随记｜厦门沙坡尾双子塔",
+   "author": "宝盖儿",
+   "likes": "6",
+   "publishedAt": "2026-09-07",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a8e7dcb000000002800503e",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a8e7dcb000000002800503e?xsec_token=ABJBGYQ2KmPVW6FcAxv8HYCxksll2NGHHguD1Rfnshz7w=&xsec_source=",
+   "title": "厦门刚回！J人复盘的地图行程越看越好用",
+   "author": "小王小丸",
+   "likes": "188",
+   "publishedAt": "2026-08-26",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9f9f82000000001203faf6",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9f9f82000000001203faf6?xsec_token=ABqF7j-M6Xzl6syb5TXRQxGHaORDkhB2DexMRuYkuCNMY=&xsec_source=",
+   "title": "厦门人的晚餐都在沙坡尾！",
+   "author": "Letitia",
+   "likes": "1",
+   "publishedAt": "2026-09-08",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9d4ce40000000025036b04",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9d4ce40000000025036b04?xsec_token=ABGqlMo8FRyNv_wtevoZkZxre8x9W7SF9wAEWcCbqRdY4=&xsec_source=",
+   "title": "厦门最值得citywalk的一条街🫧",
+   "author": "饼子",
+   "likes": "60",
+   "publishedAt": "2026-09-06",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9c2547000000001001e5e3",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9c2547000000001001e5e3?xsec_token=ABe4VEDrcFFubr-WR046hcpg2VlWQ3o7kFANvG32q-XCk=&xsec_source=",
+   "title": "廈門記憶｜我在沙坡尾拍到了动漫里的小街🏙️",
+   "author": "不会弹琴的有马公生同学",
+   "likes": "12",
+   "publishedAt": "2026-09-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9d1ed30000000011030fed",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9d1ed30000000011030fed?xsec_token=ABGqlMo8FRyNv_wtevoZkZxpqMesS5n9OVvMmoUQwO3gg=&xsec_source=",
+   "title": "厦门沙坡尾✨藏在艺术西区的复古玩具屋",
+   "author": "熙熙攘攘",
+   "likes": "1",
+   "publishedAt": "2026-09-06",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9fa201000000002a02fa4c",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9fa201000000002a02fa4c?xsec_token=ABqF7j-M6Xzl6syb5TXRQxGP7bVCmLoihnU_eT8MX7JNA=&xsec_source=",
+   "title": "厦门适合一个人无聊闲逛的地方（58/100）",
+   "author": "屿后北厘",
+   "likes": "10",
+   "publishedAt": "2026-09-08",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9ca4d30000000012027d14",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9ca4d30000000012027d14?xsec_token=ABe4VEDrcFFubr-WR046hcprZRASBryHaAokqlsAKr5xU=&xsec_source=",
+   "title": "厦门小众漫游｜藏在市区的百年南洋古镇",
+   "author": "橘子味汽水加冰",
+   "likes": "1",
+   "publishedAt": "2026-09-06",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a6def910000000022033cca",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a6def910000000022033cca?xsec_token=ABxv7U2s4CSMM0UCE3y1bQjwxVefs0mjn1wl7qnc2q2rE=&xsec_source=",
+   "title": "厦门版“里约热内卢”🌊被严重低估的小众景点",
+   "author": "库奇kuki🌲",
+   "likes": "76",
+   "publishedAt": "2026-08-01",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a57ab810000000021009e17",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a57ab810000000021009e17?xsec_token=ABFFjbcg0F8d7mSdJBnfG1i0mJjrxBGgEeE0eTWrl4f68=&xsec_source=",
+   "title": "厦门这个山景，我愿称之为“小瑞士”",
+   "author": "京枫Jerry",
+   "likes": "192",
+   "publishedAt": "2026-07-15",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a80a81900000000280338e1",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a80a81900000000280338e1?xsec_token=ABIYdkW8gsQ-MGXn_jW5sLh_UJh_A8h-gH52k5FxySthc=&xsec_source=",
+   "title": "厦门适合一个人无聊闲逛的地方（56/100）",
+   "author": "屿后北厘",
+   "likes": "921",
+   "publishedAt": "2026-08-16",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a631b39000000001002a041",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a631b39000000001002a041?xsec_token=ABlAchrjVutHvgkg03xneRhJuZPPxBeKIVja9E9RNO4tM=&xsec_source=",
+   "title": "⛰厦门海沧｜新娘山观景台，山海港区同框",
+   "author": "自由拾光",
+   "likes": "58",
+   "publishedAt": "2026-07-24",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a6e1096000000002500af61",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a6e1096000000002500af61?xsec_token=ABTV68FYgVJV1UITzC7k01KmrpV6oSy3sGN09QUdUfzHw=&xsec_source=",
+   "title": "厦门｜石头皮山公园，一个几乎没有缺点的公园",
+   "author": "七月他姐",
+   "likes": "575",
+   "publishedAt": "2026-08-01",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a772fd70000000024026a9f",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a772fd70000000024026a9f?xsec_token=ABQ4CpkdZRUNcwXoxt62lMw8waznZTa1yIaFQxnwvogu0=&xsec_source=",
+   "title": "厦门双机位海景｜码头轮渡+高空摩天轮·治愈",
+   "author": "yuki.",
+   "likes": "16",
+   "publishedAt": "2026-08-08",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a8e9882000000002102ff01",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a8e9882000000002102ff01?xsec_token=ABJBGYQ2KmPVW6FcAxv8HYC7bolJHFSwz3W7JCbBAz5aY=&xsec_source=",
+   "title": "厦门藏着这些容易被错过的风景",
+   "author": "屿后北厘",
+   "likes": "115",
+   "publishedAt": "2026-08-26",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a8f9ae6000000000303ee0e",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a8f9ae6000000000303ee0e?xsec_token=ABjy3NBz3FNmJKqzJFrSnrlpsbQ6FC79gbUdUNqtB4Gi8=&xsec_source=",
+   "title": "厦门这条线，没有海却很厦门",
+   "author": "阿旅的日常",
+   "likes": "13",
+   "publishedAt": "2026-08-27",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a7dcf0900000000330341f2",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a7dcf0900000000330341f2?xsec_token=ABgQ3c1lA70OmDhQl5VxoU9e04CCpLJgpy5T8hqe5o4Gw=&xsec_source=",
+   "title": "厦门商圈及住宿建议𓆝 ⋆.",
+   "author": "小鸡毛的",
+   "likes": "142",
+   "publishedAt": "2026-08-13",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a90672b000000000502a430",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a90672b000000000502a430?xsec_token=ABNWfoqmWvSSS1YKyDoh4_vP3I4bJVOvOvr_6FuBaCdD0=&xsec_source=",
+   "title": "厦门住宿哪块方便呀",
+   "author": "momo",
+   "likes": "39",
+   "publishedAt": "2026-08-28",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69b652c0000000002101341e",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69b652c0000000002101341e?xsec_token=ABKYtz490rDr4TRz7wRyAuFHqPt7wpujDfOxN5B6HpmOo=&xsec_source=",
+   "title": "厦门 对我选的两家酒店满意极了",
+   "author": "小红薯643134",
+   "likes": "1376",
+   "publishedAt": "2026-03-15",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a00c112000000000802553c",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a00c112000000000802553c?xsec_token=AB4Gvy3KqOdicGLUh_hSVydYvfH37JKLxHhqJq9lj3WJA=&xsec_source=",
+   "title": "厦门这三个酒店推荐哪一个（已住 含体验感）",
+   "author": "那今天吃什么",
+   "likes": "718",
+   "publishedAt": "2026-05-11",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a6353cc000000000f033046",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a6353cc000000000f033046?xsec_token=ABlAchrjVutHvgkg03xneRhGguoUkdmdW719XpHle8o18=&xsec_source=",
+   "title": "厦门住宿哪里方便？ ｜ 避雷 + 区域推荐",
+   "author": "free",
+   "likes": "43",
+   "publishedAt": "2026-07-24",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a7f2d5d0000000024025e01",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a7f2d5d0000000024025e01?xsec_token=AB2HK-OHKIc07W0eawyZCmRQqiJnTdPQGRgY0UXvVaZHs=&xsec_source=",
+   "title": "厦门住宿",
+   "author": "小栗",
+   "likes": "36",
+   "publishedAt": "2026-08-14",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a5f5aca000000000f004c50",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a5f5aca000000000f004c50?xsec_token=ABQHXZ7uLQCPPfOkd2ub0o4E2Nud5v1zRr7zj1NFtOQMQ=&xsec_source=",
+   "title": "挑选了几个厦门的酒店，请问选哪一个呢？",
+   "author": "海天一色218",
+   "likes": "134",
+   "publishedAt": "2026-07-21",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a70bbf600000000220120e6",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a70bbf600000000220120e6?xsec_token=AB4dwzv5SkmwreuHngXEZ0jbO6LXRS1DAYb4uOGMczk-0=&xsec_source=",
+   "title": "八月份想去厦门玩",
+   "author": "momo",
+   "likes": "58",
+   "publishedAt": "2026-08-04",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_68e9fc020000000007003490",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68e9fc020000000007003490?xsec_token=AB5nX7vC3uWl6AXshRdO21yqTant_jmeEm1KBMNKogyco=&xsec_source=",
+   "title": "🙏极限4选1谢谢",
+   "author": "侏罗纪在逃恐龙🦕",
+   "likes": "306",
+   "publishedAt": "2025-10-11",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6896dc5c000000002502af8f",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6896dc5c000000002502af8f?xsec_token=ABpQ96N5Qt5rkQuUyi3W6tvhKPiN3Wvf5yX8RV-p5QxEY=&xsec_source=",
+   "title": "第一次去厦门看海，到底要住哪里？！",
+   "author": "黑月旅行笔记",
+   "likes": "8628",
+   "publishedAt": "2025-08-09",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9a601d000000002b0007e5",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9a601d000000002b0007e5?xsec_token=ABw3kZ0bHoMTRKNxfcZm-rZvD4SK1XA91xTfabMDSkZmY=&xsec_source=",
+   "title": "准备出发厦门｜不想当大冤种，求避坑😭",
+   "author": "咩咩大王",
+   "likes": "24",
+   "publishedAt": "2026-09-04",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a798c7f0000000008012a28",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a798c7f0000000008012a28?xsec_token=ABQSEjsU63oIfoiodSIH6C5lZdObDD4Xm_ow91hbotOzU=&xsec_source=",
+   "title": "厦门，一座不会再来旅游的城市",
+   "author": "momo",
+   "likes": "164",
+   "publishedAt": "2026-08-10",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9f89980000000011037dcf",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9f89980000000011037dcf?xsec_token=ABqF7j-M6Xzl6syb5TXRQxGImXAS3pbEz-oPn5l7_iLxs=&xsec_source=",
+   "title": "壁垒｜厦门海斯蒂 面试刷KPI避雷💣",
+   "author": "momo",
+   "likes": "11",
+   "publishedAt": "2026-09-08",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a85080d0000000025013368",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a85080d0000000025013368?xsec_token=ABAa6hdcATPpKFuQqMUnVG_bcfHYt5sdoZ4AM-AKsMh2g=&xsec_source=",
+   "title": "鼓浪屿再见👋短期不想再来了",
+   "author": "悠游童行",
+   "likes": "124",
+   "publishedAt": "2026-08-19",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9603ae000000002901739f",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9603ae000000002901739f?xsec_token=ABSE0sIbATfx-hV_IQKLcJByD23hxoMd6qn4ab-Gfk3JQ=&xsec_source=",
+   "title": "厦门就业环境",
+   "author": "嘟嘟",
+   "likes": "51",
+   "publishedAt": "2026-09-01",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a86a68100000000280209ce",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a86a68100000000280209ce?xsec_token=ABB5wFWxegLz5Zukm32bqGd5ESfhBUFwXBiMKNIcrUoWY=&xsec_source=",
+   "title": "来厦门，先搞懂这6件事",
+   "author": "阿旅的日常",
+   "likes": "8",
+   "publishedAt": "2026-08-20",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a7c54310000000033036f60",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a7c54310000000033036f60?xsec_token=ABUxrCzjXOrRoXfX-T03da077eJbTiepg0wwppvaAz_hI=&xsec_source=",
+   "title": "厦门避雷贴，不想朋友们在被骗了",
+   "author": "✎包子ʕ•̫͡•ིʔྀ",
+   "likes": "7",
+   "publishedAt": "2026-08-12",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a7318e8000000002c00675d",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a7318e8000000002c00675d?xsec_token=ABK7cO9YvAS8rMkxvmR3zFCvbEkf784jd1iq6CHnzPD_s=&xsec_source=",
+   "title": "避雷厦门",
+   "author": "真的很困",
+   "likes": "127",
+   "publishedAt": "2026-08-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a9e47270000000029011f08",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a9e47270000000029011f08?xsec_token=ABlr7DzEQt-8jkhcnOr84mPHCvdfH_9ty0N2o_NH-PYks=&xsec_source=",
+   "title": "厦门租房心酸日记",
+   "author": "下雨了记得带沐浴露",
+   "likes": "67",
+   "publishedAt": "2026-09-07",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a96cf23000000002a0069f9",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a96cf23000000002a0069f9?xsec_token=ABSE0sIbATfx-hV_IQKLcJBxFBbOGdVqaSh14yjkcihlo=&xsec_source=",
+   "title": "J人耗时6小时整理的厦门美食合集（纯手绘）",
+   "author": "林曼生-",
+   "likes": "66",
+   "publishedAt": "2026-09-01",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69c936cd000000001a0238b4",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69c936cd000000001a0238b4?xsec_token=ABbC9XRE886YCxdtM4d9SXwhHohmtHmkK7GshBq5VNmPU=&xsec_source=",
+   "title": "厦门会反复去的16家小破店。。。",
+   "author": "阿珊。",
+   "likes": "631",
+   "publishedAt": "2026-03-29",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69ddcc57000000001a02bedf",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69ddcc57000000001a02bedf?xsec_token=AB4Q4jz5YKoIfhvFqH2fdeXAkGwZEZXMzEcF17SahDbLU=&xsec_source=",
+   "title": "厦门集美学村大学生私藏美食清单✨ 全是不踩",
+   "author": "厦门是阴天",
+   "likes": "752",
+   "publishedAt": "2026-04-14",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69d10ea2000000001e00e36c",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69d10ea2000000001e00e36c?xsec_token=ABDDZX4zSgpezY10EElDf8h9RNS3itD_bq09b40kuqz2g=&xsec_source=",
+   "title": "真游客howto速通厦门外卖",
+   "author": "李大壮",
+   "likes": "1771",
+   "publishedAt": "2026-04-04",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a0ace270000000008025a74",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a0ace270000000008025a74?xsec_token=ABAXeNwVXU60O3I59unWhmzu6o3xFHa7qtnhkpGR5HwkY=&xsec_source=",
+   "title": "厦门|一出厦门站，直奔这些店",
+   "author": "凉拌玛卡巴卡",
+   "likes": "469",
+   "publishedAt": "2026-05-18",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a210ee000000000380346c6",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a210ee000000000380346c6?xsec_token=AByB2MhFhetGjwWaT2q0pVjXjk1eDB98aMgzzD8q_Nk8U=&xsec_source=",
+   "title": "个人认为，厦门nb好吃的🔟家店 . . .",
+   "author": "做自己的山",
+   "likes": "14",
+   "publishedAt": "2026-06-04",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69f2b59d000000003502faeb",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69f2b59d000000003502faeb?xsec_token=AB5aJCki0X5tkiQ13AFKK62thuQodrtRmCWqLMNw7gCEw=&xsec_source=",
+   "title": "厦门美食合集｜40+厦门老店一次拿走（含地图",
+   "author": "獭啊獭",
+   "likes": "631",
+   "publishedAt": "2026-04-30",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69f2d70d0000000023015fc7",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69f2d70d0000000023015fc7?xsec_token=AB5aJCki0X5tkiQ13AFKK62n2OPHJyvMC4uk7pU70Qbhc=&xsec_source=",
+   "title": "厦门美食推荐必吃餐厅✅连夜整理版",
+   "author": "吸吸果冻",
+   "likes": "71",
+   "publishedAt": "2026-04-30",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_68d40238000000001400b9ac",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68d40238000000001400b9ac?xsec_token=ABAqsDlIodWxJIIjIGTLQwnOtIjh_GIALZe6dh3ScVCjI=&xsec_source=",
+   "title": "厦门反复去的16家小破店。。。",
+   "author": "阿珊。",
+   "likes": "3113",
+   "publishedAt": "2025-09-24",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_68e4df840000000005033082",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68e4df840000000005033082?xsec_token=ABd6CRQJ-sxugDVg_eT9S1FDOsgb7dDqOVnW_FpISyeC0=&xsec_source=",
+   "title": "厦门岛内极品！！！岛内极品！！！",
+   "author": "洞洞-",
+   "likes": "1558",
+   "publishedAt": "2025-10-07",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a2d10ef000000001702d0cd",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a2d10ef000000001702d0cd?xsec_token=ABHRVVtY4W5HaFHRHZTxqpmx-mP8NepcD4SwCU1WUueFk=&xsec_source=",
+   "title": "6.12 厦门鼓浪屿 当天往返6h游玩路线",
+   "author": "饭饭",
+   "likes": "3284",
+   "publishedAt": "2026-06-13",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a8484f50000000008011746",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a8484f50000000008011746?xsec_token=ABNPPLr6r2jdEeBeGFx8ZOZI8JFDeEy1MxzVXZ9glx388=&xsec_source=",
+   "title": "鼓浪屿一日环岛路线（步行版）",
+   "author": "小魚冻干",
+   "likes": "677",
+   "publishedAt": "2026-08-19",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_69a00d28000000002603e138",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/69a00d28000000002603e138?xsec_token=ABafHXv1yW09ffn0Gc4qbigL3Q42yoD-MabExhQc4ITgo=&xsec_source=",
+   "title": "鼓浪屿避坑！90%的人都踩过",
+   "author": "鼓浪屿明哥",
+   "likes": "51",
+   "publishedAt": "2026-02-26",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6926eaf1000000000d03c080",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6926eaf1000000000d03c080?xsec_token=ABE9uacUNKYRHgzw-44MmWcdWRC0rirvwhQMupGmQrdc4=&xsec_source=",
+   "title": "厦门鼓浪屿保姆级攻略",
+   "author": "暴躁小帅-攻略版",
+   "likes": "1.2万",
+   "publishedAt": "2025-11-26",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a4f069c000000002103f58d",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a4f069c000000002103f58d?xsec_token=ABIZDphQ2qNk-OBB6T_oRZGX9xQ_wdLntRFrdc7huJPEw=&xsec_source=",
+   "title": "厦门鼓浪屿🏝️｜慢逛的正确打开方式🔁",
+   "author": "甜兔贩卖机",
+   "likes": "1478",
+   "publishedAt": "2026-07-09",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a699e38000000000f032cb5",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a699e38000000000f032cb5?xsec_token=AB10o_wz06hgBKVqSJdJsxCGy4yFVucFfodJMxqLjMvnE=&xsec_source=",
+   "title": "鼓浪屿6大景点逐个吐槽｜去了3次我悟了",
+   "author": "💤",
+   "likes": "113",
+   "publishedAt": "2026-07-29",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a77d0ce000000003302fc63",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a77d0ce000000003302fc63?xsec_token=ABQ4CpkdZRUNcwXoxt62lMwzi7oQVM6YE-U7-f0lfgWqA=&xsec_source=",
+   "title": "厦门｜鼓浪屿一日游最佳路线‼️",
+   "author": "六六",
+   "likes": "292",
+   "publishedAt": "2026-08-09",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_690afc6d0000000005039614",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/690afc6d0000000005039614?xsec_token=AB7AjPJj3tZDamn35GOz9Lp3N_ZcLmXn1z90yS7Mp8w-Q=&xsec_source=",
+   "title": "去鼓浪屿导航避免走冤枉路一篇就够",
+   "author": "山顶小猫猫",
+   "likes": "8197",
+   "publishedAt": "2025-11-05",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a868f03000000002702880d",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a868f03000000002702880d?xsec_token=ABB5wFWxegLz5Zukm32bqGd-dQnZbeGFPBvRDzwKMIp2U=&xsec_source=",
+   "title": "鼓浪屿半日游｜超全攻略（省钱不废腿版）",
+   "author": "柿子红了",
+   "likes": "154",
+   "publishedAt": "2026-08-20",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  },
+  {
+   "id": "xhs_6a846dda000000003300d56c",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a846dda000000003300d56c?xsec_token=ABNPPLr6r2jdEeBeGFx8ZOZFus3kxBO5nJS3Q1du7RMWs=&xsec_source=",
+   "title": "厦门鼓浪屿不花钱半日游",
+   "author": "elena",
+   "likes": "874",
+   "publishedAt": "2026-08-18",
+   "status": "已采集（部分图文帖正文在图片中）",
+   "summary": "",
+   "used": false
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "景点",
+   "name": "鼓浪屿（全岛）",
+   "address": "厦门市思明区鼓浪屿",
+   "lng": 118.066102,
+   "lat": 24.446214,
+   "day": 3,
+   "slot": "全日",
+   "durationMin": 600,
+   "bookingRequired": true,
+   "bookingNote": "东渡邮轮码头→三丘田/内厝澳，船票提前10天放票",
+   "ticketPrice": "船票35元(普通)/80元(豪华)，回程免费",
+   "openHours": "轮渡 7:00-18:30 左右",
+   "tags": [
+    "世界遗产",
+    "万国建筑",
+    "琴岛"
+   ],
+   "notes": "主码头东渡；船票小程序购；不要信路边拉客",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0FFFYJ219"
+  },
+  {
+   "id": "p16",
+   "category": "景点",
+   "name": "日光岩",
+   "address": "鼓浪屿",
+   "lng": "118.067310",
+   "lat": "24.442228",
+   "day": 3,
+   "slot": "上午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "单买50元/联票含",
+   "openHours": "8:00-17:30",
+   "tags": [
+    "登顶",
+    "俯瞰全岛"
+   ],
+   "notes": "节假日排队严重，建议早去或傍晚",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0FFFFJIDK"
+  },
+  {
+   "id": "p17",
+   "category": "景点",
+   "name": "菽庄花园+钢琴博物馆",
+   "address": "鼓浪屿",
+   "lng": "118.069520",
+   "lat": "24.439035",
+   "day": 3,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "单买30元/联票含",
+   "openHours": "8:00-17:30",
+   "tags": [
+    "园林",
+    "钢琴"
+   ],
+   "notes": "钢琴博物馆有免费演奏，卡好时间",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B02500U8LZ"
+  },
+  {
+   "id": "p18",
+   "category": "景点",
+   "name": "八卦楼（风琴博物馆）",
+   "address": "鼓浪屿",
+   "lng": "118.068263",
+   "lat": "24.447422",
+   "day": 3,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": true,
+   "bookingNote": "需在鼓浪屿核心景点小程序预约场次",
+   "ticketPrice": "联票含/单约免费",
+   "openHours": "8:30-17:30",
+   "tags": [
+    "管风琴",
+    "红顶"
+   ],
+   "notes": "每天有管风琴演奏；有免费讲解",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0G05UKYBN"
+  },
+  {
+   "id": "p20",
+   "category": "海边",
+   "name": "大德记沙滩+皓月园",
+   "address": "鼓浪屿东南",
+   "lng": "118.075936",
+   "lat": "24.441099",
+   "day": 3,
+   "slot": "傍晚",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费(皓月园门票另计)",
+   "openHours": "全天",
+   "tags": [
+    "日落",
+    "郑成功像",
+    "双子塔同框"
+   ],
+   "notes": "退潮礁石注意防滑",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B02500UNIP"
+  },
+  {
+   "id": "p02",
+   "category": "街区",
+   "name": "中山路步行街",
+   "address": "厦门市思明区中山路",
+   "lng": 118.081903,
+   "lat": 24.454104,
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "骑楼",
+    "步行街"
+   ],
+   "notes": "老虎城四楼天台可拍全景(10元)；中华城免费",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0J67KP2XX"
+  },
+  {
+   "id": "p11",
+   "category": "市集",
+   "name": "厦门八市（营平菜市场）",
+   "address": "厦门市思明区营平路",
+   "lng": 118.075017,
+   "lat": 24.457902,
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "水产市场",
+    "小吃"
+   ],
+   "notes": "看热闹为主，海鲜加工慎重；阿杰五香等小吃在此",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0I0ZAB1HM"
+  },
+  {
+   "id": "p08",
+   "category": "景区",
+   "name": "集美学村",
+   "address": "厦门市集美区",
+   "lng": 118.103353,
+   "lat": 24.572373,
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 240,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "嘉庚建筑",
+    "海上地铁"
+   ],
+   "notes": "地铁1号线直达；龙舟池/鳌园/嘉庚故居/大社戏台",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0FFHCECWJ"
+  },
+  {
+   "id": "p15",
+   "category": "观景",
+   "name": "十里长堤（集美）",
+   "address": "厦门市集美区",
+   "lng": 118.089475,
+   "lat": 24.563722,
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "日落",
+    "夜市",
+    "乐队"
+   ],
+   "notes": "地铁穿海+日落+不定期免费演出",
+   "sourceIds": [
+    "v01",
+    "xhs_695b6c51000000001a02654d"
+   ],
+   "checked": true,
+   "poiId": "B0KUPUDCFO"
+  },
+  {
+   "id": "p04",
+   "category": "景点",
+   "name": "厦门园林植物园",
+   "address": "厦门市思明区虎园路",
+   "lng": 118.109277,
+   "lat": 24.447728,
+   "day": 2,
+   "slot": "上午",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "ticketPrice": "约30元",
+   "openHours": "6:30-18:00",
+   "tags": [
+    "雨林世界",
+    "多肉"
+   ],
+   "notes": "西门进+观光车；雨林喷雾8:00-9:30/15:00-16:30",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B025003OPX"
+  },
+  {
+   "id": "p05",
+   "category": "人文",
+   "name": "南普陀寺",
+   "address": "厦门市思明区思明南路",
+   "lng": 118.095336,
+   "lat": 24.440836,
+   "day": 2,
+   "slot": "上午",
+   "durationMin": 90,
+   "bookingRequired": true,
+   "bookingNote": "访客需预约",
+   "ticketPrice": "免费",
+   "openHours": "8:00-17:00",
+   "tags": [
+    "闽南佛教",
+    "素饼"
+   ],
+   "notes": "东门进长津阁石阶20分钟到免费观景台；西门出接猫街",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0JKHB0YIJ"
+  },
+  {
+   "id": "p14",
+   "category": "街区",
+   "name": "顶澳仔猫街",
+   "address": "厦门市思明区顶澳仔路",
+   "lng": 118.091662,
+   "lat": 24.440171,
+   "day": 2,
+   "slot": "上午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "猫咪涂鸦",
+    "拍照"
+   ],
+   "notes": "无真猫，涂鸦打卡地",
+   "sourceIds": [
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0G0RN7WUQ"
+  },
+  {
+   "id": "p03",
+   "category": "街区",
+   "name": "沙坡尾艺术西区",
+   "address": "厦门市思明区大学路",
+   "lng": 118.087587,
+   "lat": 24.437609,
+   "day": 2,
+   "slot": "中午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "文艺",
+    "老渔港"
+   ],
+   "notes": "彩虹墙在艺术西区2楼天台；拍照为主",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0FFF6YYVV"
+  },
+  {
+   "id": "p06",
+   "category": "海滩",
+   "name": "白城沙滩",
+   "address": "厦门市思明区环岛南路",
+   "lng": 118.100875,
+   "lat": 24.432281,
+   "day": 2,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "沙滩",
+    "日落"
+   ],
+   "notes": "日落分神级；人较多",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0MU31Q7WB"
+  },
+  {
+   "id": "p13",
+   "category": "桥梁",
+   "name": "演武大桥观景台",
+   "address": "厦门市思明区环岛南路",
+   "lng": 118.087789,
+   "lat": 24.435421,
+   "day": 2,
+   "slot": "下午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "海景",
+    "双子塔机位"
+   ],
+   "notes": "拍世茂双子塔经典机位",
+   "sourceIds": [
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0HRSCRJGJ"
+  },
+  {
+   "id": "p07",
+   "category": "道路",
+   "name": "环岛路（白城→黄厝）",
+   "address": "厦门市思明区环岛路",
+   "lng": 118.142325,
+   "lat": 24.431453,
+   "day": 2,
+   "slot": "下午",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "骑行",
+    "海景"
+   ],
+   "notes": "可29路公交1元走全程；黄厝日出/日落均可",
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0M6CHUM8U"
+  },
+  {
+   "id": "p10",
+   "category": "海滩",
+   "name": "黄厝海滩",
+   "address": "厦门市思明区环岛南路",
+   "lng": 118.228083,
+   "lat": 24.64782,
+   "day": 2,
+   "slot": "傍晚",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "日落",
+    "人少"
+   ],
+   "notes": "看日落最佳；附近海边咖啡馆多",
+   "sourceIds": [
+    "v01",
+    "v04"
+   ],
+   "checked": true,
+   "poiId": "B0G17HVLES"
+  },
+  {
+   "id": "p12",
+   "category": "公园",
+   "name": "厦门铁路文化公园",
+   "address": "厦门市思明区",
+   "lng": 118.102223,
+   "lat": 24.460383,
+   "day": 2,
+   "slot": "机动",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "老铁路",
+    "免费"
+   ],
+   "notes": "可选：大生里段穿鸿山隧道；时间紧可跳过",
+   "sourceIds": [
+    "v01"
+   ],
+   "checked": false,
+   "poiId": "B02500RZHC"
+  },
+  {
+   "id": "p21",
+   "category": "交通",
+   "name": "东渡邮轮码头",
+   "address": "厦门市思明区东渡路",
+   "lng": 118.077007,
+   "lat": 24.49397,
+   "day": 3,
+   "slot": "07:30出发",
+   "durationMin": 60,
+   "bookingRequired": true,
+   "bookingNote": "去鼓浪屿主码头上船点",
+   "ticketPrice": "—",
+   "openHours": "随班次",
+   "tags": [
+    "船票",
+    "码头"
+   ],
+   "notes": "提前到码头取票/刷码",
+   "sourceIds": [
+    "v03"
+   ],
+   "checked": true,
+   "poiId": "B0L276HYPT"
+  }
+ ],
+ "hotels": [
+  {
+   "id": "a01",
+   "name": "镇海路片区",
+   "scope": "区域推荐",
+   "area": "思明区镇海路（中山路/沙坡尾/轮渡码头都近）",
+   "lng": 118.085491,
+   "lat": 24.451308,
+   "radius": 900,
+   "priceRange": "舒适档（示例）",
+   "bestFor": "第一次来厦门、以老城步行为主的行程",
+   "notes": "小红书高赞帖推荐：去中山路、沙坡尾、码头都超方便",
+   "subHotels": [
+    "延鹭客栈(厦门中山路店)"
+   ],
+   "sourceIds": [
+    "xhs_695b6c51000000001a02654d"
+   ],
+   "recommend": true,
+   "poiId": "B0FFGJYAEB"
+  },
+  {
+   "id": "a02",
+   "name": "中山路/八市片区",
+   "scope": "区域推荐",
+   "area": "中山路、大同路、开禾路一带（八市旁）",
+   "lng": 118.075017,
+   "lat": 24.457902,
+   "radius": 700,
+   "priceRange": "热闹地段，节假日偏贵",
+   "bestFor": "喜欢烟火气、吃吃喝喝为主的游客",
+   "notes": "视频建议：中山路是地理核心，逛吃八市最方便；嫌贵可退一步住文灶/厦门站区域",
+   "subHotels": [
+    "文灶地铁站片区（备选）"
+   ],
+   "sourceIds": [
+    "v03"
+   ],
+   "recommend": false,
+   "poiId": "B0I0ZAB1HM"
+  },
+  {
+   "id": "a03",
+   "name": "环岛路·黄厝靠海片区",
+   "scope": "区域推荐",
+   "area": "黄厝海滩/环岛南路沿线",
+   "lng": 118.228083,
+   "lat": 24.64782,
+   "radius": 1500,
+   "priceRange": "海边民宿/酒店（度假感）",
+   "bestFor": "想看海、看日出，不赶景点的人",
+   "notes": "视频建议：黄厝海滩是日出绝佳点，住这免早起奔波；周边海边咖啡馆多",
+   "subHotels": [],
+   "sourceIds": [
+    "v01"
+   ],
+   "recommend": false,
+   "poiId": "B0G17HVLES"
+  },
+  {
+   "id": "a04",
+   "name": "厦大/白城片区",
+   "scope": "区域推荐",
+   "area": "厦大西村、白城沙滩、猫街一带",
+   "lng": 118.100875,
+   "lat": 24.432281,
+   "radius": 900,
+   "priceRange": "校园周边，价位适中",
+   "bestFor": "行程以植物园-厦大-环岛路为主的游客",
+   "notes": "靠近植物园西门/南普陀/厦大/白城，D2 山海环岛当日走动最少",
+   "subHotels": [],
+   "sourceIds": [
+    "v01",
+    "v03"
+   ],
+   "recommend": true,
+   "poiId": "B0MU31Q7WB"
+  },
+  {
+   "id": "a05",
+   "name": "鼓浪屿·码头附近",
+   "scope": "区域推荐",
+   "area": "鼓浪屿三丘田/内厝澳码头周边",
+   "lng": 118.069014,
+   "lat": 24.449775,
+   "radius": 1000,
+   "priceRange": "老别墅酒店/民宿（价位偏高）",
+   "bestFor": "想住在岛上看夜景、慢慢逛的人",
+   "notes": "视频建议：住岛上选离码头近的，岛上不通车、上下坡多，行李远不如住码头边",
+   "subHotels": [
+    "洋桃院子旅馆（视频亲测）"
+   ],
+   "sourceIds": [
+    "v01"
+   ],
+   "recommend": false,
+   "poiId": "B0L0C7026C"
+  }
+ ],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "老溪岸沙茶面",
+   "type": "沙茶面",
+   "avgPrice": 25,
+   "day": 1,
+   "area": "溪岸路224号",
+   "lng": 118.088955,
+   "lat": 24.461247,
+   "poiId": "B0FFH2GMPZ",
+   "dianpingKeyword": "厦门 沙茶面",
+   "tips": "高德 POI 真实坐标；人均为估算（示例档）",
+   "sourceIds": [
+    "v05",
+    "v08"
+   ],
+   "checked": true
+  },
+  {
+   "id": "r02",
+   "name": "阿忠食坊大排档·20年老店(万象城店)",
+   "type": "海蛎煎",
+   "avgPrice": 50,
+   "day": 2,
+   "area": "金榜路111之一(湖滨东路地铁站2号口步行230米)",
+   "lng": 118.10943,
+   "lat": 24.471967,
+   "poiId": "B02500QG1G",
+   "dianpingKeyword": "厦门 海蛎煎",
+   "tips": "高德 POI 真实坐标；人均为估算（示例档）",
+   "sourceIds": [
+    "v05",
+    "v08"
+   ],
+   "checked": true
+  },
+  {
+   "id": "r03",
+   "name": "百赞姜母鸭(思明南路店)",
+   "type": "姜母鸭",
+   "avgPrice": 80,
+   "day": 1,
+   "area": "思明南路391号",
+   "lng": 118.085495,
+   "lat": 24.44611,
+   "poiId": "B0FFF5WF5X",
+   "dianpingKeyword": "厦门 姜母鸭",
+   "tips": "高德 POI 真实坐标；人均为估算（示例档）",
+   "sourceIds": [
+    "v05",
+    "v08"
+   ],
+   "checked": true
+  },
+  {
+   "id": "r04",
+   "name": "黄则和花生汤(中山路总店)",
+   "type": "花生汤",
+   "avgPrice": 30,
+   "day": 2,
+   "area": "中山路22-24号",
+   "lng": 118.076185,
+   "lat": 24.453358,
+   "poiId": "B025003Z7S",
+   "dianpingKeyword": "厦门 花生汤",
+   "tips": "高德 POI 真实坐标；人均为估算（示例档）",
+   "sourceIds": [
+    "v05",
+    "v08"
+   ],
+   "checked": true
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "鼓浪屿轮渡+岛屿漫步",
+   "where": "厦门轮渡码头→鼓浪屿",
+   "durationMin": 240,
+   "price": "船票35元起",
+   "bookingRequired": true,
+   "bookingLink": "微信搜索「厦门轮渡」",
+   "bestFor": "全员",
+   "sourceIds": [
+    "v01"
+   ]
+  },
+  {
+   "id": "e02",
+   "name": "环岛路骑行",
+   "where": "环岛路（白城→黄厝）",
+   "durationMin": 120,
+   "price": "共享单车/租车约20-50元",
+   "bookingRequired": false,
+   "bestFor": "年轻人/情侣",
+   "sourceIds": [
+    "v07"
+   ]
+  },
+  {
+   "id": "e03",
+   "name": "海上地铁海景段",
+   "where": "地铁1号线高崎→集美学村",
+   "durationMin": 30,
+   "price": "地铁票价约2-4元",
+   "bookingRequired": false,
+   "bestFor": "全员",
+   "sourceIds": [
+    "v03"
+   ]
+  },
+  {
+   "id": "e04",
+   "name": "植物园雨林喷雾打卡",
+   "where": "厦门园林植物园雨林世界",
+   "durationMin": 60,
+   "price": "含在门票内",
+   "bookingRequired": false,
+   "bestFor": "摄影/亲子",
+   "sourceIds": [
+    "v03"
+   ]
+  },
+  {
+   "id": "e05",
+   "name": "十里长堤看日落+免费演唱会",
+   "where": "集美学村·十里长堤",
+   "durationMin": 120,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "全员/情侣",
+   "sourceIds": [
+    "xhs_695b6c51000000001a02654d"
+   ]
+  },
+  {
+   "id": "e06",
+   "name": "租小电驴环岛骑行",
+   "where": "黄厝→白城沙滩",
+   "durationMin": 180,
+   "price": "租车约30-60元",
+   "bookingRequired": false,
+   "bestFor": "年轻人/情侣",
+   "sourceIds": [
+    "xhs_695b6c51000000001a02654d"
+   ]
+  },
+  {
+   "id": "e07",
+   "name": "帆船出海",
+   "where": "五缘湾帆船港",
+   "durationMin": 90,
+   "price": "约120-200元/人（示例）",
+   "bookingRequired": true,
+   "bookingLink": "平台购票",
+   "bestFor": "喜欢海的朋友",
+   "sourceIds": [
+    "v03"
+   ]
+  },
+  {
+   "id": "e08",
+   "name": "赶海挖沙",
+   "where": "观音山沙滩",
+   "durationMin": 120,
+   "price": "免费（查好潮汐表）",
+   "bookingRequired": false,
+   "bestFor": "亲子",
+   "sourceIds": [
+    "v03"
+   ]
+  },
+  {
+   "id": "e09",
+   "name": "山海健康步道临海线",
+   "where": "第18出入口→盼归塔（速通：云山天际酒店旁24口电梯）",
+   "durationMin": 150,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "徒步爱好者",
+   "sourceIds": [
+    "v03"
+   ]
+  },
+  {
+   "id": "e10",
+   "name": "集美海上自行车道",
+   "where": "集美学村·海上自行车道（2.6km）",
+   "durationMin": 30,
+   "price": "骑行约10-20元",
+   "bookingRequired": false,
+   "bestFor": "骑行",
+   "sourceIds": [
+    "v03"
+   ]
+  },
+  {
+   "id": "e11",
+   "name": "钟鼓索道（空中看厦门）",
+   "where": "植物园西门旁（万石植物园站）",
+   "durationMin": 60,
+   "price": "约65-70元/人（示例）",
+   "bookingRequired": true,
+   "bookingLink": "官方渠道提前预约",
+   "bestFor": "想俯瞰厦门全景的人",
+   "sourceIds": [
+    "v03"
+   ]
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-09-18",
+   "theme": "老城烟火+集美学村（1号线沿线）",
+   "area": "中山路/八市/集美",
+   "items": [
+    {
+     "poiId": "p02",
+     "time": "09:00-11:00"
+    },
+    {
+     "poiId": "p11",
+     "time": "11:00-12:30"
+    },
+    {
+     "poiId": "r01",
+     "time": "12:30-13:30"
+    },
+    {
+     "poiId": "p08",
+     "time": "14:00-17:30"
+    },
+    {
+     "poiId": "p15",
+     "time": "17:30-19:00"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "地铁1号线+步行",
+    "polylines": [],
+    "distanceKm": 23.7,
+    "durationMin": 62.5,
+    "note": "1号线串联：中山路→集美学村",
+    "legs": [
+     {
+      "from": "p02",
+      "to": "p11",
+      "distanceKm": 1.67,
+      "durationMin": 12.8
+     },
+     {
+      "from": "p11",
+      "to": "r01",
+      "distanceKm": 2.1,
+      "durationMin": 9.7
+     },
+     {
+      "from": "r01",
+      "to": "p08",
+      "distanceKm": 16.74,
+      "durationMin": 28.0
+     },
+     {
+      "from": "p08",
+      "to": "p15",
+      "distanceKm": 3.2,
+      "durationMin": 11.8
+     }
+    ]
+   },
+   "notes": "八市看热闹别乱买海鲜；集美学村值得慢逛"
+  },
+  {
+   "day": 2,
+   "date": "2026-09-19",
+   "theme": "山海环岛：植物园→厦大→环岛路",
+   "area": "思明东南",
+   "items": [
+    {
+     "poiId": "p04",
+     "time": "08:30-11:30"
+    },
+    {
+     "poiId": "p05",
+     "time": "11:30-13:00"
+    },
+    {
+     "poiId": "p14",
+     "time": "13:00-13:40"
+    },
+    {
+     "poiId": "p03",
+     "time": "13:40-14:40"
+    },
+    {
+     "poiId": "p06",
+     "time": "15:00-16:00"
+    },
+    {
+     "poiId": "p13",
+     "time": "16:00-17:00"
+    },
+    {
+     "poiId": "p07",
+     "time": "17:00-18:30"
+    },
+    {
+     "poiId": "p10",
+     "time": "18:30-19:30"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "driving",
+    "polylines": [],
+    "distanceKm": 55.17,
+    "durationMin": 107.5,
+    "note": "可29路公交串联",
+    "legs": [
+     {
+      "from": "p04",
+      "to": "p05",
+      "distanceKm": 2.76,
+      "durationMin": 23.7
+     },
+     {
+      "from": "p05",
+      "to": "p14",
+      "distanceKm": 4.46,
+      "durationMin": 14.1
+     },
+     {
+      "from": "p14",
+      "to": "p03",
+      "distanceKm": 1.27,
+      "durationMin": 6.8
+     },
+     {
+      "from": "p03",
+      "to": "p06",
+      "distanceKm": 2.42,
+      "durationMin": 6.9
+     },
+     {
+      "from": "p06",
+      "to": "p13",
+      "distanceKm": 4.4,
+      "durationMin": 7.8
+     },
+     {
+      "from": "p13",
+      "to": "p07",
+      "distanceKm": 9.14,
+      "durationMin": 14.3
+     },
+     {
+      "from": "p07",
+      "to": "p10",
+      "distanceKm": 30.73,
+      "durationMin": 33.8
+     }
+    ]
+   },
+   "notes": "植物园西门进；南普陀需预约；沙坡尾拍照打卡"
+  },
+  {
+   "day": 3,
+   "date": "2026-09-20",
+   "theme": "鼓浪屿全日：码头→三大片区",
+   "area": "鼓浪屿",
+   "items": [
+    {
+     "poiId": "p21",
+     "time": "07:30-08:30"
+    },
+    {
+     "poiId": "p16",
+     "time": "09:30-11:00"
+    },
+    {
+     "poiId": "p17",
+     "time": "11:00-12:30"
+    },
+    {
+     "poiId": "p01",
+     "time": "12:30-13:30",
+     "label": "龙头路小吃街午餐"
+    },
+    {
+     "poiId": "p18",
+     "time": "13:30-15:00"
+    },
+    {
+     "poiId": "p20",
+     "time": "16:00-17:30"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "步行",
+    "polylines": [],
+    "distanceKm": 13.75,
+    "durationMin": 118.7,
+    "note": "岛上不通车",
+    "legs": [
+     {
+      "from": "p21",
+      "to": "p16",
+      "distanceKm": 8.59,
+      "durationMin": 42.5
+     },
+     {
+      "from": "p16",
+      "to": "p17",
+      "distanceKm": 1.48,
+      "durationMin": 21.9
+     },
+     {
+      "from": "p17",
+      "to": "p01",
+      "distanceKm": 1.54,
+      "durationMin": 26.4
+     },
+     {
+      "from": "p01",
+      "to": "p18",
+      "distanceKm": 0.62,
+      "durationMin": 10.4
+     },
+     {
+      "from": "p18",
+      "to": "p20",
+      "distanceKm": 1.52,
+      "durationMin": 17.4
+     }
+    ]
+   },
+   "notes": "船票提前10天买；日光岩早去；八卦楼需预约场次"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "9月中下旬（参考近期实况）",
+   "high": 31,
+   "low": 24,
+   "advice": "参考高德实况预报：2026-09-08 小雨/小雨 31~24°C；2026-09-09 多云/小雨 29~24°C；2026-09-10 多云/多云 30~24°C。9月厦门多阵雨、湿热，出行前 3 天再查一次实时预报；带伞+防晒。"
+  },
+  "packing": [
+   "防晒霜（重要说三遍）",
+   "防蚊液（植物园必备）",
+   "晴雨伞",
+   "舒适步行鞋",
+   "白色系衣服（植物园出片）"
+  ],
+  "bookings": [
+   {
+    "item": "鼓浪屿船票",
+    "how": "微信小程序「厦门轮渡」，提前1-3天",
+    "deadline": "出发前1天"
+   },
+   {
+    "item": "南普陀寺",
+    "how": "小程序/现场预约（小红书提示需提前预约）",
+    "deadline": "当天"
+   },
+   {
+    "item": "朱富贵海鲜火锅",
+    "how": "热门需提前预约，11点开始排队",
+    "deadline": "提前1天"
+   },
+   {
+    "item": "鼓浪屿船票",
+    "how": "微信小程序（提前10天放票，节假日必须提前）；普通35元/豪华80元，回程免费",
+    "deadline": "提前10天"
+   },
+   {
+    "item": "厦门大学",
+    "how": "南门访客中心预约（群贤楼群→芙蓉隧道路线）",
+    "deadline": "提前1-3天"
+   },
+   {
+    "item": "日光岩/菽庄/八卦楼",
+    "how": "可单独购票或买联票更划算；八卦楼需预约场次",
+    "deadline": "当天"
+   },
+   {
+    "item": "钟鼓索道",
+    "how": "提前7天抢票（8点放票）",
+    "deadline": "提前7天"
+   },
+   {
+    "item": "鼓浪屿收费景点（日光岩/菽庄等）",
+    "how": "单买需预约、联票免预约（子代理核实）",
+    "deadline": "当天"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "机场→市区",
+    "note": "公交机场专线1元/机场巴士；或BRT全程高架无红绿灯，超快"
+   },
+   {
+    "line": "厦门北站→岛内",
+    "note": "地铁1号线直达，转集美学村同线"
+   },
+   {
+    "line": "环岛路海岸线",
+    "note": "29路公交1元，完整走完海岸线"
+   },
+   {
+    "line": "上海→厦门",
+    "note": "高铁约5-6h / 飞机约2h（示例，请查询实时）"
+   }
+  ],
+  "safety": [
+   "海边注意潮汐与警示",
+   "打车用正规平台"
+  ],
+  "customs": [
+   "海鲜先问清价格再点",
+   "闽南话地区，普通话通用；寺庙注意着装"
+  ]
+ },
+ "_routeFilled": true
+}
