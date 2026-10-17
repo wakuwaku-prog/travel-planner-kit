@@ -1,0 +1,1243 @@
+{
+ "meta": {
+  "destination": "上海",
+  "slug": "shanghai",
+  "dates": [
+   "2026-10-03"
+  ],
+  "days": 1,
+  "departureCity": "上海西站（两人汇合点）",
+  "travelers": "2人（上海交通大学闵行校区 + 同济大学嘉定校区）",
+  "budget": "穷游",
+  "preferences": [
+   "跨区citywalk",
+   "避开人流",
+   "古建园林",
+   "工业遗产",
+   "历史街区",
+   "市井烟火",
+   "免费",
+   "穷游"
+  ],
+  "pace": "均衡",
+  "meetingPoint": {
+   "name": "上海西站",
+   "address": "普陀区桃浦路22号",
+   "why": "上海西站是 11 号线与 15 号线的交汇站，正好是两人各自线路的交点：同济嘉定乘 11 号线直达（78min/¥5），交大闵行乘 15 号线直达（92min/¥6），双方都是零换乘单线直达，是全部候选汇合点中最公平且最省换乘的。",
+   "fromSJTU": {
+    "route": "15号线直达（紫竹高新区→上海西站）",
+    "durationMin": 92.0,
+    "cost": "¥6",
+    "transfers": 0
+   },
+   "fromTongji": {
+    "route": "11号线直达（同济嘉定→上海西站）",
+    "durationMin": 77.8,
+    "cost": "¥5",
+    "transfers": 0
+   },
+   "directBetweenOrigins": {
+    "durationMin": 163.2,
+    "cost": "¥10",
+    "note": "两人直连需 163–168 分钟，故取中点汇合更优"
+   }
+  },
+  "sources": {
+   "videos": 18,
+   "posts": 148,
+   "keywords": 17,
+   "seedVideos": 273,
+   "xhsKeywords": 10
+  },
+  "generatedAt": "2026-10-02",
+  "status": "调研完成：B站17关键词→273条种子→149候选→转写4视频；小红书20关键词→263篇唯一笔记；双起点汇合点＝上海西站（高德实测）；行程已扩为普陀→静安→虹口三区",
+  "experiencesNote": "主方案为 5 个步行可达的免费/低价点位；另附 8 项体验类备选（丛林飞跃/卡丁车/陶艺/攀岩/皮划艇/骑行等），覆盖不同娱乐方式。",
+  "xhsNote": "小红书通道已跑通：opencli 浏览器桥在 Edge 中连接成功（Chrome 154 已禁用 --load-extension）。搜索为游客态可用；笔记详情页需登录，本次未深读正文，仅采集标题/作者/点赞。",
+  "primary": false,
+  "districts": [
+   "普陀",
+   "静安",
+   "虹口"
+  ]
+ },
+ "sources": [
+  {
+   "id": "b01",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1t7EE6EE9w",
+   "title": "上海最有性价比的旅游方式：东岸骑行",
+   "author": "G僧东东",
+   "likes": "120840",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b02",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ma411G7wC",
+   "title": "【上海骑行VLOG】我最喜欢的骑游路线",
+   "author": "WDisOK",
+   "likes": "166421",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b03",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1gYjA6KEw8",
+   "title": "上海杨浦滨江5.5公里citywalk全攻略",
+   "author": "康行记Karl",
+   "likes": "8595",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b04",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1N98zzyEJv",
+   "title": "上海最热闹的二次元市集",
+   "author": "基西大驴唇",
+   "likes": "81075",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b05",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ZJ4m177rm",
+   "title": "上海是一座非常适合穷游的城市！免费旅游景点大盘点",
+   "author": "河西貝先生",
+   "likes": "44741",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b06",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1zt1hBeETB",
+   "title": "上海citywalk路线首选之【巨鹿路】",
+   "author": "小白Ethan",
+   "likes": "268193",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b09",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV163411X7Bq",
+   "title": "当咖啡脑袋遇到上海！魔都10家咖啡日记",
+   "author": "Banbi扁哥",
+   "likes": "251694",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b12",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Cx4y197gM",
+   "title": "上海青浦区桨板：闲鱼租板85元/天",
+   "author": "记者老周",
+   "likes": "27831",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b17",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1oP4y1s7i2",
+   "title": "新手体验攀岩馆，原来没有想象中那么难？",
+   "author": "小美是个野孩纸",
+   "likes": "20721",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "w01",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.shanghai.gov.cn/",
+   "title": "上海市政府：中秋国庆场馆开放安排",
+   "author": "上海市人民政府",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w02",
+   "platform": "official",
+   "type": "web",
+   "url": "https://export.shobserver.com/baijiahao/html/1119949.html",
+   "title": "双子山自2026-06-01起取消预约管理",
+   "author": "上观新闻",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w03",
+   "platform": "official",
+   "type": "web",
+   "url": "https://news.qq.com/rain/a/20260625A03B0O00",
+   "title": "绿之丘自2026-06起封闭修缮，暂停开放",
+   "author": "上海杨浦",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w05",
+   "platform": "official",
+   "type": "web",
+   "url": "https://baike.baidu.com/item/%E5%8D%8A%E9%A9%AC%E8%8B%8F%E6%B2%B3%E5%85%AC%E5%9B%AD/62613043",
+   "title": "半马苏河公园：苏州河普陀段21公里岸线，35公顷，2023-01-28开放",
+   "author": "百度百科",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w06",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.shpt.gov.cn/cyjd-jiedaozhen/sqdt-sqzc-cyjd/20231018/920173.html",
+   "title": "普陀区曹杨新村街道：'新曹流 City Walk'，沉浸式打卡新中国第一个工人新村",
+   "author": "上海市普陀区人民政府",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w07",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.thepaper.cn/newsDetail_forward_26764565",
+   "title": "曹杨新村：全国第一个工人新村，1952年建，入选中国20世纪建筑遗产",
+   "author": "澎湃新闻",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w08",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.shpt.gov.cn/jujiao/20241230/955498.html",
+   "title": "曹杨一村：2005年上海市第四批优秀历史建筑",
+   "author": "上海市普陀区人民政府",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w09",
+   "platform": "official",
+   "type": "web",
+   "url": "https://touch.travel.qunar.com/poi/703289",
+   "title": "真如寺：上海四大名寺之一，兰溪路399号，全国重点文物保护单位",
+   "author": "去哪儿攻略",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "x01",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68be8836000000001b01d99e?xsec_token=ABvAVcj11PTvVqZrsIpeo4_JO4LRVPxhwEqz-k6i9cz_c=&xsec_source=",
+   "title": "上海普陀citywalk一日游（无广逛吃攻略",
+   "author": "💛WINGMIKOU",
+   "likes": "2493",
+   "status": "已采集",
+   "used": true,
+   "summary": "普陀一日 citywalk 的真实走法，与本方案同区域"
+  },
+  {
+   "id": "x02",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6800d436000000001200de2c?xsec_token=AB68e6Acq4xn0r_jqWj1v8a6x-uEUPqoLXjzBKovz8Mqs=&xsec_source=",
+   "title": "比起静安寺，我更喜欢这座人少又出片的寺庙",
+   "author": "是梨某人啊",
+   "likes": "1208",
+   "status": "已采集",
+   "used": true,
+   "summary": "印证真如寺「人少、出片」——与静安寺对比"
+  },
+  {
+   "id": "x03",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6958ec7f000000001e02798b?xsec_token=ABRziRU08Bvmura1hKXWncGVm6WrFpgGd9H5Aq25yWj64=&xsec_source=",
+   "title": "普陀区一日citywalk路线攻略😺☕🌳",
+   "author": "潘思思",
+   "likes": "829",
+   "status": "已采集",
+   "used": true,
+   "summary": "普陀区路线攻略，含咖啡与绿地"
+  },
+  {
+   "id": "x04",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6923d988000000001e00757b?xsec_token=AByJILRxgBgx2YFo2IIgwgh-HyWvnHgwuGFF5o7xpmflo=&xsec_source=",
+   "title": "上海最好的地方都是免费的",
+   "author": "斯派克",
+   "likes": "9345",
+   "status": "已采集",
+   "used": true,
+   "summary": "高赞（9345）免费资源盘点，支撑穷游取向"
+  },
+  {
+   "id": "x05",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6aa616f80000000026031241?xsec_token=AB4YbTLxVmvB9fqkBtJqlkS4jvEol49u_EAUX4FY6tSyI=&xsec_source=",
+   "title": "上海已迎来最佳citywalk期（国庆人少版）",
+   "author": "艾玛芸📸",
+   "likes": "7897",
+   "status": "已采集",
+   "used": true,
+   "summary": "直接对应「国庆 + 人少」诉求"
+  },
+  {
+   "id": "x06",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a81d67c00000000250013ec?xsec_token=ABelt_O2n77W4Zqk2gsKKcxi5EKY0VHv8_MVIRHHIY0Vs=&xsec_source=",
+   "title": "如何在上海花0元获得高质量旅行体验",
+   "author": "柚子不熬夜",
+   "likes": "4672",
+   "status": "已采集",
+   "used": true,
+   "summary": "0 元高质量体验思路"
+  },
+  {
+   "id": "x07",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68cee4ca0000000012017fd6?xsec_token=AB8UF5KsU2es8HdEiHg2NDK5gRt6pfub8CXKfn1ckDxLE=&xsec_source=",
+   "title": "上海威尼斯小镇 | 周末放松的小众打卡点",
+   "author": "Carter_闻🥕",
+   "likes": "1623",
+   "status": "已采集",
+   "used": true,
+   "summary": "普陀小众点位"
+  },
+  {
+   "id": "x08",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6964fcc500000000210327f5?xsec_token=ABxxb0Uxe-MkGCgSZQFXh1mEA1i6geCprQeFvfsWCJR-U=&xsec_source=",
+   "title": "我亲测走过的8条上海citywalk路线",
+   "author": "雯雯的魔都漫游地图",
+   "likes": "3591",
+   "status": "已采集",
+   "used": true,
+   "summary": "citywalk 路线合集"
+  },
+  {
+   "id": "x09",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/68adc495000000001c03da80?xsec_token=ABR7KPRzABsfhY3QuYl1Di5Nye18TSJsY6V5pwG-2CW70=&xsec_source=",
+   "title": "上海小众宝藏景点清单｜避开人潮",
+   "author": "小伞",
+   "likes": "709",
+   "status": "已采集",
+   "used": true,
+   "summary": "避开人潮清单"
+  },
+  {
+   "id": "x10",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6aa24a1e000000002a02e3c3?xsec_token=ABXJCT00wETSDTxMBDuf4KslufwtVbf_8mPoXT1ZaRYbI=&xsec_source=",
+   "title": "上海小小众Citywalk路線",
+   "author": "路小雨",
+   "likes": "1131",
+   "status": "已采集",
+   "used": true,
+   "summary": "小众 citywalk 路线"
+  },
+  {
+   "id": "x11",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6a291ed500000000350312bc?xsec_token=ABFbZ8wdZTPie4q39Rd3DEuWimIQXW266ubd-5axCWIck=&xsec_source=",
+   "title": "大部分免费！上海能待一整天的31大室内场馆",
+   "author": "上海周末去哪",
+   "likes": "3338",
+   "status": "已采集",
+   "used": true,
+   "summary": "雨天备选：室内场馆清单"
+  },
+  {
+   "id": "x12",
+   "platform": "xiaohongshu",
+   "type": "post",
+   "url": "https://www.xiaohongshu.com/search_result/6ab92b260000000018011b5d?xsec_token=ABysePQmHN28izPFSlN-DLzIa_qslfwdNvPg9Kb85OMTM=&xsec_source=",
+   "title": "上海已迎来最佳Citywalk期(避开人挤人🍂🍂",
+   "author": "爱拍照的Yummy 📷",
+   "likes": "1043",
+   "status": "已采集",
+   "used": true,
+   "summary": "避开人挤人"
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "景点",
+   "name": "真如寺",
+   "geoQuery": "真如寺",
+   "geoFallback": "真如寺 兰溪路399号",
+   "address": "普陀区真如镇兰溪路399号",
+   "district": "普陀",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "低价门票（以现场为准）",
+   "openHours": "约 06:00-16:30（以现场公告为准）",
+   "tags": [
+    "古建",
+    "元代木构",
+    "全国重点文保",
+    "人少",
+    "斋饭"
+   ],
+   "notes": "上海四大名寺之一。寺内大雄宝殿是上海地区现存唯一完整的元代木结构建筑，1963年列为全国重点文物保护单位。古朴静谧、临河清幽、放养鸽群、供应斋饭。距上海西站步行1.78km(24min)或公交17min。",
+   "sourceIds": [
+    "w09"
+   ],
+   "checked": true,
+   "lng": "121.401359",
+   "lat": "31.249775",
+   "poiId": "B00155L2UR"
+  },
+  {
+   "id": "p02",
+   "category": "景点",
+   "name": "真如古镇",
+   "geoQuery": "真如古镇",
+   "geoFallback": "真如古镇 兰溪路225号",
+   "address": "普陀区兰溪路225号",
+   "district": "普陀",
+   "day": 1,
+   "slot": "中午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "街区全天；店铺约 09:00-20:00",
+   "tags": [
+    "古镇",
+    "非遗",
+    "羊肉",
+    "市井",
+    "免费"
+   ],
+   "notes": "上海中环内的'铜真如'，非遗真如羊肉是招牌，另有真如寺素面。本地人聚集、几乎无游客。与真如寺相距0.48km（步行6min）。",
+   "sourceIds": [
+    "w09"
+   ],
+   "checked": true,
+   "lng": "121.402365",
+   "lat": "31.246039",
+   "poiId": "B00155HL2U"
+  },
+  {
+   "id": "p03",
+   "category": "景点",
+   "name": "张园",
+   "geoQuery": "张园",
+   "geoFallback": "张园 威海路588弄",
+   "address": "静安区威海路588弄（茂名北路258弄）",
+   "district": "静安",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 75,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "街区全天；店铺约 10:00-22:00",
+   "tags": [
+    "石库门",
+    "建筑群",
+    "免费",
+    "城市更新",
+    "历史"
+   ],
+   "notes": "始建于1882年，'海上第一名园'，是上海现存规模最大、保存最完整的石库门建筑群（保留16栋老建筑）。地铁2/12/13号线南京西路站。距静安雕塑公园步行1.28km(17min)。",
+   "sourceIds": [
+    "x01"
+   ],
+   "checked": true,
+   "lng": "121.460064",
+   "lat": "31.227971",
+   "poiId": "B00155QIPB"
+  },
+  {
+   "id": "p04",
+   "category": "景点",
+   "name": "四行仓库抗战纪念馆",
+   "geoQuery": "四行仓库",
+   "geoFallback": "四行仓库 光复路21号",
+   "address": "静安区光复路21号（苏州河北岸）",
+   "district": "静安",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 75,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "周二~周日 9:00-16:30（16:00停止入场）；周一闭馆（法定节假日除外）",
+   "tags": [
+    "历史",
+    "免费",
+    "免预约",
+    "弹孔遗址",
+    "苏州河"
+   ],
+   "notes": "苏州河北岸西藏路桥西堍。**核心看点是西墙保留的真实弹孔遗址**。2023-05-23起实行免预约入馆，开放日有定时公益讲解。注意周一闭馆。距张园步行2.58km(34min)或公交21min。",
+   "sourceIds": [
+    "x02"
+   ],
+   "checked": true,
+   "lng": "121.471104",
+   "lat": "31.240340",
+   "poiId": "B0GKOS77AU"
+  },
+  {
+   "id": "p05",
+   "category": "景点",
+   "name": "1933老场坊",
+   "geoQuery": "1933老场坊",
+   "geoFallback": "1933老场坊 沙泾路10号",
+   "address": "虹口区沙泾路10号",
+   "district": "虹口",
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 75,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "24小时开放（23:00后店铺陆续打烊）",
+   "tags": [
+    "工业遗产",
+    "免费",
+    "全国重点文保",
+    "建筑",
+    "人少"
+   ],
+   "notes": "前身是上海工部局宰牲场，英国建筑师巴尔弗斯设计、1933年建成，以'远东第一'名噪一时，全国重点文物保护单位。伞形柱、廊桥、旋转楼梯构成'魔都秘境'般的迷宫空间，《小时代》取景地。距四行仓库步行3.15km(42min)。",
+   "sourceIds": [
+    "b03"
+   ],
+   "checked": true,
+   "lng": "121.491884",
+   "lat": "31.254559",
+   "poiId": "B00155LPBC"
+  },
+  {
+   "id": "p06",
+   "category": "景点",
+   "name": "多伦路文化名人街",
+   "geoQuery": "多伦路",
+   "geoFallback": "多伦路文化名人街",
+   "address": "虹口区多伦路",
+   "district": "虹口",
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "街区全天",
+   "tags": [
+    "老马路",
+    "免费",
+    "名人故居",
+    "市井",
+    "人少"
+   ],
+   "notes": "鲁迅、茅盾、郭沫若等曾在此活动，'海上旧里'风貌，沿街洋房与旧书店。距1933老场坊步行2.0km(27min)。",
+   "sourceIds": [
+    "x03"
+   ],
+   "checked": true,
+   "lng": "121.481748",
+   "lat": "31.264124",
+   "poiId": "B00155FLFD"
+  },
+  {
+   "id": "p07",
+   "category": "景点",
+   "name": "静安雕塑公园",
+   "geoQuery": "静安雕塑公园",
+   "geoFallback": "静安雕塑公园 石门二路128号",
+   "address": "静安区石门二路128号",
+   "district": "静安",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天开放（部分展馆另计）",
+   "tags": [
+    "雕塑",
+    "免费",
+    "公园",
+    "上海自然博物馆"
+   ],
+   "notes": "紧邻上海自然博物馆，绿地与当代雕塑结合，免费。距上海西站公交38.7min(¥4/1换乘)。可作为静安段的起点或备选。",
+   "sourceIds": [
+    "x04"
+   ],
+   "checked": false,
+   "lng": "121.463871",
+   "lat": "31.234819",
+   "poiId": "B00155KKCG"
+  },
+  {
+   "id": "p08",
+   "category": "景点",
+   "name": "鲁迅公园",
+   "geoQuery": "鲁迅公园",
+   "geoFallback": "上海鲁迅公园 四川北路2288号",
+   "address": "虹口区四川北路2288号",
+   "district": "虹口",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "约 06:00-18:00",
+   "tags": [
+    "公园",
+    "免费",
+    "鲁迅墓",
+    "本地人"
+   ],
+   "notes": "含鲁迅墓与纪念馆，虹口足球场地铁站6号口步行120米。距多伦路步行1.03km(14min)。可作虹口段的收尾。",
+   "sourceIds": [
+    "x03"
+   ],
+   "checked": false,
+   "lng": "121.483535",
+   "lat": "31.271766",
+   "poiId": "B00155KZKW"
+  },
+  {
+   "id": "p09",
+   "category": "景点",
+   "name": "曹杨新村 · 曹杨公园",
+   "geoQuery": "曹杨公园",
+   "geoFallback": "曹杨公园 枫桥路50号",
+   "address": "普陀区曹杨新村街道枫桥路50号",
+   "district": "普陀",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "公园全天",
+   "tags": [
+    "工人新村",
+    "建筑遗产",
+    "市井",
+    "免费"
+   ],
+   "notes": "全国第一个工人新村（1952年建），曹杨一村2005年列为上海市第四批优秀历史建筑，入选'中国20世纪建筑遗产'。普陀区官方'新曹流 City Walk'路线。",
+   "sourceIds": [
+    "w06",
+    "w07",
+    "w08"
+   ],
+   "checked": false,
+   "lng": "121.408900",
+   "lat": "31.240026",
+   "poiId": "B001559284"
+  },
+  {
+   "id": "p10",
+   "category": "景点",
+   "name": "半马苏河公园",
+   "geoQuery": "半马苏河公园",
+   "geoFallback": "半马苏河公园 光复西路6号",
+   "address": "普陀区光复西路6号",
+   "district": "普陀",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天开放",
+   "tags": [
+    "苏州河",
+    "工业遗迹",
+    "滨河步道",
+    "免费",
+    "日落"
+   ],
+   "notes": "苏州河普陀段21公里岸线，正好是半程马拉松长度。公园35公顷，有水杉花园、露营草坡、城市沙滩。距上海西站15号线36.3min(¥3/零换乘)。",
+   "sourceIds": [
+    "w05"
+   ],
+   "checked": false,
+   "lng": "121.388857",
+   "lat": "31.219351",
+   "poiId": "B0H1SUJKH4"
+  },
+  {
+   "id": "p11",
+   "category": "景点",
+   "name": "上生新所",
+   "geoQuery": "上生新所",
+   "geoFallback": "上生新所 延安西路1262号",
+   "address": "长宁区延安西路1262号",
+   "district": "长宁",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "园区全天；店铺约 10:00-22:00",
+   "tags": [
+    "老建筑改造",
+    "免费",
+    "茑屋书店",
+    "孙科别墅"
+   ],
+   "notes": "百年哥伦比亚生活圈改造，含孙科别墅、海军俱乐部、茑屋书店。小红书相关笔记点赞1313。距上海西站公交93.4min(¥2/零换乘)——较远，列备选。",
+   "sourceIds": [
+    "x05"
+   ],
+   "checked": false,
+   "lng": "121.427719",
+   "lat": "31.208185",
+   "poiId": "B0FFJ2JI6R"
+  },
+  {
+   "id": "p12",
+   "category": "景点",
+   "name": "愚园路",
+   "geoQuery": "愚园路",
+   "geoFallback": "愚园路 静安寺",
+   "address": "长宁区/静安区 愚园路",
+   "district": "长宁",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "街区全天",
+   "tags": [
+    "老马路",
+    "免费",
+    "梧桐",
+    "小店",
+    "citywalk"
+   ],
+   "notes": "东起常德路、西至定西路，全长2.78km，因'愚园'园林得名。小红书'AAAAA上海愚园路Walk'点赞3632。距上海西站公交81.1min(¥2/零换乘)。",
+   "sourceIds": [
+    "x06"
+   ],
+   "checked": false,
+   "lng": "121.435535",
+   "lat": "31.220707",
+   "poiId": "BZAFR002CG"
+  },
+  {
+   "id": "p13",
+   "category": "景点",
+   "name": "苏州河华政步道",
+   "geoQuery": "苏州河华政段",
+   "geoFallback": "华东政法大学 苏州河步道",
+   "address": "长宁区苏州河华政段",
+   "district": "长宁",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天开放",
+   "tags": [
+    "滨河步道",
+    "百年红砖",
+    "免费免预约",
+    "秋色"
+   ],
+   "notes": "900米滨河步道，百年红砖+华政校园，免费免预约，被市文旅局推荐为秋冬上海最值得去的打卡地之一。距上海西站公交81.0min(¥2/零换乘)。",
+   "sourceIds": [
+    "b06"
+   ],
+   "checked": false,
+   "lng": "121.420288",
+   "lat": "31.224908",
+   "poiId": "B0H3Z9I1Z7"
+  },
+  {
+   "id": "p14",
+   "category": "景点",
+   "name": "徐家汇源",
+   "geoQuery": "徐家汇源",
+   "geoFallback": "徐家汇源景区",
+   "address": "徐汇区徐家汇",
+   "district": "徐汇",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "ticketPrice": "部分免费",
+   "openHours": "各馆不一",
+   "tags": [
+    "历史街区",
+    "徐家汇",
+    "citywalk"
+   ],
+   "notes": "徐家汇源含徐家汇天主堂、徐家汇书院、土山湾博物馆等。小红书'徐家汇最值得逛的路线'点赞3504。距上海西站公交75.9min(¥4/1换乘)。",
+   "sourceIds": [
+    "x07"
+   ],
+   "checked": false,
+   "lng": "121.436763",
+   "lat": "31.195898",
+   "poiId": "B00156R4F0"
+  },
+  {
+   "id": "p15",
+   "category": "景点",
+   "name": "大学路",
+   "geoQuery": "大学路",
+   "geoFallback": "大学路 五角场",
+   "address": "杨浦区大学路",
+   "district": "杨浦",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "街区全天",
+   "tags": [
+    "创意街区",
+    "免费",
+    "独立书店",
+    "咖啡"
+   ],
+   "notes": "全长约700米的创意街区与美食街，汇聚独立书店与异国餐厅，夜晚常有校园乐队。距上海西站公交67.0min(¥5/1换乘)。",
+   "sourceIds": [
+    "x08"
+   ],
+   "checked": false,
+   "lng": "121.508820",
+   "lat": "31.303744",
+   "poiId": "B0FFGQ5TH9"
+  },
+  {
+   "id": "p16",
+   "category": "景点",
+   "name": "共青森林公园",
+   "geoQuery": "共青森林公园",
+   "geoFallback": "上海共青森林公园 军工路2000号",
+   "address": "杨浦区军工路2000号",
+   "district": "杨浦",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 240,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "约 06:00-17:00",
+   "tags": [
+    "森林",
+    "免费",
+    "自然徒步",
+    "大"
+   ],
+   "notes": "市区内大型森林公园，'现实版莫奈花园'。距上海西站公交109.8min(¥6/2换乘)——较远，适合单独一天。",
+   "sourceIds": [
+    "b05"
+   ],
+   "checked": false,
+   "lng": "121.551787",
+   "lat": "31.318956",
+   "poiId": "B0015211C2"
+  }
+ ],
+ "hotels": [],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "真如羊肉馆（非遗羊肉）",
+   "type": "本帮·非遗",
+   "geoQuery": "真如羊肉",
+   "geoFallback": "真如古镇 羊肉",
+   "avgPrice": 50,
+   "dianpingKeyword": "真如羊肉",
+   "tips": "真如古镇的招牌非遗美食，上海本地人认可。两人约 ¥80-120。另有真如寺素面可作轻食。对应行程 12:00-13:30 午餐。",
+   "lng": "121.402318",
+   "lat": "31.248220",
+   "poiId": "B00155M162",
+   "address": "普陀区兰溪路300号,兰溪路北石路口"
+  },
+  {
+   "id": "r02",
+   "name": "王家沙点心店（南京西路总店）",
+   "type": "本帮点心·老字号",
+   "geoQuery": "王家沙点心店 南京西路",
+   "geoFallback": "王家沙点心店 南京西路805号",
+   "avgPrice": 40,
+   "dianpingKeyword": "王家沙点心店 南京西路",
+   "tips": "1938年创立的上海点心老字号，蟹粉小笼、两面黄、八宝饭。距张园步行可达（南京西路地铁站11号口90米）。两人约 ¥60-90。对应行程 15:00-16:15 前后的点心时间。",
+   "address": "静安区南京西路805号",
+   "lng": "121.461318",
+   "lat": "31.230402",
+   "poiId": "B00155HNAR"
+  },
+  {
+   "id": "r03",
+   "name": "万寿斋（山阴路店）",
+   "type": "本帮·小笼馄饨",
+   "geoQuery": "万寿斋 山阴路",
+   "geoFallback": "万寿斋 山阴路123号",
+   "avgPrice": 35,
+   "dianpingKeyword": "万寿斋 山阴路",
+   "tips": "虹口人气小笼/馄饨老店，就在多伦路与鲁迅公园之间（山阴路123号），本地人排队。两人约 ¥50-80。对应行程 19:45-20:45 晚餐。",
+   "address": "虹口区山阴路123号",
+   "lng": "121.484810",
+   "lat": "31.265945",
+   "poiId": "B001536432"
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "真如寺元代木构 + 斋饭 + 放生池鸽群",
+   "where": "真如寺（兰溪路399号）",
+   "durationMin": 90,
+   "price": "低价门票",
+   "bookingRequired": false,
+   "bestFor": "古建爱好者；上海唯一完整的元代木结构大雄宝殿，全国重点文保"
+  },
+  {
+   "id": "e02",
+   "name": "真如非遗羊肉 + 古镇市井漫步",
+   "where": "真如古镇",
+   "durationMin": 90,
+   "price": "人均约50元",
+   "bookingRequired": false,
+   "bestFor": "非遗美食+市井烟火；中环内、本地人聚集、几乎无游客"
+  },
+  {
+   "id": "e03",
+   "name": "曹杨新村'新曹流'City Walk（工人新村建筑遗产）",
+   "where": "曹杨新村街道",
+   "durationMin": 90,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "建筑遗产+社区烟火；全国第一个工人新村，中国20世纪建筑遗产，普陀区官方路线"
+  },
+  {
+   "id": "e04",
+   "name": "苏州河'半马苏河'滨河漫步 + 日落",
+   "where": "半马苏河公园（光复西路6号）",
+   "durationMin": 120,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "自然徒步+工业遗迹；21公里岸线，水杉花园、露营草坡、城市沙滩"
+  },
+  {
+   "id": "e05",
+   "name": "环浜骑行 / 公园双人自行车",
+   "where": "曹杨环浜、长风公园",
+   "durationMin": 90,
+   "price": "共享单车约10元",
+   "bookingRequired": false,
+   "bestFor": "两人协作；曹杨新村有环浜骑行道，路况好、人少"
+  },
+  {
+   "id": "e06",
+   "name": "M50 当代艺术区看展",
+   "where": "M50创意园（莫干山路50号）",
+   "durationMin": 120,
+   "price": "免费（部分特展另计）",
+   "bookingRequired": false,
+   "bestFor": "备选：1930年代纺织厂房改造，红砖+涂鸦+画廊，可连天安千树"
+  },
+  {
+   "id": "e07",
+   "name": "城市水上运动：皮划艇 / 桨板",
+   "where": "动邦皮划艇·桨板基地（青浦岑卜村）/ 野路子户外皮划艇",
+   "durationMin": 180,
+   "price": "动邦人均约172元/2小时，体验课198元/3小时；野路子自租桨板约85元/天",
+   "bookingRequired": true,
+   "bestFor": "备选（晴天远线）：淀山湖水系，教练全程带队护航，大众点评青浦团建热门第1。公共交通弱（约1.5-2h），适合自驾/打车。穿长衣长裤防蚊虫+防晒。"
+  },
+  {
+   "id": "e08",
+   "name": "室内攀岩馆初体验",
+   "where": "香蕉攀岩（淮海中路 Longfeng PASCO 店）或就近攀岩馆",
+   "durationMin": 120,
+   "price": "单次约60-120元/人（含装备），闲时票更便宜",
+   "bookingRequired": false,
+   "bestFor": "备选（雨天极佳）：上海口碑抱石馆连锁，新手友好、零基础可玩，两人互相保护/打分很有互动性，完全室内不受天气影响。"
+  },
+  {
+   "id": "e09",
+   "name": "丛林飞跃（树冠探险）",
+   "where": "飞悦森林探险乐园·浦江郊野公园活力森林区",
+   "durationMin": 150,
+   "price": "粉线/速降49.8元起；红线约125元；蓝线+红线双线188元",
+   "bookingRequired": true,
+   "bestFor": "备选：欧洲原装树冠探险，高空绳索+滑索+速降，3-60岁可玩。两人可各选难度线再在平台汇合。节假日建议美团/Trip.com提前购票并赶上午场；小雨照常，中雨/雷雨关闭。"
+  },
+  {
+   "id": "e10",
+   "name": "卡丁车竞速",
+   "where": "锐擎卡丁车主题乐园（浦江郊野公园店）",
+   "durationMin": 90,
+   "price": "工作日98元/人起；节假日110元/人（200cc/270cc可选）",
+   "bookingRequired": true,
+   "bestFor": "备选：户外赛道，两人互相刷圈速比成绩。官方小程序预约，电话021-34306333。雨天可能停开。"
+  },
+  {
+   "id": "e11",
+   "name": "情侣陶艺 DIY（拉坯+烧制）",
+   "where": "市区独立工作室（大众点评预约）",
+   "durationMin": 120,
+   "price": "约198-298元/两人",
+   "bookingRequired": true,
+   "bestFor": "备选（雨天/市区线）：做情侣杯，零基础可玩；节假日建议提前1周约位。"
+  },
+  {
+   "id": "e12",
+   "name": "四行仓库西墙弹孔遗址 + 苏州河北岸漫步",
+   "where": "四行仓库抗战纪念馆（光复路21号）",
+   "durationMin": 75,
+   "price": "免费（免预约）",
+   "bookingRequired": false,
+   "bestFor": "历史爱好者；西墙保留的真实弹孔遗址是核心看点。周一闭馆，9:00-16:30（16:00停止入场）"
+  },
+  {
+   "id": "e13",
+   "name": "1933老场坊建筑迷宫探访",
+   "where": "1933老场坊（虹口区沙泾路10号）",
+   "durationMin": 75,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "建筑/摄影爱好者；原上海工部局宰牲场，英国建筑师巴尔弗斯设计，伞形柱+廊桥+旋转楼梯，全国重点文保"
+  },
+  {
+   "id": "e14",
+   "name": "多伦路旧书店淘书 + 名人故居巡礼",
+   "where": "多伦路文化名人街（虹口区多伦路）",
+   "durationMin": 60,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "文学爱好者；鲁迅/茅盾/郭沫若活动地，'海上旧里'风貌，沿街洋房与旧书店"
+  },
+  {
+   "id": "e15",
+   "name": "张园石库门建筑群漫步",
+   "where": "张园（静安区威海路588弄）",
+   "durationMin": 75,
+   "price": "免费",
+   "bookingRequired": false,
+   "bestFor": "建筑爱好者；1882年'海上第一名园'，上海现存规模最大、保存最完整的石库门建筑群（16栋老建筑）"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-10-03",
+   "theme": "三区跨区 citywalk：普陀真如（元代木构）→ 静安（石库门+四行仓库）→ 虹口（1933老场坊+多伦路）",
+   "area": "普陀区 → 静安区 → 虹口区（3 个行政区）",
+   "items": [
+    {
+     "poiId": "p01",
+     "time": "10:30-12:00"
+    },
+    {
+     "poiId": "p02",
+     "time": "12:00-13:30"
+    },
+    {
+     "poiId": "p03",
+     "time": "15:00-16:15"
+    },
+    {
+     "poiId": "p04",
+     "time": "16:30-17:45"
+    },
+    {
+     "poiId": "p05",
+     "time": "18:15-19:30"
+    },
+    {
+     "poiId": "p06",
+     "time": "19:45-20:45"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "walking+transit",
+    "distanceKm": 15.85,
+    "durationMin": 52.2,
+    "note": "由 route_fill.py 回填（驾车口径）",
+    "legs": [
+     {
+      "from": "p01",
+      "to": "p02",
+      "distanceKm": 0.56,
+      "durationMin": 1.6
+     },
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 6.9,
+      "durationMin": 21.2
+     },
+     {
+      "from": "p03",
+      "to": "p04",
+      "distanceKm": 2.97,
+      "durationMin": 9.3
+     },
+     {
+      "from": "p04",
+      "to": "p05",
+      "distanceKm": 3.05,
+      "durationMin": 11.7
+     },
+     {
+      "from": "p05",
+      "to": "p06",
+      "distanceKm": 2.37,
+      "durationMin": 8.4
+     }
+    ]
+   },
+   "walkChain": [
+    {
+     "from": "上海西站",
+     "to": "真如寺(普陀)",
+     "km": 1.78,
+     "min": 23.8
+    },
+    {
+     "from": "真如寺",
+     "to": "真如古镇",
+     "km": 0.48,
+     "min": 6.4
+    },
+    {
+     "from": "真如古镇",
+     "to": "张园(静安)",
+     "transitMin": 61.4,
+     "cost": "¥3",
+     "transfers": 1,
+     "note": "跨区段，7.65km，需公交/地铁"
+    },
+    {
+     "from": "张园",
+     "to": "四行仓库",
+     "km": 2.58,
+     "min": 34.4
+    },
+    {
+     "from": "四行仓库",
+     "to": "1933老场坊(虹口)",
+     "km": 3.15,
+     "min": 42.1,
+     "note": "跨区段，仍可步行"
+    },
+    {
+     "from": "1933老场坊",
+     "to": "多伦路",
+     "km": 2.0,
+     "min": 26.6
+    }
+   ],
+   "notes": "本线覆盖普陀、静安、虹口三个行政区，回应'景点全在普陀'的问题。设计逻辑：汇合点上海西站本身在普陀，先用最短距离（1.78km步行）拿下真如寺+古镇并解决午餐，再用一段跨区公交（61min/¥3）跳到静安，之后静安与虹口两区内部**全程可步行**（张园→四行仓库2.58km→1933老场坊3.15km→多伦路2.0km）。实测虹口离汇合点仅51-56min，比长宁(81min)、徐汇(76-148min)更近，且小红书有3016赞的虹口citywalk攻略。 ⚠️ 雨情：10-03小雨转中雨、10-04小雨转阴。四行仓库与1933老场坊均为室内，雨天反而更合适；真如寺有殿堂可避雨。能改期建议改到10-05多云转晴。",
+   "rainPlan": "本线抗雨能力明显优于原普陀公园线：真如寺(殿堂)、张园(石库门沿街)、四行仓库(室内展馆)、1933老场坊(室内)均可避雨；仅多伦路为户外街区。若下中雨，可删去多伦路，全程室内。"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "10月初初秋（高德实况预报）",
+   "high": 24,
+   "low": 15,
+   "advice": "高德实时预报：2026-10-02 阴转阴 24~19°C；2026-10-03 小雨转中雨 24~19°C；2026-10-04 小雨转阴 23~18°C；2026-10-05 多云转晴 22~15°C。10月上海秋高气爽、昼夜温差大，白天薄长袖即可，傍晚加薄外套；偶有秋雨，随身带折叠伞。出发前1天再刷新一次预报，以临近预报为准。"
+  },
+  "packing": [
+   "折叠伞（周末有雨）",
+   "薄外套（傍晚温差）",
+   "舒适的步行鞋（静安+虹口段全天步行约10km）",
+   "身份证（四行仓库免费入馆需安检；上海博物馆东馆等备选点需刷证）",
+   "充电宝（全天导航+拍照）",
+   "水杯（真如寺、公园、场馆多有直饮水）"
+  ],
+  "bookings": [
+   {
+    "item": "四行仓库抗战纪念馆",
+    "how": "免费，2023-05-23起已免预约，直接入馆",
+    "deadline": "无需预约；注意周一闭馆，开放9:00-16:30（16:00停止入场）"
+   },
+   {
+    "item": "真如寺",
+    "how": "现场购票，低价门票",
+    "deadline": "无需预约"
+   },
+   {
+    "item": "张园 / 1933老场坊 / 多伦路 / 鲁迅公园",
+    "how": "免费开放，无需预约",
+    "deadline": "1933老场坊24小时开放（23:00后店铺打烊）；鲁迅公园约06:00-18:00"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "上海西站汇合",
+    "note": "交大闵行→上海西站：15号线，92.0min/¥6/零换乘；同济嘉定→上海西站：11号线，77.8min/¥5/零换乘。上海西站是11号线∩15号线换乘站，正是两条线的交点。直接校区对校区为163.2min/¥10，故必须取中点。"
+   },
+   {
+    "line": "上海西站→真如寺（普陀）",
+    "note": "步行1.78km/23.8min，或公交17.4min/¥2/零换乘"
+   },
+   {
+    "line": "真如寺→真如古镇（普陀）",
+    "note": "步行0.48km/6.4min"
+   },
+   {
+    "line": "真如古镇→张园（普陀→静安，跨区）",
+    "note": "公交/地铁61.4min/¥3/1换乘（7.65km，不宜步行）"
+   },
+   {
+    "line": "张园→四行仓库（静安）",
+    "note": "步行2.58km/34.4min（或公交20.8min/¥3）"
+   },
+   {
+    "line": "四行仓库→1933老场坊（静安→虹口，跨区）",
+    "note": "步行3.15km/42.1min（或公交39.0min/¥2）"
+   },
+   {
+    "line": "1933老场坊→多伦路（虹口）",
+    "note": "步行2.0km/26.6min"
+   },
+   {
+    "line": "多伦路→鲁迅公园（虹口，备选收尾）",
+    "note": "步行1.03km/13.8min"
+   }
+  ],
+  "safety": [
+   "苏州河沿岸及滨河步道注意临水安全，雨天路滑",
+   "1933老场坊内部廊桥与旋转楼梯较多，注意脚下",
+   "多伦路、山阴路一带为居民区，请勿喧哗扰民",
+   "四行仓库为纪念场馆，参观时保持肃穆"
+  ],
+  "customs": [
+   "本线覆盖普陀、静安、虹口三个行政区，回应'景点全在普陀'的问题。设计逻辑：汇合点本身在普陀，先用最短距离（1.78km步行/公交17min）拿下真如寺+古镇并解决午餐；再用一段跨区公交（61.4min/¥3/1换乘）跳到静安；此后静安与虹口两区内部全程可步行（张园→四行仓库2.58km→1933老场坊3.15km→多伦路2.0km）。",
+   "为什么选虹口：高德实测虹口离汇合点仅51-56min（多伦路51.8/鲁迅公园55.1/1933老场坊55.5），比长宁（愚园路81.1/上生新所93.4）、徐汇（徐家汇源75.9/桂林公园148.5）更近。且虹口在小红书有3016赞的citywalk攻略，属低人流高性价比区域。",
+   "预算（穷游档，两人合计约 ¥170-250）：跨区交通 ¥10-16 + 真如寺门票约 ¥20 + 午餐（真如羊肉）¥80-120 + 点心（王家沙）¥60-90 + 晚餐（万寿斋）¥50-80。多数景点免费。",
+   "避开人流：全线避开外滩、豫园、东方明珠、南京路步行街等常规打卡点。真如寺/古镇、四行仓库、1933老场坊、多伦路均为本地人向、游客密度低的点位。",
+   "备选替换：静安段起点可用静安雕塑公园（上海西站公交38.7min/¥4/1换乘）替代张园；虹口段可加鲁迅公园收尾。长宁（愚园路/上生新所/苏州河华政步道）、徐汇（徐家汇源）、杨浦（大学路/共青森林公园）已作为备选 POI 列在景点指南中。",
+   "真如寺为宗教场所，入殿请脱帽、勿大声喧哗；寺内供应斋饭，可作轻食。"
+  ]
+ },
+ "_geoFilled": true,
+ "_routeFilled": true
+}

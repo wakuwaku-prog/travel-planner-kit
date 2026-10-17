@@ -1,0 +1,912 @@
+{
+ "meta": {
+  "destination": "上海",
+  "slug": "shanghai",
+  "dates": [
+   "2026-10-05"
+  ],
+  "days": 1,
+  "departureCity": "上海交通大学闵行校区",
+  "travelers": "2人",
+  "budget": "舒适（体验优先）",
+  "preferences": [
+   "体验类项目",
+   "避开人流",
+   "户外运动",
+   "手作",
+   "夜游灯会"
+  ],
+  "pace": "均衡",
+  "sources": {
+   "videos": 17,
+   "posts": 0
+  },
+  "generatedAt": "2026-10-02",
+  "status": "调研完成（体验类专项：B站17视频7转写 + 官方/OTA交叉验证；小红书通道未解锁）"
+ },
+ "sources": [
+  {
+   "id": "b01",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1t7EE6EE9w",
+   "title": "上海最有性价比的旅游方式：东岸骑行",
+   "author": "G僧东东",
+   "likes": "120840",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b02",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ma411G7wC",
+   "title": "【上海骑行VLOG】我最喜欢的骑游路线",
+   "author": "WDisOK",
+   "likes": "166421",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b03",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1gYjA6KEw8",
+   "title": "上海杨浦滨江5.5公里citywalk全攻略",
+   "author": "康行记Karl",
+   "likes": "8595",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b04",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1N98zzyEJv",
+   "title": "上海最热闹的二次元市集",
+   "author": "基西大驴唇",
+   "likes": "81075",
+   "status": "已转写",
+   "used": false
+  },
+  {
+   "id": "b05",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ZJ4m177rm",
+   "title": "上海是一座非常适合穷游的城市！免费旅游景点大盘点",
+   "author": "河西貝先生",
+   "likes": "44741",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b06",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1zt1hBeETB",
+   "title": "上海citywalk路线首选之【巨鹿路】",
+   "author": "小白Ethan",
+   "likes": "268193",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b07",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1tm7B6iEpi",
+   "title": "上海Citywalk推荐【长乐路】",
+   "author": "小白Ethan",
+   "likes": "96054",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b08",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Tq4y187qB",
+   "title": "上海市区免费露营地推荐|徐汇滨江|露营攻略",
+   "author": "房车露营Steve",
+   "likes": "39065",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b09",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV163411X7Bq",
+   "title": "当咖啡脑袋遇到上海！魔都10家咖啡日记",
+   "author": "Banbi扁哥",
+   "likes": "251694",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b10",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Gzti68EBr",
+   "title": "上海打工人周末都干什么？",
+   "author": "好叫好伐",
+   "likes": "152958",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b11",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Vy41187bE",
+   "title": "如果只来上海1天，首选这条citywalk路线！",
+   "author": "王小捣儿",
+   "likes": "56029",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b12",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1mVETzaEky",
+   "title": "在上海的\"丛林飞跃\"～\"黑线挑战\"！",
+   "author": "新生代芹菜",
+   "likes": "24",
+   "status": "已转写",
+   "used": true,
+   "summary": "确认上海有飞跃森林探险乐园（丛林飞跃树冠探险），含护具/安全帽穿戴流程与黑线高级道挑战"
+  },
+  {
+   "id": "b13",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1dB4y1u7Ra",
+   "title": "体验上海最大的室内攀岩馆（攀岩工厂·宝山）",
+   "author": "IZZZZZZZZO",
+   "likes": "10",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b14",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Cx4y197gM",
+   "title": "上海青浦区桨板try（野路子户外皮划艇下水点）",
+   "author": "记者老周",
+   "likes": "312",
+   "status": "已转写",
+   "used": true,
+   "summary": "青浦自租桨板85元/天，导航'野路子户外皮划艇'下水；穿长衣长裤防蚊防晒"
+  },
+  {
+   "id": "b15",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV12FEb66Es1",
+   "title": "新江湾城皮划艇初体验",
+   "author": "violin1988",
+   "likes": "7",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b16",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ZY4y1P7dg",
+   "title": "上海遇见陶艺｜沉浸式陶艺初体验vlog",
+   "author": "—",
+   "likes": "—",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b17",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1W2Ny67Enb",
+   "title": "情侣捏陶真实体验｜教了也不会",
+   "author": "黄色包装chips",
+   "likes": "15",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "w01",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.shanghai.gov.cn/",
+   "title": "上海市政府：中秋国庆场馆开放安排",
+   "author": "上海市人民政府",
+   "status": "已核实",
+   "used": true,
+   "summary": "2026-10-01至10-07 科技馆/自博馆/天文馆正常开放；天文馆延时至20:00"
+  },
+  {
+   "id": "w02",
+   "platform": "official",
+   "type": "web",
+   "url": "https://export.shobserver.com/baijiahao/html/1119949.html",
+   "title": "双子山自2026-06-01起取消预约管理",
+   "author": "上观新闻",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w03",
+   "platform": "official",
+   "type": "web",
+   "url": "https://news.qq.com/rain/a/20260625A03B0O00",
+   "title": "绿之丘自2026-06起封闭修缮，暂停开放",
+   "author": "上海杨浦",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w04",
+   "platform": "official",
+   "type": "web",
+   "url": "https://sh.bendibao.com/xiuxian/2026928/309538.shtm",
+   "title": "2026奇迹花园秋季花展：9/25-11/30，8:30-22:00，39.9元",
+   "author": "上海本地宝",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w05",
+   "platform": "official",
+   "type": "web",
+   "url": "https://sh.bendibao.com/tour/202362/272985.shtm",
+   "title": "韩湘水博园门票36元/开放时间",
+   "author": "上海本地宝",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w06",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://hk.trip.com/travel-guide/attraction/shanghai/shanghai-feiyue-forest-adventure-park-148923039",
+   "title": "飞悦（飞跃）森林探险乐园门票/开放时间（Trip.com 2026）",
+   "author": "Trip.com",
+   "status": "已核实",
+   "used": true,
+   "summary": "位于浦江郊野公园活力森林区（浦星公路2578弄8号）；8:30-17:00；粉线/速降49.8元起、红线约125元、蓝线+红线双线188元；欧洲原装引进树冠探险，3-60岁"
+  },
+  {
+   "id": "w07",
+   "platform": "media",
+   "type": "web",
+   "url": "https://www.sina.cn/gc/article/nipxqmf9518789.html",
+   "title": "锐擎卡丁车实测：98元起+户外赛道",
+   "author": "新浪",
+   "status": "已核实",
+   "used": true,
+   "summary": "工作日98元/人、节假日110元/人，200cc/270cc双排量，户外赛道"
+  },
+  {
+   "id": "w08",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://hk.trip.com/travel-guide/attraction/shanghai/ruiqingkadingche-club-80112727",
+   "title": "锐擎卡丁车主题乐园（郊野公园店）预约页",
+   "author": "Trip.com/高德POI B0IK07R7R3",
+   "status": "已核实",
+   "used": true,
+   "summary": "闵行区浦江镇民联路701号；10:00-20:00；电话021-34306333；官方小程序预约"
+  },
+  {
+   "id": "w09",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.bananaclimbing.com",
+   "title": "香蕉攀岩官网（门店与营业时间）",
+   "author": "Banana Climbing",
+   "status": "已核实",
+   "used": true,
+   "summary": "上海门店多在市区（淮海中路Longfeng PASCO等）；单次门票约60-120元，闲时票更便宜"
+  },
+  {
+   "id": "w10",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://www.klook.com/zh-TW/activity/186486-shanghai-dongbang-kayak-outdoor-sports-base",
+   "title": "动邦皮划艇户外运动基地（皮划艇+桨板）",
+   "author": "Klook/大众点评",
+   "status": "已核实",
+   "used": true,
+   "summary": "青浦区岑卜村（淀山湖水系）；人均约172元/2小时；教练带队护航；Klook可订"
+  },
+  {
+   "id": "w11",
+   "platform": "media",
+   "type": "web",
+   "url": "https://m.sh.bendibao.com/mip/241389.html",
+   "title": "上海皮划艇桨板水上运动体验课价格",
+   "author": "上海本地宝",
+   "status": "已核实",
+   "used": true,
+   "summary": "3小时皮划艇+桨板体验课：单人198元、亲子278元，含教练指导"
+  },
+  {
+   "id": "w12",
+   "platform": "official",
+   "type": "web",
+   "url": "https://moovitapp.com/index/zh-cn/%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A-line-%E9%97%B5%E8%A1%8C11%E8%B7%AF-Shanghai_%E4%B8%8A%E6%B5%B7-3000-858507-402806-0",
+   "title": "闵行11路走向与首末班（江月路地铁站⇄浦江路兰坪路滨江枢纽）",
+   "author": "Moovit",
+   "status": "已核实",
+   "used": true,
+   "summary": "每日06:20起运营，途经江月路浦晓路/浦驰路/浦锦路等站；末班以随申行为准"
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "体验",
+   "name": "飞悦森林探险乐园（丛林飞跃）",
+   "geoQuery": "飞悦森林探险乐园",
+   "geoFallback": "浦江郊野公园 活力森林区",
+   "address": "闵行区浦星公路2578弄8号（浦江郊野公园活力森林区）",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 150,
+   "bookingRequired": true,
+   "ticketPrice": "粉线/速降 49.8元起；红线约125元；蓝线+红线双线188元（美团/Trip.com）",
+   "openHours": "8:30-17:00",
+   "tags": [
+    "丛林飞跃",
+    "树冠探险",
+    "体验",
+    "两人同玩"
+   ],
+   "notes": "欧洲原装引进的树冠探险，高空绳索+滑索+速降，3-60岁可玩。多条难度线：新手走粉线（49.8），想上强度选红线/蓝线，两人可各选难度再在平台汇合。节假日建议提前在美团/Trip.com购票并赶上午场。小雨一般照常（树木遮挡），中雨/雷雨关闭。",
+   "sourceIds": [
+    "w06",
+    "b12"
+   ],
+   "checked": true,
+   "lng": "121.504377",
+   "lat": "31.061264",
+   "poiId": "B0K11CQO9H"
+  },
+  {
+   "id": "p02",
+   "category": "景点",
+   "name": "上海浦江郊野公园（活力森林区/柳鹭田园区）",
+   "geoQuery": "浦江郊野公园",
+   "geoFallback": "浦江郊野公园 浦星公路2578弄",
+   "address": "闵行区浦星公路2578弄",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费（奇迹花园区花展期间收费）",
+   "openHours": "免费区 6:00-18:00；森林游憩区与滨江漫步区全天开放",
+   "tags": [
+    "郊野",
+    "骑行",
+    "免费",
+    "空间大",
+    "体验"
+   ],
+   "notes": "国家4A级，总规划15.29平方公里，人流被摊薄。本日下午主项：双人自行车骑行（50元/小时）穿行活力森林区与柳鹭田园区，比徒步省力且好拍。园内还有小火车（30元/人）。与飞悦乐园、锐擎卡丁车、奇迹花园同在一个大园区，无需换场。",
+   "sourceIds": [
+    "w04",
+    "b05"
+   ],
+   "checked": true,
+   "lng": "121.496281",
+   "lat": "31.057830",
+   "poiId": "B0FFGE2F10"
+  },
+  {
+   "id": "p03",
+   "category": "体验",
+   "name": "锐擎卡丁车主题乐园（浦江郊野公园店）",
+   "geoQuery": "锐擎卡丁车主题乐园(郊野公园店)",
+   "geoFallback": "锐擎卡丁车 民联路701号",
+   "address": "闵行区浦江镇民联路701号",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": true,
+   "ticketPrice": "工作日98元/人起；节假日110元/人（200cc/270cc可选）",
+   "openHours": "10:00-20:00",
+   "tags": [
+    "卡丁车",
+    "竞速",
+    "体验",
+    "户外赛道"
+   ],
+   "notes": "户外赛道+200cc/270cc双排量，两人可以互相刷圈速比成绩。官方小程序预约（节假日建议提前1天），电话021-34306333。雨天可能停开，作为晴天下午压轴；被雨改期时可整体换室内方案。",
+   "sourceIds": [
+    "w07",
+    "w08"
+   ],
+   "checked": true,
+   "lng": "121.487258",
+   "lat": "31.042138",
+   "poiId": "B0IK07R7R3"
+  },
+  {
+   "id": "p04",
+   "category": "景点",
+   "name": "奇迹花园（浦江郊野公园1号门）",
+   "geoQuery": "浦江郊野公园奇迹花园",
+   "geoFallback": "奇迹花园 浦星公路2578弄8号",
+   "address": "闵行区浦星公路2578弄8号",
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 210,
+   "bookingRequired": true,
+   "ticketPrice": "秋季花展单人票39.9元",
+   "openHours": "花展期间 8:30-22:00（21:00停止入园）",
+   "tags": [
+    "花展",
+    "夜游",
+    "千灯会",
+    "灯光",
+    "体验"
+   ],
+   "notes": "2026秋季花展'菊韵华章，奇迹拾光'9/25-11/30。17:00后入场正好白天菊花+夜间千灯会一场两看，是全天唯一可能有人流的环节（国庆夜间灯会人多，接受度因人而异；不喜欢就只在白天看花）。'上海奇迹花园'公众号购票。园内餐饮偏贵（面49元），可在入园前或出园后吃。",
+   "sourceIds": [
+    "w04"
+   ],
+   "checked": true,
+   "lng": "121.507652",
+   "lat": "31.054776",
+   "poiId": "B0FFI9ZXCK"
+  },
+  {
+   "id": "p05",
+   "category": "景点",
+   "name": "世博文化公园双子山",
+   "geoQuery": "世博文化公园双子山",
+   "geoFallback": "双子山 通耀路255号",
+   "address": "浦东新区通耀路255号",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "9:00-17:00（16:30停止入园）",
+   "tags": [
+    "登高",
+    "城市更新",
+    "免费",
+    "晴天备选"
+   ],
+   "notes": "2026-06-01起取消预约，直接前往。主峰48米，登顶俯瞰世博园区与卢浦大桥。国庆大客流时段观景平台单向游览+限流。可与温室花园、前滩串成'市区体验备选线'。实测紫竹高新区站出发90分钟。",
+   "sourceIds": [
+    "w02"
+   ],
+   "checked": false,
+   "lng": "121.479769",
+   "lat": "31.177459",
+   "poiId": "B0IKJZ2X6P"
+  },
+  {
+   "id": "p06",
+   "category": "景点",
+   "name": "上海温室花园",
+   "geoQuery": "上海温室花园",
+   "geoFallback": "上海温室花园 世博文化公园",
+   "address": "浦东新区世博文化公园内（近双子山）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 150,
+   "bookingRequired": true,
+   "ticketPrice": "平日98元 / 周末及节假日128元；优待票49/64元",
+   "openHours": "周一不营业；其余约09:00-17:00",
+   "tags": [
+    "温室",
+    "植物",
+    "室内",
+    "雨天备选"
+   ],
+   "notes": "亚洲最大玻璃温室之一，沙漠/雨林/峡谷三大主题馆，全室内——雨天变体的主项。分时段预约购票。注意周一不营业（若出行日为10-05且下雨，雨天变体里不能用这个，改攀岩/陶艺/上博东馆）。",
+   "sourceIds": [
+    "b10",
+    "w01"
+   ],
+   "checked": false,
+   "lng": "121.475064",
+   "lat": "31.178387",
+   "poiId": "B0IU15ZN3L"
+  },
+  {
+   "id": "p07",
+   "category": "博物馆",
+   "name": "上海博物馆东馆",
+   "geoQuery": "上海博物馆东馆",
+   "geoFallback": "上海博物馆 世纪大道1952号",
+   "address": "浦东新区世纪大道1952号",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "10:00-18:00（17:00停止入场），周二闭馆（法定节假日除外）",
+   "tags": [
+    "博物馆",
+    "免费",
+    "室内",
+    "雨天备选"
+   ],
+   "notes": "散客免预约，B1东门刷身份证入馆。雨天变体的免费主项。历代书法馆、绘画馆自2026-09-28起闭馆调整。实测紫竹高新区站出发99分钟。",
+   "sourceIds": [
+    "w01"
+   ],
+   "checked": false,
+   "lng": "121.538745",
+   "lat": "31.219913",
+   "poiId": "B0FFIFP90V"
+  },
+  {
+   "id": "p08",
+   "category": "体验",
+   "name": "香蕉攀岩（淮海中路 Longfeng PASCO 店）",
+   "geoQuery": "香蕉攀岩 淮海中路",
+   "geoFallback": "Longfeng PASCO 淮海中路",
+   "address": "黄浦区淮海中路（Longfeng PASCO内，以官网/点评定位为准）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "单次约60-120元，闲时票更便宜",
+   "openHours": "约11:00-22:00（周一14:00起）",
+   "tags": [
+    "攀岩",
+    "抱石",
+    "体验",
+    "雨天备选"
+   ],
+   "notes": "上海口碑抱石馆连锁，新手友好、零基础可玩，两人互相保护/打分很有互动性。室内不受雨影响。从交大闵行：5号线转1号线到黄陂南路/陕西南站步行。也可就近选闵行/徐汇的攀岩馆（大众点评搜'攀岩'按距离选）。",
+   "sourceIds": [
+    "w09",
+    "b13"
+   ],
+   "checked": false,
+   "lng": "121.456655",
+   "lat": "31.215841",
+   "poiId": "B0IA3ARONU"
+  },
+  {
+   "id": "p09",
+   "category": "体验",
+   "name": "动邦皮划艇·桨板基地（青浦岑卜村）",
+   "geoQuery": "动邦皮划艇 岑卜村",
+   "geoFallback": "岑卜村 青浦",
+   "address": "青浦区金泽镇岑卜村（淀山湖水系）",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "ticketPrice": "人均约172元/2小时；体验课单人198元/3小时",
+   "openHours": "约09:00-17:00（以预约为准）",
+   "tags": [
+    "皮划艇",
+    "桨板",
+    "水上运动",
+    "晴天远备"
+   ],
+   "notes": "淀山湖水系，教练全程带队护航，大众点评青浦团建热门第1。公共交通弱（从交大约1.5-2h），适合自驾/打车前往的晴天备选；同水域还有'野路子户外皮划艇'自租桨板约85元/天（B站实测）。",
+   "sourceIds": [
+    "w10",
+    "w11",
+    "b14"
+   ],
+   "checked": false,
+   "lng": "120.934525",
+   "lat": "31.055825",
+   "poiId": "B0IR7592W2"
+  },
+  {
+   "id": "p10",
+   "category": "景点",
+   "name": "上海韩湘水博园",
+   "geoQuery": "韩湘水博园",
+   "geoFallback": "韩湘水博园 江川路3805号",
+   "address": "闵行区江川路3805号",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "现场36元 / 线上33元 / 双人票61.9元；学生24元",
+   "openHours": "08:00-17:00（16:00停止入园）",
+   "tags": [
+    "古桥",
+    "古树",
+    "市井",
+    "人少",
+    "闲逛备选"
+   ],
+   "notes": "'古桥博物馆'：约50座移建古桥、600余棵百年古树，游客极少。上一版方案的主项，本轮让位给体验类项目；若当天想安排'轻松闲逛+重体验'的混合，可作上午加场（闵东线48分钟/2元直达）。",
+   "sourceIds": [
+    "w05",
+    "b05"
+   ],
+   "checked": false,
+   "lng": "121.329686",
+   "lat": "30.984104",
+   "poiId": "B00155R3IT"
+  },
+  {
+   "id": "p11",
+   "category": "景点",
+   "name": "前滩休闲公园",
+   "geoQuery": "前滩休闲公园",
+   "geoFallback": "前滩休闲公园 前滩大道650号",
+   "address": "浦东新区前滩大道650号",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "滨江",
+    "免费",
+    "骑行",
+    "晴天备选"
+   ],
+   "notes": "对望徐汇滨江天际线，人少得多。与双子山/东岸骑行可串线。实测紫竹高新区站出发仅79分钟，市区方向最快。",
+   "sourceIds": [
+    "b01"
+   ],
+   "checked": false,
+   "lng": "121.466195",
+   "lat": "31.150864",
+   "poiId": "B0FFGFW4NK"
+  }
+ ],
+ "hotels": [],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "浦锦街道丰收村农家菜",
+   "type": "农家菜",
+   "geoQuery": "浦江郊野公园 农家菜",
+   "geoFallback": "浦星公路 餐厅",
+   "avgPrice": 60,
+   "dianpingKeyword": "浦江镇 农家菜",
+   "tips": "公园周边以农家菜与简餐为主，中午顺路吃；两人100-130元。园内餐饮价格偏高（面49元），建议出园外吃。以大众点评当日评分现选。",
+   "lng": "121.488550",
+   "lat": "31.064565",
+   "poiId": "B0JRJ7GG4J",
+   "address": "浦锦街道丰收村8组19号"
+  },
+  {
+   "id": "r02",
+   "name": "奇迹花园园区餐饮/浦江镇简餐",
+   "type": "简餐·小吃",
+   "geoQuery": "浦江镇 简餐",
+   "geoFallback": "浦星公路 小吃",
+   "avgPrice": 50,
+   "dianpingKeyword": "浦江镇 小吃",
+   "tips": "晚场在花展里解决：园区内有小吃摊与简餐（偏贵），或17:00入园前在浦江镇先吃。两人80-120元。",
+   "lng": "121.505000",
+   "lat": "31.056000",
+   "poiId": "",
+   "address": "浦星公路2578弄8号附近"
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "丛林飞跃（树冠探险）",
+   "where": "飞悦森林探险乐园·活力森林区",
+   "durationMin": 150,
+   "price": "49.8-188元/人（按线路）",
+   "bookingRequired": true,
+   "bestFor": "主方案上午：高空绳索+滑索+速降，两人可各选难度线"
+  },
+  {
+   "id": "e02",
+   "name": "双人自行车骑行",
+   "where": "浦江郊野公园",
+   "durationMin": 120,
+   "price": "双人自行车50元/小时",
+   "bookingRequired": false,
+   "bestFor": "主方案下午：两人协作逛15平方公里大园子"
+  },
+  {
+   "id": "e03",
+   "name": "卡丁车竞速",
+   "where": "锐擎卡丁车（郊野公园店）",
+   "durationMin": 90,
+   "price": "工作日98/节假日110元/人",
+   "bookingRequired": true,
+   "bestFor": "主方案下午压轴：200cc/270cc户外赛道，互相刷圈速"
+  },
+  {
+   "id": "e04",
+   "name": "秋季花展+千灯会夜游",
+   "where": "奇迹花园（公园1号门）",
+   "durationMin": 210,
+   "price": "39.9元/人",
+   "bookingRequired": true,
+   "bestFor": "主方案傍晚：白天菊花+夜间千灯会一场两看（9/25-11/30限定）"
+  },
+  {
+   "id": "e05",
+   "name": "室内抱石攀岩",
+   "where": "香蕉攀岩（淮海中路）或就近攀岩馆",
+   "durationMin": 150,
+   "price": "60-120元/人",
+   "bookingRequired": false,
+   "bestFor": "雨天变体：零基础可玩，两人互相打保护"
+  },
+  {
+   "id": "e06",
+   "name": "情侣陶艺DIY（拉坯+烧制）",
+   "where": "市区独立工作室（大众点评预约）",
+   "durationMin": 120,
+   "price": "约198-298元/两人",
+   "bookingRequired": true,
+   "bestFor": "雨天变体/市区线：做情侣杯，节假日提前1周约位"
+  },
+  {
+   "id": "e07",
+   "name": "皮划艇/桨板水上体验",
+   "where": "动邦基地（青浦岑卜村）",
+   "durationMin": 120,
+   "price": "约172元/人；体验课198元/3小时",
+   "bookingRequired": true,
+   "bestFor": "晴天远备：淀山湖水系，教练护航，适合自驾"
+  },
+  {
+   "id": "e08",
+   "name": "浦东东岸滨江骑行（24km三道贯通）",
+   "where": "歇浦路渡口—徐浦大桥南墙",
+   "durationMin": 180,
+   "price": "共享单车约10-20元",
+   "bookingRequired": false,
+   "bestFor": "备选：漫步道/跑步道/骑行道三道贯通，耀华滨江到徐浦大桥一段人少景美"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-10-05",
+   "theme": "浦江郊野公园体验线：丛林飞跃 + 农家菜 + 双人骑行 + 卡丁车 + 花展千灯会",
+   "area": "闵行区（浦江镇，一个大园区内不换场）",
+   "items": [
+    {
+     "poiId": "p01",
+     "time": "09:30-12:00"
+    },
+    {
+     "poiId": "r01",
+     "time": "12:00-13:15"
+    },
+    {
+     "poiId": "p02",
+     "time": "13:15-15:15"
+    },
+    {
+     "poiId": "p03",
+     "time": "15:15-17:00"
+    },
+    {
+     "poiId": "p04",
+     "time": "17:00-20:30"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "driving",
+    "distanceKm": 15.12,
+    "durationMin": 40.8,
+    "note": "由 route_fill.py 回填（驾车口径；本日实际以公交+步行为主：去程5号线→江川路站换闵行11路约58分钟）",
+    "legs": [
+     {
+      "from": "p01",
+      "to": "r01",
+      "distanceKm": 3.65,
+      "durationMin": 10.3
+     },
+     {
+      "from": "r01",
+      "to": "p02",
+      "distanceKm": 1.48,
+      "durationMin": 3.6
+     },
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 3.92,
+      "durationMin": 11.2
+     },
+     {
+      "from": "p03",
+      "to": "p04",
+      "distanceKm": 6.07,
+      "durationMin": 15.7
+     }
+    ]
+   },
+   "notes": "出发：交大闵行 → 东川路站/剑川路站乘5号线（1站）→ 江川路站 → 换闵行11路（实测58分钟/2元/零换乘，至江月路沿线站步行约1公里入园，以高德当日导航为准）。全程在浦江郊野公园一个大园区内：上午飞悦丛林飞跃赶凉爽时段，中午农家菜，下午双人自行车+卡丁车，17:00后进奇迹花园白天花+夜灯一场两看。返程：闵行11路回江川路站（末班以'随申行'当日为准）；若已收班，打车回交大约20公里/50-60元兜底。⚠️ 若出行日是10-03/10-04（有雨）：上午丛林飞跃看天气（小雨照常、中雨关闭），下午卡丁车可能停开——雨天变体改室内：上海温室花园（注意周一不营业）或上博东馆+香蕉攀岩/陶艺DIY。",
+   "rainPlan": "10-03小雨转中雨/10-04小雨转阴的雨天变体：①上午改为市区室内体验线：香蕉攀岩抱石（60-120元）+ 巨鹿路/永康路午餐；②下午陶艺DIY情侣双人件（198-298元/两人，需提前1周预约）或上海博物馆东馆（免费，刷证入馆）；③若坚持浦江郊野公园线：丛林飞跃小雨可玩（穿雨衣）、奇迹花园花展照常（亭廊多），卡丁车取消。最佳选择仍是改期到10-05多云转晴。"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "10月初初秋（高德实况预报）",
+   "high": 24,
+   "low": 15,
+   "advice": "高德实时预报：2026-10-02 阴转阴 24~19°C；2026-10-03 小雨转中雨 24~19°C；2026-10-04 小雨转阴 23~18°C；2026-10-05 多云转晴 22~15°C。10月上海秋高气爽、昼夜温差大，白天薄长袖即可，傍晚加薄外套；偶有秋雨，随身带折叠伞。出发前1天再刷新一次预报，以临近预报为准。"
+  },
+  "packing": [
+   "薄长袖（白天15-23°C）",
+   "薄外套/风衣（傍晚江边风大）",
+   "折叠伞或轻雨衣（10-03/10-04出行必带）",
+   "运动鞋（丛林飞跃/骑行/卡丁车都要求封闭式鞋）",
+   "不要带长挂饰/围巾（丛林飞跃安全要求）",
+   "充电宝、少量现金",
+   "身份证（博物馆类备选刷证入馆）"
+  ],
+  "bookings": [
+   {
+    "item": "飞悦森林探险乐园（丛林飞跃）",
+    "how": "美团/Trip.com 购票，选上午场",
+    "deadline": "节假日建议提前1天"
+   },
+   {
+    "item": "奇迹花园秋季花展门票",
+    "how": "'上海奇迹花园'微信公众号",
+    "deadline": "建议提前1天"
+   },
+   {
+    "item": "锐擎卡丁车",
+    "how": "官方小程序预约；电话021-34306333",
+    "deadline": "节假日建议提前1天"
+   },
+   {
+    "item": "陶艺DIY（若选雨天变体）",
+    "how": "大众点评选评分4.8+的独立工作室",
+    "deadline": "节假日建议提前1周"
+   },
+   {
+    "item": "上海温室花园（若选雨天变体）",
+    "how": "官方渠道分时段预约购票",
+    "deadline": "提前1-2天；周一不营业"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "5号线（剑川路/东川路/江川路站）",
+    "note": "交大闵行最近的轨交；江川路站是去程换乘枢纽"
+   },
+   {
+    "line": "闵行11路",
+    "note": "江川路（滨江枢纽）⇄ 江月路地铁站方向；实测58分钟/2元/零换乘到浦江郊野公园片区；06:20起运营，末班以'随申行'当日为准"
+   },
+   {
+    "line": "8号线沈杜公路站",
+    "note": "公园另一侧的轨交备选出口（步行约5分钟到公园片区），返程可打车短驳至此换地铁"
+   },
+   {
+    "line": "打车兜底",
+    "note": "千灯会散场若公交已收班：浦江郊野公园→交大闵行约20公里/50-60元"
+   }
+  ],
+  "safety": [
+   "丛林飞跃：长发扎起、摘掉挂饰围巾、穿封闭式运动鞋；中雨/雷雨线路关闭，服从现场安排",
+   "卡丁车为户外赛道：雨天可能停开，出发前电话021-34306333确认",
+   "国庆奇迹花园夜间灯会人多：17:00前入场错峰，看管好随身物品",
+   "郊野公园面积大，记好1号门位置与末班公交时间",
+   "傍晚江边风大温差大，及时加衣"
+  ],
+  "customs": [
+   "郊野公园可带宠物但需牵绳",
+   "花展区域勿踩花田、勿折花",
+   "垃圾带走，柳鹭田园区为农田保育区"
+  ]
+ },
+ "_geoFilled": true,
+ "_routeFilled": true
+}

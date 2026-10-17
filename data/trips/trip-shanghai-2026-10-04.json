@@ -1,0 +1,2106 @@
+{
+ "meta": {
+  "destination": "上海",
+  "slug": "shanghai-dt",
+  "dates": [
+   "2026-10-04"
+  ],
+  "days": 1,
+  "departureCity": "上海交通大学闵行校区",
+  "travelers": "2人",
+  "budget": "舒适（体验优先）",
+  "preferences": [
+   "体验类项目",
+   "市中心",
+   "室内为主",
+   "避开人流",
+   "手作",
+   "地铁出行"
+  ],
+  "pace": "均衡",
+  "primary": false,
+  "sources": {
+   "videos": 17,
+   "posts": 148
+  },
+  "generatedAt": "2026-10-03",
+  "status": "调研完成（市中心体验类专项：B站17视频7转写 + 小红书148篇共享种子池 + 官方/OTA/高德POI交叉验证）"
+ },
+ "sources": [
+  {
+   "id": "b01",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1t7EE6EE9w",
+   "title": "上海最有性价比的旅游方式：东岸骑行",
+   "author": "G僧东东",
+   "likes": "120840",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b02",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ma411G7wC",
+   "title": "【上海骑行VLOG】我最喜欢的骑游路线",
+   "author": "WDisOK",
+   "likes": "166421",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b03",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1gYjA6KEw8",
+   "title": "上海杨浦滨江5.5公里citywalk全攻略",
+   "author": "康行记Karl",
+   "likes": "8595",
+   "status": "已转写",
+   "used": true
+  },
+  {
+   "id": "b04",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1N98zzyEJv",
+   "title": "上海最热闹的二次元市集",
+   "author": "基西大驴唇",
+   "likes": "81075",
+   "status": "已转写",
+   "used": false
+  },
+  {
+   "id": "b05",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ZJ4m177rm",
+   "title": "上海是一座非常适合穷游的城市！免费旅游景点大盘点",
+   "author": "河西貝先生",
+   "likes": "44741",
+   "status": "已转写",
+   "used": false
+  },
+  {
+   "id": "b06",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1zt1hBeETB",
+   "title": "上海citywalk路线首选之【巨鹿路】",
+   "author": "小白Ethan",
+   "likes": "268193",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b07",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1tm7B6iEpi",
+   "title": "上海Citywalk推荐【长乐路】",
+   "author": "小白Ethan",
+   "likes": "96054",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b08",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Tq4y187qB",
+   "title": "上海市区免费露营地推荐|徐汇滨江|露营攻略",
+   "author": "房车露营Steve",
+   "likes": "39065",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b09",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV163411X7Bq",
+   "title": "当咖啡脑袋遇到上海！魔都10家咖啡日记",
+   "author": "Banbi扁哥",
+   "likes": "251694",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b10",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Gzti68EBr",
+   "title": "上海打工人周末都干什么？",
+   "author": "好叫好伐",
+   "likes": "152958",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b11",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Vy41187bE",
+   "title": "如果只来上海1天，首选这条citywalk路线！",
+   "author": "王小捣儿",
+   "likes": "56029",
+   "status": "种子",
+   "used": false
+  },
+  {
+   "id": "b12",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1mVETzaEky",
+   "title": "在上海的\"丛林飞跃\"～\"黑线挑战\"！",
+   "author": "新生代芹菜",
+   "likes": "24",
+   "status": "已转写",
+   "used": false
+  },
+  {
+   "id": "b13",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1dB4y1u7Ra",
+   "title": "体验上海最大的室内攀岩馆（攀岩工厂·宝山）",
+   "author": "IZZZZZZZZO",
+   "likes": "10",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b14",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1Cx4y197gM",
+   "title": "上海青浦区桨板try（野路子户外皮划艇下水点）",
+   "author": "记者老周",
+   "likes": "312",
+   "status": "已转写",
+   "used": false
+  },
+  {
+   "id": "b15",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV12FEb66Es1",
+   "title": "新江湾城皮划艇初体验",
+   "author": "violin1988",
+   "likes": "7",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b16",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1ZY4y1P7dg",
+   "title": "上海遇见陶艺｜沉浸式陶艺初体验vlog",
+   "author": "—",
+   "likes": "—",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "b17",
+   "platform": "bilibili",
+   "type": "video",
+   "url": "https://www.bilibili.com/video/BV1W2Ny67Enb",
+   "title": "情侣捏陶真实体验｜教了也不会",
+   "author": "黄色包装chips",
+   "likes": "15",
+   "status": "种子",
+   "used": true
+  },
+  {
+   "id": "w01",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.shanghai.gov.cn/",
+   "title": "上海市政府：中秋国庆场馆开放安排",
+   "author": "上海市人民政府",
+   "status": "已核实",
+   "used": true,
+   "summary": "2026-10-01至10-07 科技馆/自博馆/天文馆正常开放"
+  },
+  {
+   "id": "w02",
+   "platform": "official",
+   "type": "web",
+   "url": "https://export.shobserver.com/baijiahao/html/1119949.html",
+   "title": "双子山自2026-06-01起取消预约管理",
+   "author": "上观新闻",
+   "status": "已核实",
+   "used": true
+  },
+  {
+   "id": "w04",
+   "platform": "official",
+   "type": "web",
+   "url": "https://sh.bendibao.com/xiuxian/2026928/309538.shtm",
+   "title": "2026奇迹花园秋季花展：9/25-11/30，8:30-22:00，39.9元",
+   "author": "上海本地宝",
+   "status": "已核实",
+   "used": false
+  },
+  {
+   "id": "w06",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://hk.trip.com/travel-guide/attraction/shanghai/shanghai-feiyue-forest-adventure-park-148923039",
+   "title": "飞悦森林探险乐园门票/开放时间（Trip.com 2026）",
+   "author": "Trip.com",
+   "status": "已核实",
+   "used": false,
+   "summary": "浦江郊野公园活力森林区；8:30-17:00；49.8元起"
+  },
+  {
+   "id": "w09",
+   "platform": "official",
+   "type": "web",
+   "url": "https://www.bananaclimbing.com",
+   "title": "香蕉攀岩官网（门店与营业时间）",
+   "author": "Banana Climbing",
+   "status": "已核实",
+   "used": true,
+   "summary": "上海门店多在市区（淮海中路Longfeng PASCO等）；单次门票约60-120元，闲时票更便宜；周一14:00起、周二至周五11:00起"
+  },
+  {
+   "id": "w10",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://www.klook.com/zh-TW/activity/186486-shanghai-dongbang-kayak-outdoor-sports-base",
+   "title": "动邦皮划艇户外运动基地（皮划艇+桨板）",
+   "author": "Klook/大众点评",
+   "status": "已核实",
+   "used": false,
+   "summary": "青浦岑卜村；人均约172元/2小时"
+  },
+  {
+   "id": "w13",
+   "platform": "official",
+   "type": "web",
+   "url": "https://cmp.whlyj.sh.gov.cn/CMP/news_view.ac?id=7e2c896552da44d685095fde11351c8e",
+   "title": "新江湾城文体公园水上运动中心：'水域漫游亚马逊4.2'皮划艇",
+   "author": "上海市文旅局",
+   "status": "已核实",
+   "used": true,
+   "summary": "杨浦新江湾城4.2公里生态水系，皮划艇观候鸟穿湿地；地铁10号线新江湾城站可达；价格以点评/现场为准（同业估算100-200元/小时）"
+  },
+  {
+   "id": "w14",
+   "platform": "media",
+   "type": "web",
+   "url": "https://www.sina.cn/news/article/comos_nitfanp9961343.html",
+   "title": "上海室内卡丁车馆价格实测（行业口径）",
+   "author": "新浪",
+   "status": "已核实",
+   "used": true,
+   "summary": "单节80-150元为行业区间；原文提到的流光速吴中路店已不在高德POI库（疑似闭店），市区改选爱琴海卡丁公园（高德核实B0G2MKVTEL）"
+  },
+  {
+   "id": "w15",
+   "platform": "media",
+   "type": "web",
+   "url": "https://finance.sina.com.cn/jjxw/2026-08-28/doc-inipwtfp5722908.shtml",
+   "title": "新江湾城水上运动中心打卡报道",
+   "author": "新浪财经",
+   "status": "已核实",
+   "used": true,
+   "summary": "与w13互为第二来源：沪上小亚马逊水系，闹中取静"
+  },
+  {
+   "id": "w16",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://www.getyourguide.com/zh-cn/shanghai-l178/shanghai-creative-pottery-workshop-t1055676",
+   "title": "上海创意陶艺工作坊（可预约）",
+   "author": "GetYourGuide/KKday",
+   "status": "已核实",
+   "used": true,
+   "summary": "拉坯-塑形-彩绘-烧制全流程可在线预订；情侣双人DIY市场价约198-298元/两人（大众点评独立工作室区间）"
+  },
+  {
+   "id": "x01",
+   "platform": "xiaohongshu",
+   "type": "seed-pool",
+   "url": "data/research/xhs_seed.json",
+   "title": "小红书种子池：10关键词148篇唯一笔记（上海一日游/小众景点/周末去哪/各区好玩等）",
+   "author": "并行会话经 opencli+Edge 游客态采集",
+   "status": "已入库",
+   "used": true,
+   "summary": "覆盖上海一日游/小众/各区的场景与人流判断；体验类细分关键词未专项采集"
+  },
+  {
+   "id": "w17",
+   "platform": "media",
+   "type": "web",
+   "url": "https://www.sina.cn/news/article/nifqwea5520127.html",
+   "title": "Mr.Bonus博纳仕保龄球馆收费标准",
+   "author": "新浪",
+   "status": "已核实",
+   "used": true,
+   "summary": "按球道计费：工作日约120元/小时/道、周末节假日180元/小时/道，多人分摊划算；另有青松城保龄球25元/局"
+  },
+  {
+   "id": "w18",
+   "platform": "media",
+   "type": "web",
+   "url": "http://www.youthcn.com.cn/qiyezixun/13715305.html",
+   "title": "RIINK轮滑主题旱冰场（静安康定路）2026推荐",
+   "author": "青年网/本地生活",
+   "status": "已核实",
+   "used": true,
+   "summary": "复古旱冰+餐吧复合业态，静安区康定路358号18幢，11:00-次日01:00，轮滑鞋尺码齐全；票价以点评现价为准"
+  },
+  {
+   "id": "w19",
+   "platform": "media",
+   "type": "web",
+   "url": "https://www.sina.cn/gc/article/niswezt0834666.html",
+   "title": "弓夫射箭·CAFE收费与业态",
+   "author": "新浪/什么值得买",
+   "status": "已核实",
+   "used": true,
+   "summary": "射箭+咖啡复合业态；上海商场店散客约50-120元/小时，新手含护具与教练指导；徐家汇另有幻境城射箭馆（沉浸投影箭道）"
+  },
+  {
+   "id": "w20",
+   "platform": "media",
+   "type": "web",
+   "url": "https://m.jiemian.com/article/14766773.html",
+   "title": "叙室·上海定制调香（界面报道）",
+   "author": "界面新闻",
+   "status": "已核实",
+   "used": true,
+   "summary": "定制调香30ml约388元起，一对一约90分钟-2小时；另有O D'HORA时光馥等调香体验店；属进阶价位"
+  },
+  {
+   "id": "w21",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://www.klook.com/activity/92120-classic-cocktail-making-experience-shanghai",
+   "title": "零基础鸡尾酒调酒体验（Klook×Eatwith）",
+   "author": "Klook",
+   "status": "已核实",
+   "used": true,
+   "summary": "工作室小班制，零基础学经典鸡尾酒调制；本地调酒体验课市场价约150-400元/人"
+  },
+  {
+   "id": "w22",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://www.kkday.com/zh-hk/product/152422",
+   "title": "《不眠之夜》Sleep No More 上海（演出信息）",
+   "author": "KKday/Trip",
+   "status": "已核实",
+   "used": true,
+   "summary": "⚠️ 沉浸式戏剧标杆，但上海版已于2026年8月落幕停演——网上的旧攻略不要再排，别白跑"
+  },
+  {
+   "id": "w23",
+   "platform": "media",
+   "type": "web",
+   "url": "https://post.m.smzdm.com/p/a82308x7",
+   "title": "上海咖啡体验课价格行情",
+   "author": "什么值得买/一尺见学",
+   "status": "已核实",
+   "used": true,
+   "summary": "零基础体验课约200-300元/人，有工作室88元/半小时（拉花/手冲）；一尺见学手冲120分钟小班含材料"
+  },
+  {
+   "id": "w24",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://www.trip.com/travel-guide/attraction/shanghai/party-king-61942101",
+   "title": "PARTY KING运动娱乐街区（迪美店）",
+   "author": "Trip.com/36氪/SmartShanghai",
+   "status": "已核实",
+   "used": true,
+   "summary": "人民广场迪美B1；一票不限时畅玩保龄球/飞镖/桌球/射箭/电玩；历史团购68-78元/人全天、158元双人夜场；五角场店已关门"
+  },
+  {
+   "id": "w25",
+   "platform": "ota",
+   "type": "web",
+   "url": "https://my.trip.com/moments/detail/shanghai-2-137657347",
+   "title": "上海耀雪冰雪世界L+SNOW（临港）",
+   "author": "Trip.com/Klook",
+   "status": "已核实",
+   "used": true,
+   "summary": "全球最大室内真雪场（临港滴水湖，16号线临港大道站）；娱雪约210元起；市区出发1.5-2小时，只作远郊选项"
+  },
+  {
+   "id": "w26",
+   "platform": "official",
+   "type": "web",
+   "url": "https://m.df962388.com/yanchu/shanghaixiangyinshuyuan",
+   "title": "乡音书苑（上海评弹团）演出排期",
+   "author": "东方演出网/上海评弹团",
+   "status": "已核实",
+   "used": true,
+   "summary": "静安区评弹书场，常年长篇评弹演出；票价与场次以当期排片/大麦为准"
+  },
+  {
+   "id": "w27",
+   "platform": "official",
+   "type": "web",
+   "url": "https://m.sh.bendibao.com/news/309539.html",
+   "title": "2026上海国庆节展览汇总（本地宝）",
+   "author": "上海本地宝",
+   "status": "已核实",
+   "used": true,
+   "summary": "国庆档：中华艺术宫'千金之家——马王堆汉墓的生活美学'（收官期，10/5-7有美术馆奇妙夜夜场）；'历史的星辉'10/7闭展；'大师同行'名画对话；约翰尼·德普：边缘形象；宝格丽Kaleidos万花绮镜；中国当代艺术年鉴展（上海）@多伦现代美术馆至10/11收官"
+  },
+  {
+   "id": "w28",
+   "platform": "official",
+   "type": "web",
+   "url": "http://www.expo-museum.cn/sbbwg/n137/n138/n140/n144/index.html",
+   "title": "世博会博物馆票务与开放信息",
+   "author": "世博会博物馆官网",
+   "status": "已核实",
+   "used": true,
+   "summary": "免费不免票；散客无需预约；周二-日9:00-17:00（16:15停入），周一闭馆（节假日另行公告）；近期有希腊珍宝特展、探月特展"
+  },
+  {
+   "id": "w29",
+   "platform": "official",
+   "type": "web",
+   "url": "https://shanghai.chinapost.com.cn/sh/report/2507/9131-1.html",
+   "title": "上海邮政博物馆开放调整公告",
+   "author": "上海邮政",
+   "status": "已核实",
+   "used": true,
+   "summary": "天潼路395号；免费，散客无需预约；2025-08起调整为周三/四/六/日对公众开放（周三/四仅二楼），周一/二/五不开放——出行前按官方公告核实"
+  },
+  {
+   "id": "w30",
+   "platform": "official",
+   "type": "web",
+   "url": "https://jtw.sh.gov.cn/zsk/20230614/49b56918a59b43dbaf99ae866413eab2.html",
+   "title": "悠游苏州河：码头与购票方式",
+   "author": "上海市交通委",
+   "status": "已核实",
+   "used": true,
+   "summary": "官方小程序'悠游苏州河'购票；码头：外滩源/四行仓库/昌化路/长风公园；全程约17公里约2小时；成人票60元起、一日票约100元"
+  },
+  {
+   "id": "w31",
+   "platform": "official",
+   "type": "web",
+   "url": "https://m.sh.bendibao.com/news/309529.html",
+   "title": "上海大歌剧院国庆公众参观开放预约（本地宝）",
+   "author": "上海本地宝/解放日报/澎湃",
+   "status": "已核实",
+   "used": true,
+   "summary": "2026-10-01~07首次公众开放（10-17正式开幕）；9:00-17:00（16:30停入）；50元/人（70+与半价）；'上海大歌剧院'小程序实名预约，每日限约1200人；409级双螺旋楼梯+户外观景平台；免费讲解约10:30/11:30/14:30/15:30/16:30各一场"
+  },
+  {
+   "id": "w32",
+   "platform": "official",
+   "type": "web",
+   "url": "https://m.sh.bendibao.com/tour/285673.html",
+   "title": "朵云书院·旗舰店（上海中心52楼）预约攻略",
+   "author": "上海本地宝",
+   "status": "已核实",
+   "used": true,
+   "summary": "239米高空书店；10:30-20:00；免费但必须提前预约（'世纪朵云'公众号/佰朋小程序，建议提前3天，现场不能约）；好望角观景区需店内消费约30-60元"
+  }
+ ],
+ "pois": [
+  {
+   "id": "p01",
+   "category": "体验",
+   "name": "香蕉攀岩（淮海中路 Longfeng PASCO 店）",
+   "geoQuery": "香蕉攀岩 淮海中路",
+   "geoFallback": "Longfeng PASCO 淮海中路",
+   "address": "黄浦区淮海中路（Longfeng PASCO内，以官网/点评定位为准）",
+   "day": 1,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "单次约60-120元，闲时票更便宜（美团/点评可比价）",
+   "openHours": "约11:00-22:00（周一14:00起；节假日以官方为准）",
+   "tags": [
+    "攀岩",
+    "抱石",
+    "体验",
+    "室内",
+    "零基础"
+   ],
+   "notes": "上海口碑抱石馆连锁，零基础可玩：现场有教学墙与租鞋，两人互相打分/保护，互动性强。节假日人多但有人数上限，建议开门时（11:00）进场错峰。若当天满员，就近改'岩时/此山/GOAT 2.0'等馆（点评按距离排序）。",
+   "sourceIds": [
+    "w09",
+    "b13"
+   ],
+   "checked": true,
+   "lng": "121.456655",
+   "lat": "31.215841",
+   "poiId": "B0IA3ARONU"
+  },
+  {
+   "id": "p02",
+   "category": "体验",
+   "name": "手作DIY工作室（思南路—南昌路一带）",
+   "geoQuery": "思南路",
+   "geoFallback": "南昌路",
+   "address": "黄浦区/徐汇区思南路—南昌路一带（以点评当日预约门店为准）",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "ticketPrice": "银饰戒指DIY约200-300元/人；陶艺DIY约99-149元/人（情侣双人件198-298元）",
+   "openHours": "约10:00-20:00（按预约时段）",
+   "tags": [
+    "手作",
+    "DIY",
+    "情侣",
+    "室内",
+    "预约制"
+   ],
+   "notes": "这一带小型手作工作室密集：银饰戒指（打一枚对戒，纪念感最强）、陶艺拉坯（做情侣杯）、香水/蜡烛DIY。节假日位置紧张，提前1-3天大众点评分4.8+的工作室预约；两人同做一件或各做一件互换，比单独体验更有意思。",
+   "sourceIds": [
+    "w16",
+    "b16",
+    "b17"
+   ],
+   "checked": true,
+   "lng": "121.468306",
+   "lat": "31.213987",
+   "poiId": "B00156DU8T"
+  },
+  {
+   "id": "p03",
+   "category": "景点",
+   "name": "永康路—建国西路 咖啡街区",
+   "geoQuery": "永康路",
+   "geoFallback": "永康路 咖啡",
+   "address": "徐汇区永康路（近嘉善路/襄阳南路）",
+   "day": 1,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "咖啡40-60元/人",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "咖啡",
+    "街区",
+    "市井",
+    "拍照"
+   ],
+   "notes": "不到500米的小马路开了近20家独立咖啡馆（The Blend 163等），串永康路—建国西路—安亭路慢慢走。秋季法国梧桐落叶+老洋房，是小马路里人流相对可控的一条；雨天改店内坐坐。距手作工作室步行约15分钟。",
+   "sourceIds": [
+    "b09",
+    "b06"
+   ],
+   "checked": true,
+   "lng": "121.456624",
+   "lat": "31.210392",
+   "poiId": "B0FFGQ57DC"
+  },
+  {
+   "id": "p04",
+   "category": "体验",
+   "name": "密室逃脱双人场（黄陂南路/人民广场一带）",
+   "geoQuery": "黄陂南路",
+   "geoFallback": "人民广场 密室",
+   "address": "黄浦区黄陂南路—人民广场一带（以点评当日预约门店为准）",
+   "day": 1,
+   "slot": "傍晚",
+   "durationMin": 150,
+   "bookingRequired": true,
+   "ticketPrice": "约100-150元/人（双人场按人均计）",
+   "openHours": "约10:00-24:00（按预约场次）",
+   "tags": [
+    "密室",
+    "沉浸式",
+    "体验",
+    "室内",
+    "两人成行"
+   ],
+   "notes": "黄浦是上海密室门店最密集的区域，选'2人即可开场'的剧本/主题（下单页标注双人可玩），避免拼场。雨夜收尾首选：室内1.5-2小时，结束正值晚高峰散场，地铁直达。提前1天点评预约并电话确认双人场。",
+   "sourceIds": [
+    "b10"
+   ],
+   "checked": true,
+   "lng": "121.474848",
+   "lat": "31.222438",
+   "poiId": "BZAFR002VV"
+  },
+  {
+   "id": "p05",
+   "category": "体验",
+   "name": "新江湾城文体公园水上运动中心（皮划艇）",
+   "geoQuery": "新江湾城水上运动中心",
+   "geoFallback": "新江湾城文体公园",
+   "address": "杨浦区新江湾城文体公园（10号线新江湾城站）",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 150,
+   "bookingRequired": true,
+   "ticketPrice": "约100-200元/小时（同业估算，以点评/现场为准）",
+   "openHours": "约09:00-17:00（以预约为准）",
+   "tags": [
+    "皮划艇",
+    "水上运动",
+    "晴天备选",
+    "湿地"
+   ],
+   "notes": "'沪上小亚马逊'：4.2公里生态水系皮划艇穿湿地观候鸟，市区内难得的水上体验，闹中取静。晴天（10-05/10-06）替换下午行程的首选；需预约，穿速干衣物。",
+   "sourceIds": [
+    "w13",
+    "w15",
+    "b15"
+   ],
+   "checked": false,
+   "lng": "121.513641",
+   "lat": "31.333484",
+   "poiId": "B00156G72R"
+  },
+  {
+   "id": "p06",
+   "category": "体验",
+   "name": "长风公园划船",
+   "geoQuery": "长风公园",
+   "geoFallback": "长风公园 大渡河路",
+   "address": "普陀区大渡河路189号（13号线大渡河路站/15号线长风公园站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "脚踏船约60元/小时、电动船约80元/小时（规划估算，现场为准）；公园免门票",
+   "openHours": "约06:00-18:00（游船以现场为准）",
+   "tags": [
+    "划船",
+    "公园",
+    "晴天备选",
+    "免费入园"
+   ],
+   "notes": "老牌市中心公园，银锄湖划船是几代上海人的周末记忆，游客少、以本地家庭为主。晴天轻量级水上备选；雨天停开。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.400804",
+   "lat": "31.224607",
+   "poiId": "B00155KK03"
+  },
+  {
+   "id": "p07",
+   "category": "景点",
+   "name": "世博文化公园双子山",
+   "geoQuery": "世博文化公园双子山",
+   "geoFallback": "双子山 通耀路255号",
+   "address": "浦东新区通耀路255号",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "9:00-17:00（16:30停止入园）",
+   "tags": [
+    "登高",
+    "免费",
+    "晴天备选"
+   ],
+   "notes": "2026-06-01起免预约。主峰48米俯瞰世博园区与卢浦大桥。可与温室花园串线。实测紫竹高新区站出发90分钟。",
+   "sourceIds": [
+    "w02"
+   ],
+   "checked": false,
+   "lng": "121.479769",
+   "lat": "31.177459",
+   "poiId": "B0IKJZ2X6P"
+  },
+  {
+   "id": "p08",
+   "category": "体验",
+   "name": "卡丁公园汽车主题乐园（爱琴海购物公园店）",
+   "geoQuery": "卡丁公园汽车主题乐园 爱琴海",
+   "geoFallback": "流光速卡丁车 吴中路1059号",
+   "address": "闵行区吴中路1588号爱琴海购物中心下沉式广场B1层",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "单节约100-200元/节（以美团/点评现价为准）",
+   "openHours": "约10:00-22:00（以商场/门店当日为准）",
+   "tags": [
+    "卡丁车",
+    "室内",
+    "体验",
+    "夜间"
+   ],
+   "notes": "爱琴海购物中心B1下沉广场室内卡丁公园（高德POI核实：B0G2MKVTEL）。不受天气影响，适合作为夜间替换密室的选项。注意：早前新浪文章提到的\"流光速吴中路店\"已不在高德POI库（吴中路1059号现为办公楼，疑似闭店/搬迁），请勿按旧地址前往。",
+   "sourceIds": [
+    "w14"
+   ],
+   "checked": false,
+   "lng": "121.372153",
+   "lat": "31.173592",
+   "poiId": "B0G2MKVTEL"
+  },
+  {
+   "id": "p09",
+   "category": "景点",
+   "name": "上海温室花园",
+   "geoQuery": "上海温室花园",
+   "geoFallback": "上海温室花园 世博文化公园",
+   "address": "浦东新区世博文化公园内（近双子山）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 150,
+   "bookingRequired": true,
+   "ticketPrice": "平日98元 / 周末及节假日128元；优待票49/64元",
+   "openHours": "周一不营业；其余约09:00-17:00",
+   "tags": [
+    "温室",
+    "室内",
+    "雨天备选"
+   ],
+   "notes": "亚洲最大玻璃温室之一，沙漠/雨林/峡谷三大主题馆全室内。分时段预约；周一不营业（10-05出行别选它）。",
+   "sourceIds": [
+    "b10",
+    "w01"
+   ],
+   "checked": false,
+   "lng": "121.475064",
+   "lat": "31.178387",
+   "poiId": "B0IU15ZN3L"
+  },
+  {
+   "id": "p10",
+   "category": "博物馆",
+   "name": "上海博物馆东馆",
+   "geoQuery": "上海博物馆东馆",
+   "geoFallback": "上海博物馆 世纪大道1952号",
+   "address": "浦东新区世纪大道1952号",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "10:00-18:00（17:00停止入场），周二闭馆（法定节假日除外）",
+   "tags": [
+    "博物馆",
+    "免费",
+    "室内",
+    "雨天备选"
+   ],
+   "notes": "散客免预约，B1东门刷身份证入馆。免费雨天兜底项。历代书法馆、绘画馆自2026-09-28起闭馆调整。",
+   "sourceIds": [
+    "w01"
+   ],
+   "checked": false,
+   "lng": "121.538745",
+   "lat": "31.219913",
+   "poiId": "B0FFIFP90V"
+  },
+  {
+   "id": "p11",
+   "category": "景点",
+   "name": "浦江郊野公园体验带（丛林飞跃+卡丁车+花展）",
+   "geoQuery": "浦江郊野公园",
+   "geoFallback": "浦江郊野公园 浦星公路2578弄",
+   "address": "闵行区浦星公路2578弄",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 480,
+   "bookingRequired": true,
+   "ticketPrice": "丛林飞跃49.8元起/卡丁车98-110元/花展39.9元",
+   "openHours": "全天各点位不同（丛林飞跃8:30-17:00，花展8:30-22:00）",
+   "tags": [
+    "远郊备选",
+    "体验密集",
+    "晴天优先"
+   ],
+   "notes": "上一版主打方案，保留为远郊备选：飞悦丛林飞跃+双人骑行+锐擎卡丁车+奇迹花园花展千灯会，闵行11路58分钟直达。适合晴天且愿意跑郊区的一天；细则见 guides 里 v2 版说明。",
+   "sourceIds": [
+    "w06",
+    "w04",
+    "b12"
+   ],
+   "checked": false,
+   "lng": "121.496281",
+   "lat": "31.057830",
+   "poiId": "B0FFGE2F10"
+  },
+  {
+   "id": "p12",
+   "category": "体验",
+   "name": "RIINK 复古轮滑旱冰场·餐吧",
+   "geoQuery": "RIINK 康定路",
+   "geoFallback": "康定路358号",
+   "address": "静安区康定路358号18幢102/104室",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "门票+鞋租以点评/美团现价为准",
+   "openHours": "11:00-次日01:00",
+   "tags": [
+    "轮滑",
+    "复古",
+    "室内",
+    "音乐餐吧"
+   ],
+   "notes": "复古旱冰+餐吧复合业态：白天轮滑、晚上变音乐酒吧，两人边滑边玩很出片。零基础可用护具，摔倒风险低于轮滑街。雨夜替代密室的选项之一。",
+   "sourceIds": [
+    "w18"
+   ],
+   "checked": false,
+   "lng": "121.449606",
+   "lat": "31.235835",
+   "poiId": "B0G14MD5LN"
+  },
+  {
+   "id": "p13",
+   "category": "体验",
+   "name": "PARTY KING 运动娱乐街区（迪美购物中心店）",
+   "geoQuery": "PARTY KING 迪美",
+   "geoFallback": "人民大道221号迪美购物中心",
+   "address": "黄浦区人民大道221号B1（人民广场）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 180,
+   "bookingRequired": false,
+   "ticketPrice": "一票不限时畅玩：历史团购68-78元/人全天、158元双人夜场（以美团/点评现价为准）",
+   "openHours": "约10:00-24:00",
+   "tags": [
+    "一票通玩",
+    "保龄球",
+    "飞镖",
+    "射箭",
+    "电玩",
+    "室内"
+   ],
+   "notes": "保龄球/飞镖/桌球/射箭/电玩十余项一票通玩，两人一下午能轮遍，性价比最高的'杂食'选项。注意五角场店已关门，认准迪美店。",
+   "sourceIds": [
+    "w24"
+   ],
+   "checked": false,
+   "lng": "121.474025",
+   "lat": "31.227729",
+   "poiId": "B0FFJKT877"
+  },
+  {
+   "id": "p14",
+   "category": "体验",
+   "name": "鼎杰保龄球CLUB（源深体育馆）",
+   "geoQuery": "鼎杰保龄球 源深体育馆",
+   "geoFallback": "博纳仕保龄球馆",
+   "address": "浦东新区张杨路1458号源深体育馆1层",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "按球道计费：工作日约120元/道/小时、周末180元/道/小时",
+   "openHours": "约10:00-24:00",
+   "tags": [
+    "保龄球",
+    "复古",
+    "室内"
+   ],
+   "notes": "高德POI核实的保龄球馆（6号线源深体育中心站）。计费参照（新浪实测行业口径）：复古馆Mr.Bonus工作日约120元/道/小时、周末180元/道/小时，按道计费两人分摊；青松城约25元/局。⚠️ 老牌\"欧登保龄球\"衡山路店已于2025年闭店，网传旧地址勿去。具体门店以大众点评选近的为准。",
+   "sourceIds": [
+    "w17"
+   ],
+   "checked": false,
+   "lng": "121.537471",
+   "lat": "31.232423",
+   "poiId": "B00155LBKC"
+  },
+  {
+   "id": "p15",
+   "category": "体验",
+   "name": "射箭馆（玄弓会808弓场等）",
+   "geoQuery": "玄弓会 射箭 兰溪路",
+   "geoFallback": "幻境城射箭馆 徐家汇",
+   "address": "普陀区兰溪路808号（高德POI：玄弓会）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "约50-120元/小时（新手含护具+教练指导）",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "射箭",
+    "室内",
+    "零基础",
+    "咖啡"
+   ],
+   "notes": "高德POI核实的射箭场（含攻防箭/团建）。品牌参照：弓夫射箭·CAFE为\"射箭+咖啡\"连锁（散客约50-120元/小时，新手含护具与教练）；徐家汇另有幻境城沉浸投影箭道。两家可按点评距离/评分现选，两人比环数即开赛。",
+   "sourceIds": [
+    "w19"
+   ],
+   "checked": false,
+   "lng": "121.401178",
+   "lat": "31.254193",
+   "poiId": "B0G12KJBPP"
+  },
+  {
+   "id": "p16",
+   "category": "体验",
+   "name": "乡音书苑（评弹）",
+   "geoQuery": "乡音书苑",
+   "geoFallback": "乡音书苑 南京西路",
+   "address": "静安区（上海评弹团书场）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "票价与场次以当期排片/大麦为准（书场类通常几十元起）",
+   "openHours": "以排片为准",
+   "tags": [
+    "评弹",
+    "曲艺",
+    "老上海",
+    "室内",
+    "便宜"
+   ],
+   "notes": "上海评弹团的常设书场，长篇评弹连台本演出，本地老听客居多、游客极少——最便宜也最'上海'的沉浸式体验。听不懂吴语也有字幕/唱本，坐一小时感受市井声腔。",
+   "sourceIds": [
+    "w26"
+   ],
+   "checked": false,
+   "lng": "121.460173",
+   "lat": "31.230924",
+   "poiId": "B0FFFSYJ02"
+  },
+  {
+   "id": "p17",
+   "category": "体验",
+   "name": "一号卡丁车（鑫耀·光环Live店）",
+   "geoQuery": "一号卡丁车 鑫耀光环",
+   "geoFallback": "鑫耀光环 叠彩路211号",
+   "address": "徐汇区叠彩路211号鑫耀光环(北区)S6-B1层",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "单节约100-200元（以点评现价为准）",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "卡丁车",
+    "室内",
+    "B1"
+   ],
+   "notes": "徐汇B1室内卡丁车（高德POI：B0LRV5JVU9），比爱琴海店更靠市中心；两人刷圈速竞速。",
+   "sourceIds": [
+    "w14"
+   ],
+   "checked": false,
+   "lng": "121.415003",
+   "lat": "31.167462",
+   "poiId": "B0LRV5JVU9"
+  },
+  {
+   "id": "p18",
+   "category": "体验",
+   "name": "上海耀雪冰雪世界 L+SNOW（临港·远郊）",
+   "geoQuery": "耀雪冰雪世界",
+   "geoFallback": "耀雪冰雪世界 临港",
+   "address": "浦东新区临港滴水湖（16号线临港大道站+接驳）",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 360,
+   "bookingRequired": true,
+   "ticketPrice": "娱雪约210元起；滑雪按雪道/时长分档（含装备）",
+   "openHours": "以官方当日为准",
+   "tags": [
+    "室内滑雪",
+    "真雪",
+    "远郊",
+    "全天"
+   ],
+   "notes": "全球最大室内真雪场（吉尼斯认证，垂直落差近60米）。市区出发单程1.5-2小时，只适合愿意跑远郊的整天空档，夏季也可玩。",
+   "sourceIds": [
+    "w25"
+   ],
+   "checked": false,
+   "lng": "121.906146",
+   "lat": "30.918925",
+   "poiId": "B0FFL5P95R"
+  },
+  {
+   "id": "p19",
+   "category": "场馆展览",
+   "name": "中华艺术宫（上海美术馆）·马王堆大展",
+   "geoQuery": "中华艺术宫",
+   "geoFallback": "中华艺术宫 上南路205号",
+   "address": "浦东新区上南路205号（8号线中华艺术宫站）",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 180,
+   "bookingRequired": true,
+   "ticketPrice": "常设展免费（公众号'中华艺术宫'预约）；特展以当期公告为准",
+   "openHours": "约10:00-18:00（周一闭馆，节假日另行公告）",
+   "tags": [
+    "展览",
+    "免费",
+    "国庆档",
+    "收官大展"
+   ],
+   "notes": "国庆档重头戏：'千金之家——马王堆汉墓的生活美学'大展（收官期，先约先得）；10/5-7推出'美术馆奇妙夜'夜游；'历史的星辉'10/7闭展。与世博会博物馆、PSA同属世博片区，可串一线。",
+   "sourceIds": [
+    "w27"
+   ],
+   "checked": false,
+   "lng": "121.494740",
+   "lat": "31.184338",
+   "poiId": "B00155L9WI"
+  },
+  {
+   "id": "p20",
+   "category": "场馆展览",
+   "name": "多伦路文化名人街 + 多伦现代美术馆",
+   "geoQuery": "多伦路文化名人街",
+   "geoFallback": "多伦路 虹口",
+   "address": "虹口区多伦路27号（美术馆）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "街区免费；美术馆当期展以馆方为准",
+   "openHours": "街区全天；美术馆约10:00-18:00（周一闭馆）",
+   "tags": [
+    "历史街区",
+    "展览",
+    "小众",
+    "虹口"
+   ],
+   "notes": "'中国当代艺术年鉴展（上海）'至10/11收官（103位艺术家文献）。多伦路老建筑+旧书摊，游客比武康路少得多；可串甜爱路—鲁迅公园。",
+   "sourceIds": [
+    "w27"
+   ],
+   "checked": false,
+   "lng": "121.481748",
+   "lat": "31.264124",
+   "poiId": "B00155FLFD"
+  },
+  {
+   "id": "p21",
+   "category": "场馆展览",
+   "name": "世博会博物馆",
+   "geoQuery": "世博会博物馆",
+   "geoFallback": "世博会博物馆 蒙自路818号",
+   "address": "黄浦区蒙自路818号（13号线世博会博物馆站）",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "免费（散客无需预约，免费不免票）",
+   "openHours": "周二-日 9:00-17:00（16:15停入），周一闭馆（节假日另行公告）",
+   "tags": [
+    "博物馆",
+    "免费",
+    "免预约",
+    "建筑"
+   ],
+   "notes": "'欢乐桂冠'建筑本体值得看；近期有希腊珍宝特展（约270件）、探月特展；免费纪念章可收集，2-3小时。与中华艺术宫/PSA同片区。",
+   "sourceIds": [
+    "w28"
+   ],
+   "checked": false,
+   "lng": "121.482161",
+   "lat": "31.194391",
+   "poiId": "B001575WDA"
+  },
+  {
+   "id": "p22",
+   "category": "场馆展览",
+   "name": "上海邮政博物馆",
+   "geoQuery": "上海邮政博物馆",
+   "geoFallback": "邮政博物馆 天潼路395号",
+   "address": "虹口区天潼路395号（邮政总局大楼，12/10号线天潼路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费（散客无需预约）",
+   "openHours": "2025-08起：周三/四/六/日开放（周三/四仅二楼）；周一/二/五不开放",
+   "tags": [
+    "博物馆",
+    "免费",
+    "苏州河",
+    "天台"
+   ],
+   "notes": "1924年邮政总局大楼，中庭巴洛克天井+顶楼天台花园可看苏州河湾，人极少。10-04（周日）正常开放。旁边即苏州河乍浦路桥—四川路桥机位。",
+   "sourceIds": [
+    "w29"
+   ],
+   "checked": false,
+   "lng": "121.484749",
+   "lat": "31.244286",
+   "poiId": "B00155F9RW"
+  },
+  {
+   "id": "p23",
+   "category": "场馆展览",
+   "name": "上海当代艺术博物馆 PSA",
+   "geoQuery": "上海当代艺术博物馆",
+   "geoFallback": "当代艺术博物馆 花园港路200号",
+   "address": "黄浦区花园港路200号（4/8号线西藏南路站转步行）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "常设免费；特展单独购票（以公众号当期为准）",
+   "openHours": "约11:00-19:00（周一闭馆）",
+   "tags": [
+    "当代艺术",
+    "工业遗产",
+    "烟囱",
+    "黄浦"
+   ],
+   "notes": "原南市发电厂改造，165米大烟囱是地标，内部空间震撼。国庆档展讯以'上海当代艺术博物馆'公众号为准。与世博会博物馆同片区。",
+   "sourceIds": [
+    "w27"
+   ],
+   "checked": false,
+   "lng": "121.498406",
+   "lat": "31.201041",
+   "poiId": "B00156F7CP"
+  },
+  {
+   "id": "p24",
+   "category": "场馆展览",
+   "name": "浦东美术馆 MAP",
+   "geoQuery": "浦东美术馆",
+   "geoFallback": "浦东美术馆 滨江大道2777号",
+   "address": "浦东新区滨江大道2777号（2号线陆家嘴站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 180,
+   "bookingRequired": true,
+   "ticketPrice": "以当期展览公告为准",
+   "openHours": "约10:00-21:00（延时以公告为准）",
+   "tags": [
+    "美术馆",
+    "镜厅",
+    "江景"
+   ],
+   "notes": "让·努维尔设计，'镜厅'对着外滩天际线本身是展品。陆家嘴片区国庆人流大（近东方明珠），建议开门即入或改天平峰前往。当期展讯以官方公众号为准。",
+   "sourceIds": [
+    "w27"
+   ],
+   "checked": false,
+   "lng": "121.496310",
+   "lat": "31.238115",
+   "poiId": "B0FFLCKUTU"
+  },
+  {
+   "id": "p25",
+   "category": "场馆展览",
+   "name": "UCCA Edge",
+   "geoQuery": "UCCA Edge",
+   "geoFallback": "UCCA Edge 西藏北路88号",
+   "address": "静安区西藏北路88号盈凯文创广场2层（8号线中兴路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "ticketPrice": "以当期展览公告为准",
+   "openHours": "约10:00-19:00（周一闭馆）",
+   "tags": [
+    "当代艺术",
+    "静安",
+    "苏州河"
+   ],
+   "notes": "UCCA上海馆，苏州河静安段旁；看展后可沿苏河湾步道走到四行仓库。当期展讯以官方为准。",
+   "sourceIds": [
+    "w27"
+   ],
+   "checked": false,
+   "lng": "121.472034",
+   "lat": "31.242110",
+   "poiId": "B0HBBD3UW5"
+  },
+  {
+   "id": "p26",
+   "category": "景点",
+   "name": "四行仓库抗战纪念馆（苏州河步道）",
+   "geoQuery": "四行仓库",
+   "geoFallback": "四行仓库 光复路21号",
+   "address": "静安区光复路21号（8/12号线曲阜路站）",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 90,
+   "bookingRequired": true,
+   "ticketPrice": "免费（公众号预约）",
+   "openHours": "约9:00-16:30（周一闭馆）",
+   "tags": [
+    "历史",
+    "免费",
+    "苏州河",
+    "西墙弹孔"
+   ],
+   "notes": "《八佰》原址，西墙弹孔震撼。沿苏州河北岸步道：四行仓库→邮政博物馆→乍浦路桥，是市区人流最低的历史徒步线之一。",
+   "sourceIds": [
+    "w30"
+   ],
+   "checked": false,
+   "lng": "121.471104",
+   "lat": "31.240340",
+   "poiId": "B0GKOS77AU"
+  },
+  {
+   "id": "p27",
+   "category": "景点",
+   "name": "M50创意园",
+   "geoQuery": "M50创意园",
+   "geoFallback": "M50 莫干山路50号",
+   "address": "普陀区莫干山路50号（13号线江宁路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "园区免费，画廊大部分免费",
+   "openHours": "园区约9:00-18:00，各画廊不一（周一部分闭）",
+   "tags": [
+    "艺术区",
+    "画廊",
+    "免费",
+    "苏州河"
+   ],
+   "notes": "纺织老厂房改造的画廊群，当代艺术氛围浓、游客少，逛画展不要钱。可与天安千树、昌化路码头游船串成苏州河普陀段。",
+   "sourceIds": [
+    "w27"
+   ],
+   "checked": false,
+   "lng": "121.449361",
+   "lat": "31.248101",
+   "poiId": "B0FFFS173H"
+  },
+  {
+   "id": "p28",
+   "category": "景点",
+   "name": "北外滩滨江（国客中心—世界会客厅段）",
+   "geoQuery": "北外滩滨江绿地",
+   "geoFallback": "北外滩 国客中心",
+   "address": "虹口区东大名路沿线（12号线国际客运中心站）",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天",
+   "tags": [
+    "滨江",
+    "天际线",
+    "免费",
+    "人少"
+   ],
+   "notes": "看陆家嘴三件套+外滩天际线的'低人流版'机位，比外滩空得多；傍晚来正好接夜景。国客中心段步道开阔。",
+   "sourceIds": [
+    "b03"
+   ],
+   "checked": false,
+   "lng": "121.499372",
+   "lat": "31.247461",
+   "poiId": "B00156NZVG"
+  },
+  {
+   "id": "p29",
+   "category": "景点",
+   "name": "复兴公园",
+   "geoQuery": "复兴公园",
+   "geoFallback": "复兴公园 雁荡路105号",
+   "address": "黄浦区雁荡路105号（1号线黄陂南路站）",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "约05:00-22:00",
+   "tags": [
+    "法式园林",
+    "梧桐",
+    "免费",
+    "本地人"
+   ],
+   "notes": "上海唯一保存完整的法式风格公园，玫瑰园+梧桐喷泉，本地老人晨练遛鸟，游客少。紧邻思南路—南昌路，可直接并入主线的上午空闲段。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.469115",
+   "lat": "31.216980",
+   "poiId": "B00155KTVH"
+  },
+  {
+   "id": "p30",
+   "category": "景点",
+   "name": "静安雕塑公园",
+   "geoQuery": "静安雕塑公园",
+   "geoFallback": "静安雕塑公园 石门二路128号",
+   "address": "静安区石门二路128号（13号线自然博物馆站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 60,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "约05:00-22:00",
+   "tags": [
+    "雕塑",
+    "免费",
+    "城市公园"
+   ],
+   "notes": "城市雕塑+草坪的开放公园，旁边即上海自然博物馆（30元需预约，假期票紧）。可作为静安片区换乘/休整点。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.463871",
+   "lat": "31.234819",
+   "poiId": "B00155KKCG"
+  },
+  {
+   "id": "p31",
+   "category": "景点",
+   "name": "上生新所·茑屋书店",
+   "geoQuery": "上生新所",
+   "geoFallback": "上生新所 延安西路1262号",
+   "address": "长宁区延安西路1262号（3/4号线延安西路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "园区免费",
+   "openHours": "园区全天，商铺约10:00-22:00",
+   "tags": [
+    "历史建筑",
+    "书店",
+    "哥伦比亚",
+    "街区"
+   ],
+   "notes": "哥伦比亚乡村俱乐部旧址，茑屋书店在百年建筑里；泳池广场出片。假期人流中等，工作日傍晚最舒服。可与愚园路公共市集串线。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.427719",
+   "lat": "31.208185",
+   "poiId": "B0FFJ2JI6R"
+  },
+  {
+   "id": "p32",
+   "category": "景点",
+   "name": "天安千树",
+   "geoQuery": "天安千树",
+   "geoFallback": "天安千树 莫干山路600号",
+   "address": "普陀区莫干山路600号（13号线江宁路站）",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "商场免费开放",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "建筑",
+    "苏州河",
+    "商场"
+   ],
+   "notes": "'古巴比伦空中花园'山形建筑，露台种满绿植，苏州河边看最出片。与M50一街之隔，可连逛。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.445495",
+   "lat": "31.249159",
+   "poiId": "B0FFMA0COY"
+  },
+  {
+   "id": "p33",
+   "category": "景点",
+   "name": "蟠龙天地（远郊备选）",
+   "geoQuery": "蟠龙天地",
+   "geoFallback": "蟠龙天地 蟠鼎路123弄",
+   "address": "青浦区徐泾镇蟠鼎路123弄8号（17号线蟠龙路站）",
+   "day": 0,
+   "slot": "全天",
+   "durationMin": 240,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "园区全天",
+   "tags": [
+    "古镇水乡",
+    "免费",
+    "远郊"
+   ],
+   "notes": "十字水街千年古镇+现代商业，元代香花桥仍在；17号线直达。上一版方案验证过的点，作晴天远郊备选。",
+   "sourceIds": [
+    "b11"
+   ],
+   "checked": false,
+   "lng": "121.275520",
+   "lat": "31.188492",
+   "poiId": "B0GR66UUOU"
+  },
+  {
+   "id": "p34",
+   "category": "景点",
+   "name": "韩湘水博园（远郊备选）",
+   "geoQuery": "韩湘水博园",
+   "geoFallback": "韩湘水博园 江川路3805号",
+   "address": "闵行区江川路3805号",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "现场36元/线上33元/双人票61.9元",
+   "openHours": "08:00-17:00（16:00停止入园）",
+   "tags": [
+    "古桥",
+    "远郊",
+    "人少"
+   ],
+   "notes": "'古桥博物馆'约50座移建古桥+600棵百年古树，闵东线48分钟直达，游客极少。想安排'轻松闲逛'半日时作加场。",
+   "sourceIds": [
+    "w05"
+   ],
+   "checked": false,
+   "lng": "121.329686",
+   "lat": "30.984104",
+   "poiId": "B00155R3IT"
+  },
+  {
+   "id": "p35",
+   "category": "场馆展览",
+   "name": "上海大歌剧院（国庆首次开放）",
+   "geoQuery": "上海大歌剧院",
+   "geoFallback": "上海大歌剧院 世博文化公园",
+   "address": "浦东新区世博大道1110号（世博文化公园旁，13号线世博大道站）",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "ticketPrice": "50元/人（70岁以上/学生半价）",
+   "openHours": "10-01~07 9:00-17:00（16:30停止入场）；10-17正式开幕后常态开放",
+   "tags": [
+    "新地标",
+    "中热度",
+    "登高",
+    "限流",
+    "国庆限定"
+   ],
+   "notes": "'中国扇'造型，409级白色双螺旋楼梯登户外观景平台俯瞰浦江，免费讲解（10:30/11:30/14:30/15:30/16:30）。⚠️ 小程序'上海大歌剧院'实名预约、每日限约1200人，假期名额紧，定了日期立刻约。与双子山/温室花园同在世博文化公园，可串一线。",
+   "sourceIds": [
+    "w31"
+   ],
+   "checked": false,
+   "lng": "121.470925",
+   "lat": "31.178705",
+   "poiId": "B0J39CD0XW"
+  },
+  {
+   "id": "p36",
+   "category": "场馆展览",
+   "name": "朵云书院旗舰店（上海中心52楼）",
+   "geoQuery": "朵云书院旗舰店",
+   "geoFallback": "朵云书院 上海中心",
+   "address": "浦东新区陆家嘴环路479号上海中心大厦52层（2号线陆家嘴站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": true,
+   "ticketPrice": "进店免费；'好望角'观景区需店内消费约30-60元",
+   "openHours": "10:30-20:00",
+   "tags": [
+    "高空书店",
+    "中热度",
+    "预约制",
+    "陆家嘴"
+   ],
+   "notes": "239米云端书店，山峦书架+好望角观景。⚠️ 必须提前约3天（'世纪朵云'公众号/佰朋小程序），现场不能约、不约不能进。假期人多，约到下午时段顺手逛陆家嘴。",
+   "sourceIds": [
+    "w32"
+   ],
+   "checked": false,
+   "lng": "121.505560",
+   "lat": "31.233492",
+   "poiId": "B0G0P9FUWI"
+  },
+  {
+   "id": "p37",
+   "category": "景点",
+   "name": "武康路—武康大楼—安福路",
+   "geoQuery": "武康大楼",
+   "geoFallback": "武康路",
+   "address": "徐汇区武康路/淮海中路1850号（10/11号线交通大学站）",
+   "day": 0,
+   "slot": "上午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天（武康大楼最佳机位为清晨）",
+   "tags": [
+    "网红马路",
+    "中热度",
+    "梧桐区",
+    "免费"
+   ],
+   "notes": "上海顶流小马路：武康大楼船头机位+安福路话剧中心/网红小店一条街。假期人流大——错峰策略：早8点前或晚9点后光线与人流都最好；避开周末下午。与主线永康路同属梧桐区，可步行串（永康路→武康路约1.5km）。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.438278",
+   "lat": "31.204430",
+   "poiId": "B00155ITJ1"
+  },
+  {
+   "id": "p38",
+   "category": "景点",
+   "name": "田子坊",
+   "geoQuery": "田子坊",
+   "geoFallback": "田子坊 泰康路210弄",
+   "address": "黄浦区泰康路210弄（9号线打浦桥站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费进入（店内消费另计）",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "石库门弄堂",
+    "中热度",
+    "文创"
+   ],
+   "notes": "石库门弄堂里的小店/画廊/文创，比主线永康路商业一些。假期中午后人流大，适合开门时段（10点）或晚饭后逛，主巷人多可拐进支弄。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.468662",
+   "lat": "31.208197",
+   "poiId": "B00155HO6Y"
+  },
+  {
+   "id": "p39",
+   "category": "景点",
+   "name": "新天地·中共一大纪念馆",
+   "geoQuery": "中共一大纪念馆",
+   "geoFallback": "新天地 黄陂南路",
+   "address": "黄浦区黄陂南路374号（1号线黄陂南路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "ticketPrice": "街区免费；一大纪念馆免费（公众号预约）",
+   "openHours": "街区全天；纪念馆约9:00-17:00（周一闭馆，节假日另行公告）",
+   "tags": [
+    "石库门",
+    "红色场馆",
+    "中热度",
+    "商业街区"
+   ],
+   "notes": "石库门建筑群+商业；一大会址纪念馆是免费预约制，展陈质量高、限流后体验尚可。假期街区人流中高，纪念馆提前1-2天约。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.476246",
+   "lat": "31.220104",
+   "poiId": "B0HD6SBAAC"
+  },
+  {
+   "id": "p40",
+   "category": "景点",
+   "name": "张园",
+   "geoQuery": "张园",
+   "geoFallback": "张园 茂名北路",
+   "address": "静安区茂名北路（2/12/13号线南京西路站）",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费进入",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "石库门建筑群",
+    "中热度",
+    "商业"
+   ],
+   "notes": "'海上第一名园'，百年石库门里弄整体修缮后的商业街区，建筑细节值得看。假期人流中高，傍晚亮灯后氛围更好。与主线密室区域（黄陂南路）地铁两站可达。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.460064",
+   "lat": "31.227971",
+   "poiId": "B00155QIPB"
+  },
+  {
+   "id": "p41",
+   "category": "景点",
+   "name": "愚园路历史街区+公共市集",
+   "geoQuery": "愚园路",
+   "geoFallback": "愚园路 长宁",
+   "address": "长宁区愚园路（2/11号线江苏路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "全天；公共市集约8:00-22:00",
+   "tags": [
+    "小马路",
+    "中热度",
+    "市集",
+    "名人墙"
+   ],
+   "notes": "比武康路松弛一档的梧桐区小马路：历史名人墙+弄堂+公共市集（一楼菜场二楼咖啡馆）。假期人流可控。可与上生新所（p31）步行串联。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.435535",
+   "lat": "31.220707",
+   "poiId": "BZAFR002CG"
+  },
+  {
+   "id": "p42",
+   "category": "景点",
+   "name": "今潮8弄",
+   "geoQuery": "今潮8弄",
+   "geoFallback": "今潮8弄 四川北路",
+   "address": "虹口区四川北路武进路口（3/10号线虹口足球场站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "石库门艺术街区",
+    "中热度",
+    "展览场地"
+   ],
+   "notes": "60幢石库门建筑群改造的艺术商业街区，常有免费艺术装置与市集。可与多伦路（p20）一线串联成虹口段。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.484182",
+   "lat": "31.251626",
+   "poiId": "B0HDACXK1W"
+  },
+  {
+   "id": "p43",
+   "category": "景点",
+   "name": "苏河湾万象天地",
+   "geoQuery": "苏河湾万象天地",
+   "geoFallback": "苏河湾万象天地 福建北路",
+   "address": "静安区福建北路（10/12号线天潼路站）",
+   "day": 0,
+   "slot": "傍晚",
+   "durationMin": 90,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "石库门商业",
+    "苏州河",
+    "中热度"
+   ],
+   "notes": "慎余里石库门群+下沉式商业+苏州河岸线，屋顶绿地可看河景。与邮政博物馆（p22）/四行仓库（p26）同在苏州河静安段，一线串联。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.478536",
+   "lat": "31.242508",
+   "poiId": "B0IRBDWIRI"
+  },
+  {
+   "id": "p44",
+   "category": "体验",
+   "name": "百联ZX创趣场（二次元）",
+   "geoQuery": "百联ZX创趣场",
+   "geoFallback": "百联ZX 南京东路",
+   "address": "黄浦区南京东路300号（2/10号线南京东路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": false,
+   "ticketPrice": "免费进入（谷子/手办消费另计）",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "二次元",
+    "谷子店",
+    "室内",
+    "中高热度"
+   ],
+   "notes": "被称'中国版秋叶原'：万代魂、高达基地、谷子店密集，室内不受天气影响。⚠️ 南京东路国庆人流极大，进店即躲开人流；二次元浓度全天最高，转一两圈就走，别在步行街久留。",
+   "sourceIds": [
+    "b04"
+   ],
+   "checked": false,
+   "lng": "121.483254",
+   "lat": "31.237161",
+   "poiId": "B00155HPWC"
+  },
+  {
+   "id": "p45",
+   "category": "景点",
+   "name": "前滩太古里+前滩休闲公园",
+   "geoQuery": "前滩太古里",
+   "geoFallback": "前滩太古里 前滩大道",
+   "address": "浦东新区前滩大道（6/8号线东方体育中心站转）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 150,
+   "bookingRequired": false,
+   "ticketPrice": "免费",
+   "openHours": "约10:00-22:00",
+   "tags": [
+    "滨江商业",
+    "屋顶跑道",
+    "中热度"
+   ],
+   "notes": "450米屋顶漫步道（Sky Loop）+滨江公园对望徐汇天际线，人流比市区商圈低。实测紫竹高新区站出发仅79分钟，是市区方向最快的中热度选项。",
+   "sourceIds": [
+    "b01"
+   ],
+   "checked": false,
+   "lng": "121.481489",
+   "lat": "31.152823",
+   "poiId": "B0FFIRXH9Z"
+  },
+  {
+   "id": "p46",
+   "category": "场馆展览",
+   "name": "上海图书馆东馆",
+   "geoQuery": "上海图书馆东馆",
+   "geoFallback": "上海图书馆东馆 迎春路",
+   "address": "浦东新区迎春路300号（18号线迎春路站）",
+   "day": 0,
+   "slot": "下午",
+   "durationMin": 120,
+   "bookingRequired": true,
+   "ticketPrice": "免费（入馆预约制）",
+   "openHours": "约9:00-17:00（周一闭馆）",
+   "tags": [
+    "图书馆",
+    "建筑",
+    "免费",
+    "阅读"
+   ],
+   "notes": "玉石色大屋顶现代图书馆，七层阅读空间+顶层环窗看世纪公园树海， visitors适中。假期需提前1天公众号预约；安静的半天休整点。",
+   "sourceIds": [],
+   "checked": false,
+   "lng": "121.547154",
+   "lat": "31.219971",
+   "poiId": "B0FFJUO1FR"
+  }
+ ],
+ "hotels": [],
+ "restaurants": [
+  {
+   "id": "r01",
+   "name": "进贤路/南昌路 本帮小馆",
+   "type": "本帮菜·市井",
+   "geoQuery": "进贤路",
+   "geoFallback": "南昌路 本帮菜",
+   "avgPrice": 70,
+   "dianpingKeyword": "进贤路 本帮菜",
+   "tips": "进贤路是老牌本帮小馆一条街（兰心/海金滋等），国庆中午排队可控但难免等位；两人120-180元。若排队久，就近转南昌路/瑞金二路一带小店。以大众点评当日取号情况现选。",
+   "lng": "121.463915",
+   "lat": "31.216900",
+   "poiId": "",
+   "address": "黄浦区进贤路"
+  },
+  {
+   "id": "r02",
+   "name": "巨鹿路/永康路 咖啡轻食",
+   "type": "咖啡·轻食",
+   "geoQuery": "巨鹿路 咖啡",
+   "geoFallback": "永康路 咖啡",
+   "avgPrice": 45,
+   "dianpingKeyword": "巨鹿路 咖啡",
+   "tips": "下午场休整点：手作结束后来一杯，配可颂/贝果当早晚餐垫底；两晚咖啡+轻食约90-120元。",
+   "lng": "121.450800",
+   "lat": "31.213500",
+   "poiId": "",
+   "address": "徐汇区/黄浦区巨鹿路"
+  }
+ ],
+ "experiences": [
+  {
+   "id": "e01",
+   "name": "室内抱石攀岩",
+   "where": "香蕉攀岩（淮海中路）",
+   "durationMin": 120,
+   "price": "60-120元/人",
+   "bookingRequired": false,
+   "bestFor": "主方案上午：零基础抱石，两人互相打分"
+  },
+  {
+   "id": "e02",
+   "name": "银饰对戒/陶艺情侣杯 DIY",
+   "where": "思南路—南昌路一带工作室",
+   "durationMin": 120,
+   "price": "约198-298元/两人",
+   "bookingRequired": true,
+   "bestFor": "主方案下午：做一件带得走的纪念物"
+  },
+  {
+   "id": "e03",
+   "name": "密室逃脱双人场",
+   "where": "黄陂南路/人民广场一带",
+   "durationMin": 150,
+   "price": "约100-150元/人",
+   "bookingRequired": true,
+   "bestFor": "主方案夜间：雨夜收尾，2人成行不拼场"
+  },
+  {
+   "id": "e04",
+   "name": "皮划艇穿'沪上小亚马逊'",
+   "where": "新江湾城水上运动中心（杨浦）",
+   "durationMin": 150,
+   "price": "约100-200元/小时（估算）",
+   "bookingRequired": true,
+   "bestFor": "晴天备选：4.2公里生态水系，10号线直达"
+  },
+  {
+   "id": "e05",
+   "name": "银锄湖划船",
+   "where": "长风公园（普陀）",
+   "durationMin": 120,
+   "price": "约60-80元/小时（估算）",
+   "bookingRequired": false,
+   "bestFor": "晴天轻量备选：老牌市中心公园，本地人记忆"
+  },
+  {
+   "id": "e06",
+   "name": "室内双层赛道卡丁车",
+   "where": "流光速卡丁车馆（吴中路）",
+   "durationMin": 120,
+   "price": "80-150元/节",
+   "bookingRequired": false,
+   "bestFor": "夜间替换密室：9号线合川路站，营业到凌晨"
+  },
+  {
+   "id": "e07",
+   "name": "浦东东岸滨江骑行（24km三道贯通）",
+   "where": "歇浦路渡口—徐浦大桥南墙",
+   "durationMin": 180,
+   "price": "共享单车约10-20元",
+   "bookingRequired": false,
+   "bestFor": "晴天备选：耀华滨江到徐浦大桥一段人少景美"
+  },
+  {
+   "id": "e08",
+   "name": "丛林飞跃+千灯会（远郊组合）",
+   "where": "浦江郊野公园",
+   "durationMin": 480,
+   "price": "见 v2 攻略",
+   "bookingRequired": true,
+   "bestFor": "远郊备选：晴天愿意跑郊区时的全天体验线"
+  },
+  {
+   "id": "e09",
+   "name": "复古旱冰（轮滑+餐吧）",
+   "where": "RIINK（静安康定路）",
+   "durationMin": 150,
+   "price": "以点评现价为准",
+   "bookingRequired": false,
+   "bestFor": "雨夜替代项：边滑边喝酒，复古氛围"
+  },
+  {
+   "id": "e10",
+   "name": "一票通玩运动街区",
+   "where": "PARTY KING（人民广场迪美B1）",
+   "durationMin": 180,
+   "price": "68-158元/人（团购）",
+   "bookingRequired": false,
+   "bestFor": "选择困难时的兜底：保龄球/飞镖/射箭/桌球一次玩遍"
+  },
+  {
+   "id": "e11",
+   "name": "保龄球（按道计费）",
+   "where": "Mr.Bonus 博纳仕",
+   "durationMin": 120,
+   "price": "120-180元/道/小时（两人分摊）",
+   "bookingRequired": false,
+   "bestFor": "复古感+低门槛，两人各打一局"
+  },
+  {
+   "id": "e12",
+   "name": "射箭+咖啡",
+   "where": "弓夫射箭·CAFE / 幻境城（徐家汇）",
+   "durationMin": 120,
+   "price": "50-120元/小时",
+   "bookingRequired": false,
+   "bestFor": "零基础半小时上手，两人比环数"
+  },
+  {
+   "id": "e13",
+   "name": "零基础调酒课",
+   "where": "市区工作室/永嘉路小酒馆（Klook×Eatwith 可订）",
+   "durationMin": 120,
+   "price": "约150-400元/人",
+   "bookingRequired": true,
+   "bestFor": "夜场替代密室：两人各调两款经典鸡尾酒"
+  },
+  {
+   "id": "e14",
+   "name": "咖啡拉花/手冲课",
+   "where": "一尺见学等（1-6人小班）",
+   "durationMin": 120,
+   "price": "88元/半小时-300元/人",
+   "bookingRequired": true,
+   "bestFor": "咖啡爱好者：拉花出爱心带走两杯"
+  },
+  {
+   "id": "e15",
+   "name": "定制调香（进阶）",
+   "where": "叙室 / O D'HORA 时光馥",
+   "durationMin": 120,
+   "price": "388元起/30ml",
+   "bookingRequired": true,
+   "bestFor": "纪念日向：调一瓶专属香水"
+  },
+  {
+   "id": "e16",
+   "name": "评弹书场（老上海声腔）",
+   "where": "乡音书苑（静安）",
+   "durationMin": 120,
+   "price": "书场票通常几十元起",
+   "bookingRequired": false,
+   "bestFor": "最便宜最本地：游客极少的长篇评弹"
+  },
+  {
+   "id": "e17",
+   "name": "脱口秀/爵士Livehouse",
+   "where": "市中心各剧场（以当期排片为准）",
+   "durationMin": 120,
+   "price": "按演出而定",
+   "bookingRequired": true,
+   "bestFor": "夜场备选：提前在购票小程序看10-03/10-04排期"
+  },
+  {
+   "id": "e18",
+   "name": "苏州河游船（悠游苏州河）",
+   "where": "外滩源/四行仓库/昌化路/长风公园码头",
+   "durationMin": 120,
+   "price": "60元起；一日票约100元",
+   "bookingRequired": true,
+   "bestFor": "水上看上海：17公里串5个区，游客比黄浦江游船少得多；小程序'悠游苏州河'购票"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "date": "2026-10-04",
+   "theme": "市中心体验线：抱石攀岩 + 本帮午餐 + 手作DIY + 咖啡街区 + 密室夜场（全程室内为主，雨天无忧）",
+   "area": "黄浦区—徐汇区（淮海中路/思南路/永康路，一个主区域步行串联）",
+   "items": [
+    {
+     "poiId": "p01",
+     "time": "11:00-12:30"
+    },
+    {
+     "poiId": "r01",
+     "time": "12:45-14:00"
+    },
+    {
+     "poiId": "p02",
+     "time": "14:15-16:15"
+    },
+    {
+     "poiId": "p03",
+     "time": "16:30-17:45"
+    },
+    {
+     "poiId": "p04",
+     "time": "18:30-21:00"
+    }
+   ],
+   "dailyRoute": {
+    "mode": "driving",
+    "distanceKm": 9.35,
+    "durationMin": 31.9,
+    "note": "由 route_fill.py 回填（驾车口径；本日实际：地铁到陕西南路后全部步行可达，单段≤20分钟）",
+    "legs": [
+     {
+      "from": "p01",
+      "to": "r01",
+      "distanceKm": 2.82,
+      "durationMin": 9.4
+     },
+     {
+      "from": "r01",
+      "to": "p02",
+      "distanceKm": 0.83,
+      "durationMin": 2.8
+     },
+     {
+      "from": "p02",
+      "to": "p03",
+      "distanceKm": 2.14,
+      "durationMin": 7.1
+     },
+     {
+      "from": "p03",
+      "to": "p04",
+      "distanceKm": 3.56,
+      "durationMin": 12.6
+     }
+    ]
+   },
+   "notes": "出发：交大闵行 → 东川路站乘5号线 → 莘庄换1号线 → 陕西南路站（约65分钟/6元）。攀岩馆11:00开门即进场错峰；午饭后手作DIY（提前预约时段）；傍晚永康路咖啡，雨小可漫步；晚间密室双人场（黄陂南路一带，1号线直达）。返程：1号线→莘庄→5号线，周六1号线延时运营、周日按常态末班车。若同伴从同济嘉定出发：11号线进城至常熟路站汇合最顺（或参考双起点汇合版攻略）。若定在晴天10-05/10-06：把下午 p02+p03 换成新江湾城皮划艇（p05，10号线可达）或长风公园划船（p06），晚间可换流光速卡丁车（p08）。",
+   "rainPlan": "本主线即雨天方案：全部核心项目（攀岩/手作/密室/咖啡店内）室内完成，仅街区漫步段可能淋雨——大雨就把 p03 咖啡街区改为室内甜品店或直接延长密室时长。备用室内项：上海温室花园（p09，周一不营业）、上博东馆（p10，免费刷证）。"
+  }
+ ],
+ "tips": {
+  "weather": {
+   "season": "10月初初秋（高德实况预报）",
+   "high": 24,
+   "low": 15,
+   "advice": "高德实时预报：2026-10-03 小雨转中雨 24~19°C；2026-10-04 小雨转阴 23~18°C；2026-10-05 多云转晴 22~15°C；2026-10-06 晴转晴 22~15°C。10月上海秋高气爽、昼夜温差大，白天薄长袖即可，傍晚加薄外套；偶有秋雨，随身带折叠伞。出发前1天再刷新一次预报，以临近预报为准。"
+  },
+  "packing": [
+   "薄长袖（白天15-24°C）",
+   "薄外套/风衣（夜间温差）",
+   "折叠伞或轻雨衣（10-03/10-04 必带）",
+   "封闭式运动鞋（攀岩必须，密室建议）",
+   "穿方便活动的衣物（攀岩/密室/手作）",
+   "充电宝、身份证",
+   "小号密封袋（DIY烧制件回执单/手机防雨）"
+  ],
+  "bookings": [
+   {
+    "item": "手作DIY工作室（银饰对戒/陶艺）",
+    "how": "大众点评分4.8+工作室电话/在线预约",
+    "deadline": "节假日提前1-3天"
+   },
+   {
+    "item": "密室逃脱双人场",
+    "how": "大众点评/美团选'2人可开'主题并电话确认",
+    "deadline": "提前1天"
+   },
+   {
+    "item": "香蕉攀岩",
+    "how": "可现场购票；美团/点评有闲时票",
+    "deadline": "节假日建议开门时段进场"
+   },
+   {
+    "item": "新江湾城皮划艇（晴天备选）",
+    "how": "大众点评/美团预约场次",
+    "deadline": "提前1-2天"
+   }
+  ],
+  "transportSchedules": [
+   {
+    "line": "5号线→1号线（莘庄换乘）",
+    "note": "交大闵行→陕西南路约65分钟/6元；去程往莘庄方向首班约5:30后"
+   },
+   {
+    "line": "1号线",
+    "note": "陕西南路站是全天主区域锚点；逢周五/周六延时运营（10-03周六适用，10-04周日按常态末班车）"
+   },
+   {
+    "line": "10号线新江湾城站",
+    "note": "晴天备选皮划艇（p05）的下车站"
+   },
+   {
+    "line": "9号线合川路站",
+    "note": "流光速卡丁车（p08）步行约10分钟"
+   }
+  ],
+  "safety": [
+   "攀岩：长发扎起、摘戒指手链、穿封闭式运动鞋，遵守馆内保护规则",
+   "密室/手作：提前电话确认双人开场与烧制件邮寄方式",
+   "国庆小马路（永康路/进贤路）午后人流上升，餐厅先取号再逛街",
+   "雨天路面湿滑，陕西南路—思南路一带注意非机动车"
+  ],
+  "customs": [
+   "手作工作室是居民区小店，保持安静、按预约时间到场",
+   "老马路弄堂口勿聚集拍照挡路",
+   "进贤路小馆翻台快，用餐完及时让座"
+  ]
+ },
+ "_geoFilled": true,
+ "_routeFilled": true
+}
