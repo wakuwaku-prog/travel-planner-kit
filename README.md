@@ -1,7 +1,7 @@
 # travel-planner-kit — 通用旅行规划网站模板
 
 > 一套「调研 → 攻略 → 高德路线 → 可部署网站」的完整方法包。方法本体与目的地数据解耦，拿到即可规划任意目的地；本仓库同时收录 **7 段实战行程**（见文末「已收录的行程」）。
-> 由厦门实战项目沉淀（原实例仓库 travel-site 保留作历史存档，全部数据已归并至本仓库）。
+> 由厦门实战项目沉淀。原独立实例仓库（travel-site / travel-site-nanjing / shanghai-daytrip）已全部合并进本仓库并删除，数据、攻略、导出物与调研原始产物均以本仓库为准。
 
 ## 它能干什么
 
@@ -31,10 +31,12 @@ travel-planner-kit/
 │   └── export/                # KML/GPX/routes.json 导出物
 ├── scripts/
 │   ├── build_site.py          # trip JSON → site/ 网站（含行程编辑器）
+│   ├── legacy/                # 一次性迁移脚本留档（patch_bookings / restructure_trip）
 │   └── amap/
 │       ├── fill_geo.py        # 坐标/POI ID/天气一键回填（按 geoQuery 搜索）
 │       ├── route_fill.py      # 逐日高德方向 API → 距离/耗时回填
 │       └── export_routes.py   # KML/GPX + polyline 路线导出
+├── history/                   # 历史站点快照（UI 重设计等，不参与建站）
 ├── site/                      # 生成后的网站（部署物）
 └── .github/workflows/deploy-pages.yml
 ```
@@ -138,8 +140,8 @@ git push origin main   # 自动构建并发布到 GitHub Pages
 | 南京 3 天 | 2026-10-02~04 | `data/trips/trip-nanjing-2026-10-02.json` | [攻略](guides/南京-nanjing-攻略.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/nanjing-2026-10-02.html) |
 | 厦门 3 天 2 晚 | 2026-09-18~20 | `data/trips/trip-xiamen-2026-09-18.json` | [攻略](guides/厦门-xiamen-攻略.md) | [页面](https://wakuwaku-prog.github.io/travel-planner-kit/xiamen-2026-09-18.html) |
 
-> 原独立实例仓库（travel-site / travel-site-nanjing 等）保留作历史存档，数据以本仓库为准。
-> 历史版本行程在 `data/trips/archive/`（不参与建站，仅留档）。
+> **单仓库策略**：原独立实例仓库（travel-site / travel-site-nanjing / shanghai-daytrip）已于 2026-10-23 合并进本仓库并删除。所有行程站点统一由本仓库 GitHub Pages 出页面（`<slug>-<日期>.html`），不再为单个目的地单独建站。
+> 历史版本行程在 `data/trips/archive/`（不参与建站，仅留档）；厦门原始调研产物在 `data/research/xiamen-*` 与 `data/raw/xiamen/`；2026-09-08 UI 重设计快照在 `history/2026-09-08-ui-redesign-v1/`。
 
 ## 许可
 

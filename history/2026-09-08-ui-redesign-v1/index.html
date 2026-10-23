@@ -1,0 +1,712 @@
+
+<!doctype html>
+<html lang='zh-CN'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>厦门 旅行攻略</title>
+<style>
+/* ===== 设计系统：潮汐 × 闽南砖瓦 ===== */
+:root{
+  --paper:#f7f9fb;            /* 海雾纸底（偏冷，非奶油） */
+  --ink:#12303d;              /* 深海墨蓝 */
+  --ink-soft:#4c6472;
+  --sea:#0e7490;              /* 主色：潮汐青 */
+  --sea-deep:#155e75;
+  --dusk:#e5725c;             /* 点缀：落日珊瑚（唯一强调色） */
+  --line:#dce7ec;
+  --card:#ffffff;
+  --glass:rgba(255,255,255,.86);
+  --shadow:0 1px 2px rgba(18,48,61,.05),0 8px 24px -12px rgba(18,48,61,.18);
+  --radius:16px;
+  --font-serif:"Noto Serif SC","Songti SC","STSong","SimSun",serif;
+  --font-sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-sans);background:var(--paper);color:var(--ink);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--font-serif);line-height:1.25;font-weight:700}
+a{color:var(--sea)}
+:focus-visible{outline:2px solid var(--dusk);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* ===== 页头：航线卡片式 hero ===== */
+header{position:relative;color:#fff;background:linear-gradient(135deg,#0f4c5c 0%,var(--sea) 55%,#0aa5a0 100%);padding:26px 22px 34px;overflow:hidden}
+header::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:26px;background:var(--paper);border-radius:100% 100% 0 0/100% 100% 0 0}
+header .hwrap{max-width:1180px;margin:0 auto;position:relative;z-index:1}
+header h1{margin:0;font-size:clamp(24px,4.6vw,34px);letter-spacing:.02em}
+header .sub{margin-top:8px;font-size:13.5px;opacity:.9;max-width:70ch}
+.metachips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.metachip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(4px);border-radius:999px;padding:4px 12px;font-size:12.5px}
+.metachip b{font-weight:600}
+
+/* ===== 栏目导航：吸顶玻璃条 ===== */
+.topbar{position:sticky;top:0;z-index:60;display:flex;gap:8px;align-items:center;background:var(--glass);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 14px;margin:0 -14px 18px;box-shadow:0 4px 16px -12px rgba(18,48,61,.2)}
+.topbar::-webkit-scrollbar{display:none}
+.pill{flex:0 0 auto;border:1px solid var(--line);background:#fff;color:var(--ink-soft);border-radius:999px;padding:8px 15px;font-size:13.5px;cursor:pointer;transition:all .18s ease;font-family:var(--font-sans)}
+.pill:hover{border-color:var(--sea);color:var(--sea);transform:translateY(-1px)}
+.pill.on{background:var(--sea);border-color:var(--sea);color:#fff;box-shadow:0 6px 16px -8px rgba(14,116,144,.55)}
+
+/* ===== 布局 ===== */
+.container{max-width:1180px;margin:0 auto;padding:0 14px 40px}
+.grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:20px;align-items:start}
+@media(max-width:960px){.grid{grid-template-columns:1fr}}
+
+/* ===== 面板 ===== */
+.panel{display:none}
+.panel.active{display:block;animation:panelIn .22s ease}
+@keyframes panelIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.panel>h2{font-size:21px;margin:2px 0 14px;color:var(--ink)}
+.panel>h3{font-size:16px;margin:18px 0 8px;color:var(--ink)}
+.note{font-size:13px;color:var(--ink-soft);line-height:1.7}
+
+/* ===== 卡片通用 ===== */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;margin-bottom:16px;box-shadow:var(--shadow)}
+
+/* ===== 每日行程：时间线 ===== */
+.daycard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 10px;margin-bottom:16px;box-shadow:var(--shadow);cursor:pointer;transition:border-color .2s, box-shadow .2s}
+.daycard:hover{border-color:var(--sea)}
+.daycard.on{border-color:var(--sea);box-shadow:0 12px 28px -14px rgba(14,116,144,.35)}
+.dayhead{display:flex;align-items:flex-start;gap:12px}
+.daynum{flex:0 0 auto;width:44px;height:44px;border-radius:14px;background:linear-gradient(145deg,var(--sea),var(--sea-deep));color:#fff;font-family:var(--font-serif);font-weight:700;font-size:17px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 14px -6px rgba(21,94,117,.5)}
+.dh-txt{min-width:0}
+.dh-txt h2{margin:2px 0 2px;font-size:17px}
+.daymeta{font-size:12.5px;color:var(--ink-soft)}
+ol.poilist{list-style:none;margin:12px 0 4px;padding:0;position:relative}
+ol.poilist li{position:relative;padding:8px 0 8px 26px;border-bottom:1px dashed var(--line)}
+ol.poilist li:last-child{border-bottom:none}
+ol.poilist li::before{content:"";position:absolute;left:7px;top:16px;width:8px;height:8px;border-radius:50%;background:var(--sea);opacity:.85}
+ol.poilist li::after{content:"";position:absolute;left:10px;top:28px;bottom:-6px;width:2px;background:linear-gradient(var(--sea),rgba(14,116,144,.15))}
+ol.poilist li:last-child::after{display:none}
+ol.poilist b{color:var(--sea);white-space:nowrap;font-size:12.5px;margin-right:8px;font-weight:600}
+.nav-mini{flex:0 0 auto;font-size:12px;color:var(--sea);text-decoration:none;border:1px solid #bfdce6;padding:2px 10px;border-radius:999px;margin-left:8px;transition:all .15s}
+.nav-mini:hover{background:var(--sea);color:#fff}
+.routeinfo{font-size:12.5px;color:var(--ink-soft);background:#eef6f9;border-radius:8px;padding:6px 10px;display:inline-block;margin:6px 0 2px}
+.notes{font-size:13px;color:var(--ink-soft);margin:6px 0 10px}
+
+/* ===== POI / 酒店 / 餐厅卡片 ===== */
+.poi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px;box-shadow:var(--shadow);position:relative;transition:transform .15s,box-shadow .15s}
+.poi:hover{transform:translateY(-2px);box-shadow:0 14px 30px -16px rgba(18,48,61,.28)}
+.poi::before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:3px;border-radius:3px;background:linear-gradient(var(--sea),var(--dusk));opacity:.85}
+.poi h3{margin:0 0 4px;font-size:16px;padding-left:6px}
+.poi .src{font-size:12px;color:var(--ink-soft);font-weight:400;font-family:var(--font-sans)}
+.poi .meta{color:var(--ink-soft);font-size:13px;padding-left:6px}
+.poi p{padding-left:6px;margin:6px 0}
+.tag{display:inline-block;background:#eef4f9;color:var(--sea-deep);font-size:12px;padding:2px 10px;border-radius:999px;margin:2px 4px 2px 0}
+.actions{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;padding-left:6px}
+.actions .nav{display:inline-block;text-decoration:none;background:var(--sea);color:#fff;padding:6px 14px;border-radius:999px;font-size:13px;transition:all .15s}
+.actions .nav:hover{background:var(--sea-deep);transform:translateY(-1px)}
+.actions .nav[style*="b06ae0"],.actions .nav[style*="background:#b06ae0"]{background:#8b5cf6}
+.actions .nav[style*="b06ae0"]:hover{background:#7c3aed}
+.sources{font-size:12px;color:var(--ink-soft);padding-left:6px;margin-top:6px}
+.sources a{color:var(--sea);text-decoration:none;margin-right:8px}
+
+/* ===== 地图 ===== */
+#mapwrap{position:sticky;top:70px;height:calc(100vh - 90px);min-height:420px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+#map{width:100%;height:100%}
+.mlegend{position:absolute;top:10px;left:10px;z-index:20;background:var(--glass);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:10px;padding:6px 10px;font-size:11.5px;color:var(--ink-soft);box-shadow:0 4px 12px -6px rgba(18,48,61,.25);pointer-events:none}
+.mlegend i{display:inline-block;width:14px;height:4px;border-radius:2px;margin-right:4px;vertical-align:middle}
+.mlegend i.p{background:var(--sea)}
+.mlegend i.l{background:var(--sea);opacity:.5}
+
+/* ===== 地图标注 ===== */
+.seqmarker{width:28px;height:28px;border-radius:50%;background:var(--sea);color:#fff;font-size:13px;font-weight:700;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 8px rgba(18,48,61,.3)}
+.poilabel{font-size:12px;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:8px;padding:2px 8px;color:var(--ink);white-space:nowrap;box-shadow:0 2px 6px -2px rgba(18,48,61,.2)}
+.hotelmark{width:28px;height:28px;border-radius:50%;background:#8b5cf6;color:#fff;font-size:15px;text-align:center;line-height:28px;box-shadow:0 0 0 2px #fff,0 2px 8px rgba(18,48,61,.3)}
+
+/* ===== 顺序导航底部栏（玻璃） ===== */
+#navbar{position:sticky;bottom:10px;left:0;right:0;z-index:50;background:var(--glass);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:14px;padding:10px 14px;display:flex;flex-direction:column;gap:8px;box-shadow:0 8px 30px -12px rgba(18,48,61,.35);margin:0 4px}
+#navbar .navhead{font-weight:700;font-size:14px;color:var(--ink);display:flex;align-items:center;gap:8px}
+#navbar .navhead::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--dusk)}
+#navbar .navtip{font-weight:400;color:var(--ink-soft);font-size:11.5px}
+#navbar .chips{display:flex;gap:6px;flex-wrap:wrap}
+#navbar .chip{font-size:12.5px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;transition:all .15s}
+#navbar .chip:hover{border-color:var(--sea)}
+#navbar .chip.cur{background:var(--sea);color:#fff;border-color:var(--sea)}
+#navbar .navctl{display:flex;gap:8px;align-items:center}
+#navbar .navctl button{font-size:13px;padding:7px 14px;border-radius:10px;border:1px solid #bfdce6;background:#fff;color:var(--sea);cursor:pointer;transition:all .15s;font-family:var(--font-sans)}
+#navbar .navctl button:hover{background:var(--sea);color:#fff}
+
+/* ===== 手机端 ===== */
+@media(max-width:960px){
+  .topbar{flex-wrap:nowrap;overflow-x:auto;padding:10px 12px;margin:0 -14px 12px;scrollbar-width:none}
+  .grid{display:flex;flex-direction:column}
+  #mapwrap{order:-1;position:sticky;top:52px;height:44vh;min-height:300px}
+  #navbar{position:fixed;left:8px;right:8px;bottom:8px}
+  body{padding-bottom:120px}
+  .poilist li{padding:8px 0 8px 24px}
+}
+@media(max-width:560px){
+  .dayhead{gap:10px}
+  .daynum{width:38px;height:38px;font-size:15px;border-radius:12px}
+}
+</style></head><body>
+<header><div class='hwrap'>
+  <h1>厦门 之旅</h1>
+  <div class='sub'>厦门 · 3天 · 出发上海 · 2人 · 自然风光/人文历史/美食/海岛度假</div>
+  <div class='metachips'><span class='metachip'><b>游玩</b> 3 天</span><span class='metachip'><b>日期</b> 2026-09-18 ~ 2026-09-20</span><span class='metachip'><b>出发</b> 上海</span><span class='metachip'><b>人数</b> 2人</span><span class='metachip'><b>预算</b> 舒适</span><span class='metachip'><b>偏好</b> 自然风光 / 人文历史 / 美食 / 海岛度假</span><span class='metachip'><b>节奏</b> 均衡</span></div>
+</div></header>
+<div class='container'>
+  <div class='topbar'>
+    <button class='pill on' data-panel='trip'>📅 行程</button>
+    <button class='pill' data-panel='stays'>🏨 住宿推荐</button>
+    <button class='pill' data-panel='spots'>📍 景点指南</button>
+    <button class='pill' data-panel='food'>🍜 餐饮指南</button>
+    <button class='pill' data-panel='exp'>🎨 特色体验</button>
+    <button class='pill' data-panel='prep'>🎒 出发前准备</button>
+    <button class='pill' data-panel='tips'>⚠️ 旅行提醒</button>
+    <button class='pill' data-panel='srcs'>📚 资料来源</button>
+    <button class='pill' data-panel='import'>📦 导入路线</button>
+  </div>
+  <div class='grid'>
+    <div>
+      <div id='panel-trip' class='panel active'>
+            <section class='daycard' id='day-1' data-day='1'>
+              <div class='dayhead'>
+                <div class='daynum'>D1</div>
+                <div class='dh-txt'>
+                  <h2>老城烟火+集美学村（1号线沿线）</h2>
+                  <div class='daymeta'>2026-09-18 · 中山路/八市/集美 · 约23.7 km / 约62.5 min / 地铁1号线+步行</div>
+                </div>
+              </div>
+              <ol class='poilist'><li><b>09:00-11:00</b> 中山路步行街<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.081903,24.454104,%E4%B8%AD%E5%B1%B1%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97&mode=car&callnative=1'>导航</a></li><li><b>11:00-12:30</b> 厦门八市（营平菜市场）<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.075017,24.457902,%E5%8E%A6%E9%97%A8%E5%85%AB%E5%B8%82%EF%BC%88%E8%90%A5%E5%B9%B3%E8%8F%9C%E5%B8%82%E5%9C%BA%EF%BC%89&mode=car&callnative=1'>导航</a></li><li><b>12:30-13:30</b> 老溪岸沙茶面<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.088955,24.461247,%E8%80%81%E6%BA%AA%E5%B2%B8%E6%B2%99%E8%8C%B6%E9%9D%A2&mode=car&callnative=1'>导航</a></li><li><b>14:00-17:30</b> 集美学村<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.103353,24.572373,%E9%9B%86%E7%BE%8E%E5%AD%A6%E6%9D%91&mode=car&callnative=1'>导航</a></li><li><b>17:30-19:00</b> 十里长堤（集美）<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.089475,24.563722,%E5%8D%81%E9%87%8C%E9%95%BF%E5%A0%A4%EF%BC%88%E9%9B%86%E7%BE%8E%EF%BC%89&mode=car&callnative=1'>导航</a></li></ol>
+              <p class='notes'>八市看热闹别乱买海鲜；集美学村值得慢逛</p>
+            </section>
+
+            <section class='daycard' id='day-2' data-day='2'>
+              <div class='dayhead'>
+                <div class='daynum'>D2</div>
+                <div class='dh-txt'>
+                  <h2>山海环岛：植物园→厦大→环岛路</h2>
+                  <div class='daymeta'>2026-09-19 · 思明东南 · 约55.17 km / 约107.5 min / driving</div>
+                </div>
+              </div>
+              <ol class='poilist'><li><b>08:30-11:30</b> 厦门园林植物园<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.109277,24.447728,%E5%8E%A6%E9%97%A8%E5%9B%AD%E6%9E%97%E6%A4%8D%E7%89%A9%E5%9B%AD&mode=car&callnative=1'>导航</a></li><li><b>11:30-13:00</b> 南普陀寺<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.095336,24.440836,%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA&mode=car&callnative=1'>导航</a></li><li><b>13:00-13:40</b> 顶澳仔猫街<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.091662,24.440171,%E9%A1%B6%E6%BE%B3%E4%BB%94%E7%8C%AB%E8%A1%97&mode=car&callnative=1'>导航</a></li><li><b>13:40-14:40</b> 沙坡尾艺术西区<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.087587,24.437609,%E6%B2%99%E5%9D%A1%E5%B0%BE%E8%89%BA%E6%9C%AF%E8%A5%BF%E5%8C%BA&mode=car&callnative=1'>导航</a></li><li><b>15:00-16:00</b> 白城沙滩<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.100875,24.432281,%E7%99%BD%E5%9F%8E%E6%B2%99%E6%BB%A9&mode=car&callnative=1'>导航</a></li><li><b>16:00-17:00</b> 演武大桥观景台<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.087789,24.435421,%E6%BC%94%E6%AD%A6%E5%A4%A7%E6%A1%A5%E8%A7%82%E6%99%AF%E5%8F%B0&mode=car&callnative=1'>导航</a></li><li><b>17:00-18:30</b> 环岛路（白城→黄厝）<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.142325,24.431453,%E7%8E%AF%E5%B2%9B%E8%B7%AF%EF%BC%88%E7%99%BD%E5%9F%8E%E2%86%92%E9%BB%84%E5%8E%9D%EF%BC%89&mode=car&callnative=1'>导航</a></li><li><b>18:30-19:30</b> 黄厝海滩<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.228083,24.64782,%E9%BB%84%E5%8E%9D%E6%B5%B7%E6%BB%A9&mode=car&callnative=1'>导航</a></li></ol>
+              <p class='notes'>植物园西门进；南普陀需预约；沙坡尾拍照打卡</p>
+            </section>
+
+            <section class='daycard' id='day-3' data-day='3'>
+              <div class='dayhead'>
+                <div class='daynum'>D3</div>
+                <div class='dh-txt'>
+                  <h2>鼓浪屿全日：码头→三大片区</h2>
+                  <div class='daymeta'>2026-09-20 · 鼓浪屿 · 约13.75 km / 约118.7 min / 步行</div>
+                </div>
+              </div>
+              <ol class='poilist'><li><b>07:30-08:30</b> 东渡邮轮码头<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.077007,24.49397,%E4%B8%9C%E6%B8%A1%E9%82%AE%E8%BD%AE%E7%A0%81%E5%A4%B4&mode=car&callnative=1'>导航</a></li><li><b>09:30-11:00</b> 日光岩<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.067310,24.442228,%E6%97%A5%E5%85%89%E5%B2%A9&mode=car&callnative=1'>导航</a></li><li><b>11:00-12:30</b> 菽庄花园+钢琴博物馆<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.069520,24.439035,%E8%8F%BD%E5%BA%84%E8%8A%B1%E5%9B%AD%2B%E9%92%A2%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86&mode=car&callnative=1'>导航</a></li><li><b>12:30-13:30</b> 鼓浪屿（全岛）<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.066102,24.446214,%E9%BC%93%E6%B5%AA%E5%B1%BF%EF%BC%88%E5%85%A8%E5%B2%9B%EF%BC%89&mode=car&callnative=1'>导航</a></li><li><b>13:30-15:00</b> 八卦楼（风琴博物馆）<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.068263,24.447422,%E5%85%AB%E5%8D%A6%E6%A5%BC%EF%BC%88%E9%A3%8E%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86%EF%BC%89&mode=car&callnative=1'>导航</a></li><li><b>16:00-17:30</b> 大德记沙滩+皓月园<a class='nav-mini' href='https://uri.amap.com/navigation?to=118.075936,24.441099,%E5%A4%A7%E5%BE%B7%E8%AE%B0%E6%B2%99%E6%BB%A9%2B%E7%9A%93%E6%9C%88%E5%9B%AD&mode=car&callnative=1'>导航</a></li></ol>
+              <p class='notes'>船票提前10天买；日光岩早去；八卦楼需预约场次</p>
+            </section>
+        <div class='card note'>点选任意一天查看当日线路；在地图上点击编号可直达高德导航。住宿区域用紫色圈标出，不在逐日路线内。</div>
+      </div>
+      <div id='panel-spots' class='panel'><h2>📍 景点指南</h2>
+    <article class='poi' id='poi-p01' data-lng='118.066102' data-lat='24.446214'>
+      <label class='check'><input type='checkbox' checked data-id='p01'> 加入当日行程</label>
+      <h3>鼓浪屿（全岛） <span class='src'>厦门市思明区鼓浪屿</span></h3>
+      <div class='meta'>轮渡 7:00-18:30 左右 · 船票35元(普通)/80元(豪华)，回程免费 · 世界遗产 / 万国建筑 / 琴岛</div>
+      <p>主码头东渡；船票小程序购；不要信路边拉客</p>
+      <span class='tag'>世界遗产</span> <span class='tag'>万国建筑</span> <span class='tag'>琴岛</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.066102,24.446214,%E9%BC%93%E6%B5%AA%E5%B1%BF%EF%BC%88%E5%85%A8%E5%B2%9B%EF%BC%89&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p01' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p16' data-lng='118.067310' data-lat='24.442228'>
+      <label class='check'><input type='checkbox' checked data-id='p16'> 加入当日行程</label>
+      <h3>日光岩 <span class='src'>鼓浪屿</span></h3>
+      <div class='meta'>8:00-17:30 · 单买50元/联票含 · 登顶 / 俯瞰全岛</div>
+      <p>节假日排队严重，建议早去或傍晚</p>
+      <span class='tag'>登顶</span> <span class='tag'>俯瞰全岛</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.067310,24.442228,%E6%97%A5%E5%85%89%E5%B2%A9&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p16' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p17' data-lng='118.069520' data-lat='24.439035'>
+      <label class='check'><input type='checkbox' checked data-id='p17'> 加入当日行程</label>
+      <h3>菽庄花园+钢琴博物馆 <span class='src'>鼓浪屿</span></h3>
+      <div class='meta'>8:00-17:30 · 单买30元/联票含 · 园林 / 钢琴</div>
+      <p>钢琴博物馆有免费演奏，卡好时间</p>
+      <span class='tag'>园林</span> <span class='tag'>钢琴</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.069520,24.439035,%E8%8F%BD%E5%BA%84%E8%8A%B1%E5%9B%AD%2B%E9%92%A2%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p17' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p18' data-lng='118.068263' data-lat='24.447422'>
+      <label class='check'><input type='checkbox' checked data-id='p18'> 加入当日行程</label>
+      <h3>八卦楼（风琴博物馆） <span class='src'>鼓浪屿</span></h3>
+      <div class='meta'>8:30-17:30 · 联票含/单约免费 · 管风琴 / 红顶</div>
+      <p>每天有管风琴演奏；有免费讲解</p>
+      <span class='tag'>管风琴</span> <span class='tag'>红顶</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.068263,24.447422,%E5%85%AB%E5%8D%A6%E6%A5%BC%EF%BC%88%E9%A3%8E%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86%EF%BC%89&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p18' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p20' data-lng='118.075936' data-lat='24.441099'>
+      <label class='check'><input type='checkbox' checked data-id='p20'> 加入当日行程</label>
+      <h3>大德记沙滩+皓月园 <span class='src'>鼓浪屿东南</span></h3>
+      <div class='meta'>全天 · 免费(皓月园门票另计) · 日落 / 郑成功像 / 双子塔同框</div>
+      <p>退潮礁石注意防滑</p>
+      <span class='tag'>日落</span> <span class='tag'>郑成功像</span> <span class='tag'>双子塔同框</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.075936,24.441099,%E5%A4%A7%E5%BE%B7%E8%AE%B0%E6%B2%99%E6%BB%A9%2B%E7%9A%93%E6%9C%88%E5%9B%AD&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p20' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p02' data-lng='118.081903' data-lat='24.454104'>
+      <label class='check'><input type='checkbox' checked data-id='p02'> 加入当日行程</label>
+      <h3>中山路步行街 <span class='src'>厦门市思明区中山路</span></h3>
+      <div class='meta'>全天 · 免费 · 骑楼 / 步行街</div>
+      <p>老虎城四楼天台可拍全景(10元)；中华城免费</p>
+      <span class='tag'>骑楼</span> <span class='tag'>步行街</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.081903,24.454104,%E4%B8%AD%E5%B1%B1%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p02' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p11' data-lng='118.075017' data-lat='24.457902'>
+      <label class='check'><input type='checkbox' checked data-id='p11'> 加入当日行程</label>
+      <h3>厦门八市（营平菜市场） <span class='src'>厦门市思明区营平路</span></h3>
+      <div class='meta'>全天 · 免费 · 水产市场 / 小吃</div>
+      <p>看热闹为主，海鲜加工慎重；阿杰五香等小吃在此</p>
+      <span class='tag'>水产市场</span> <span class='tag'>小吃</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.075017,24.457902,%E5%8E%A6%E9%97%A8%E5%85%AB%E5%B8%82%EF%BC%88%E8%90%A5%E5%B9%B3%E8%8F%9C%E5%B8%82%E5%9C%BA%EF%BC%89&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p11' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p08' data-lng='118.103353' data-lat='24.572373'>
+      <label class='check'><input type='checkbox' checked data-id='p08'> 加入当日行程</label>
+      <h3>集美学村 <span class='src'>厦门市集美区</span></h3>
+      <div class='meta'>全天 · 免费 · 嘉庚建筑 / 海上地铁</div>
+      <p>地铁1号线直达；龙舟池/鳌园/嘉庚故居/大社戏台</p>
+      <span class='tag'>嘉庚建筑</span> <span class='tag'>海上地铁</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.103353,24.572373,%E9%9B%86%E7%BE%8E%E5%AD%A6%E6%9D%91&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p08' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p15' data-lng='118.089475' data-lat='24.563722'>
+      <label class='check'><input type='checkbox' checked data-id='p15'> 加入当日行程</label>
+      <h3>十里长堤（集美） <span class='src'>厦门市集美区</span></h3>
+      <div class='meta'>全天 · 免费 · 日落 / 夜市 / 乐队</div>
+      <p>地铁穿海+日落+不定期免费演出</p>
+      <span class='tag'>日落</span> <span class='tag'>夜市</span> <span class='tag'>乐队</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.089475,24.563722,%E5%8D%81%E9%87%8C%E9%95%BF%E5%A0%A4%EF%BC%88%E9%9B%86%E7%BE%8E%EF%BC%89&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p15' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.xiaohongshu.com/search_result/695b6c51000000001a02654d?xsec_token=ABgWzQMHns3t9w_s7YHgkXivEMJl_f82wVHMy2KwKM4M0=&xsec_source='>厦门3天2夜攻略🌊人均2k+玩到爽！</a></div>
+    </article>
+
+    <article class='poi' id='poi-p04' data-lng='118.109277' data-lat='24.447728'>
+      <label class='check'><input type='checkbox' checked data-id='p04'> 加入当日行程</label>
+      <h3>厦门园林植物园 <span class='src'>厦门市思明区虎园路</span></h3>
+      <div class='meta'>6:30-18:00 · 约30元 · 雨林世界 / 多肉</div>
+      <p>西门进+观光车；雨林喷雾8:00-9:30/15:00-16:30</p>
+      <span class='tag'>雨林世界</span> <span class='tag'>多肉</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.109277,24.447728,%E5%8E%A6%E9%97%A8%E5%9B%AD%E6%9E%97%E6%A4%8D%E7%89%A9%E5%9B%AD&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p04' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p05' data-lng='118.095336' data-lat='24.440836'>
+      <label class='check'><input type='checkbox' checked data-id='p05'> 加入当日行程</label>
+      <h3>南普陀寺 <span class='src'>厦门市思明区思明南路</span></h3>
+      <div class='meta'>8:00-17:00 · 免费 · 闽南佛教 / 素饼</div>
+      <p>东门进长津阁石阶20分钟到免费观景台；西门出接猫街</p>
+      <span class='tag'>闽南佛教</span> <span class='tag'>素饼</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.095336,24.440836,%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p05' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p14' data-lng='118.091662' data-lat='24.440171'>
+      <label class='check'><input type='checkbox' checked data-id='p14'> 加入当日行程</label>
+      <h3>顶澳仔猫街 <span class='src'>厦门市思明区顶澳仔路</span></h3>
+      <div class='meta'>全天 · 免费 · 猫咪涂鸦 / 拍照</div>
+      <p>无真猫，涂鸦打卡地</p>
+      <span class='tag'>猫咪涂鸦</span> <span class='tag'>拍照</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.091662,24.440171,%E9%A1%B6%E6%BE%B3%E4%BB%94%E7%8C%AB%E8%A1%97&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p14' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p03' data-lng='118.087587' data-lat='24.437609'>
+      <label class='check'><input type='checkbox' checked data-id='p03'> 加入当日行程</label>
+      <h3>沙坡尾艺术西区 <span class='src'>厦门市思明区大学路</span></h3>
+      <div class='meta'>全天 · 免费 · 文艺 / 老渔港</div>
+      <p>彩虹墙在艺术西区2楼天台；拍照为主</p>
+      <span class='tag'>文艺</span> <span class='tag'>老渔港</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.087587,24.437609,%E6%B2%99%E5%9D%A1%E5%B0%BE%E8%89%BA%E6%9C%AF%E8%A5%BF%E5%8C%BA&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p03' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p06' data-lng='118.100875' data-lat='24.432281'>
+      <label class='check'><input type='checkbox' checked data-id='p06'> 加入当日行程</label>
+      <h3>白城沙滩 <span class='src'>厦门市思明区环岛南路</span></h3>
+      <div class='meta'>全天 · 免费 · 沙滩 / 日落</div>
+      <p>日落分神级；人较多</p>
+      <span class='tag'>沙滩</span> <span class='tag'>日落</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.100875,24.432281,%E7%99%BD%E5%9F%8E%E6%B2%99%E6%BB%A9&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p06' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p13' data-lng='118.087789' data-lat='24.435421'>
+      <label class='check'><input type='checkbox' checked data-id='p13'> 加入当日行程</label>
+      <h3>演武大桥观景台 <span class='src'>厦门市思明区环岛南路</span></h3>
+      <div class='meta'>全天 · 免费 · 海景 / 双子塔机位</div>
+      <p>拍世茂双子塔经典机位</p>
+      <span class='tag'>海景</span> <span class='tag'>双子塔机位</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.087789,24.435421,%E6%BC%94%E6%AD%A6%E5%A4%A7%E6%A1%A5%E8%A7%82%E6%99%AF%E5%8F%B0&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p13' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p07' data-lng='118.142325' data-lat='24.431453'>
+      <label class='check'><input type='checkbox' checked data-id='p07'> 加入当日行程</label>
+      <h3>环岛路（白城→黄厝） <span class='src'>厦门市思明区环岛路</span></h3>
+      <div class='meta'>全天 · 免费 · 骑行 / 海景</div>
+      <p>可29路公交1元走全程；黄厝日出/日落均可</p>
+      <span class='tag'>骑行</span> <span class='tag'>海景</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.142325,24.431453,%E7%8E%AF%E5%B2%9B%E8%B7%AF%EF%BC%88%E7%99%BD%E5%9F%8E%E2%86%92%E9%BB%84%E5%8E%9D%EF%BC%89&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p07' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article>
+
+    <article class='poi' id='poi-p10' data-lng='118.228083' data-lat='24.64782'>
+      <label class='check'><input type='checkbox' checked data-id='p10'> 加入当日行程</label>
+      <h3>黄厝海滩 <span class='src'>厦门市思明区环岛南路</span></h3>
+      <div class='meta'>全天 · 免费 · 日落 / 人少</div>
+      <p>看日落最佳；附近海边咖啡馆多</p>
+      <span class='tag'>日落</span> <span class='tag'>人少</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.228083,24.64782,%E9%BB%84%E5%8E%9D%E6%B5%B7%E6%BB%A9&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p10' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a><br><a href='https://www.bilibili.com/video/BV1dbyFBBE9X'>厦门人眼中的厦门攻略，拒绝人挤人踩大坑！</a></div>
+    </article>
+
+    <article class='poi' id='poi-p12' data-lng='118.102223' data-lat='24.460383'>
+      <label class='check'><input type='checkbox'  data-id='p12'> 加入当日行程</label>
+      <h3>厦门铁路文化公园 <span class='src'>厦门市思明区</span></h3>
+      <div class='meta'>全天 · 免费 · 老铁路 / 免费</div>
+      <p>可选：大生里段穿鸿山隧道；时间紧可跳过</p>
+      <span class='tag'>老铁路</span> <span class='tag'>免费</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.102223,24.460383,%E5%8E%A6%E9%97%A8%E9%93%81%E8%B7%AF%E6%96%87%E5%8C%96%E5%85%AC%E5%9B%AD&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p12' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a></div>
+    </article>
+
+    <article class='poi' id='poi-p21' data-lng='118.077007' data-lat='24.49397'>
+      <label class='check'><input type='checkbox' checked data-id='p21'> 加入当日行程</label>
+      <h3>东渡邮轮码头 <span class='src'>厦门市思明区东渡路</span></h3>
+      <div class='meta'>随班次 · — · 船票 / 码头</div>
+      <p>提前到码头取票/刷码</p>
+      <span class='tag'>船票</span> <span class='tag'>码头</span>
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.077007,24.49397,%E4%B8%9C%E6%B8%A1%E9%82%AE%E8%BD%AE%E7%A0%81%E5%A4%B4&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='p21' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV1UCrVBRELu'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div>
+    </article></div>
+      <div id='panel-food' class='panel'><h2>🍜 餐饮指南</h2><div class='note'>老溪岸沙茶面（沙茶面，约¥25） / 阿忠食坊大排档·20年老店(万象城店)（海蛎煎，约¥50） / 百赞姜母鸭(思明南路店)（姜母鸭，约¥80） / 黄则和花生汤(中山路总店)（花生汤，约¥30）<p style='margin-top:8px'>共 4 家候选（坐标来自高德 POI，人均为估算）</p><div style='margin-top:10px'>
+    <article class='poi' id='poi-r01' data-lng='118.088955' data-lat='24.461247'>
+      <label class='check'><input type='checkbox' checked data-id='r01'> 加入当日行程</label>
+      <h3>老溪岸沙茶面 <span class='src'>溪岸路224号</span></h3>
+      <div class='meta'>厦门 沙茶面 · 人均约¥25</div>
+      <p></p>
+      
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.088955,24.461247,%E8%80%81%E6%BA%AA%E5%B2%B8%E6%B2%99%E8%8C%B6%E9%9D%A2&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='r01' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV12d3NzzEEE'>厦门本地人推荐的24小时美食小店盘点</a><br><a href='https://www.bilibili.com/video/BV14oR5YYE1K'>挑战成为厦门本地人，在店里吃遍全厦超全美食攻略</a></div>
+    </article>
+
+    <article class='poi' id='poi-r02' data-lng='118.10943' data-lat='24.471967'>
+      <label class='check'><input type='checkbox' checked data-id='r02'> 加入当日行程</label>
+      <h3>阿忠食坊大排档·20年老店(万象城店) <span class='src'>金榜路111之一(湖滨东路地铁站2号口步行230米)</span></h3>
+      <div class='meta'>厦门 海蛎煎 · 人均约¥50</div>
+      <p></p>
+      
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.10943,24.471967,%E9%98%BF%E5%BF%A0%E9%A3%9F%E5%9D%8A%E5%A4%A7%E6%8E%92%E6%A1%A3%C2%B720%E5%B9%B4%E8%80%81%E5%BA%97%28%E4%B8%87%E8%B1%A1%E5%9F%8E%E5%BA%97%29&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='r02' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV12d3NzzEEE'>厦门本地人推荐的24小时美食小店盘点</a><br><a href='https://www.bilibili.com/video/BV14oR5YYE1K'>挑战成为厦门本地人，在店里吃遍全厦超全美食攻略</a></div>
+    </article>
+
+    <article class='poi' id='poi-r03' data-lng='118.085495' data-lat='24.44611'>
+      <label class='check'><input type='checkbox' checked data-id='r03'> 加入当日行程</label>
+      <h3>百赞姜母鸭(思明南路店) <span class='src'>思明南路391号</span></h3>
+      <div class='meta'>厦门 姜母鸭 · 人均约¥80</div>
+      <p></p>
+      
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.085495,24.44611,%E7%99%BE%E8%B5%9E%E5%A7%9C%E6%AF%8D%E9%B8%AD%28%E6%80%9D%E6%98%8E%E5%8D%97%E8%B7%AF%E5%BA%97%29&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='r03' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV12d3NzzEEE'>厦门本地人推荐的24小时美食小店盘点</a><br><a href='https://www.bilibili.com/video/BV14oR5YYE1K'>挑战成为厦门本地人，在店里吃遍全厦超全美食攻略</a></div>
+    </article>
+
+    <article class='poi' id='poi-r04' data-lng='118.076185' data-lat='24.453358'>
+      <label class='check'><input type='checkbox' checked data-id='r04'> 加入当日行程</label>
+      <h3>黄则和花生汤(中山路总店) <span class='src'>中山路22-24号</span></h3>
+      <div class='meta'>厦门 花生汤 · 人均约¥30</div>
+      <p></p>
+      
+      <div class='actions'>
+        <a class='nav' href='https://uri.amap.com/navigation?to=118.076185,24.453358,%E9%BB%84%E5%88%99%E5%92%8C%E8%8A%B1%E7%94%9F%E6%B1%A4%28%E4%B8%AD%E5%B1%B1%E8%B7%AF%E6%80%BB%E5%BA%97%29&mode=car&callnative=1' target='_blank'>🧭 高德导航</a>
+        <a class='detail' target='_blank' data-poi='r04' href='javascript:;'>详情</a>
+      </div>
+      <div class='sources'><a href='https://www.bilibili.com/video/BV12d3NzzEEE'>厦门本地人推荐的24小时美食小店盘点</a><br><a href='https://www.bilibili.com/video/BV14oR5YYE1K'>挑战成为厦门本地人，在店里吃遍全厦超全美食攻略</a></div>
+    </article></div></div></div>
+      <div id='panel-stays' class='panel'><h2>🏨 住宿推荐（按区域）</h2><article class='poi'><h3>🏠 镇海路片区 ⭐推荐 <span class='src'>区域</span></h3><div class='meta'>思明区镇海路（中山路/沙坡尾/轮渡码头都近）</div><div class='meta'>适合：第一次来厦门、以老城步行为主的行程 · 舒适档（示例）</div><p>小红书高赞帖推荐：去中山路、沙坡尾、码头都超方便</p><div class='meta' style='color:#7b56a0'>候选示例：</div><p style='font-size:13px;color:#556'>延鹭客栈(厦门中山路店)</p><div class='actions'><a class='nav' href='https://uri.amap.com/navigation?to=118.085491,24.451308,%E9%95%87%E6%B5%B7%E8%B7%AF%E7%89%87%E5%8C%BA&mode=car&callnative=1' target='_blank'>🧭 高德导航</a> <a class='nav' style='background:#b06ae0' href='https://uri.amap.com/poidetail?poiid=B0FFGJYAEB&callnative=1&src=travelsite' target='_blank'>⭐ 收藏</a></div><div class='sources'><a href='https://www.xiaohongshu.com/search_result/695b6c51000000001a02654d?xsec_token=ABgWzQMHns3t9w_s7YHgkXivEMJl_f82wVHMy2KwKM4M0=&amp;xsec_source=' target='_blank'>📎 厦门3天2夜攻略🌊人均2k+玩到爽！</a></div></article>
+<article class='poi'><h3>🏠 中山路/八市片区 <span class='src'>区域</span></h3><div class='meta'>中山路、大同路、开禾路一带（八市旁）</div><div class='meta'>适合：喜欢烟火气、吃吃喝喝为主的游客 · 热闹地段，节假日偏贵</div><p>视频建议：中山路是地理核心，逛吃八市最方便；嫌贵可退一步住文灶/厦门站区域</p><div class='meta' style='color:#7b56a0'>候选示例：</div><p style='font-size:13px;color:#556'>文灶地铁站片区（备选）</p><div class='actions'><a class='nav' href='https://uri.amap.com/navigation?to=118.075017,24.457902,%E4%B8%AD%E5%B1%B1%E8%B7%AF/%E5%85%AB%E5%B8%82%E7%89%87%E5%8C%BA&mode=car&callnative=1' target='_blank'>🧭 高德导航</a> <a class='nav' style='background:#b06ae0' href='https://uri.amap.com/poidetail?poiid=B0I0ZAB1HM&callnative=1&src=travelsite' target='_blank'>⭐ 收藏</a></div><div class='sources'><a href='https://www.bilibili.com/video/BV1UCrVBRELu' target='_blank'>📎 厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div></article>
+<article class='poi'><h3>🏠 环岛路·黄厝靠海片区 <span class='src'>区域</span></h3><div class='meta'>黄厝海滩/环岛南路沿线</div><div class='meta'>适合：想看海、看日出，不赶景点的人 · 海边民宿/酒店（度假感）</div><p>视频建议：黄厝海滩是日出绝佳点，住这免早起奔波；周边海边咖啡馆多</p><div class='actions'><a class='nav' href='https://uri.amap.com/navigation?to=118.228083,24.64782,%E7%8E%AF%E5%B2%9B%E8%B7%AF%C2%B7%E9%BB%84%E5%8E%9D%E9%9D%A0%E6%B5%B7%E7%89%87%E5%8C%BA&mode=car&callnative=1' target='_blank'>🧭 高德导航</a> <a class='nav' style='background:#b06ae0' href='https://uri.amap.com/poidetail?poiid=B0G17HVLES&callnative=1&src=travelsite' target='_blank'>⭐ 收藏</a></div><div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm' target='_blank'>📎 套路多、花费高、体验差？厦门3天2晚旅游攻略</a></div></article>
+<article class='poi'><h3>🏠 厦大/白城片区 ⭐推荐 <span class='src'>区域</span></h3><div class='meta'>厦大西村、白城沙滩、猫街一带</div><div class='meta'>适合：行程以植物园-厦大-环岛路为主的游客 · 校园周边，价位适中</div><p>靠近植物园西门/南普陀/厦大/白城，D2 山海环岛当日走动最少</p><div class='actions'><a class='nav' href='https://uri.amap.com/navigation?to=118.100875,24.432281,%E5%8E%A6%E5%A4%A7/%E7%99%BD%E5%9F%8E%E7%89%87%E5%8C%BA&mode=car&callnative=1' target='_blank'>🧭 高德导航</a> <a class='nav' style='background:#b06ae0' href='https://uri.amap.com/poidetail?poiid=B0MU31Q7WB&callnative=1&src=travelsite' target='_blank'>⭐ 收藏</a></div><div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm' target='_blank'>📎 套路多、花费高、体验差？厦门3天2晚旅游攻略</a><a href='https://www.bilibili.com/video/BV1UCrVBRELu' target='_blank'>📎 厦门超详细保姆级自由行攻略（路线、交通、避坑）</a></div></article>
+<article class='poi'><h3>🏠 鼓浪屿·码头附近 <span class='src'>区域</span></h3><div class='meta'>鼓浪屿三丘田/内厝澳码头周边</div><div class='meta'>适合：想住在岛上看夜景、慢慢逛的人 · 老别墅酒店/民宿（价位偏高）</div><p>视频建议：住岛上选离码头近的，岛上不通车、上下坡多，行李远不如住码头边</p><div class='meta' style='color:#7b56a0'>候选示例：</div><p style='font-size:13px;color:#556'>洋桃院子旅馆（视频亲测）</p><div class='actions'><a class='nav' href='https://uri.amap.com/navigation?to=118.069014,24.449775,%E9%BC%93%E6%B5%AA%E5%B1%BF%C2%B7%E7%A0%81%E5%A4%B4%E9%99%84%E8%BF%91&mode=car&callnative=1' target='_blank'>🧭 高德导航</a> <a class='nav' style='background:#b06ae0' href='https://uri.amap.com/poidetail?poiid=B0L0C7026C&callnative=1&src=travelsite' target='_blank'>⭐ 收藏</a></div><div class='sources'><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm' target='_blank'>📎 套路多、花费高、体验差？厦门3天2晚旅游攻略</a></div></article></div>
+      <div id='panel-exp' class='panel'><h2>🎨 当地特色体验</h2><div class='card'><h3>鼓浪屿轮渡+岛屿漫步</h3><div class='meta'>厦门轮渡码头→鼓浪屿 · 240分钟 · 船票35元起</div><p>需预约 · 预约入口:微信搜索「厦门轮渡」 · 适合：全员</p></div>
+<div class='card'><h3>环岛路骑行</h3><div class='meta'>环岛路（白城→黄厝） · 120分钟 · 共享单车/租车约20-50元</div><p>无需预约 · 适合：年轻人/情侣</p></div>
+<div class='card'><h3>海上地铁海景段</h3><div class='meta'>地铁1号线高崎→集美学村 · 30分钟 · 地铁票价约2-4元</div><p>无需预约 · 适合：全员</p></div>
+<div class='card'><h3>植物园雨林喷雾打卡</h3><div class='meta'>厦门园林植物园雨林世界 · 60分钟 · 含在门票内</div><p>无需预约 · 适合：摄影/亲子</p></div>
+<div class='card'><h3>十里长堤看日落+免费演唱会</h3><div class='meta'>集美学村·十里长堤 · 120分钟 · 免费</div><p>无需预约 · 适合：全员/情侣</p></div>
+<div class='card'><h3>租小电驴环岛骑行</h3><div class='meta'>黄厝→白城沙滩 · 180分钟 · 租车约30-60元</div><p>无需预约 · 适合：年轻人/情侣</p></div>
+<div class='card'><h3>帆船出海</h3><div class='meta'>五缘湾帆船港 · 90分钟 · 约120-200元/人（示例）</div><p>需预约 · 预约入口:平台购票 · 适合：喜欢海的朋友</p></div>
+<div class='card'><h3>赶海挖沙</h3><div class='meta'>观音山沙滩 · 120分钟 · 免费（查好潮汐表）</div><p>无需预约 · 适合：亲子</p></div>
+<div class='card'><h3>山海健康步道临海线</h3><div class='meta'>第18出入口→盼归塔（速通：云山天际酒店旁24口电梯） · 150分钟 · 免费</div><p>无需预约 · 适合：徒步爱好者</p></div>
+<div class='card'><h3>集美海上自行车道</h3><div class='meta'>集美学村·海上自行车道（2.6km） · 30分钟 · 骑行约10-20元</div><p>无需预约 · 适合：骑行</p></div>
+<div class='card'><h3>钟鼓索道（空中看厦门）</h3><div class='meta'>植物园西门旁（万石植物园站） · 60分钟 · 约65-70元/人（示例）</div><p>需预约 · 预约入口:官方渠道提前预约 · 适合：想俯瞰厦门全景的人</p></div></div>
+      <div id='panel-prep' class='panel'><h2>🎒 出发前准备</h2><div class='note'>• <b>鼓浪屿船票</b>：微信小程序「厦门轮渡」，提前1-3天（出发前1天）
+• <b>南普陀寺</b>：小程序/现场预约（小红书提示需提前预约）（当天）
+• <b>朱富贵海鲜火锅</b>：热门需提前预约，11点开始排队（提前1天）
+• <b>鼓浪屿船票</b>：微信小程序（提前10天放票，节假日必须提前）；普通35元/豪华80元，回程免费（提前10天）
+• <b>厦门大学</b>：南门访客中心预约（群贤楼群→芙蓉隧道路线）（提前1-3天）
+• <b>日光岩/菽庄/八卦楼</b>：可单独购票或买联票更划算；八卦楼需预约场次（当天）
+• <b>钟鼓索道</b>：提前7天抢票（8点放票）（提前7天）
+• <b>鼓浪屿收费景点（日光岩/菽庄等）</b>：单买需预约、联票免预约（子代理核实）（当天）<h3>本地交通</h3>• 机场→市区 — 公交机场专线1元/机场巴士；或BRT全程高架无红绿灯，超快
+• 厦门北站→岛内 — 地铁1号线直达，转集美学村同线
+• 环岛路海岸线 — 29路公交1元，完整走完海岸线
+• 上海→厦门 — 高铁约5-6h / 飞机约2h（示例，请查询实时）</div></div>
+      <div id='panel-tips' class='panel'><h2>⚠️ 旅行提醒</h2><div class='note'><h3>天气与打包</h3>· 参考高德实况预报：2026-09-08 小雨/小雨 31~24°C；2026-09-09 多云/小雨 29~24°C；2026-09-10 多云/多云 30~24°C。9月厦门多阵雨、湿热，出行前 3 天再查一次实时预报；带伞+防晒。<br>防晒霜（重要说三遍） / 防蚊液（植物园必备） / 晴雨伞 / 舒适步行鞋 / 白色系衣服（植物园出片）<h3>需预约</h3>• <b>鼓浪屿船票</b>：微信小程序「厦门轮渡」，提前1-3天（出发前1天）
+• <b>南普陀寺</b>：小程序/现场预约（小红书提示需提前预约）（当天）
+• <b>朱富贵海鲜火锅</b>：热门需提前预约，11点开始排队（提前1天）
+• <b>鼓浪屿船票</b>：微信小程序（提前10天放票，节假日必须提前）；普通35元/豪华80元，回程免费（提前10天）
+• <b>厦门大学</b>：南门访客中心预约（群贤楼群→芙蓉隧道路线）（提前1-3天）
+• <b>日光岩/菽庄/八卦楼</b>：可单独购票或买联票更划算；八卦楼需预约场次（当天）
+• <b>钟鼓索道</b>：提前7天抢票（8点放票）（提前7天）
+• <b>鼓浪屿收费景点（日光岩/菽庄等）</b>：单买需预约、联票免预约（子代理核实）（当天）<h3>本地交通</h3>• 机场→市区 — 公交机场专线1元/机场巴士；或BRT全程高架无红绿灯，超快
+• 厦门北站→岛内 — 地铁1号线直达，转集美学村同线
+• 环岛路海岸线 — 29路公交1元，完整走完海岸线
+• 上海→厦门 — 高铁约5-6h / 飞机约2h（示例，请查询实时）<h3>安全/风俗</h3>· 海边注意潮汐与警示<br>· 打车用正规平台<br>· 海鲜先问清价格再点<br>· 闽南话地区，普通话通用；寺庙注意着装</div></div>
+      <div id='panel-srcs' class='panel'><h2>📚 资料来源（105 条）</h2><h3>B站视频（26）</h3><ol class='poilist'><li><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm' target='_blank'>套路多、花费高、体验差？厦门3天2晚旅游攻略</a> <span style='color:#8895a5'>KK叫阿KEN  · 444626</span></li>
+<li><a href='https://www.bilibili.com/video/BV1apDMBTEED' target='_blank'>可能是最全的厦门旅游攻略（不踩雷版）</a> <span style='color:#8895a5'>码语者和杰妮  · 66012</span></li>
+<li><a href='https://www.bilibili.com/video/BV1UCrVBRELu' target='_blank'>厦门超详细保姆级自由行攻略（路线、交通、避坑）</a> <span style='color:#8895a5'>那是sn  · 148657</span></li>
+<li><a href='https://www.bilibili.com/video/BV1dbyFBBE9X' target='_blank'>厦门人眼中的厦门攻略，拒绝人挤人踩大坑！</a> <span style='color:#8895a5'>厦门的小火车tiger  · 135647</span></li>
+<li><a href='https://www.bilibili.com/video/BV12d3NzzEEE' target='_blank'>厦门本地人推荐的24小时美食小店盘点</a> <span style='color:#8895a5'>chi_chi_  · 94071</span></li>
+<li><a href='https://www.bilibili.com/video/BV1V5j96nESh' target='_blank'>泉州好吃到哭泣！30种泉州特色美食/厦门周边吃通</a> <span style='color:#8895a5'>星氪旅行记  · 57108</span></li>
+<li><a href='https://www.bilibili.com/video/BV1xb421J775' target='_blank'>12分钟带你看懂厦门，鼓浪屿、山海健康步道路线</a> <span style='color:#8895a5'>厦门导游小辉  · 57028</span></li>
+<li><a href='https://www.bilibili.com/video/BV14oR5YYE1K' target='_blank'>挑战成为厦门本地人，在店里吃遍全厦超全美食攻略</a> <span style='color:#8895a5'>爱吃的达达  · 3981602</span></li>
+<li><a href='https://www.bilibili.com/video/BV1Vs4y177Xa' target='_blank'>厦门vlog小吃篇：本地人的厦门美食攻略</a> <span style='color:#8895a5'>阿毛的旅行日记  · 278032</span></li>
+<li><a href='https://www.bilibili.com/video/BV1iM4y1f7V2' target='_blank'>到了厦门除了吃就是江头美食，48h厦门美食vlog</a> <span style='color:#8895a5'>百变小樱  · 236204</span></li>
+<li><a href='https://www.bilibili.com/video/BV14oR5YYE1K' target='_blank'>挑战成为南昌最会吃的外地人！挖遍大街小巷超全美食攻略！</a> <span style='color:#8895a5'>猴儿甜猴儿甜  · 3981602</span></li>
+<li><a href='https://www.bilibili.com/video/BV1Dy4y1K7Hb' target='_blank'>刻在DNA里的歌，小花忍不住就唱出来了【厦门云旅游08】</a> <span style='color:#8895a5'>边检小花  · 581094</span></li>
+<li><a href='https://www.bilibili.com/video/BV1qJ4m1G7Gm' target='_blank'>套路多、花费高、体验差？请收好这份厦门3天2晚旅游攻略，从行程安排到美食推荐，一篇搞定不踩雷</a> <span style='color:#8895a5'>KK叫阿KEN  · 444626</span></li>
+<li><a href='https://www.bilibili.com/video/BV16x4y1i7D7' target='_blank'>这次我来厦门旅游都没做攻略…</a> <span style='color:#8895a5'>猴儿甜猴儿甜  · 282487</span></li>
+<li><a href='https://www.bilibili.com/video/BV1Vs4y177Xa' target='_blank'>【宁波vlog小吃篇】宁波保姆级美食攻略！本地人推荐不踩雷！鼓楼美食合集 糯叽叽猪油年糕团 </a> <span style='color:#8895a5'>西边有座桥  · 278032</span></li>
+<li><a href='https://www.bilibili.com/video/BV1iM4y1f7V2' target='_blank'>别坑了！厦门美食这样才地道！巨好吃！狂吃3天，本地人推荐|48h逛吃厦门vlog</a> <span style='color:#8895a5'>嘿嘿逛吃噜  · 236204</span></li>
+<li><a href='https://www.bilibili.com/video/BV1UCrVBRELu' target='_blank'>厦门详细到离谱的旅行攻略｜路线、交通、避坑全有</a> <span style='color:#8895a5'>阿眯sn  · 148657</span></li>
+<li><a href='https://www.bilibili.com/video/BV1dbyFBBE9X' target='_blank'>鼓浪屿“邪修”攻略，拒绝人挤人带着美食反向穿越小岛。</a> <span style='color:#8895a5'>机智的小肥虎tiger  · 135647</span></li>
+<li><a href='https://www.bilibili.com/video/BV12d3NzzEEE' target='_blank'>摸着良心分享的厦门24家神级美食小店，去厦门看这一篇就够了！</a> <span style='color:#8895a5'>好chi好chi_  · 94071</span></li>
+<li><a href='https://www.bilibili.com/video/BV1apDMBTEED' target='_blank'>可能是最全的 厦门旅游攻略（不踩雷版）</a> <span style='color:#8895a5'>码语者和杰妮  · 66012</span></li>
+<li><a href='https://www.bilibili.com/video/BV1V5j96nESh' target='_blank'>厦门好吃！一口气30家厦门特色美食！无广实拍耗时7天！全国各市美食速通--福建厦门</a> <span style='color:#8895a5'>这是花二腻  · 57108</span></li>
+<li><a href='https://www.bilibili.com/video/BV1xb421J775' target='_blank'>12分钟带你们走鼓浪屿经典的旅游线路！堪称“保姆级”攻略！大家一定收藏，转发！以后一定能用上</a> <span style='color:#8895a5'>厦门导游小程  · 57028</span></li>
+<li><a href='https://www.bilibili.com/video/BV1pF9BBLEri' target='_blank'>鼓浪屿超全攻略｜真实跑图不照骗！</a> <span style='color:#8895a5'>有点瞎搞  · 9776</span></li>
+<li><a href='https://www.bilibili.com/video/BV1A6QqBGEdD' target='_blank'>可能是最实在的 鼓浪屿攻略 （不踩雷版）</a> <span style='color:#8895a5'>码语者和杰妮  · 6443</span></li>
+<li><a href='https://www.bilibili.com/video/BV1Ritm6cEuL' target='_blank'>千万别乱去！厦门平潭岛4天3晚这样玩才不白来！看海拍照美食全搞定…</a> <span style='color:#8895a5'>27_王开心  · 1574</span></li>
+<li><a href='https://www.bilibili.com/video/BV1ngbs6yE9S' target='_blank'>9月10号开始啊，千万不要随便来厦门了#厦门旅游攻略 #厦门旅游 #鼓浪屿旅游攻略 #鼓浪屿</a> <span style='color:#8895a5'>厦门导游小甜甜  · 193</span></li></ol><h3>小红书帖子（79）</h3><ol class='poilist'><li><a href='https://www.xiaohongshu.com/search_result/69567f2a000000001e009246?xsec_token=ABgdCcPhY1PsMgVEUi3TsVfMh3ObVvekjrGUcSocSKDFY=&amp;xsec_source=' target='_blank'>厦门环岛路</a> <span style='color:#8895a5'>Haru하루はる ♥2020</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a8823e700000000160264b9?xsec_token=ABMb0x_53NUI1O-wFnapekIPEdNKtmiXEfo2MRadvWY3g=&amp;xsec_source=' target='_blank'>去厦门，电动车骑行这条线真的可以闭眼冲！！！</a> <span style='color:#8895a5'>鹭岛电动车出租（厦大店） ♥50</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69b51f9f000000002200dbf0?xsec_token=ABX6K31MPkZeqfW0igWD1zgPrYUUw4e4AD7mS8NskCue4=&amp;xsec_source=' target='_blank'>厦门环岛骑行攻略新手小白版</a> <span style='color:#8895a5'>小吴吴吴吴 ♥111</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69f9cdf50000000038034a3e?xsec_token=ABcZZCnXzwqJP8GOVgNdTZvxErm4dnYHcV4ePWNq6s1_o=&amp;xsec_source=' target='_blank'>厦门环岛路骑行🌊一日看海路线不走回头路</a> <span style='color:#8895a5'>川渝暴龙 ♥173</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6958a421000000001e036e7e?xsec_token=ABRziRU08Bvmura1hKXWncGWXtJq-YclsxKgvOa1mfzz0=&amp;xsec_source=' target='_blank'>🚴厦门环岛50KM骑行全攻略</a> <span style='color:#8895a5'>寻找多莉🐏 ♥256</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69f0e30c000000002003b8bb?xsec_token=AB3HMrxzNyfDJV6UIpaJOZpd1qpM6Rc1A0I_sWJBR0SxE=&amp;xsec_source=' target='_blank'>游玩攻略 ｜ 厦门环岛南路骑行</a> <span style='color:#8895a5'>榛果小柯粒 ♥165</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6900bd25000000000401096d?xsec_token=ABtqkIjzlP9XMdNHFcaBYI11DcubtbcWubNGRVd0vTu5s=&amp;xsec_source=' target='_blank'>来厦门 必须环岛骑行（非专业人士攻略版）</a> <span style='color:#8895a5'>无声处听惊雷 ♥459</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/694bf5e0000000000d036c6d?xsec_token=AB-mLisFKtjEpHseXsz9o66oqfEy4JfFMGYrePex61qRk=&amp;xsec_source=' target='_blank'>厦门共享单车骑行线路① | 环岛路</a> <span style='color:#8895a5'>爬坡喘成狗 ♥934</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69de4840000000002202baba?xsec_token=ABhvbPx7bD3bf3r7qmyFJhOmmbs8efw1cdBIdFT8HQODc=&amp;xsec_source=' target='_blank'>厦门环岛骑行</a> <span style='color:#8895a5'>知行 ♥8</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6975c75f000000001a0245c3?xsec_token=ABAx5MTd-wM8GstpjcRnVxMyfIjQXz_k13ytq2Er0kJKo=&amp;xsec_source=' target='_blank'>厦门</a> <span style='color:#8895a5'>大天使只想在火锅店 ♥4756</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69956115000000001a03145e?xsec_token=ABFX3kBZ4XVPKwiyvqK9zM6inznRL_S59xUmAP8hlpdlU=&amp;xsec_source=' target='_blank'>分享一下我的厦门四天三夜行程，我很满意！</a> <span style='color:#8895a5'>时间旅人 ♥1万</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69de52c9000000002202b105?xsec_token=ABhvbPx7bD3bf3r7qmyFJhOp18KKpqz9bVY1zppi4Mjjw=&amp;xsec_source=' target='_blank'>厦门|老牌旅游城市三天两夜攻略</a> <span style='color:#8895a5'>我笑起来连眼睛都没了 ♥8</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a8d7278000000002a03f2be?xsec_token=ABa1QbWiHbX9h9-gycqAFuIF3UwxWGv3wufus-2RASgcA=&amp;xsec_source=' target='_blank'>终于把厦门景点地图画清楚了，P人直接抄</a> <span style='color:#8895a5'>福气小土豆 ♥853</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a97af3c000000001200197b?xsec_token=ABoxx5e04HCZj5BbpCSWyv5FAgZOEddfX8El92qOlx_VY=&amp;xsec_source=' target='_blank'>去完厦门我的真实感受.....</a> <span style='color:#8895a5'>牛油果 ♥86</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/695b6c51000000001a02654d?xsec_token=ABgWzQMHns3t9w_s7YHgkXivEMJl_f82wVHMy2KwKM4M0=&amp;xsec_source=' target='_blank'>厦门3天2夜攻略🌊人均2k+玩到爽！</a> <span style='color:#8895a5'>啊哈 ♥2412</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69e387e0000000001a021e9c?xsec_token=ABktfbQgGEZOXlQ1AGBlTFOS8IOjEMUf1g-y2z-YaNWmg=&amp;xsec_source=' target='_blank'>个人认为，厦门无法超越的🔟个地方…（免费）</a> <span style='color:#8895a5'>喜东东xixi ♥2.6万</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a6c58740000000028008672?xsec_token=AByUg5HC4J3JDg3KcyF-9XFwU5Zj6oVz4sEQHYS3YPV2o=&amp;xsec_source=' target='_blank'>终于把厦门景点地图画清楚了，P人抄作业吧</a> <span style='color:#8895a5'>一颗桔子🍊 ♥1846</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a89c87e000000000b02470e?xsec_token=AB_klCvMvLr1oOFyEUdbZWHuQfAw-882PvxaLqCHdIaWk=&amp;xsec_source=' target='_blank'>人均500💰厦门72h特种兵citywalk路线攻略‼️</a> <span style='color:#8895a5'>少女与诗 ♥1297</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69eb13030000000019025c02?xsec_token=ABLh4SCKB9Yr_veOGfWKLU_jE4P9DIPB-SaA5QuTQJuWg=&amp;xsec_source=' target='_blank'>厦门三天两夜旅游这么规划合不合理呀</a> <span style='color:#8895a5'>泡芙小子oOo ♥155</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/68daa7a4000000000b03db1a?xsec_token=ABRNgMNlnndmIWtbsFkjF6DMA-nkytsZsdjU6tHmySRJM=&amp;xsec_source=' target='_blank'>厦门3天2夜旅游攻略（上篇）</a> <span style='color:#8895a5'>奥特张张 ♥11</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9bd9e5000000000b0348ac?xsec_token=ABTisHmzdkRrTLlmq-cJpSNJ334I_4jTGsNniWqvoR3k8=&amp;xsec_source=' target='_blank'>厦门沙坡尾别瞎逛！沙坡尾+艺术西区+双子塔</a> <span style='color:#8895a5'>漫厦呀 ♥204</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a94efdb000000002a03a2db?xsec_token=ABF8Wk9F1h5tp9RvKTDSrHucBBQJKhHX1yNAjjWoKTJvU=&amp;xsec_source=' target='_blank'>沙坡尾拍老厦门旧时光，citywalk 逛吃攻略</a> <span style='color:#8895a5'>琳仔环游记🐳 ♥40</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9bfbcc000000002802d39a?xsec_token=ABTisHmzdkRrTLlmq-cJpSNAfSnGoW-zBUL6bkNP7_CA4=&amp;xsec_source=' target='_blank'>应该也是前几天大暴雨导致的</a> <span style='color:#8895a5'>也还是叫蘑菇吧 ♥5</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9b116a0000000012001807?xsec_token=ABTisHmzdkRrTLlmq-cJpSNNQo2SUZfaKujsy_bnO2U-I=&amp;xsec_source=' target='_blank'>厦门沙坡尾☀️</a> <span style='color:#8895a5'>加加儿 ♥3</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9ec7dc0000000011035316?xsec_token=ABlr7DzEQt-8jkhcnOr84mPOoWET52v0ksspAm1d_CK4o=&amp;xsec_source=' target='_blank'>随记｜厦门沙坡尾双子塔</a> <span style='color:#8895a5'>宝盖儿 ♥6</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a8e7dcb000000002800503e?xsec_token=ABJBGYQ2KmPVW6FcAxv8HYCxksll2NGHHguD1Rfnshz7w=&amp;xsec_source=' target='_blank'>厦门刚回！J人复盘的地图行程越看越好用</a> <span style='color:#8895a5'>小王小丸 ♥188</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9f9f82000000001203faf6?xsec_token=ABqF7j-M6Xzl6syb5TXRQxGHaORDkhB2DexMRuYkuCNMY=&amp;xsec_source=' target='_blank'>厦门人的晚餐都在沙坡尾！</a> <span style='color:#8895a5'>Letitia ♥1</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9d4ce40000000025036b04?xsec_token=ABGqlMo8FRyNv_wtevoZkZxre8x9W7SF9wAEWcCbqRdY4=&amp;xsec_source=' target='_blank'>厦门最值得citywalk的一条街🫧</a> <span style='color:#8895a5'>饼子 ♥60</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9c2547000000001001e5e3?xsec_token=ABe4VEDrcFFubr-WR046hcpg2VlWQ3o7kFANvG32q-XCk=&amp;xsec_source=' target='_blank'>廈門記憶｜我在沙坡尾拍到了动漫里的小街🏙️</a> <span style='color:#8895a5'>不会弹琴的有马公生同学 ♥12</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9d1ed30000000011030fed?xsec_token=ABGqlMo8FRyNv_wtevoZkZxpqMesS5n9OVvMmoUQwO3gg=&amp;xsec_source=' target='_blank'>厦门沙坡尾✨藏在艺术西区的复古玩具屋</a> <span style='color:#8895a5'>熙熙攘攘 ♥1</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9fa201000000002a02fa4c?xsec_token=ABqF7j-M6Xzl6syb5TXRQxGP7bVCmLoihnU_eT8MX7JNA=&amp;xsec_source=' target='_blank'>厦门适合一个人无聊闲逛的地方（58/100）</a> <span style='color:#8895a5'>屿后北厘 ♥10</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9ca4d30000000012027d14?xsec_token=ABe4VEDrcFFubr-WR046hcprZRASBryHaAokqlsAKr5xU=&amp;xsec_source=' target='_blank'>厦门小众漫游｜藏在市区的百年南洋古镇</a> <span style='color:#8895a5'>橘子味汽水加冰 ♥1</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a6def910000000022033cca?xsec_token=ABxv7U2s4CSMM0UCE3y1bQjwxVefs0mjn1wl7qnc2q2rE=&amp;xsec_source=' target='_blank'>厦门版“里约热内卢”🌊被严重低估的小众景点</a> <span style='color:#8895a5'>库奇kuki🌲 ♥76</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a57ab810000000021009e17?xsec_token=ABFFjbcg0F8d7mSdJBnfG1i0mJjrxBGgEeE0eTWrl4f68=&amp;xsec_source=' target='_blank'>厦门这个山景，我愿称之为“小瑞士”</a> <span style='color:#8895a5'>京枫Jerry ♥192</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a80a81900000000280338e1?xsec_token=ABIYdkW8gsQ-MGXn_jW5sLh_UJh_A8h-gH52k5FxySthc=&amp;xsec_source=' target='_blank'>厦门适合一个人无聊闲逛的地方（56/100）</a> <span style='color:#8895a5'>屿后北厘 ♥921</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a631b39000000001002a041?xsec_token=ABlAchrjVutHvgkg03xneRhJuZPPxBeKIVja9E9RNO4tM=&amp;xsec_source=' target='_blank'>⛰厦门海沧｜新娘山观景台，山海港区同框</a> <span style='color:#8895a5'>自由拾光 ♥58</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a6e1096000000002500af61?xsec_token=ABTV68FYgVJV1UITzC7k01KmrpV6oSy3sGN09QUdUfzHw=&amp;xsec_source=' target='_blank'>厦门｜石头皮山公园，一个几乎没有缺点的公园</a> <span style='color:#8895a5'>七月他姐 ♥575</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a772fd70000000024026a9f?xsec_token=ABQ4CpkdZRUNcwXoxt62lMw8waznZTa1yIaFQxnwvogu0=&amp;xsec_source=' target='_blank'>厦门双机位海景｜码头轮渡+高空摩天轮·治愈</a> <span style='color:#8895a5'>yuki. ♥16</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a8e9882000000002102ff01?xsec_token=ABJBGYQ2KmPVW6FcAxv8HYC7bolJHFSwz3W7JCbBAz5aY=&amp;xsec_source=' target='_blank'>厦门藏着这些容易被错过的风景</a> <span style='color:#8895a5'>屿后北厘 ♥115</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a8f9ae6000000000303ee0e?xsec_token=ABjy3NBz3FNmJKqzJFrSnrlpsbQ6FC79gbUdUNqtB4Gi8=&amp;xsec_source=' target='_blank'>厦门这条线，没有海却很厦门</a> <span style='color:#8895a5'>阿旅的日常 ♥13</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a7dcf0900000000330341f2?xsec_token=ABgQ3c1lA70OmDhQl5VxoU9e04CCpLJgpy5T8hqe5o4Gw=&amp;xsec_source=' target='_blank'>厦门商圈及住宿建议𓆝 ⋆.</a> <span style='color:#8895a5'>小鸡毛的 ♥142</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a90672b000000000502a430?xsec_token=ABNWfoqmWvSSS1YKyDoh4_vP3I4bJVOvOvr_6FuBaCdD0=&amp;xsec_source=' target='_blank'>厦门住宿哪块方便呀</a> <span style='color:#8895a5'>momo ♥39</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69b652c0000000002101341e?xsec_token=ABKYtz490rDr4TRz7wRyAuFHqPt7wpujDfOxN5B6HpmOo=&amp;xsec_source=' target='_blank'>厦门 对我选的两家酒店满意极了</a> <span style='color:#8895a5'>小红薯643134 ♥1376</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a00c112000000000802553c?xsec_token=AB4Gvy3KqOdicGLUh_hSVydYvfH37JKLxHhqJq9lj3WJA=&amp;xsec_source=' target='_blank'>厦门这三个酒店推荐哪一个（已住 含体验感）</a> <span style='color:#8895a5'>那今天吃什么 ♥718</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a6353cc000000000f033046?xsec_token=ABlAchrjVutHvgkg03xneRhGguoUkdmdW719XpHle8o18=&amp;xsec_source=' target='_blank'>厦门住宿哪里方便？ ｜ 避雷 + 区域推荐</a> <span style='color:#8895a5'>free ♥43</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a7f2d5d0000000024025e01?xsec_token=AB2HK-OHKIc07W0eawyZCmRQqiJnTdPQGRgY0UXvVaZHs=&amp;xsec_source=' target='_blank'>厦门住宿</a> <span style='color:#8895a5'>小栗 ♥36</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a5f5aca000000000f004c50?xsec_token=ABQHXZ7uLQCPPfOkd2ub0o4E2Nud5v1zRr7zj1NFtOQMQ=&amp;xsec_source=' target='_blank'>挑选了几个厦门的酒店，请问选哪一个呢？</a> <span style='color:#8895a5'>海天一色218 ♥134</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a70bbf600000000220120e6?xsec_token=AB4dwzv5SkmwreuHngXEZ0jbO6LXRS1DAYb4uOGMczk-0=&amp;xsec_source=' target='_blank'>八月份想去厦门玩</a> <span style='color:#8895a5'>momo ♥58</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/68e9fc020000000007003490?xsec_token=AB5nX7vC3uWl6AXshRdO21yqTant_jmeEm1KBMNKogyco=&amp;xsec_source=' target='_blank'>🙏极限4选1谢谢</a> <span style='color:#8895a5'>侏罗纪在逃恐龙🦕 ♥306</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6896dc5c000000002502af8f?xsec_token=ABpQ96N5Qt5rkQuUyi3W6tvhKPiN3Wvf5yX8RV-p5QxEY=&amp;xsec_source=' target='_blank'>第一次去厦门看海，到底要住哪里？！</a> <span style='color:#8895a5'>黑月旅行笔记 ♥8628</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9a601d000000002b0007e5?xsec_token=ABw3kZ0bHoMTRKNxfcZm-rZvD4SK1XA91xTfabMDSkZmY=&amp;xsec_source=' target='_blank'>准备出发厦门｜不想当大冤种，求避坑😭</a> <span style='color:#8895a5'>咩咩大王 ♥24</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a798c7f0000000008012a28?xsec_token=ABQSEjsU63oIfoiodSIH6C5lZdObDD4Xm_ow91hbotOzU=&amp;xsec_source=' target='_blank'>厦门，一座不会再来旅游的城市</a> <span style='color:#8895a5'>momo ♥164</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9f89980000000011037dcf?xsec_token=ABqF7j-M6Xzl6syb5TXRQxGImXAS3pbEz-oPn5l7_iLxs=&amp;xsec_source=' target='_blank'>壁垒｜厦门海斯蒂 面试刷KPI避雷💣</a> <span style='color:#8895a5'>momo ♥11</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a85080d0000000025013368?xsec_token=ABAa6hdcATPpKFuQqMUnVG_bcfHYt5sdoZ4AM-AKsMh2g=&amp;xsec_source=' target='_blank'>鼓浪屿再见👋短期不想再来了</a> <span style='color:#8895a5'>悠游童行 ♥124</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9603ae000000002901739f?xsec_token=ABSE0sIbATfx-hV_IQKLcJByD23hxoMd6qn4ab-Gfk3JQ=&amp;xsec_source=' target='_blank'>厦门就业环境</a> <span style='color:#8895a5'>嘟嘟 ♥51</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a86a68100000000280209ce?xsec_token=ABB5wFWxegLz5Zukm32bqGd5ESfhBUFwXBiMKNIcrUoWY=&amp;xsec_source=' target='_blank'>来厦门，先搞懂这6件事</a> <span style='color:#8895a5'>阿旅的日常 ♥8</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a7c54310000000033036f60?xsec_token=ABUxrCzjXOrRoXfX-T03da077eJbTiepg0wwppvaAz_hI=&amp;xsec_source=' target='_blank'>厦门避雷贴，不想朋友们在被骗了</a> <span style='color:#8895a5'>✎包子ʕ•̫͡•ིʔྀ ♥7</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a7318e8000000002c00675d?xsec_token=ABK7cO9YvAS8rMkxvmR3zFCvbEkf784jd1iq6CHnzPD_s=&amp;xsec_source=' target='_blank'>避雷厦门</a> <span style='color:#8895a5'>真的很困 ♥127</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a9e47270000000029011f08?xsec_token=ABlr7DzEQt-8jkhcnOr84mPHCvdfH_9ty0N2o_NH-PYks=&amp;xsec_source=' target='_blank'>厦门租房心酸日记</a> <span style='color:#8895a5'>下雨了记得带沐浴露 ♥67</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a96cf23000000002a0069f9?xsec_token=ABSE0sIbATfx-hV_IQKLcJBxFBbOGdVqaSh14yjkcihlo=&amp;xsec_source=' target='_blank'>J人耗时6小时整理的厦门美食合集（纯手绘）</a> <span style='color:#8895a5'>林曼生- ♥66</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69c936cd000000001a0238b4?xsec_token=ABbC9XRE886YCxdtM4d9SXwhHohmtHmkK7GshBq5VNmPU=&amp;xsec_source=' target='_blank'>厦门会反复去的16家小破店。。。</a> <span style='color:#8895a5'>阿珊。 ♥631</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69ddcc57000000001a02bedf?xsec_token=AB4Q4jz5YKoIfhvFqH2fdeXAkGwZEZXMzEcF17SahDbLU=&amp;xsec_source=' target='_blank'>厦门集美学村大学生私藏美食清单✨ 全是不踩</a> <span style='color:#8895a5'>厦门是阴天 ♥752</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69d10ea2000000001e00e36c?xsec_token=ABDDZX4zSgpezY10EElDf8h9RNS3itD_bq09b40kuqz2g=&amp;xsec_source=' target='_blank'>真游客howto速通厦门外卖</a> <span style='color:#8895a5'>李大壮 ♥1771</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a0ace270000000008025a74?xsec_token=ABAXeNwVXU60O3I59unWhmzu6o3xFHa7qtnhkpGR5HwkY=&amp;xsec_source=' target='_blank'>厦门|一出厦门站，直奔这些店</a> <span style='color:#8895a5'>凉拌玛卡巴卡 ♥469</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a210ee000000000380346c6?xsec_token=AByB2MhFhetGjwWaT2q0pVjXjk1eDB98aMgzzD8q_Nk8U=&amp;xsec_source=' target='_blank'>个人认为，厦门nb好吃的🔟家店 . . .</a> <span style='color:#8895a5'>做自己的山 ♥14</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69f2b59d000000003502faeb?xsec_token=AB5aJCki0X5tkiQ13AFKK62thuQodrtRmCWqLMNw7gCEw=&amp;xsec_source=' target='_blank'>厦门美食合集｜40+厦门老店一次拿走（含地图</a> <span style='color:#8895a5'>獭啊獭 ♥631</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69f2d70d0000000023015fc7?xsec_token=AB5aJCki0X5tkiQ13AFKK62n2OPHJyvMC4uk7pU70Qbhc=&amp;xsec_source=' target='_blank'>厦门美食推荐必吃餐厅✅连夜整理版</a> <span style='color:#8895a5'>吸吸果冻 ♥71</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/68d40238000000001400b9ac?xsec_token=ABAqsDlIodWxJIIjIGTLQwnOtIjh_GIALZe6dh3ScVCjI=&amp;xsec_source=' target='_blank'>厦门反复去的16家小破店。。。</a> <span style='color:#8895a5'>阿珊。 ♥3113</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/68e4df840000000005033082?xsec_token=ABd6CRQJ-sxugDVg_eT9S1FDOsgb7dDqOVnW_FpISyeC0=&amp;xsec_source=' target='_blank'>厦门岛内极品！！！岛内极品！！！</a> <span style='color:#8895a5'>洞洞- ♥1558</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a2d10ef000000001702d0cd?xsec_token=ABHRVVtY4W5HaFHRHZTxqpmx-mP8NepcD4SwCU1WUueFk=&amp;xsec_source=' target='_blank'>6.12 厦门鼓浪屿 当天往返6h游玩路线</a> <span style='color:#8895a5'>饭饭 ♥3284</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a8484f50000000008011746?xsec_token=ABNPPLr6r2jdEeBeGFx8ZOZI8JFDeEy1MxzVXZ9glx388=&amp;xsec_source=' target='_blank'>鼓浪屿一日环岛路线（步行版）</a> <span style='color:#8895a5'>小魚冻干 ♥677</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/69a00d28000000002603e138?xsec_token=ABafHXv1yW09ffn0Gc4qbigL3Q42yoD-MabExhQc4ITgo=&amp;xsec_source=' target='_blank'>鼓浪屿避坑！90%的人都踩过</a> <span style='color:#8895a5'>鼓浪屿明哥 ♥51</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6926eaf1000000000d03c080?xsec_token=ABE9uacUNKYRHgzw-44MmWcdWRC0rirvwhQMupGmQrdc4=&amp;xsec_source=' target='_blank'>厦门鼓浪屿保姆级攻略</a> <span style='color:#8895a5'>暴躁小帅-攻略版 ♥1.2万</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a4f069c000000002103f58d?xsec_token=ABIZDphQ2qNk-OBB6T_oRZGX9xQ_wdLntRFrdc7huJPEw=&amp;xsec_source=' target='_blank'>厦门鼓浪屿🏝️｜慢逛的正确打开方式🔁</a> <span style='color:#8895a5'>甜兔贩卖机 ♥1478</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a699e38000000000f032cb5?xsec_token=AB10o_wz06hgBKVqSJdJsxCGy4yFVucFfodJMxqLjMvnE=&amp;xsec_source=' target='_blank'>鼓浪屿6大景点逐个吐槽｜去了3次我悟了</a> <span style='color:#8895a5'>💤 ♥113</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a77d0ce000000003302fc63?xsec_token=ABQ4CpkdZRUNcwXoxt62lMwzi7oQVM6YE-U7-f0lfgWqA=&amp;xsec_source=' target='_blank'>厦门｜鼓浪屿一日游最佳路线‼️</a> <span style='color:#8895a5'>六六 ♥292</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/690afc6d0000000005039614?xsec_token=AB7AjPJj3tZDamn35GOz9Lp3N_ZcLmXn1z90yS7Mp8w-Q=&amp;xsec_source=' target='_blank'>去鼓浪屿导航避免走冤枉路一篇就够</a> <span style='color:#8895a5'>山顶小猫猫 ♥8197</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a868f03000000002702880d?xsec_token=ABB5wFWxegLz5Zukm32bqGd-dQnZbeGFPBvRDzwKMIp2U=&amp;xsec_source=' target='_blank'>鼓浪屿半日游｜超全攻略（省钱不废腿版）</a> <span style='color:#8895a5'>柿子红了 ♥154</span></li>
+<li><a href='https://www.xiaohongshu.com/search_result/6a846dda000000003300d56c?xsec_token=ABNPPLr6r2jdEeBeGFx8ZOZFus3kxBO5nJS3Q1du7RMWs=&amp;xsec_source=' target='_blank'>厦门鼓浪屿不花钱半日游</a> <span style='color:#8895a5'>elena ♥874</span></li></ol></div>
+      <div id='panel-import' class='panel'><h2>📦 把行程导入高德地图 / 旅行软件</h2><h3>① 把路线图存进高德（KML 分日 / GPX 通用）</h3><div style='line-height:1.9'></div><div style='line-height:1.9'></div><p style='color:#c00;font-size:12px'><b>重要提醒：</b>高德 App 的『轨迹导入』把文件当<u>运动轨迹</u>解析，<b>只显示一条路线、不显示各景点名称</b>（你在截图中看到的就是这个）。要带地名+编号的线路图，请直接用本站『行程』页的地图（已给每个点加编号与名称，可点站导航）。KML 导入仅适合把整条路线存进『足迹』参考。</p><h3>② 逐段导航（每段一个高德入口）</h3><div class='card' style='padding:10px'><b>Day1 · 2026-09-18</b><ol class='poilist' style='font-size:13px'><li><b>1. 中山路步行街</b> → <b>2. 厦门八市（营平菜市场）</b> <a href='https://uri.amap.com/navigation?from=118.081903,24.454104,%E4%B8%AD%E5%B1%B1%E8%B7%AF%E6%AD%A5%E8%A1%8C%E8%A1%97&to=118.075017,24.457902,%E5%8E%A6%E9%97%A8%E5%85%AB%E5%B8%82%EF%BC%88%E8%90%A5%E5%B9%B3%E8%8F%9C%E5%B8%82%E5%9C%BA%EF%BC%89&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>2. 厦门八市（营平菜市场）</b> → <b>3. 老溪岸沙茶面</b> <a href='https://uri.amap.com/navigation?from=118.075017,24.457902,%E5%8E%A6%E9%97%A8%E5%85%AB%E5%B8%82%EF%BC%88%E8%90%A5%E5%B9%B3%E8%8F%9C%E5%B8%82%E5%9C%BA%EF%BC%89&to=118.088955,24.461247,%E8%80%81%E6%BA%AA%E5%B2%B8%E6%B2%99%E8%8C%B6%E9%9D%A2&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>3. 老溪岸沙茶面</b> → <b>4. 集美学村</b> <a href='https://uri.amap.com/navigation?from=118.088955,24.461247,%E8%80%81%E6%BA%AA%E5%B2%B8%E6%B2%99%E8%8C%B6%E9%9D%A2&to=118.103353,24.572373,%E9%9B%86%E7%BE%8E%E5%AD%A6%E6%9D%91&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>4. 集美学村</b> → <b>5. 十里长堤（集美）</b> <a href='https://uri.amap.com/navigation?from=118.103353,24.572373,%E9%9B%86%E7%BE%8E%E5%AD%A6%E6%9D%91&to=118.089475,24.563722,%E5%8D%81%E9%87%8C%E9%95%BF%E5%A0%A4%EF%BC%88%E9%9B%86%E7%BE%8E%EF%BC%89&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li></ol></div><div class='card' style='padding:10px'><b>Day2 · 2026-09-19</b><ol class='poilist' style='font-size:13px'><li><b>1. 厦门园林植物园</b> → <b>2. 南普陀寺</b> <a href='https://uri.amap.com/navigation?from=118.109277,24.447728,%E5%8E%A6%E9%97%A8%E5%9B%AD%E6%9E%97%E6%A4%8D%E7%89%A9%E5%9B%AD&to=118.095336,24.440836,%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>2. 南普陀寺</b> → <b>3. 顶澳仔猫街</b> <a href='https://uri.amap.com/navigation?from=118.095336,24.440836,%E5%8D%97%E6%99%AE%E9%99%80%E5%AF%BA&to=118.091662,24.440171,%E9%A1%B6%E6%BE%B3%E4%BB%94%E7%8C%AB%E8%A1%97&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>3. 顶澳仔猫街</b> → <b>4. 沙坡尾艺术西区</b> <a href='https://uri.amap.com/navigation?from=118.091662,24.440171,%E9%A1%B6%E6%BE%B3%E4%BB%94%E7%8C%AB%E8%A1%97&to=118.087587,24.437609,%E6%B2%99%E5%9D%A1%E5%B0%BE%E8%89%BA%E6%9C%AF%E8%A5%BF%E5%8C%BA&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>4. 沙坡尾艺术西区</b> → <b>5. 白城沙滩</b> <a href='https://uri.amap.com/navigation?from=118.087587,24.437609,%E6%B2%99%E5%9D%A1%E5%B0%BE%E8%89%BA%E6%9C%AF%E8%A5%BF%E5%8C%BA&to=118.100875,24.432281,%E7%99%BD%E5%9F%8E%E6%B2%99%E6%BB%A9&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>5. 白城沙滩</b> → <b>6. 演武大桥观景台</b> <a href='https://uri.amap.com/navigation?from=118.100875,24.432281,%E7%99%BD%E5%9F%8E%E6%B2%99%E6%BB%A9&to=118.087789,24.435421,%E6%BC%94%E6%AD%A6%E5%A4%A7%E6%A1%A5%E8%A7%82%E6%99%AF%E5%8F%B0&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>6. 演武大桥观景台</b> → <b>7. 环岛路（白城→黄厝）</b> <a href='https://uri.amap.com/navigation?from=118.087789,24.435421,%E6%BC%94%E6%AD%A6%E5%A4%A7%E6%A1%A5%E8%A7%82%E6%99%AF%E5%8F%B0&to=118.142325,24.431453,%E7%8E%AF%E5%B2%9B%E8%B7%AF%EF%BC%88%E7%99%BD%E5%9F%8E%E2%86%92%E9%BB%84%E5%8E%9D%EF%BC%89&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>7. 环岛路（白城→黄厝）</b> → <b>8. 黄厝海滩</b> <a href='https://uri.amap.com/navigation?from=118.142325,24.431453,%E7%8E%AF%E5%B2%9B%E8%B7%AF%EF%BC%88%E7%99%BD%E5%9F%8E%E2%86%92%E9%BB%84%E5%8E%9D%EF%BC%89&to=118.228083,24.64782,%E9%BB%84%E5%8E%9D%E6%B5%B7%E6%BB%A9&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li></ol></div><div class='card' style='padding:10px'><b>Day3 · 2026-09-20</b><ol class='poilist' style='font-size:13px'><li><b>1. 东渡邮轮码头</b> → <b>2. 日光岩</b> <a href='https://uri.amap.com/navigation?from=118.077007,24.49397,%E4%B8%9C%E6%B8%A1%E9%82%AE%E8%BD%AE%E7%A0%81%E5%A4%B4&to=118.067310,24.442228,%E6%97%A5%E5%85%89%E5%B2%A9&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>2. 日光岩</b> → <b>3. 菽庄花园+钢琴博物馆</b> <a href='https://uri.amap.com/navigation?from=118.067310,24.442228,%E6%97%A5%E5%85%89%E5%B2%A9&to=118.069520,24.439035,%E8%8F%BD%E5%BA%84%E8%8A%B1%E5%9B%AD%2B%E9%92%A2%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>3. 菽庄花园+钢琴博物馆</b> → <b>4. 鼓浪屿（全岛）</b> <a href='https://uri.amap.com/navigation?from=118.069520,24.439035,%E8%8F%BD%E5%BA%84%E8%8A%B1%E5%9B%AD%2B%E9%92%A2%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86&to=118.066102,24.446214,%E9%BC%93%E6%B5%AA%E5%B1%BF%EF%BC%88%E5%85%A8%E5%B2%9B%EF%BC%89&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>4. 鼓浪屿（全岛）</b> → <b>5. 八卦楼（风琴博物馆）</b> <a href='https://uri.amap.com/navigation?from=118.066102,24.446214,%E9%BC%93%E6%B5%AA%E5%B1%BF%EF%BC%88%E5%85%A8%E5%B2%9B%EF%BC%89&to=118.068263,24.447422,%E5%85%AB%E5%8D%A6%E6%A5%BC%EF%BC%88%E9%A3%8E%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86%EF%BC%89&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li><li><b>5. 八卦楼（风琴博物馆）</b> → <b>6. 大德记沙滩+皓月园</b> <a href='https://uri.amap.com/navigation?from=118.068263,24.447422,%E5%85%AB%E5%8D%A6%E6%A5%BC%EF%BC%88%E9%A3%8E%E7%90%B4%E5%8D%9A%E7%89%A9%E9%A6%86%EF%BC%89&to=118.075936,24.441099,%E5%A4%A7%E5%BE%B7%E8%AE%B0%E6%B2%99%E6%BB%A9%2B%E7%9A%93%E6%9C%88%E5%9B%AD&mode=car&callnative=1' target='_blank'>🚗 高德导航</a></li></ol></div><h3>③ 📌 把点位收藏进高德（官方方式，逐点确认）</h3><p style='color:#556;font-size:13px'>高德不允许第三方直接写入收藏夹；官方支持的做法是：点下面的按钮 → 高德打开该地点<b>详情页</b> → 点信息卡的<b>⭐ 收藏</b>按钮（需登录高德账号，收藏会同步到手机）。逐点点完即全部入你的收藏。</p><ol class='poilist' style='font-size:13px'><li><a href='https://uri.amap.com/poidetail?poiid=B0FFFYJ219&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：鼓浪屿（全岛）</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0FFFFJIDK&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：日光岩</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B02500U8LZ&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：菽庄花园+钢琴博物馆</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0G05UKYBN&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：八卦楼（风琴博物馆）</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B02500UNIP&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：大德记沙滩+皓月园</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0J67KP2XX&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：中山路步行街</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0I0ZAB1HM&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：厦门八市（营平菜市场）</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0FFHCECWJ&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：集美学村</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0KUPUDCFO&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：十里长堤（集美）</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B025003OPX&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：厦门园林植物园</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0JKHB0YIJ&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：南普陀寺</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0G0RN7WUQ&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：顶澳仔猫街</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0FFF6YYVV&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：沙坡尾艺术西区</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0MU31Q7WB&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：白城沙滩</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0HRSCRJGJ&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：演武大桥观景台</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0M6CHUM8U&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：环岛路（白城→黄厝）</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0G17HVLES&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：黄厝海滩</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B02500RZHC&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：厦门铁路文化公园</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0L276HYPT&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：东渡邮轮码头</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0FFGJYAEB&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：镇海路片区</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0I0ZAB1HM&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：中山路/八市片区</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0G17HVLES&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：环岛路·黄厝靠海片区</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0MU31Q7WB&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：厦大/白城片区</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0L0C7026C&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：鼓浪屿·码头附近</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0FFH2GMPZ&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：老溪岸沙茶面</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B02500QG1G&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：阿忠食坊大排档·20年老店(万象城店)</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B0FFF5WF5X&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：百赞姜母鸭(思明南路店)</a></li><li><a href='https://uri.amap.com/poidetail?poiid=B025003Z7S&callnative=1&src=travelsite' target='_blank'>⭐ 收藏：黄则和花生汤(中山路总店)</a></li></ol><p style='color:#8895a5;font-size:12px'>提示：坐标来自高德（GCJ-02）。KML/GPX 供导入轨迹参考；本站地图即最完整的带地名线路图；高德官方不支持第三方静默写入收藏，唯一个人侧官方路径是上面这种『详情页收藏』。</p></div>
+    </div>
+    <div><div id='mapwrap'><div class='mlegend'><i class='p'></i>当日路线 · <i class='l'></i>途经点 · <span style='color:#8b5cf6'>🏨 住宿区域</span></div><div id='map'></div></div></div>
+  </div>
+</div>
+<script src='https://webapi.amap.com/maps?v=2.0&key=2525e1aeef193f334882762b43b3b7ba&plugin=AMap.Driving,AMap.Walking,AMap.Transfer'></script>
+<script>
+window.__DAYS__ = {"1": [{"id": "p02", "name": "中山路步行街", "lng": 118.081903, "lat": 24.454104}, {"id": "p11", "name": "厦门八市（营平菜市场）", "lng": 118.075017, "lat": 24.457902}, {"id": "r01", "name": "老溪岸沙茶面", "lng": 118.088955, "lat": 24.461247}, {"id": "p08", "name": "集美学村", "lng": 118.103353, "lat": 24.572373}, {"id": "p15", "name": "十里长堤（集美）", "lng": 118.089475, "lat": 24.563722}], "2": [{"id": "p04", "name": "厦门园林植物园", "lng": 118.109277, "lat": 24.447728}, {"id": "p05", "name": "南普陀寺", "lng": 118.095336, "lat": 24.440836}, {"id": "p14", "name": "顶澳仔猫街", "lng": 118.091662, "lat": 24.440171}, {"id": "p03", "name": "沙坡尾艺术西区", "lng": 118.087587, "lat": 24.437609}, {"id": "p06", "name": "白城沙滩", "lng": 118.100875, "lat": 24.432281}, {"id": "p13", "name": "演武大桥观景台", "lng": 118.087789, "lat": 24.435421}, {"id": "p07", "name": "环岛路（白城→黄厝）", "lng": 118.142325, "lat": 24.431453}, {"id": "p10", "name": "黄厝海滩", "lng": 118.228083, "lat": 24.64782}], "3": [{"id": "p21", "name": "东渡邮轮码头", "lng": 118.077007, "lat": 24.49397}, {"id": "p16", "name": "日光岩", "lng": "118.067310", "lat": "24.442228"}, {"id": "p17", "name": "菽庄花园+钢琴博物馆", "lng": "118.069520", "lat": "24.439035"}, {"id": "p01", "name": "鼓浪屿（全岛）", "lng": 118.066102, "lat": 24.446214}, {"id": "p18", "name": "八卦楼（风琴博物馆）", "lng": "118.068263", "lat": "24.447422"}, {"id": "p20", "name": "大德记沙滩+皓月园", "lng": "118.075936", "lat": "24.441099"}]};
+window.__HOTELS__ = [{"name": "镇海路片区", "lng": 118.085491, "lat": 24.451308, "radius": 900}, {"name": "中山路/八市片区", "lng": 118.075017, "lat": 24.457902, "radius": 700}, {"name": "环岛路·黄厝靠海片区", "lng": 118.228083, "lat": 24.64782, "radius": 1500}, {"name": "厦大/白城片区", "lng": 118.100875, "lat": 24.432281, "radius": 900}, {"name": "鼓浪屿·码头附近", "lng": 118.069014, "lat": 24.449775, "radius": 1000}];
+(function(){ for(var d in window.__DAYS__){ var arr=window.__DAYS__[d]; arr.forEach(function(p,i){ p.seq=i+1; }); } })();
+var mp = new AMap.Map('map',{zoom:11,center:[118.09,24.47]});
+var routeLayers=[], markerLayers=[], activeDay=1;
+function navUrl(p){ return 'https://uri.amap.com/navigation?to='+p.lng+','+p.lat+','+encodeURIComponent(p.name)+'&mode=car&callnative=1'; }
+function clearLayers(){ routeLayers.concat(markerLayers).forEach(function(l){l.setMap&&l.setMap(null)}); routeLayers=[]; markerLayers=[]; }
+function drawDay(d){
+  clearLayers();
+  var pts=(window.__DAYS__[d]||[]).filter(function(p){return p&&p.lat});
+  if(pts.length<2) return;
+  var path=pts.map(function(p){return [p.lng,p.lat]});
+  var poly=new AMap.Polyline({path:path,strokeColor:'#0e7490',strokeWeight:6,strokeOpacity:.9,lineJoin:'round',borderWeight:2,strokeStyle:'solid'});
+  poly.setMap(mp); routeLayers.push(poly);
+  pts.forEach(function(p){
+    var m=new AMap.Marker({position:[p.lng,p.lat],zIndex:120,content:'<div class="seqmarker" data-name="'+p.name+'">'+p.seq+'</div>',offset:new AMap.Pixel(-14,-14)});
+    m.setMap(mp); markerLayers.push(m);
+    var lb=new AMap.Text({position:[p.lng,p.lat],content:'<div class="poilabel">'+(p.seq+'. '+p.name)+'</div>',offset:new AMap.Pixel(0,12),zIndex:130});
+    lb.setMap(mp); markerLayers.push(lb);
+  });
+  mp.setFitView([poly]);
+  document.querySelectorAll('.daycard').forEach(function(c){ c.classList.toggle('on', +c.dataset.day===d); });
+  renderNavbar(d, pts);
+}
+function renderNavbar(d, pts){
+  var bar=document.getElementById('navbar'); if(!bar) return;
+  var html='<div class="navhead">Day '+d+' 顺序导航 <span class="navtip">点站点直达高德 · 下一站自动前进</span></div>';
+  html+='<div class="chips">';
+  pts.forEach(function(p,i){ html+='<button class="chip" data-i="'+i+'">'+p.seq+'. '+p.name+'</button>'; });
+  html+='</div><div class="navctl"><button id="prevStop">上一站</button><button id="nextStop">下一站</button></div>';
+  bar.innerHTML=html;
+  var chips=bar.querySelectorAll('.chip');
+  chips.forEach(function(c){ c.addEventListener('click',function(){ window.open(navUrl(pts[+c.dataset.i]),'_blank'); }); });
+  var cur=0;
+  function hi(i){ cur=i; chips.forEach(function(c,j){ c.classList.toggle('cur', j===i); }); }
+  hi(0);
+  bar.querySelector('#prevStop').addEventListener('click',function(){ if(cur>0) hi(cur-1); });
+  bar.querySelector('#nextStop').addEventListener('click',function(){ if(cur<pts.length-1){ hi(cur+1); } window.open(navUrl(pts[cur]),'_blank'); });
+}
+var dayCards=document.querySelectorAll('.daycard');
+dayCards.forEach(function(c){c.addEventListener('click',function(){activeDay=+c.dataset.day;drawDay(activeDay);});});
+drawDay(1);
+var hotelLayer=[];
+(window.__HOTELS__||[]).forEach(function(h){
+  if(!h.lat) return;
+  var c=new AMap.Circle({center:[h.lng,h.lat],radius:h.radius||800,strokeColor:'#8b5cf6',strokeWeight:2,strokeOpacity:.6,fillColor:'#8b5cf6',fillOpacity:.16,zIndex:100});
+  c.setMap(mp); hotelLayer.push(c);
+  var m=new AMap.Marker({position:[h.lng,h.lat],zIndex:110,content:'<div class="hotelmark">🏨</div>',offset:new AMap.Pixel(-14,-14)});
+  m.setMap(mp); hotelLayer.push(m);
+  var lb=new AMap.Text({position:[h.lng,h.lat],content:'<div class="poilabel" style="border-color:#e0ccff;background:#faf5ff">🏨 '+h.name+'</div>',offset:new AMap.Pixel(0,16),zIndex:115});
+  lb.setMap(mp); hotelLayer.push(lb);
+  var _h=(function(hn){ return function(){ window.open('https://uri.amap.com/navigation?to='+h.lng+','+h.lat+','+encodeURIComponent(hn)+'&mode=car&callnative=1','_blank'); }; })(h.name);
+  m.on('click',_h); lb.on('click',_h); c.on('click',_h);
+});
+var pois=document.querySelectorAll('.poi input[type=checkbox]');
+pois.forEach(function(cb){cb.addEventListener('change',function(){ drawDay(activeDay); });});
+var btns=document.querySelectorAll('.topbar .pill');
+btns.forEach(function(b){b.addEventListener('click',function(){
+  btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
+  document.getElementById('panel-'+b.dataset.panel).classList.add('active');
+  if(b.dataset.panel==='trip'){ var bar=document.getElementById('navbar'); if(bar) bar.style.display='flex'; }
+  else if(b.dataset.panel==='import'){ var nb=document.getElementById('navbar'); if(nb) nb.style.display='none'; }
+});});
+</script>
+<div id='navbar'></div>
+</body></html>
