@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>川西跟团游 · 多方案对比攻略</title>
+<style>
+:root { color-scheme: light dark;
+  --background:#ffffff; --foreground:#1a1d21; --card:#ffffff; --card-foreground:#1a1d21;
+  --muted:#f2f3f5; --muted-foreground:#5c6470; --border:#e3e5e8; --input:#e3e5e8;
+  --primary:#2563eb; --primary-foreground:#ffffff; --accent:#eef2ff; --accent-foreground:#1e3a8a;
+  --ring:#2563eb; }
+@media (prefers-color-scheme: dark) {
+  :root { --background:#101214; --foreground:#e8eaed; --card:#181b1f; --card-foreground:#e8eaed;
+    --muted:#22262b; --muted-foreground:#9aa3ad; --border:#2e3339; --input:#2e3339;
+    --primary:#5b8def; --primary-foreground:#0b1220; --accent:#1d2430; --accent-foreground:#a5b8ec; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--background); color:var(--foreground);
+  font:15px/1.65 -apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  -webkit-font-smoothing:antialiased; }
+main { max-width:1080px; margin:0 auto; padding:28px 20px 60px; }
+h1 { font-size:26px; margin:.2em 0 .3em; } h2 { font-size:20px; margin:1.4em 0 .5em; } h3 { font-size:17px; margin:1.1em 0 .4em; }
+p { margin:.5em 0; } a { color:var(--primary); }
+code { background:var(--muted); border-radius:5px; padding:.1em .4em; font-size:.9em; }
+hr { border:0; border-top:1px solid var(--border); margin:1.6em 0; }
+.text-muted { color:var(--muted-foreground); } .text-small { font-size:12.5px; }
+.cx-kicker { letter-spacing:.04em; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 16px; }
+.viz-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:10px; }
+.viz-stat { display:flex; flex-direction:column; gap:2px; }
+.viz-stat-value { font-size:21px; font-weight:600; font-variant-numeric:tabular-nums; }
+.viz-row { display:flex; align-items:center; gap:10px; }
+.viz-badge { display:inline-block; background:var(--accent); color:var(--accent-foreground);
+  border-radius:999px; padding:1px 9px; font-size:12px; font-weight:500; white-space:nowrap; }
+.cx-band { background:var(--muted); border-radius:12px; padding:10px 14px; }
+.cx-quote { border-left:3px solid var(--border); padding-left:10px; margin:6px 0; }
+table { border-collapse:collapse; width:100%; font-size:14px; }
+th,td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--border); vertical-align:top; }
+th { color:var(--muted-foreground); font-weight:500; }
+.table-responsive { overflow-x:auto; }
+.nav { display:flex; flex-wrap:wrap; gap:6px; padding:0; margin:14px 0 10px; list-style:none; }
+.nav-link { appearance:none; border:1px solid transparent; background:var(--muted); color:var(--foreground);
+  border-radius:999px; padding:6px 14px; font-size:14px; cursor:pointer; font-family:inherit; }
+.nav-link:hover { background:var(--accent); }
+.nav-link.active { background:var(--foreground); color:var(--background); }
+[hidden] { display:none !important; }
+.form-check { display:flex; align-items:flex-start; gap:8px; margin:6px 0; cursor:pointer; }
+.form-check-input { width:16px; height:16px; margin:3px 0 0; accent-color:var(--primary); flex:none; }
+details { border:1px solid var(--border); border-radius:12px; padding:10px 16px; margin:10px 0; }
+details[open] { background:var(--card); }
+summary { font-weight:600; }
+ol,ul { padding-left:22px; } li { margin:4px 0; }
+i[data-lucide] { display:inline-block; width:16px; height:16px; vertical-align:-2px; }
+</style>
+</head>
+<body>
+<main>
+<div id="chuanxi-plan">
+
+<style>
+/* ===== 兜底设计系统：宿主变量优先，缺失时用兜底值（独立浏览器可完整渲染） ===== */
+#chuanxi-plan { --cx-r1:#2563eb; --cx-r2:#0d9488; --cx-r3:#7c3aed; --cx-r4:#d97706; --cx-r5:#dc2626; --cx-r6:#059669;
+  font-size:15px; line-height:1.65; color:var(--foreground,#1a1d21); }
+#chuanxi-plan .text-muted { color: var(--muted-foreground, #5c6470); }
+#chuanxi-plan .text-small { font-size: 12.5px; }
+#chuanxi-plan .cx-hero { border-radius: 16px; padding: 22px 22px 18px; margin-bottom: 14px;
+  background: linear-gradient(135deg, var(--accent, #eef2ff) 0%, var(--card, #fff) 55%, var(--muted, #f2f3f5) 100%); border: 1px solid var(--border, #e3e5e8); }
+#chuanxi-plan .cx-hero h1 { font-size: 27px; margin: 8px 0 6px; letter-spacing: .01em; }
+#chuanxi-plan .cx-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 4px; }
+#chuanxi-plan .cx-chip { display: inline-block; background: var(--card, #fff); border: 1px solid var(--border, #e3e5e8);
+  border-radius: 999px; padding: 3px 12px; font-size: 13px; font-weight: 500; }
+#chuanxi-plan .cx-chip b { font-weight: 600; }
+#chuanxi-plan .cx-alert { display: flex; gap: 10px; align-items: flex-start; background: var(--card, #fff);
+  border: 1px solid var(--border, #e3e5e8); border-left: 4px solid var(--cx-r4, #d97706); border-radius: 12px; padding: 12px 16px; margin: 14px 0 4px; }
+#chuanxi-plan .nav { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 16px 0 12px; list-style: none; }
+#chuanxi-plan .nav-link { appearance: none; border: 1px solid var(--border, #e3e5e8); background: var(--card, #fff); color: var(--foreground, #1a1d21);
+  border-radius: 999px; padding: 7px 15px; font-size: 14px; cursor: pointer; font-family: inherit; transition: background .15s; }
+#chuanxi-plan .nav-link:hover { background: var(--accent, #eef2ff); }
+#chuanxi-plan .nav-link.active { background: var(--foreground, #1a1d21); color: var(--background, #fff); border-color: transparent; }
+#chuanxi-plan .card { background: var(--card, #fff); border: 1px solid var(--border, #e3e5e8); border-radius: 14px; padding: 16px 18px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+#chuanxi-plan .viz-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px; }
+#chuanxi-plan .viz-stat { display: flex; flex-direction: column; gap: 3px; border-top: 3px solid var(--cx-r1, #2563eb); }
+#chuanxi-plan .viz-stat-value { font-size: 22px; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: .01em; }
+#chuanxi-plan .viz-badge { display: inline-block; background: var(--accent, #eef2ff); color: var(--accent-foreground, #1e3a8a);
+  border-radius: 999px; padding: 1px 10px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+#chuanxi-plan h2 { font-size: 20px; margin: 1.6em 0 .6em; }
+#chuanxi-plan h3 { font-size: 16.5px; margin: .4em 0; }
+#chuanxi-plan .table { width: 100%; border-collapse: collapse; font-size: 14px; }
+#chuanxi-plan .table th, #chuanxi-plan .table td { text-align: left; padding: 9px 11px; border-bottom: 1px solid var(--border, #e3e5e8); vertical-align: top; }
+#chuanxi-plan .table th { color: var(--muted-foreground, #5c6470); font-weight: 600; font-size: 13px; }
+#chuanxi-plan .table tbody tr:hover { background: var(--accent, #eef2ff); }
+#chuanxi-plan .table tbody tr:hover .viz-badge { background: var(--card, #fff); }
+#chuanxi-plan .table-responsive { overflow-x: auto; }
+#chuanxi-plan .cx-day { display: inline-block; min-width: 30px; text-align: center; border-radius: 7px; padding: 1px 7px;
+  font-size: 12px; font-weight: 700; color: #fff; background: var(--cx-r1, #2563eb); margin-right: 4px; }
+#chuanxi-plan .cx-quote { border-left: 3px solid var(--cx-r2, #0d9488); padding: 2px 0 2px 12px; margin: 8px 0; background: var(--muted, #f2f3f5); border-radius: 0 8px 8px 0; }
+#chuanxi-plan .cx-band { background: var(--muted, #f2f3f5); border-radius: 12px; padding: 12px 16px; }
+#chuanxi-plan .cx-kicker { letter-spacing: .05em; }
+#chuanxi-plan details { border: 1px solid var(--border, #e3e5e8); border-radius: 14px; padding: 12px 18px; margin: 12px 0; background: var(--card, #fff); box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+#chuanxi-plan details > summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 16.5px; }
+#chuanxi-plan details > summary::-webkit-details-marker { display: none; }
+#chuanxi-plan details > summary::before { content: "▸"; color: var(--muted-foreground, #5c6470); transition: transform .15s; }
+#chuanxi-plan details[open] > summary::before { transform: rotate(90deg); }
+#chuanxi-plan details > summary:hover { color: var(--accent-foreground, #1e3a8a); }
+#chuanxi-plan .cx-dot { display: inline-block; width: 12px; height: 12px; border-radius: 4px; flex: none; }
+#chuanxi-plan .form-check { display: flex; align-items: flex-start; gap: 9px; margin: 7px 0; cursor: pointer; }
+#chuanxi-plan .form-check-input { width: 16px; height: 16px; margin: 3px 0 0; accent-color: var(--cx-r1, #2563eb); flex: none; }
+#chuanxi-plan ol, #chuanxi-plan ul { padding-left: 22px; margin: .5em 0; }
+#chuanxi-plan li { margin: 5px 0; }
+#chuanxi-plan code { background: var(--muted, #f2f3f5); border-radius: 5px; padding: .1em .4em; font-size: .88em; }
+#chuanxi-plan hr { border: 0; border-top: 1px solid var(--border, #e3e5e8); margin: 1.8em 0; }
+#chuanxi-plan i[data-lucide] { display: inline-block; width: 16px; height: 16px; vertical-align: -2px; }
+/* 地图 */
+#chuanxi-plan .cx-map { position: relative; height: 300px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border, #e3e5e8); margin: 12px 0 8px; background: var(--muted, #f2f3f5); }
+#chuanxi-plan .cx-map .cx-map-tip { position: absolute; left: 10px; bottom: 8px; z-index: 5; font-size: 11px; color: #334155;
+  background: rgba(255,255,255,.85); border-radius: 6px; padding: 2px 8px; }
+#chuanxi-plan .cx-map svg { width: 100%; height: 100%; display: block; }
+#chuanxi-plan .cx-mk { width: 22px; height: 22px; border-radius: 50% 50% 50% 4px; transform: rotate(-45deg); display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,.35); border: 2px solid #fff; }
+#chuanxi-plan .cx-mk span { transform: rotate(45deg); color: #fff; font-size: 11px; font-weight: 700; }
+#chuanxi-plan .cx-navlinks { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+#chuanxi-plan .cx-navlinks a { font-size: 12px; text-decoration: none; color: var(--accent-foreground, #1e3a8a);
+  background: var(--accent, #eef2ff); border-radius: 999px; padding: 2px 10px; border: 1px solid var(--border, #e3e5e8); }
+#chuanxi-plan .cx-navlinks a:hover { text-decoration: underline; }
+#chuanxi-plan .cx-labels { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 2px 0 10px; font-size: 12px; color: var(--muted-foreground, #5c6470); }
+#chuanxi-plan .cx-labels b { display: inline-block; width: 9px; height: 9px; border-radius: 3px; margin-right: 4px; }
+</style>
+
+<header class="cx-hero">
+  <div class="cx-chips"><span class="cx-chip">📍 贵州兴义出发</span><span class="cx-chip">👤 单人 · 52 岁</span><span class="cx-chip">🚐 10 人内小团包车</span><span class="cx-chip">🗓 生成 2026-10-25</span></div>
+  <h1>川西跟团游 · 多方案对比攻略</h1>
+  <p class="text-muted" style="margin:.2em 0 0">travel-planner-kit 跟团游适配版 ｜ 小红书 247 篇去重笔记 + B站 44 视频种子（3 个核心转写）+ 4 路智能体交叉验证 + 飞猪官方实时数据</p>
+  <div class="cx-alert">
+    <div style="font-size:20px;line-height:1.2">⏰</div>
+    <div><b>时效红利</b> <span class="viz-badge">10-31 截止</span>　稻城亚丁 2026-08-01～10-31 免 146 元门票（观光车/电瓶车自 2026-05-29 起免费）；免票≠免预约，日限 1.5 万需实名预约。想省 266+ 元/人，亚丁线越早走越划算。</div>
+  </div>
+</header>
+
+<div class="nav nav-pills" role="tablist" aria-label="攻略栏目">
+  <button class="nav-link active" id="cx-t1" role="tab" aria-controls="cx-p1" aria-selected="true" type="button">方案总览</button>
+  <button class="nav-link" id="cx-t2" role="tab" aria-controls="cx-p2" aria-selected="false" type="button">六大方案详情</button>
+  <button class="nav-link" id="cx-t3" role="tab" aria-controls="cx-p3" aria-selected="false" type="button">选团与合同</button>
+  <button class="nav-link" id="cx-t4" role="tab" aria-controls="cx-p4" aria-selected="false" type="button">时间与交通</button>
+  <button class="nav-link" id="cx-t5" role="tab" aria-controls="cx-p5" aria-selected="false" type="button">52岁健康高反</button>
+  <button class="nav-link" id="cx-t6" role="tab" aria-controls="cx-p6" aria-selected="false" type="button">行前清单</button>
+  <button class="nav-link" id="cx-t7" role="tab" aria-controls="cx-p7" aria-selected="false" type="button">避雷维权</button>
+</div>
+
+<!-- ============ Tab 1 方案总览 ============ -->
+<div id="cx-p1" role="tabpanel" aria-labelledby="cx-t1">
+  <div class="viz-grid">
+    <div class="card viz-stat"><div class="text-muted text-small">推荐出发窗口</div><div class="viz-stat-value">11 上旬 / 2027 秋</div><div class="text-small text-muted">要长线秋色等明年；初雪短线今年可走</div></div>
+    <div class="card viz-stat" style="border-top-color:var(--cx-r2,#0d9488)"><div class="text-muted text-small">首选方案</div><div class="viz-stat-value">A 小环线 4 天</div><div class="text-small text-muted">52 岁首上高原最稳</div></div>
+    <div class="card viz-stat" style="border-top-color:var(--cx-r4,#d97706)"><div class="text-muted text-small">合理团费（小环线）</div><div class="viz-stat-value">1000–1800 元</div><div class="text-small text-muted">显著低于此必查自费结构</div></div>
+    <div class="card viz-stat" style="border-top-color:var(--cx-r5,#dc2626)"><div class="text-muted text-small">亚丁免票截止</div><div class="viz-stat-value">10-31</div><div class="text-small text-muted">错过恢复 146 元门票</div></div>
+  </div>
+
+  <h2>六方案横向对比</h2>
+  <div class="table-responsive">
+    <table class="table">
+      <thead><tr><th>方案</th><th>天数</th><th>市场估值</th><th>飞猪实时起价<span class="text-small text-muted">（10-25 采集）</span></th><th>最高住宿海拔</th><th>强度</th><th>一句话适合</th></tr></thead>
+      <tbody>
+        <tr><td><b style="color:var(--cx-r1,#2563eb)">A 小环线</b>（四姑娘山—丹巴—新都桥—康定）</td><td>3–4 天</td><td>1000–1800 元</td><td><b>888–1380</b>（制氧机 6 人团 1680）</td><td>≈3460m（丹巴 1800m 缓冲）</td><td><span class="viz-badge">★★</span></td><td>首选·稳</td></tr>
+        <tr><td><b style="color:var(--cx-r2,#0d9488)">B 贡嘎雪山线</b>（鱼子西—冷嘎措—子梅垭口）</td><td>3–4 天</td><td>880–2500 元</td><td><b>758–1480</b>（徒步穿越 2980）</td><td>≈3460m（观景台 4200–4500m）</td><td><span class="viz-badge">★★★</span></td><td>雪山控·日照金山</td></tr>
+        <tr><td><b style="color:var(--cx-r3,#7c3aed)">C 亚丁大环线</b>（理塘—稻城亚丁）</td><td>7–8 天</td><td>2500–4000 元</td><td><b>950–1180</b>（5 天专线）；大环线 7–8 天 <b>1580–2958</b></td><td>亚丁村 ≈3900m（建议宿镇 2900m）</td><td><span class="viz-badge">★★★★</span></td><td>圆梦·体检过关再选</td></tr>
+        <tr><td><b style="color:var(--cx-r4,#d97706)">D 亚丁飞机团</b>（成都直飞稻城 4411m 机场）</td><td>3–5 天</td><td>机票 1800–2500 + 当地团</td><td>—（API 无该航线锚点）</td><td>空降 4411m</td><td><span class="viz-badge">★★★</span></td><td>假期短·52 岁慎选</td></tr>
+        <tr><td><b style="color:var(--cx-r5,#dc2626)">E 色达线</b>（观音桥—色达）</td><td>4 天</td><td>1500–2200 元</td><td><b>758–1098</b></td><td>≈3890m</td><td><span class="viz-badge">★★★</span></td><td>人文·需抢预约票</td></tr>
+        <tr><td><b style="color:var(--cx-r6,#059669)">F 四姑娘山+毕棚沟+达古冰川</b></td><td>3 天</td><td>1380–1800 元</td><td><b>288–738</b></td><td>≈3160m（52 岁最友好）</td><td><span class="viz-badge">★★</span></td><td>试水·彩林季正当时</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-small text-muted">市场估值口径：2025–2026 年 2–8 人拼车纯玩小团公开产品估值（research/01）。飞猪实时起价：2026-10-25 经飞猪官方数据（flyai）两轮 20 组关键词采集的挂牌起价，多为淡季最低配置、<b>不含门票与观光车</b>；仅采信带「无自费/无购物/成团保障」标签的产品。扩展锚点：海螺沟 2-3 天 298–799（含门票版 488）、九寨沟高铁团 450–880、丹巴党岭轻徒步 2480–3180；飞猪"包车"类目标价 100–380 元多为<b>定金引流</b>，整车日价按 800–1600/天谈。52 岁单人筛选词：「含氧酒店」「制氧机」「6 人空座团」「成团保障」「低海拔」「慢游」。下单前以 App 当日价与费用包含为准。</p>
+
+  <h2>小红书调研信号（247 篇标题池摘录）</h2>
+  <div class="cx-quote text-small">「川西小环线逆时针纯玩 4 天人均 1100 元」（67 赞）·「一人 2980 的越野小团算贵吗」·「川西包车水太深，1000/天全说清」</div>
+  <div class="cx-quote text-small">「还是被白菜价骗了！！」「一千多的川西旅游环线」——低价团警示高频出现；「别乱买甘孜终身卡！盈亏表」（123 赞）与 B站实测互证：终身卡大半景点不在行程</div>
+  <div class="cx-quote text-small">「我不推荐任何人去稻城亚丁！」（426 赞）——期望管理：拥挤、猴患（勿露食物）、长线体力门槛；「高海拔徒步 3 个信号出现立刻下撤」（57 赞）</div>
+  <div class="cx-quote text-small">单人相关：「i 人独自跟团去川西，竟遇到全女旅行团」「一个人公交环川西 20 天」——单人报小团是成熟玩法，报团前问清单房差即可</div>
+  <hr>
+  <p class="text-small text-muted"><i data-lucide="info" aria-hidden="true"></i> 数据文件：小红书种子池 <code>data/research/xhs_seed.json</code>、B站转写 <code>data/raw/subtitles/</code>、智能体报告 <code>research/01–05.md</code>、总攻略 <code>guides/川西-跟团游攻略.md</code>。路线坐标来自高德地理编码（<code>scripts/geocode_routes.py</code>）。</p>
+</div>
+
+<!-- ============ Tab 2 方案详情（含地图） ============ -->
+<div id="cx-p2" role="tabpanel" aria-labelledby="cx-t2" hidden>
+  <p class="text-small text-muted">每条路线配高德地图（节点编号＝行程顺序；点击地名可唤起高德导航）。若当前环境不加载第三方地图，则自动降级为同比例示意线路图。</p>
+
+  <details class="cx-route" data-route="A" open>
+    <summary><span class="cx-dot" style="background:var(--cx-r1,#2563eb)"></span>方案 A · 川西小环线 4 天 3 晚（首推）<span class="viz-badge">1000–1800 元</span><span class="viz-badge">≈3460m</span><span class="viz-badge">强度 ★★</span></summary>
+    <div class="cx-map" id="cx-map-A"></div>
+    <div class="cx-navlinks" id="cx-nav-A"></div>
+    <div class="cx-labels" id="cx-leg-A"></div>
+    <div class="table-responsive"><table class="table">
+      <thead><tr><th style="width:52px">日</th><th>行程</th><th>住宿海拔</th><th>提示</th></tr></thead>
+      <tbody>
+        <tr><td><span class="cx-day" style="background:var(--cx-r1,#2563eb)">D1</span></td><td>成都 ≈6:30 出发 → 猫鼻梁观景 → 双桥沟（观光车 70 必不含）</td><td>四姑娘山镇 ≈3160m</td><td>第一天上 3160m，当晚不洗澡防感冒</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r1,#2563eb)">D2</span></td><td>四姑娘山 → 丹巴甲居藏寨（门票约 50，估值）</td><td>丹巴 ≈1800m</td><td>低海拔缓冲夜，睡眠好</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r1,#2563eb)">D3</span></td><td>丹巴 → 亚拉观景台 → 墨石公园（80）→ 塔公草原</td><td>新都桥 ≈3460m</td><td>全程海拔最高夜</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r1,#2563eb)">D4</span></td><td>新都桥 → 鱼子西/格底拉姆看日照金山 → 泸定桥 → ≈18–20 点散团</td><td>—</td><td>返程票订次日；鱼子西中转车 60–80</td></tr>
+      </tbody>
+    </table></div>
+    <p class="text-small text-muted">适合：首次上高原、假期 4 天。变体：3 日版砍丹巴；「小环线+G318」组合。参考：携程甘孜 4 天 4.9 分已售 1.3 万+（6/8/12 人保姆车分线）、Klook 4 日 8 人小团。</p>
+  </details>
+
+  <details class="cx-route" data-route="B">
+    <summary><span class="cx-dot" style="background:var(--cx-r2,#0d9488)"></span>方案 B · 贡嘎雪山线 4 天（景观密度最高）<span class="viz-badge">880–2500 元</span><span class="viz-badge">观景台 4200–4500m</span><span class="viz-badge">强度 ★★★</span></summary>
+    <div class="cx-map" id="cx-map-B"></div>
+    <div class="cx-navlinks" id="cx-nav-B"></div>
+    <div class="cx-labels" id="cx-leg-B"></div>
+    <div class="table-responsive"><table class="table">
+      <thead><tr><th style="width:52px">日</th><th>行程</th><th>住宿海拔</th><th>提示</th></tr></thead>
+      <tbody>
+        <tr><td><span class="cx-day" style="background:var(--cx-r2,#0d9488)">D1</span></td><td>成都 → 康定 → 红海子 → 鱼子西（日照金山）</td><td>新都桥 ≈3460m</td><td>鱼子西中转车 60–80 元多为必消；防火期可能关闭改八郎生都</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r2,#0d9488)">D2</span></td><td>甲根坝 → 姑弄村雪山咖啡 → 提弄垭口</td><td>玉龙西村 ≈4000m</td><td>夜宿海拔高，睡不好可要求回新都桥</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r2,#0d9488)">D3</span></td><td>冷嘎措徒步/骑马拍贡嘎倒影 → 泉华滩 → 子梅垭口</td><td>新都桥</td><td>冷嘎措清洁费 20–30；骑马单程约 200；不逞强</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r2,#0d9488)">D4</span></td><td>格底拉姆·天空之城 →（塔公/墨石可选）→ 成都</td><td>—</td><td>11 月通透度高，星空/日出概率大</td></tr>
+      </tbody>
+    </table></div>
+    <p class="text-small text-muted">观景台化、无长线徒步；垭口风大温低，防风羽绒+手套帽子必带。体验型团（含咖啡/下午茶/无人机）1800–2500 元。</p>
+  </details>
+
+  <details class="cx-route" data-route="C">
+    <summary><span class="cx-dot" style="background:var(--cx-r3,#7c3aed)"></span>方案 C · 稻城亚丁大环线 7–8 天（圆梦级）<span class="viz-badge">2500–4000 元</span><span class="viz-badge">亚丁村 ≈3900m</span><span class="viz-badge">强度 ★★★★</span></summary>
+    <div class="cx-map" id="cx-map-C"></div>
+    <div class="cx-navlinks" id="cx-nav-C"></div>
+    <div class="cx-labels" id="cx-leg-C"></div>
+    <p><b>路线</b>：成都 → 四姑娘山/丹巴 → 新都桥 → 雅江 → 理塘 4014m（勒通古镇）→ 海子山/兔儿山 → 稻城 → 亚丁 → 返程。8 天经典顺时针可加色达（见方案 E）。</p>
+    <p><b>亚丁玩法</b>：短线（冲古寺+珍珠海，轻松）；长线（电瓶车至洛绒牛场 4150m → 牛奶海 4600m → 五色海，往返徒步 5–6h，可骑马减负）。<b>52 岁建议：短线已值回票价，长线量力</b>；日限 1.5 万需提前实名预约。</p>
+    <p class="text-small text-muted">住宿选香格里拉镇 ≈2900m 而非亚丁村 3900m，睡眠质量差很多；理塘仅途经勿过夜（除非已适应）。日均车程 4–7h，需体检评估后再报。</p>
+  </details>
+
+  <details class="cx-route" data-route="D">
+    <summary><span class="cx-dot" style="background:var(--cx-r4,#d97706)"></span>方案 D · 稻城亚丁飞机团 4–5 天（免颠簸）<span class="viz-badge">机票 1800–2500</span><span class="viz-badge">空降 4411m</span><span class="viz-badge">强度 ★★★</span></summary>
+    <div class="cx-map" id="cx-map-D"></div>
+    <div class="cx-navlinks" id="cx-nav-D"></div>
+    <div class="cx-labels" id="cx-leg-D"></div>
+    <p>成都天府每周约 21 班+双流 7 班直飞稻城亚丁机场（世界最高民用机场之一），川航单程低至 400 元。省去 2 天车程，但 1 小时从 500m 空降 4411m 是高反直接诱因——<b>52 岁除非医生认可，否则不选</b>；天气原因航班易取消，行程需留缓冲。</p>
+  </details>
+
+  <details class="cx-route" data-route="E">
+    <summary><span class="cx-dot" style="background:var(--cx-r5,#dc2626)"></span>方案 E · 色达线 4 天（人文向·政策敏感）<span class="viz-badge">1500–2200 元</span><span class="viz-badge">≈3890m</span><span class="viz-badge">强度 ★★★</span></summary>
+    <div class="cx-map" id="cx-map-E"></div>
+    <div class="cx-navlinks" id="cx-nav-E"></div>
+    <div class="cx-labels" id="cx-leg-E"></div>
+    <p><b>2025–2026 政策（research/01 核实）</b>：五明佛学院对大陆游客开放但严格限流——小程序「喇荣沟进沟预约」每日 18:00 放第 3 天票（约 1200–3000 张，需求 2.3 万+，秒空）；游览限 90 分钟；进沟专线车 48 元往返；佛学院免费。<b>团队票与散客同池抢约，没有旅行社能保证约上</b>。东嘎寺免费不限流；天葬台 13:00–16:00（禁喧哗拍照，心理冲击自行斟酌）。</p>
+    <p class="text-small text-muted">约不上预案：金马草原远眺红房子（骑马约 50 元/时）、药王神山观景台、格萨尔文化博物馆，或落点观音桥 ≈2600m。报名时就让旅行社写明约不上如何调整。</p>
+  </details>
+
+  <details class="cx-route" data-route="F">
+    <summary><span class="cx-dot" style="background:var(--cx-r6,#059669)"></span>方案 F · 四姑娘山+毕棚沟+达古冰川 3 天（52 岁最友好）<span class="viz-badge">1380–1800 元</span><span class="viz-badge">≤3160m</span><span class="viz-badge">强度 ★★</span></summary>
+    <div class="cx-map" id="cx-map-F"></div>
+    <div class="cx-navlinks" id="cx-nav-F"></div>
+    <div class="cx-labels" id="cx-leg-F"></div>
+    <div class="table-responsive"><table class="table">
+      <thead><tr><th style="width:52px">日</th><th>行程</th><th>住宿海拔</th><th>提示</th></tr></thead>
+      <tbody>
+        <tr><td><span class="cx-day" style="background:var(--cx-r6,#059669)">D1</span></td><td>成都 → 巴朗山隧道 → 双桥沟（观光车 70）→ 猫鼻梁</td><td>四姑娘山镇 ≈3160m</td><td>彩林季尾巴，景色好</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r6,#059669)">D2</span></td><td>毕棚沟（观光车 60–70）</td><td>黑水县 ≈2400m</td><td>低海拔好睡眠</td></tr>
+        <tr><td><span class="cx-day" style="background:var(--cx-r6,#059669)">D3</span></td><td>达古冰川（观光车 70 + 索道 180 上 4860m 观景台）→ 返成都</td><td>—</td><td>索道直达 4860m 属"被动高海拔"，山上动作放慢</td></tr>
+      </tbody>
+    </table></div>
+    <p class="text-small text-muted">Klook/KKday 在售 2–8 人小团 1380 起；10 月底–11 月红叶彩林正盛、价格尚好。部分团把"强制观光车/索道"写进必消，下单前看清。</p>
+  </details>
+</div>
+
+<!-- ============ Tab 3 选团与合同 ============ -->
+<div id="cx-p3" role="tabpanel" aria-labelledby="cx-t3" hidden>
+  <h2>选团三维模型 <span class="text-small text-muted">（B站《川西小团从夯到拉》全文转写）</span></h2>
+  <p class="text-small text-muted">同一条路线报价能从 1000 多到 5000 多，差别就在用车 / 住宿 / 领队：</p>
+  <div class="table-responsive"><table class="table">
+    <thead><tr><th>维度</th><th>拉胯（避开）</th><th>合格</th><th>优秀（贵但值）</th></tr></thead>
+    <tbody>
+      <tr><td><b>用车</b></td><td>九座普通商务车——销售发保姆车图片、上车变脸；座椅密不透风、行李堆过道</td><td>九座保姆车：3–4 个通风按摩加热独立座椅；但最后一排连坐、行李限 24 寸</td><td>9 改 7 座 1+1 布局：每座独立靠窗、行李 30 寸（稀缺，多为 6 人团）；越野车出片但<b>多无客运资质、只签租车代驾协议，合规弱</b></td></tr>
+      <tr><td><b>住宿</b></td><td>"四钻五钻"话术 + 大量罗列参考酒店 +「或同级别」（钻级是平台评价，可操作）</td><td>每个住宿点给 3 家左右具体候选随机入住（可提前查差评）</td><td>每晚指定酒店且<b>写进合同</b>（定制包车，不开盲盒）</td></tr>
+      <tr><td><b>领队</b></td><td>旺季短期兼职司机：推销氧气/高反药/高价参高发；"随车无人机拍摄"多为摆设</td><td>老司机+相机无人机双设备，<b>拍照服务写进合同</b></td><td>摄影领队：出片+情绪价值，旅拍小团，价格贵</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>合同三件套（B站低价团实测互证）</h2>
+  <p>正规团上车就会签三样，<b>缺一不可</b>：① 全国旅游监管服务平台可查的<b>电子旅游合同</b>；② <b>高原反应告知书</b>（每人必签）；③ 车辆<b>运输协议</b>（旅游包车牌，路面运管查）。<br><b>金句：先看合同再付定金，能避免 90% 的问题。</b></p>
+
+  <h2>下单前必问清单</h2>
+  <div class="cx-band">
+    <ol style="margin:0">
+      <li>成团人数与车型：确认「2–8 人」会不会拼成 17 座车；要 9 座保姆车还是 1+1 布局</li>
+      <li>单人拼房：能否拼住？拼不成单房差多少钱（小环线约 300–600、大环线 500–1200）</li>
+      <li>费用不含明细：哪些观光车/索道/清洁费/骑马是必消？逐项报价写行程单</li>
+      <li>住宿：每晚住哪家（或候选 3 家名单），新都桥/香格里拉镇有无供暖热水</li>
+      <li>每日出发时间（川西团多为 6:00–8:00 出发）与集合方式（宽窄巷子 6:30 或三环内接早）</li>
+      <li>购物与自费：是否 0 购物？自费项目是否自愿并写入行程单</li>
+      <li>保险：旅行社责任险之外，是否含旅游意外险；高原救援是否覆盖</li>
+      <li>退改：高原天气封路封山属不可抗力如何处理；高反中途退出费用怎么算</li>
+    </ol>
+  </div>
+
+  <h2>在哪订更稳 <span class="text-small text-muted">（research/04 + research/05 飞猪补充调研）</span></h2>
+  <div class="table-responsive"><table class="table">
+    <thead><tr><th>渠道</th><th>优势</th><th>短板与用法</th></tr></thead>
+    <tbody>
+      <tr><td><b>携程</b></td><td>售后最稳（黑猫回复率接近 100%），自营+供应商兜底强</td><td>价格偏高；适合省心优先</td></tr>
+      <tr><td><b>飞猪</b></td><td>价格竞争充分（2026-10-25 官方数据实测：淡季纯玩小团起价 888–1180 元真实在售）＋支付宝担保＋规则明确：<b>降酒店等级/换酒店可按《度假商品服务保障标准》主张违约金（订单 10%×天数，上限 30%）</b></td><td>平台撮合模式——履约靠第三方商家/地接社，售后介入慢（黑猫近 4 万条投诉、回复仅 2 万余；2026 上半年电诉宝投诉榜第 2）。用法：只选旗舰店/高钻级、点开店铺核对《旅行社业务经营许可证》并到 mr.mct.gov.cn 亲自核验、<b>按平台标签筛：无自费/无购物/成团保障</b>、站内沟通+支付宝付款拒绝微信转账、下单即索要电子旅游合同</td></tr>
+      <tr><td><b>成都老牌门店</b></td><td>四川康辉、四川青旅/中青旅、成都中旅可实地签约、当面核验双证</td><td>最稳但需到店；适合首次跟团者</td></tr>
+      <tr><td><b>社交平台私信</b></td><td>—</td><td>重灾区（"成都野界"近百人损失百万等实锤）：转个人微信/私下转账/无合同一律不碰</td></tr>
+    </tbody>
+  </table></div>
+  <p class="text-small text-muted">四原则通用于所有渠道：平台/门店成交 + 电子合同 + 对公/担保付款 + 全程留证。飞猪商家准入本须《旅行社业务经营许可证》+责任险保单（招商细则），但平台审核不能替代自己核验。</p>
+
+  <h2>成都集散作息</h2>
+  <p class="text-small">集合：宽窄巷子附近 ≈6:30，或成都三环内酒店 6:00 起接早（<b>前一晚短信/电话通知集合点与车牌</b>）；散团：18:00–21:00 回成都三环内地铁口。因此 <b>兴义出发须提前一晚到成都</b>住三环内，返程票订次日。</p>
+
+  <h2>包车游（独立成团）特别提示</h2>
+  <p class="text-small">5 座 SUV 约 800–1200 元/天、7 座商务 1200–1600 元/天；多日按「全包价/天」或「车价+司机食宿另算」两种模式，签约逐项确认（油费过路费停车费司机服务费）。查营运资质（旅游包车牌）、师傅驾龄与山路经验、冬季防滑链/备氧；行程变更先谈价再出发。⚠️ 飞猪"包车"类目标价 100–380 元多为定金引流，不是整车日价。单人包车无人分摊成本高，本场景推荐小团拼车+单房差。</p>
+</div>
+
+<!-- ============ Tab 4 时间与交通 ============ -->
+<div id="cx-p4" role="tabpanel" aria-labelledby="cx-t4" hidden>
+  <h2>全年季节窗口</h2>
+  <div class="table-responsive"><table class="table">
+    <thead><tr><th>月份</th><th>景色</th><th>路况/风险</th><th>价格</th></tr></thead>
+    <tbody>
+      <tr><td>3–4 月</td><td>春雪+野桃花，人少</td><td>垭口残冰</td><td>淡季价</td></tr>
+      <tr><td>5–6 月</td><td>高山杜鹃、初夏草原</td><td>稳定</td><td>平季</td></tr>
+      <tr><td>7–8 月</td><td>花海旺季、避暑</td><td><b>雨季塌方多发</b></td><td>最旺</td></tr>
+      <tr><td>9 中–10 下</td><td><b>秋色巅峰</b>（彩林/青杨林）</td><td>稳定</td><td>最旺</td></tr>
+      <tr><td><b>11 上中</b></td><td><b>秋末初冬：雪山通透、星空好</b></td><td>晨间结冰，白天尚可</td><td><b>回落，性价比高</b></td></tr>
+      <tr><td>11 下–2 月</td><td>蓝冰雪景、温泉</td><td><b>冰雪管制、部分垭口/野景点关闭</b></td><td>淡季（海螺沟 12 月起半价）</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>2026 年 10 月下旬的现状判断</h2>
+  <div class="cx-band">
+    <ul style="margin:0">
+      <li><b>11 月结论（research/03）：勉强可去，但不是好窗口</b>——上中旬是"秋色尾声+初雪+人少+淡季价"的性价比期，一般不会大雪封山（封山多在 1–2 月）；但有三重折损：亚丁免门票 10-31 截止、亚丁长线（牛奶海/五色海）冬季运营调整可能封闭、11 月中下旬徒步路面结冰需冰爪</li>
+      <li>决策口径：<b>若执念秋色和长线徒步 → 放弃今年 11 月，等 2027 年 9 月下旬–10 月中旬</b>（避开国庆、选周二三出发可省近 3 倍）；<b>若只求初雪+短线+省钱 → 11 月上旬可成行</b>（小环线/贡嘎线/阿坝短线都合适）</li>
+      <li>12–2 月为冬管期（垭口封路、理小路等管制），明确不推荐首次进川西者</li>
+      <li>10 月底–11 月中阿坝彩林正盛，方案 F 恰逢其时；夜间已到 0℃ 左右（11 月新都桥夜温 -5～5℃、香格里拉镇 -5～-8℃），观景台风大温低</li>
+      <li>冬季防火期野景点（鱼子西等）可能关闭；折多山 10 月已现暴雪临时管制——选团时问"冬季防滑链+备氧是否标配"</li>
+    </ul>
+  </div>
+
+  <h2>兴义 → 成都大交通 <span class="text-small text-muted">（research/03 核实 + flyai 火车实时数据 2026-10-25）</span></h2>
+  <div class="table-responsive"><table class="table">
+    <thead><tr><th>组合</th><th>方式</th><th>耗时/费用</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr><td>① 直飞（首推）</td><td>万峰林机场 ACX → 天府机场 TFU，约 1h24m（多彩贵州/华夏/川航，每周约 14 班，班次不稳定）</td><td>单程 ¥300–600；门到门 4–5h（落地 18 号线 60–90 分钟进城）</td><td>52 岁单人最省力；缺点是班次少，需按航班日期倒排集合日（flyai 机票接口对该航线暂报错，口径来自公开网络核实）</td></tr>
+      <tr><td>② 高铁兜底（最稳）</td><td>兴义南 → 贵阳北 → 成都东</td><td><b>实时核实：兴义南→贵阳北直达 6+ 班/日、¥117–137、约 2h</b>（G1768 08:35 发等）；贵阳北→成都东直达 D/G 约 3.4–4h（D5122 06:03 发 3h23m 等，实时价接口未返回、量级 ¥237–330）</td><td>合计约 ¥354–467、总 6–6.5h；班次最密、改签灵活</td></tr>
+      <tr><td>③ 盘州中转</td><td>兴义南 → 盘州（33 分钟）→ 成都东</td><td>约 7–8h</td><td>仅在时刻恰好咬合时用</td></tr>
+    </tbody>
+  </table></div>
+  <p class="text-small text-muted"><b>集合前一晚住宿</b>：骡马市—天府广场一带（1/2/4 号线交汇：成都东站 2 号线 17–20 分钟直达，天府机场 18 号线 60–90 分钟）；若团集合点在宽窄巷子则改住宽窄巷子站旁。返程散团 18–21 点，回程票同样订次日。<b>沿线淡季住宿锚点（11 月平日，flyai 实时）</b>：香格里拉镇经济型 ¥99–256、新都桥民宿 ¥59–70——订团时"住宿降标"要对照具体酒店名而非星级话术。</p>
+</div>
+
+<!-- ============ Tab 5 健康与高反 ============ -->
+<div id="cx-p5" role="tabpanel" aria-labelledby="cx-t5" hidden>
+  <p class="text-small text-muted">通行经验整理，供参考、不能替代医嘱（research/02 有完整来源与免责声明）。</p>
+  <h2>先说结论：52 岁能不能去？</h2>
+  <div class="cx-band"><b>年龄本身不是急性高原病的独立危险因素</b>——风险取决于慢病控制情况与爬升速度。高血压<b>控制良好可去、未控制不去</b>；心脏病人群通行建议避免 2500m+（稳定者经医生评估可谨慎）；糖尿病需加密测血糖、注意胰岛素剂量在低气压下的变化。器质性心脏病、未控高血压、重感冒未愈等（新华网"7 类人"清单）<b>明确不建议上 4000m+</b>。</div>
+  <h2>行前 1–2 周</h2>
+  <ol>
+    <li><b>体检</b>：血压、心电图、心脏彩超、肺功能、血常规、血糖</li>
+    <li><b>用药</b>：红景天循证证据不足——可提前 7–10 天吃但勿依赖；<b>乙酰唑胺是循证一线预防药</b>（2026 年 8 月国内获批），处方药须遵医嘱；高原头痛用布洛芬；个人慢病药带足量</li>
+    <li><b>保险四查</b>：① 承保海拔 ≥5000m；② 承保高反（按急性病赔付而非仅意外）；③ 含运送和送返（直升机救援甘孜未必配备，实际多靠救护车+马帮，保险是关键）；④ 投保年龄上限与既往症告知（平安高原游/美亚畅游神州/众安等产品形态见 research/02）</li>
+    <li><b>选"睡眠海拔阶梯"行程</b>：第一晚丹巴 1800m 理想；亚丁村 3900m、色达县城 3890m 不宜作前几晚的睡眠点——这是比吃任何药都硬的纪律</li>
+  </ol>
+  <h2>途中纪律</h2>
+  <ul>
+    <li>抵达高海拔 24h 内不洗头洗澡（防感冒→防肺水肿）、不跑跳、不饮酒、多喝温水</li>
+    <li><b>指夹血氧仪随身</b>：静息血氧持续偏低或症状加重即下撤就医；亚丁景区有急救站可测血氧吸氧，稻城/理塘县医院只兜轻中度，州级转诊靠康定甘孜州人民医院（三甲）</li>
+    <li>团里签《高原反应告知书》是正规动作，认真读、如实填健康告知（跟团无 52 岁硬门槛，限制多从 60 岁起、70 岁需健康证明+陪同）</li>
+  </ul>
+  <h2>下撤红线</h2>
+  <div class="cx-band">
+    <b>头痛止痛药无效/呕吐 · 意识模糊走路不稳 · 静息呼吸困难咳粉红泡沫痰</b>——出现任一信号，立即就医下撤，不要硬扛（肺水肿/脑水肿进展可以很快）。反面案例的共同教训：隐瞒身体信号、拖延不撤。
+  </div>
+  <h2>强度适配（52 岁）</h2>
+  <ul>
+    <li><b>牛奶海/五色海（4600m，徒返 10–12km / 5–9h）：有条件可行</b>——满足全部 4 条才考虑：已适应 ≥2 晚、前夜睡 2900m（香格里拉镇）、带血氧仪+便携氧、提前定好折返标准（如血氧/心率阈值或时间点）。可只走到牛奶海或骑马（约 300 元，班次少需早排队）</li>
+    <li>贡嘎观景台（4200–4500m）：徒步量小但海拔高，慢走、不负重，冷嘎措选马帮</li>
+    <li><b>达古冰川索道 4860m</b>："电梯式急升"高反高发，山上停留控制在 1 小时内、动作放慢</li>
+    <li>白天防晒（SPF50+、墨镜）、夜间保暖同样重要</li>
+  </ul>
+</div>
+
+<!-- ============ Tab 6 行前清单 ============ -->
+<div id="cx-p6" role="tabpanel" aria-labelledby="cx-t6" hidden>
+  <p class="text-small text-muted">勾选状态会自动保存在本页。11 月参考：新都桥夜温 -5～5℃、香格里拉镇 -5～-8℃（按 -5～-10℃ 备）；住宿供暖优先级"地暖＞空调＞电热毯"；"含氧房"=弥散式供氧（中央制氧进房免面罩，可向前台要鼻吸管）。</p>
+  <h2>证件与钱</h2>
+  <div id="cx-pack">
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c1"><span class="form-check-label">身份证（全程随身，进景区/佛学院/住宿都要）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c2"><span class="form-check-label">优惠证件（60 岁以上部分景区有优惠票，52 岁暂不适用但可带上）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c3"><span class="form-check-label">银行卡 + 少量现金 200–500 元（沿途小商户、厕所收费）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c4"><span class="form-check-label">电子合同/行程单截图、紧急联系人卡片</span></label>
+  </div>
+  <h2>穿衣（10–11 月三层制）</h2>
+  <div>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c5"><span class="form-check-label">保暖内层（速干保暖内衣裤）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c6"><span class="form-check-label">中层：抓绒/薄羽绒（可穿脱）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c7"><span class="form-check-label">外层：防风冲锋衣裤（观景台防风）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c8"><span class="form-check-label">厚羽绒服（垭口/日出等待零下体感）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c9"><span class="form-check-label">帽子/手套/围脖、舒适徒步鞋+厚袜</span></label>
+  </div>
+  <h2>防晒与高反</h2>
+  <div>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c10"><span class="form-check-label">SPF50+ 防晒霜、墨镜、润唇膏、保湿面霜</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c11"><span class="form-check-label">个人氧气瓶 1–2 罐（成都市区买比景区便宜）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c12"><span class="form-check-label">药品：红景天（提前 7–10 天）、布洛芬、肠胃药、感冒药、晕车药（山路多弯）、个人慢病药足量</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c13"><span class="form-check-label">指夹血氧仪（几十元，买一个）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c14"><span class="form-check-label">保温杯（沿途可续热水）</span></label>
+  </div>
+  <h2>电子与其他</h2>
+  <div>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c15"><span class="form-check-label">充电宝（低温掉电快）、相机备用电池贴身保暖</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c16"><span class="form-check-label">颈枕（单日车程 4–7h）、耳塞眼罩</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c17"><span class="form-check-label">湿纸巾/纸巾（沿途厕所条件参差）、密封袋防潮</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c19"><span class="form-check-label">简易 4–5 齿冰爪（11 月中下旬徒步路面结冰）+ 暖宝宝（勿久贴脚底）</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c18"><span class="form-check-label">行李 24 寸以内（保姆车行李限制）；硬壳箱换软包更省空间</span></label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" id="p-c20"><span class="form-check-label">信号卡：川西沿线选电信、弃联通主卡；现金 500–1000 元</span></label>
+  </div>
+</div>
+
+<!-- ============ Tab 7 避雷维权 ============ -->
+<div id="cx-p7" role="tabpanel" aria-labelledby="cx-t7" hidden>
+  <h2>十条红线 <span class="text-small text-muted">（B站实测转写 + 小红书高赞避雷帖 + research/04 公开网络交叉验证）</span></h2>
+  <ol>
+    <li><b>低价红线（量化）</b>：川西 3–5 日纯玩小团人均 <b>低于 1200 元</b>、「5 天 4 晚低于 1500 元」基本有坑；1350 元/5 天 4 晚实测 = 车上强卖氧气瓶（"不买路上缺氧"话术）+ 自费链条 + 赶路节奏</li>
+    <li><b>行程单文字游戏</b>：「藏寨家访」=银器店、「特产体验中心」=牦牛肉干推销、「唐卡画院/藏药文化馆」=包装购物点（购物点 890 元饰品网上仅 28 元）</li>
+    <li><b>氧气瓶</b>：车上 58+/罐；上观新闻丽江案例实证"含氧房"话术——<b>成都/康定药店 30 元/罐自备</b>即可</li>
+    <li><b>社交平台私信报团</b>：转个人微信、私下转账、无合同只开收据、订金进个人账户、到成都换降级车 = 重灾区（"成都野界"近百人损失百万、"旅游搭子"百账号骗局等实锤案例）；走平台下单或对公账户</li>
+    <li><b>合同三件套缺一不可</b>：电子旅游合同（全国旅游监管服务平台 mr.mct.gov.cn 亲自查）+ 高原反应告知书 + 车辆运输协议；先看合同再付定金</li>
+    <li><b>拼团超员</b>：下单"2–8 人小团"电话确认成团人数与车型（9 座还是 17 座）；合同写明"不并团"</li>
+    <li><b>住宿降标</b>：问清每晚酒店名或候选名单；高原供暖/热水问明白；警惕"半山腰观景酒店"（实测偏远叫不到车）</li>
+    <li><b>师傅带购</b>：松茸/虫草/牦牛肉干/蜜蜡天珠不碰；松潘假川贝母、药材磨粉圈套有实锤</li>
+    <li><b>年龄附加费</b>：51–60 岁高发投诉之一（中消协案例）——报价对全年龄一致才正常</li>
+    <li><b>政策时效+留证</b>：色达预约、冬季防火期关闭、垭口冰雪管制（10 月折多山已有暴雪管制）行前 3 天再确认；宣传截图/聊天记录/发票合同全程留存</li>
+  </ol>
+  <h2>维权渠道</h2>
+  <p class="text-small">12301 已并入 <b>12345</b>；线上投诉 <code>jbts.mct.gov.cn</code>；新版《旅游投诉处理办法》2026-03-15 施行；<b>强制购物可依《旅游法》第 35 条在行程结束后 30 日内要求退货、垫付退回</b>。51–60 岁高发投诉共性：年龄附加费、保健品/药材诱导、未经同意进店、住宿停水停电——对策：平台/门店成交 + 电子合同 + 对公付款 + 全程留证。</p>
+  <h2>常见隐性自费参考价 <span class="text-small text-muted">（低价团实测口径）</span></h2>
+  <p class="text-small text-muted">氧气瓶 58+/罐（药店 30）· 观景台/清洁费 20–30 · 中转摆渡 60–80 · 骑马 200/单程 · 藏装旅拍（妆造免费引客、修片加钱）· 烤羊晚会/家访 · 色达进沟车 48 · 亚丁观光车电瓶车（2026 免费中）</p>
+</div>
+
+<script src="https://webapi.amap.com/maps?v=2.0&key=2525e1aeef193f334882762b43b3b7ba&plugin=AMap.Driving"></script>
+<script>
+(function () {
+  var root = document.getElementById('chuanxi-plan');
+
+  /* ===== 页签 ===== */
+  var tabs = root.querySelectorAll('.nav-link[role=tab]');
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (x) {
+        x.classList.remove('active'); x.setAttribute('aria-selected', 'false');
+        var p = document.getElementById(x.getAttribute('aria-controls')); if (p) p.hidden = true;
+      });
+      t.classList.add('active'); t.setAttribute('aria-selected', 'true');
+      var panel = document.getElementById(t.getAttribute('aria-controls')); if (panel) panel.hidden = false;
+      if (t.getAttribute('aria-controls') === 'cx-p2') initVisibleRoutes();
+    });
+  });
+
+  /* ===== 清单持久化 ===== */
+  var boxes = root.querySelectorAll('#cx-p6 input[type=checkbox]');
+  function apply(list) { if (!list) return; boxes.forEach(function (b) { b.checked = list.indexOf(b.id) >= 0; }); }
+  function save() {
+    var ids = []; boxes.forEach(function (b) { if (b.checked) ids.push(b.id); });
+    try { if (window.zcode && window.zcode.setWidgetState) window.zcode.setWidgetState({ privateContent: { checked: ids } }).catch(function () {}); } catch (e) {}
+  }
+  boxes.forEach(function (b) { b.addEventListener('change', save); });
+  try { var s0 = window.zcode && window.zcode.widgetState && window.zcode.widgetState.privateContent; if (s0 && s0.checked) apply(s0.checked); } catch (e) {}
+  document.addEventListener('zcode:set_globals', function (ev) {
+    try { var st = ev.detail && ev.detail.globals && ev.detail.globals.widgetState; if (st && st.privateContent && st.privateContent.checked) apply(st.privateContent.checked); } catch (e) {}
+  });
+
+  /* ===== 路线数据（高德 geocode，2026-10-25） ===== */
+  var N = {
+    chengdu:{n:'成都',x:104.0663,y:30.57296}, yingxiu:{n:'映秀',x:103.48867,y:31.05574},
+    siguniang:{n:'四姑娘山镇',x:102.82602,y:31.09438}, shuangqiaogou:{n:'双桥沟',x:102.76973,y:30.98007},
+    danba:{n:'丹巴',x:101.89054,y:30.87862}, jiaju:{n:'甲居藏寨',x:101.86861,y:30.92107},
+    moshi:{n:'墨石公园',x:101.5424,y:30.44489}, tagong:{n:'塔公草原',x:101.52689,y:30.32146},
+    xinduqiao:{n:'新都桥',x:101.49331,y:30.04552}, kangding:{n:'康定',x:101.95687,y:29.99854},
+    luding:{n:'泸定桥',x:102.23164,y:29.9118}, honghaizi:{n:'红海子',x:101.77667,y:30.18178},
+    yuzixi:{n:'鱼子西',x:101.5833,y:30.20738}, jiagenba:{n:'甲根坝',x:101.56058,y:29.8441},
+    gunong:{n:'姑弄村',x:101.50686,y:30.35514}, yulongxi:{n:'玉龙西村',x:101.76035,y:29.80995},
+    lenggacuo:{n:'冷嘎措',x:101.68518,y:29.64819}, zimei:{n:'子梅垭口',x:101.72303,y:29.51543},
+    yajiang:{n:'雅江',x:101.01437,y:30.0315}, litang:{n:'理塘',x:100.26914,y:29.99423},
+    daocheng:{n:'稻城',x:100.29737,y:29.03791}, xianggelila:{n:'香格里拉镇',x:100.29494,y:29.03597},
+    dcyAirport:{n:'稻城亚丁机场',x:100.063,y:29.31268}, wenchuan:{n:'汶川',x:103.59019,y:31.47687},
+    guanyinqiao:{n:'观音桥镇',x:101.67811,y:31.83198}, seda:{n:'色达',x:100.33301,y:32.26854},
+    maerkang:{n:'马尔康',x:102.20639,y:31.9058}, bipenggou:{n:'毕棚沟',x:102.99442,y:31.38062},
+    heishui:{n:'黑水',x:102.98759,y:32.06927}, dagu:{n:'达古冰川',x:102.91101,y:32.13102}
+  };
+  var R = {
+    A:{c:0, pts:['chengdu','siguniang','danba','moshi','tagong','xinduqiao','luding','chengdu']},
+    B:{c:1, pts:['chengdu','kangding','honghaizi','yuzixi','xinduqiao','jiagenba','gunong','yulongxi','lenggacuo','zimei','xinduqiao','chengdu']},
+    C:{c:2, pts:['chengdu','siguniang','danba','xinduqiao','yajiang','litang','daocheng','xianggelila'], dashedBack:true},
+    D:{c:3, pts:['chengdu','dcyAirport','xianggelila'], flightFirst:true},
+    E:{c:4, pts:['chengdu','wenchuan','guanyinqiao','seda','maerkang'], dashedBack:true},
+    F:{c:5, pts:['chengdu','siguniang','bipenggou','heishui','dagu','chengdu']}
+  };
+  var COLORS = ['#2563eb','#0d9488','#7c3aed','#d97706','#dc2626','#059669'];
+
+  function navLinks(rk, pts) {
+    var box = document.getElementById('cx-nav-' + rk); if (!box) return;
+    box.innerHTML = pts.map(function (k, i) {
+      var p = N[k];
+      return '<a target="_blank" rel="noopener" href="https://uri.amap.com/navigation?to=' + p.x + ',' + p.y + ',' + encodeURIComponent(p.n) + '&mode=car&callnative=1">' + (i + 1) + '. ' + p.n + ' ⌖</a>';
+    }).join('');
+  }
+  function legLabels(rk, pts) {
+    var box = document.getElementById('cx-leg-' + rk); if (!box) return;
+    var seen = {}, out = [];
+    pts.forEach(function (k) { if (!seen[k]) { seen[k] = 1; out.push('<span><b style="background:' + COLORS[R[rk].c] + '"></b>' + N[k].n + '</span>'); } });
+    box.innerHTML = out.join('');
+  }
+
+  /* ===== 高德地图（不可用时降级示意 SVG） ===== */
+  var inited = {};
+  function ensureAMap(cb) {
+    if (window.AMap) return cb(true);
+    var tries = 0;
+    var t = setInterval(function () {
+      tries++;
+      if (window.AMap) { clearInterval(t); cb(true); }
+      else if (tries > 12) { clearInterval(t); cb(false); }
+    }, 400);
+  }
+  function drawFallback(el, rk, pts) {
+    var xs = pts.map(function (k) { return N[k].x; }), ys = pts.map(function (k) { return N[k].y; });
+    var minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
+    var minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
+    var W = 760, H = 280, pad = 46;
+    function px(x) { return pad + (x - minX) / Math.max(maxX - minX, 1e-6) * (W - pad * 2); }
+    function py(y) { return H - pad - (y - minY) / Math.max(maxY - minY, 1e-6) * (H - pad * 2); }
+    var seg = '', color = COLORS[R[rk].c];
+    for (var i = 0; i < pts.length - 1; i++) {
+      seg += '<line x1="' + px(N[pts[i]].x) + '" y1="' + py(N[pts[i]].y) + '" x2="' + px(N[pts[i + 1]].x) + '" y2="' + py(N[pts[i + 1]].y) + '" stroke="' + color + '" stroke-width="2.5" stroke-opacity=".8" stroke-linecap="round"/>';
+    }
+    var dots = pts.map(function (k, i) {
+      var same = i > 0 && pts[i] === pts[i - 1];
+      return '<circle cx="' + px(N[k].x) + '" cy="' + py(N[k].y) + '" r="' + (same ? 4 : 9) + '" fill="' + (same ? '#94a3b8' : color) + '" stroke="#fff" stroke-width="1.5"/>' +
+        '<text x="' + (px(N[k].x) + 10) + '" y="' + (py(N[k].y) + 4) + '" font-size="11" fill="#334155">' + (i + 1) + '. ' + N[k].n + '</text>';
+    }).join('');
+    el.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="路线示意图">' + seg + dots + '</svg>' +
+      '<div class="cx-map-tip">示意线路（真实比例，无底图）— 完整高德地图请用独立 HTML 文件打开</div>';
+  }
+  function initRoute(rk) {
+    if (inited[rk]) return; inited[rk] = true;
+    var el = document.getElementById('cx-map-' + rk); if (!el) return;
+    var pts = R[rk].pts;
+    navLinks(rk, pts); legLabels(rk, pts);
+    ensureAMap(function (ok) {
+      if (!ok || location.hash === '#nomap') return drawFallback(el, rk, pts);
+      try {
+        var map = new AMap.Map(el, { mapStyle: 'amap://styles/whitesmoke', viewMode: '2D', zoom: 8 });
+        var bounds = [];
+        pts.forEach(function (k, i) {
+          var p = N[k], same = i > 0 && pts[i] === pts[i - 1];
+          if (!same) {
+            var mk = new AMap.Marker({
+              position: [p.x, p.y], zIndex: 20,
+              content: '<div class="cx-mk" style="background:' + COLORS[R[rk].c] + '"><span>' + (i + 1) + '</span></div>',
+              anchor: 'bottom-center', label: { content: '<div style="font-size:11px;color:#334155;white-space:nowrap;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;padding:0 2px">' + p.n + '</div>', direction: 'bottom' }
+            });
+            map.add(mk);
+          }
+          bounds.push([p.x, p.y]);
+        });
+        for (var i = 0; i < pts.length - 1; i++) {
+          var a = N[pts[i]], b = N[pts[i + 1]];
+          var flight = R[rk].flightFirst && i === 0;
+          map.add(new AMap.Polyline({ path: [[a.x, a.y], [b.x, b.y]], strokeColor: COLORS[R[rk].c],
+            strokeWeight: 4, strokeOpacity: .85, strokeStyle: flight ? 'dashed' : 'solid', showDir: !flight, lineJoin: 'round' }));
+        }
+        if (R[rk].dashedBack) {
+          var l = pts[pts.length - 1];
+          map.add(new AMap.Polyline({ path: [[N[l].x, N[l].y], [N.chengdu.x, N.chengdu.y]], strokeColor: COLORS[R[rk].c],
+            strokeWeight: 3, strokeOpacity: .5, strokeStyle: 'dashed' }));
+        }
+        var lgs = [], lts = [];
+        bounds.forEach(function (b) { lgs.push(b[0]); lts.push(b[1]); });
+        var dLng = (Math.max.apply(null, lgs) - Math.min.apply(null, lgs)) * 0.18 || 0.3;
+        var dLat = (Math.max.apply(null, lts) - Math.min.apply(null, lts)) * 0.18 || 0.2;
+        map.setBounds(new AMap.Bounds([Math.min.apply(null, lgs) - dLng, Math.min.apply(null, lts) - dLat],
+                                      [Math.max.apply(null, lgs) + dLng, Math.max.apply(null, lts) + dLat]));
+        var tip = document.createElement('div'); tip.className = 'cx-map-tip';
+        tip.style.cssText = 'left:10px;top:8px;bottom:auto';
+        tip.textContent = '高德地图 · 编号=行程顺序 · 下方地名可唤起导航';
+        el.appendChild(tip);
+      } catch (e) { drawFallback(el, rk, pts); }
+    });
+  }
+  function initVisibleRoutes() {
+    var panel = document.getElementById('cx-p2');
+    if (panel.hidden) return;
+    root.querySelectorAll('details.cx-route').forEach(function (d) {
+      if (d.open) initRoute(d.getAttribute('data-route'));
+    });
+  }
+  root.querySelectorAll('details.cx-route').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      var panel = document.getElementById('cx-p2');
+      if (d.open && !panel.hidden) initRoute(d.getAttribute('data-route'));
+    });
+  });
+})();
+</script>
+
+</div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.544.0/dist/umd/lucide.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){ if(window.lucide) lucide.createIcons({attrs:{width:16,height:16}}); });
+
+(function(){
+  var tabs=document.querySelectorAll('.nav-link[role=tab]');
+  tabs.forEach(function(t){
+    t.addEventListener('click',function(){
+      tabs.forEach(function(x){x.classList.remove('active');x.setAttribute('aria-selected','false');
+        var p=document.getElementById(x.getAttribute('aria-controls')); if(p)p.hidden=true;});
+      t.classList.add('active'); t.setAttribute('aria-selected','true');
+      var panel=document.getElementById(t.getAttribute('aria-controls')); if(panel)panel.hidden=false;
+    });
+  });
+})();
+
+</script>
+</body>
+</html>
